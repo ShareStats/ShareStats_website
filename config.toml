@@ -1,6 +1,6 @@
 ################################# Default configuration ###################
 # provide your domain here
-baseURL = "https://sharestats.github.io/"
+baseURL = "https://sharestats.github.io/ShareStats_website/docs/"
 # theme
 theme = "dot-hugo-documentation-theme"
 # site title

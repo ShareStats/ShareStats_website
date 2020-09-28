@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Features on ShareStats</title>
-    <link>https://sharestats.github.io/fr/features/</link>
+    <link>https://sharestats.github.io/ShareStats_website/docs/fr/features/</link>
     <description>Recent content in Features on ShareStats</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-fr</language>
     <copyright>Copyright © 2020 un thème Hugo par [Gethugothemes](https://gethugothemes.com/)</copyright>
-    <lastBuildDate>Fri, 28 Dec 2018 11:02:05 +0600</lastBuildDate><atom:link href="https://sharestats.github.io/fr/features/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 28 Dec 2018 11:02:05 +0600</lastBuildDate><atom:link href="https://sharestats.github.io/ShareStats_website/docs/fr/features/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
