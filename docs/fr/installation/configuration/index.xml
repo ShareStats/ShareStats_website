@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Configuration on ShareStats</title>
-    <link>https://sharestats.github.io/ShareStats_website/docs/fr/installation/configuration/</link>
+    <link>./fr/installation/configuration/</link>
     <description>Recent content in Configuration on ShareStats</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-fr</language>
     <copyright>Copyright © 2020 un thème Hugo par [Gethugothemes](https://gethugothemes.com/)</copyright>
-    <lastBuildDate>Sat, 29 Dec 2018 11:02:05 +0600</lastBuildDate><atom:link href="https://sharestats.github.io/ShareStats_website/docs/fr/installation/configuration/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 29 Dec 2018 11:02:05 +0600</lastBuildDate><atom:link href="./fr/installation/configuration/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
