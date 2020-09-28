@@ -4,7 +4,7 @@ baseURL = "https://examplesite.com/"
 # theme
 theme = "dot-hugo-documentation-theme"
 # site title
-title = "Dot"
+title = "ShareStats"
 # disable language
 disableLanguages = []
 # google analytics
@@ -12,6 +12,7 @@ googleAnalytics = "" # paste your analytics ID here. (Ex: UA-123-45)
 # unsafe html
 [markup.goldmark.renderer]
 unsafe = true
+publishDir = "docs"
 
 
 ############################# Default Parameters ##########################
