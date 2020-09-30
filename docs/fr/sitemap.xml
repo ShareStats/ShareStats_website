@@ -252,6 +252,11 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="nl"
+                href="/./nl/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="fr"
                 href="/./fr/"
                 />
@@ -296,6 +301,11 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="nl"
+                href="/./nl/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="fr"
                 href="/./fr/categories/"
                 />
@@ -321,6 +331,11 @@
                 rel="alternate"
                 hreflang="en"
                 href="/./tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="/./nl/tags/"
                 />
     <xhtml:link
                 rel="alternate"

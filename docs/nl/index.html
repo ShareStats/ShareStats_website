@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="nl-nl">
   <head>
   <meta charset="utf-8">
-  <title>Vous avez des questions</title>
+  <title>ShareStats</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="generator" content="Hugo 0.75.1" />
   
@@ -62,10 +62,10 @@
   <body>
     
     <!-- header -->
-    <header class="shadow-bottom sticky-top bg-white">
-      <nav class="navbar navbar-expand-md navbar-light">
+    <header class="banner bg-primary" data-background="/">
+      <nav class="navbar navbar-expand-md navbar-dark">
   <div class="container">
-    <a class="navbar-brand px-2" href="/fr">
+    <a class="navbar-brand px-2" href="/nl">
       
       
       
@@ -80,45 +80,9 @@
     <div class="collapse navbar-collapse text-center" id="navigation">
       <ul class="navbar-nav ml-auto">
         
-        
-        <li class="nav-item">
-          <a class="nav-link text-dark" href="fr/">Accueil</a>
-        </li>
-        
-        
-        
-        <li class="nav-item">
-          <a class="nav-link text-dark" href="/fr/faq">Faq</a>
-        </li>
-        
-        
-        
-        <li class="nav-item">
-          <a class="nav-link text-dark" href="/fr/contact">contact</a>
-        </li>
-        
-        
-        
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            docs
-          </a>
-          <div class="dropdown-menu">
-            
-            <a class="dropdown-item" href="/fr/installation">Installation</a>
-            
-            <a class="dropdown-item" href="/fr/billing-pricing">Billing and Pricing</a>
-            
-            <a class="dropdown-item" href="/fr/features">Features</a>
-            
-          </div>
-        </li>
-        
-        
       </ul>
       
-      <select class="lang-list dark" id="select-language"
+      <select class="lang-list " id="select-language"
         onchange="location = this.value;">
         
         
@@ -130,7 +94,7 @@
         
         
         
-        <option id="en" value="/./contact/">EN</option>
+        <option id="en" value="/./">EN</option>
         
         
         
@@ -142,8 +106,22 @@
         
         
         
-        <option id="fr" value="/./fr/contact/" selected>
+        
+        
+        
+        
+        <option id="nl" value="/./nl/" selected>NL
         </option>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <option id="fr" value="/./fr/"></option>
         
         
         
@@ -158,33 +136,77 @@
   </div>
 </nav>
 
+      <!-- banner -->
+<div class="container section">
+	<div class="row">
+		<div class="col-lg-8 text-center mx-auto">
+			<h1 class="text-white mb-3"></h1>
+			<p class="text-white mb-4"></p>
+			<div class="position-relative">
+				<input id="search" class="form-control" placeholder="">
+				<i class="ti-search search-icon"></i>
+				
+				
+				
+				
+				<script>
+					$(function() {
+					var projects = [
+						
+						{
+							value: "Categories",
+							label: "<p></p>",
+							url:"\/.\/nl\/categories\/"
+						},
+						
+						{
+							value: "ShareStats",
+							label: "<p></p>",
+							url:"\/.\/nl\/"
+						},
+						
+						{
+							value: "Tags",
+							label: "<p></p>",
+							url:"\/.\/nl\/tags\/"
+						},
+						
+					];
+					$( "#search" ).autocomplete({
+						source: projects
+					})
+					.data( "ui-autocomplete" )._renderItem = function( ul, item ) {
+						return $( "<li>" )
+						.append( "<a href=" + item.url + " + \" &quot;\" +  >" + item.value + "</a>" + item.label )
+						.appendTo( ul );
+					};
+					});
+				</script>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- /banner -->
     </header>
     <!-- /header -->
     
     
 
-<!-- contact -->
-<section class="section">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <h2 class="section-title text-primary">Vous avez des questions</h2>
-        <p>Envoyez le formulaire et confirmez votre adresse e-mail à l&rsquo;adresse<a href="https://formspree.io/">Formspree</a>.</p>
-
-        <form action="#">
-          <input type="text" id="name" name="name" placeholder="Name" class="form-control mb-4 shadow rounded-0">
-          <input type="email" id="mail" name="mail" placeholder="Email" class="form-control mb-4 shadow rounded-0">
-          <input type="text" id="subject" name="subject" placeholder="subject"
-            class="form-control mb-4 shadow rounded-0">
-          <textarea name="message" id="message" placeholder="Message"
-            class="form-control mb-4 shadow rounded-0"></textarea>
-          <button type="submit" value="send" class="btn btn-primary">Envoyer</button>
-        </form>
+  <!-- topics -->
+  <section class="section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <h2 class="section-title">Find your answer by subject</h2>
+        </div>
+        <!-- topic-item -->
+        
       </div>
     </div>
-  </div>
-</section>
-<!-- /contact -->
+  </section>
+  <!-- /topics -->
+
+  
 
 
     <!-- footer -->
@@ -192,7 +214,7 @@
   <div class="container">
     <div class="row align-items-center">
       <div class="col-md-8 text-md-left text-center">
-       <p class="mb-md-0 mb-4"></p>
+       <p class="mb-md-0 mb-4">Copyright © 2020 un thème Hugo par <a href="https://gethugothemes.com/">Gethugothemes</a></p>
       </div>
       <div class="col-md-4 text-md-right text-center">
         <ul class="list-inline">
