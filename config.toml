@@ -39,17 +39,17 @@ contact_form_action = "#" # contact form works with : https://formspree.io
 
 
 ############################## social links ##############################
-[[params.social]]
-icon = "ti-facebook" # themify icon pack : https://themify.me/themify-icons
-link = "#"
+# [[params.social]]
+# icon = "ti-facebook" # themify icon pack : https://themify.me/themify-icons
+# link = "#"
 
 [[params.social]]
 icon = "ti-twitter-alt" # themify icon pack : https://themify.me/themify-icons
-link = "#"
+link = "https://twitter.com/search?q=%23sharestats&src=typed_query"
   
 [[params.social]]
 icon = "ti-github" # themify icon pack : https://themify.me/themify-icons
-link = "#"
+link = "https://github.com/ShareStats"
   
 [[params.social]]
 icon = "ti-linkedin" # themify icon pack : https://themify.me/themify-icons
