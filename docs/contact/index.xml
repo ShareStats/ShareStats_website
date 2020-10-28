@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Got Any Questions on ShareStats</title>
-    <link>/contact/</link>
+    <link>https://sharestats.github.io/ShareStats_website/docs/contact/</link>
     <description>Recent content in Got Any Questions on ShareStats</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Copyright © 2020 a Hugo theme by [Gethugothemes](https://gethugothemes.com/)</copyright><atom:link href="/contact/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright © 2020 a Hugo theme by [Gethugothemes](https://gethugothemes.com/)</copyright><atom:link href="https://sharestats.github.io/ShareStats_website/docs/contact/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

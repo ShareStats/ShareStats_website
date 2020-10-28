@@ -1,6 +1,6 @@
 ################################# Default configuration ###################
 # provide your domain here
-baseURL = ""
+baseURL = "https://sharestats.github.io/ShareStats_website/docs/"
 # theme
 theme = "dot-hugo-documentation-theme"
 # site title
@@ -13,6 +13,7 @@ googleAnalytics = "" # paste your analytics ID here. (Ex: UA-123-45)
 [markup.goldmark.renderer]
 unsafe = true
 publishDir = "docs"
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
 
 ############################# Default Parameters ##########################

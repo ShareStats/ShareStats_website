@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ShareStats</title>
-    <link>/nl/</link>
+    <link>https://sharestats.github.io/ShareStats_website/docs/nl/</link>
     <description>Recent content on ShareStats</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>nl-nl</language>
-    <copyright>Copyright © 2020 un thème Hugo par [Gethugothemes](https://gethugothemes.com/)</copyright><atom:link href="/nl/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright © 2020 un thème Hugo par [Gethugothemes](https://gethugothemes.com/)</copyright><atom:link href="https://sharestats.github.io/ShareStats_website/docs/nl/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
