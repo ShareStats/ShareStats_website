@@ -1,6 +1,6 @@
 ################################# Default configuration ###################
 # provide your domain here
-baseURL = "."
+baseURL = ""
 # theme
 theme = "dot-hugo-documentation-theme"
 # site title
