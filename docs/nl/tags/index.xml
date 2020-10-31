@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on ShareStats</title>
-    <link>https://sharestats.github.io/ShareStats_website/docs/nl/tags/</link>
+    <link>./nl/tags/</link>
     <description>Recent content in Tags on ShareStats</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>nl-nl</language>
-    <copyright>Copyright © 2020 un thème Hugo par [Gethugothemes](https://gethugothemes.com/)</copyright><atom:link href="https://sharestats.github.io/ShareStats_website/docs/nl/tags/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright © 2020 un thème Hugo par [Gethugothemes](https://gethugothemes.com/)</copyright><atom:link href="./nl/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

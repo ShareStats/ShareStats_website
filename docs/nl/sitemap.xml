@@ -3,59 +3,59 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://sharestats.github.io/ShareStats_website/docs/nl/categories/</loc>
+    <loc>./nl/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://sharestats.github.io/ShareStats_website/docs/categories/"
+                href="./categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://sharestats.github.io/ShareStats_website/docs/fr/categories/"
+                href="./fr/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="nl"
-                href="https://sharestats.github.io/ShareStats_website/docs/nl/categories/"
+                href="./nl/categories/"
                 />
   </url>
   
   <url>
-    <loc>https://sharestats.github.io/ShareStats_website/docs/nl/</loc>
+    <loc>./nl/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://sharestats.github.io/ShareStats_website/docs/"
+                href="./"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://sharestats.github.io/ShareStats_website/docs/fr/"
+                href="./fr/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="nl"
-                href="https://sharestats.github.io/ShareStats_website/docs/nl/"
+                href="./nl/"
                 />
   </url>
   
   <url>
-    <loc>https://sharestats.github.io/ShareStats_website/docs/nl/tags/</loc>
+    <loc>./nl/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://sharestats.github.io/ShareStats_website/docs/tags/"
+                href="./tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://sharestats.github.io/ShareStats_website/docs/fr/tags/"
+                href="./fr/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="nl"
-                href="https://sharestats.github.io/ShareStats_website/docs/nl/tags/"
+                href="./nl/tags/"
                 />
   </url>
   
