@@ -19,9 +19,9 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 ############################# Default Parameters ##########################
 [params]
 # logo is for all page
-logo = "images/infinityBL.png"
+logo = "images/InfShareStatsBL.png"
 # logo white is for homepage logo, you can use colorful logo too...
-logo_white = "images/infinityWT.png"
+logo_white = "images/InfShareStatsWT.png"
 # when logo is empty, it will shown your site title
 
 # customize color
