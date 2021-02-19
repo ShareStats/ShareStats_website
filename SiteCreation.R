@@ -1,3 +1,5 @@
+blogdown::new_site( theme = "themefisher/meghna-hugo")
+
 new_site(
   dir = "docs",
   install_hugo = TRUE,
