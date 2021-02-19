@@ -1,6 +1,6 @@
 new_site(
   dir = "docs",
-  install_hugo = FALSE,
+  install_hugo = TRUE,
   format = "toml",
   sample = TRUE,
   theme = "themefisher/meghna-hugo",
