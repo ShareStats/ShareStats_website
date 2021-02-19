@@ -12,3 +12,11 @@ new_site(
   to_yaml = TRUE,
   serve = interactive()
 )
+
+# Color changes
+
+#1d2024 -> #2E3192
+
+#57cbcc
+
+#353b43
