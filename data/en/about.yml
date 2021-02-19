@@ -3,14 +3,14 @@ about:
   enable : true
   title : About Us
   about_item :
-  - icon : ti-ruler-pencil # themify icon pack : https://themify.me/themify-icons
-    title : We're Creative
-    content : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil, libero, perspiciatis eos provident laborum eum dignissimos.
+  - icon : ti-money # themify icon pack : https://themify.me/themify-icons
+    title : Funding
+    content : The ShareStats project is nationally funded by [SURF](https://www.surf.nl/sharestats-statistiekopgaven-open-delen-met-een-vakcommunity-van-docenten) the collaborative organisation for ICT in Dutch education. 
 
-  - icon : ti-cup # themify icon pack : https://themify.me/themify-icons
-    title : We're Professional
-    content : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil, libero, perspiciatis eos provident laborum eum dignissimos.
+  - icon : ti-layout-grid2 # themify icon pack : https://themify.me/themify-icons
+    title : Collaboration
+    content : In joint collaboration between the UvA, VU, UU and EUR, we set out to create a national item bank.
 
-  - icon : ti-thought # themify icon pack : https://themify.me/themify-icons
-    title : We're Genius
-    content : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil, libero, perspiciatis eos provident laborum eum dignissimos.
+  - icon : ti-user # themify icon pack : https://themify.me/themify-icons
+    title : Community
+    content : By creating a [community](#cta) of statistics teachers, we aim to make have a wide use of our itembank.

@@ -11,7 +11,7 @@ params:
   cookies:
     enable: no
     expire_days: 2
-  description: Responsive Multipurpose Parallax Hugo Template
+  description: Project site for ShareStats
   google_analytics_id: ''
   logo: images/InfShareStatsWT.png
   map:
@@ -64,12 +64,12 @@ Languages:
       main:
         - name: about
           pre: '#'
-          url: about
+          url: feature
           weight: 1
-        - name: services
-          pre: '#'
-          url: services
-          weight: 2
+        # - name: services
+        #   pre: '#'
+        #   url: services
+        #   weight: 2
         # - name: portfolio
         #   pre: '#'
         #   url: portfolio
@@ -95,45 +95,45 @@ Languages:
         #   url: https://themefisher.com/
         #   weight: 8
     weight: 1
-  fr:
-    contentDir: content/french
-    copyright: Copyright &copy; 2020 Designed by [Themefisher](https://themefisher.com)
-      & Developed by [Gethugothemes](https://gethugothemes.com)
-    home: Accueil
-    languageCode: fr-fr
-    languageName: Fr
-    menu:
-      main:
-        - name: sur
-          pre: '#'
-          url: about
-          weight: 1
-        - name: un service
-          pre: '#'
-          url: services
-          weight: 2
-        - name: portefeuille
-          pre: '#'
-          url: portfolio
-          weight: 3
-        - name: équipe
-          pre: '#'
-          url: team
-          weight: 4
-        - name: tarification
-          pre: '#'
-          url: pricing
-          weight: 5
-        - name: blog
-          pre: '#'
-          url: blog
-          weight: 6
-        - name: contact
-          pre: '#'
-          url: contact
-          weight: 7
-        - name: themefisher
-          pre: ''
-          url: https://themefisher.com/
-          weight: 8
-    weight: 2
+  # fr:
+  #   contentDir: content/french
+  #   copyright: Copyright &copy; 2020 Designed by [Themefisher](https://themefisher.com)
+  #     & Developed by [Gethugothemes](https://gethugothemes.com)
+  #   home: Accueil
+  #   languageCode: fr-fr
+  #   languageName: Fr
+  #   menu:
+  #     main:
+  #       - name: sur
+  #         pre: '#'
+  #         url: about
+  #         weight: 1
+  #       - name: un service
+  #         pre: '#'
+  #         url: services
+  #         weight: 2
+  #       - name: portefeuille
+  #         pre: '#'
+  #         url: portfolio
+  #         weight: 3
+  #       - name: équipe
+  #         pre: '#'
+  #         url: team
+  #         weight: 4
+  #       - name: tarification
+  #         pre: '#'
+  #         url: pricing
+  #         weight: 5
+  #       - name: blog
+  #         pre: '#'
+  #         url: blog
+  #         weight: 6
+  #       - name: contact
+  #         pre: '#'
+  #         url: contact
+  #         weight: 7
+  #       - name: themefisher
+  #         pre: ''
+  #         url: https://themefisher.com/
+  #         weight: 8
+  #   weight: 2
