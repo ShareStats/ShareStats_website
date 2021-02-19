@@ -70,18 +70,18 @@ Languages:
           pre: '#'
           url: services
           weight: 2
-        - name: portfolio
-          pre: '#'
-          url: portfolio
-          weight: 3
+        # - name: portfolio
+        #   pre: '#'
+        #   url: portfolio
+        #   weight: 3
         - name: team
           pre: '#'
           url: team
           weight: 4
-        - name: pricing
-          pre: '#'
-          url: pricing
-          weight: 5
+        # - name: pricing
+        #   pre: '#'
+        #   url: pricing
+        #   weight: 5
         - name: blog
           pre: '#'
           url: blog
