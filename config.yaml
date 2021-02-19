@@ -1,4 +1,4 @@
-baseURL: https://examplesite.com
+baseURL: https://www.sharestats.nl
 title: Meghna
 theme: meghna-hugo
 publishDir: "docs"
@@ -13,7 +13,7 @@ params:
     expire_days: 2
   description: Responsive Multipurpose Parallax Hugo Template
   google_analytics_id: ''
-  logo: images/logo.png
+  logo: images/InfShareStatsWT.png
   map:
     enable: no
     gmap_api: https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ
