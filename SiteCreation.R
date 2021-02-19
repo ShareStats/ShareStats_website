@@ -1,9 +1,9 @@
 new_site(
-  dir = ".",
+  dir = "docs",
   install_hugo = FALSE,
   format = "toml",
   sample = TRUE,
-  theme = "themefisher/dot-hugo-documentation-theme",
+  theme = "themefisher/meghna-hugo",
   hostname = "github.com",
   theme_example = TRUE,
   empty_dirs = FALSE,
