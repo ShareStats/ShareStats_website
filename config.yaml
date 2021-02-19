@@ -40,18 +40,18 @@ params:
     enable: no
     preloader: images/logo.png
   social:
-    - icon: ti-facebook
-      link: '#'
-    - icon: ti-twitter-alt
-      link: '#'
-    - icon: ti-youtube
-      link: '#'
+    # - icon: ti-facebook
+    #   link: '#'
+    # - icon: ti-twitter-alt
+    #   link: '#'
+    - icon: ti-github
+      link: 'https://github.com/ShareStats'
     - icon: ti-linkedin
-      link: '#'
-    - icon: ti-dribbble
-      link: '#'
-    - icon: ti-pinterest
-      link: '#'
+      link: 'https://www.linkedin.com/groups/12464778/'
+    # - icon: ti-dribbble
+    #   link: '#'
+    # - icon: ti-pinterest
+    #   link: '#'
 Languages:
   en:
     contentDir: content/english
