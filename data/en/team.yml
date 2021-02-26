@@ -68,11 +68,11 @@ team:
           link : "#"
  
      # team member loop
-    - name : Lindia Arends
+    - name : Lidia Arends
       image_webp : images/team/lidia.webp
       image : images/team/lidia.jpg
       designation : Universiteit van Amsterdam
-      content : "Ik richt me in dit project vooral op het schrijven van R-code om de functionaliteit van het exams package uit te breiden. Ik hoop hiermee te bereiken dat gebruikers een grotere keuze hebben in de digitale leer- of toetsomgeving die ze willen gebruiken voor het aanbieden van het oefen- en toetsmateriaal. Het is mooi dat we voor het creëren van ons studiemateriaal niet langer afhankelijk zijn van een commerciële partij of softwareaanbieder!"
+      content : "Al jaren proberen we bij allerlei opleidingen en universiteiten leuke, nieuwe, originele statistiekvragen te verzinnen. Elkaar daarbij zien als partners en collega’s, in plaats van concurrenten, opent de deur om onze krachten en ideeën te bundelen zodat we gezamenlijk komen tot beter statistiekonderwijs voor al onze studenten. Als raken verbinden wordt, volgt samenwerken vanzelf."
       social :
         - icon : ti-facebook # themify icon pack : https://themify.me/themify-icons
           link : "#"
