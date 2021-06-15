@@ -7,7 +7,7 @@ image_webp: images/blog/blog-post-3.webp
 title: ShareStats gestart!
 ---
 
-Op 1 september 2020 is het project ShareStats van start gegaan. Het project loopt 2 jaar en wordt gefinancierd door SURF.
+Op 1 september 2020 is het project ShareStats van start gegaan. Het project loopt 2 jaar en wordt gefinancierd door SURF..
 
 Doel van het project is om statistiekopgaven open te delen met de vakcommunity van methoden- en statistiekdocenten in het hoger onderwijs. Met jullie dus!
 
