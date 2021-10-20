@@ -1,40 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>https://www.sharestats.nl/blog/</loc>
     <lastmod>2020-10-07T12:52:36+06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.sharestats.nl/</loc>
     <lastmod>2020-10-07T12:52:36+06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.sharestats.nl/blog/sharestats_gestart/</loc>
     <lastmod>2020-10-07T12:52:36+06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.sharestats.nl/author/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.sharestats.nl/categories/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.sharestats.nl/author/john-doe/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.sharestats.nl/author/mark-dinn/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.sharestats.nl/tags/</loc>
   </url>
-  
 </urlset>
