@@ -2,14 +2,36 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.sharestats.nl/blog/</loc>
-    <lastmod>2020-10-07T12:52:36+06:00</lastmod>
-  </url><url>
     <loc>https://www.sharestats.nl/</loc>
+    <lastmod>2020-10-07T12:52:36+06:00</lastmod>
+    <priority>0</priority>
+  </url><url>
+    <loc>https://www.sharestats.nl/blog/</loc>
     <lastmod>2020-10-07T12:52:36+06:00</lastmod>
   </url><url>
     <loc>https://www.sharestats.nl/blog/sharestats_gestart/</loc>
     <lastmod>2020-10-07T12:52:36+06:00</lastmod>
+  </url><url>
+    <loc>https://www.sharestats.nl/questions/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>https://www.sharestats.nl/questions/vu-ancova-001-nl/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>https://www.sharestats.nl/questions/vu-ancova-002-nl/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>https://www.sharestats.nl/questions/vu-chisquared-001-nl/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>https://www.sharestats.nl/questions/vu-standarddeviation-001-nl/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>https://www.sharestats.nl/questions/vu-standarddeviation-002-nl/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>https://www.sharestats.nl/questions/vu-standarddeviation-003-nl/</loc>
+    <priority>0</priority>
   </url><url>
     <loc>https://www.sharestats.nl/author/</loc>
   </url><url>
@@ -17,7 +39,7 @@
   </url><url>
     <loc>https://www.sharestats.nl/author/john-doe/</loc>
   </url><url>
-    <loc>https://www.sharestats.nl/author/mark-dinn/</loc>
+    <loc>https://www.sharestats.nl/search/</loc>
   </url><url>
     <loc>https://www.sharestats.nl/tags/</loc>
   </url>
