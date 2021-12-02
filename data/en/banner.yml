@@ -5,7 +5,7 @@ banner:
   bg_image : "images/backgrounds/hero-area-sharestats.jpg"
   icon : "" # themify icon pack : https://themify.me/themify-icons
   title : "ShareStats"
-  content : "Creating an open statistics assessment itembank"
+  content : "The open statistics assessment itembank"
   button:
     enable : true
     label : "About Us"
