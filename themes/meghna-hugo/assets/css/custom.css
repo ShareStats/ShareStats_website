@@ -15,6 +15,7 @@ body, .bg-one {background-color: #f4f4f4;}
 .navbar-dark .navbar-nav .nav-link:hover {color: black;}
 .navbar-dark .navbar-toggler-icon {filter: invert(100%);}
 a[href^="/author/"] {pointer-events: none;}
+.hero-area h1 img {max-width: 17rem; margin-bottom: 1rem; display: inline-block;}
 .hero-area form {margin: 1rem 0 1rem;}
 .hero-area form > div {display: flex; justify-content: center; margin: 0 1rem;}
 .hero-area form > div input {border: 0;}
