@@ -4,10 +4,10 @@ date: "2020-10-07T12:52:36+06:00"
 description: Nieuwsbrief 1
 image: images/blog/blog-post-3.jpg
 image_webp: images/blog/blog-post-3.webp
-title: ShareStats gestart!
+title: ShareStats started!
 ---
 
-Op 1 september 2020 is het project ShareStats van start gegaan. Het project loopt 2 jaar en wordt gefinancierd door SURF..
+At 1 september 2020 is het project ShareStats van start gegaan. Het project loopt 2 jaar en wordt gefinancierd door SURF..
 
 Doel van het project is om statistiekopgaven open te delen met de vakcommunity van methoden- en statistiekdocenten in het hoger onderwijs. Met jullie dus!
 

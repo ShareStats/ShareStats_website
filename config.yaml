@@ -55,8 +55,7 @@ params:
 Languages:
   en:
     contentDir: content/english
-    copyright: Copyright &copy; 2020 by [Themefisher](https://themefisher.com)
-      & [Gethugothemes](https://gethugothemes.com)
+    copyright: Copyright &copy; 2021 - powered by Hugo
     home: Home
     languageCode: en-us
     languageName: En

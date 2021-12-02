@@ -3,7 +3,7 @@
 {{ if $data.banner.banner.enable }}
 {{ with $data.banner.banner }}
 {{"<!-- Welcome Slider-->" | safeHTML}}
-<section class="hero-area notfullheight" style='background-image: url("{{ .bg_image_webp | absURL }}");'>
+<section class="hero-area notfullheight" style='background-image: url("{{ .bg_image_webp | absURL }}"); background-attachment: fixed;'>
 	<!-- this image is for trigger this section fallback background image -->
 	<img class="d-none" src="{{ .bg_image_webp | absURL }}" onerror="this.onerror=null;this.parentElement.style.backgroundImage= 'url({{ .bg_image | absURL }})'"/>
 
@@ -78,9 +78,9 @@
 		
 		<form onSubmit="return lunr_search(document.getElementById('lunrsearch').value);">
 			<div>
-				<label for="lunrsearch" style="display: none;">Zoeken</label>
+				<label for="lunrsearch" style="display: none;">Search</label>
 				<input type="search" id="lunrsearch" name="q" maxlength="255" value="" placeholder="" />
-				<input type="submit" value="Zoek" class="btn-main" />
+				<input type="submit" value="Search" class="btn-main" />
 			</div>
 		</form>
 
