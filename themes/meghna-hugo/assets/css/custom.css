@@ -29,6 +29,7 @@ a[href^="/author/"] {pointer-events: none;}
 
 .member-photo {position: relative; padding-bottom: 100%;}
 .member-photo img {position: absolute; width: 100%; height: 100%; object-fit: cover; left: 0; top: 0;}
-
+img.rounded-circle {aspect-ratio: 1/1; object-fit: cover;}
 .member-meta h4 + span {position: relative; bottom: 0.5rem;}
 .copyright p {font-family: anaheim,sans-serif; font-size: 12px;}
+.member-photo .mask ul {top: 50%; transform: translateY(-50%);}
