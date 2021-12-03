@@ -3,9 +3,9 @@ cta:
   enable : true
   bg_image : "images/backgrounds/bg-white-wall.jpg"
   bg_image_webp : "images/backgrounds/bg-white-wall.webp"
-  title : "Sluit je aan bij onze LinkedIn groep"
-  content : "Op de hoogte blijven?"
+  title : "Join our LinkedIn group"
+  content : "Want to stay informed?"
   button:
     enable : true
-    label : "Sluit je aan!"
+    label : "Join!"
     link : "https://www.linkedin.com/groups/12464778/"

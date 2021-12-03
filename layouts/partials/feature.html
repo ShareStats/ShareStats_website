@@ -4,10 +4,10 @@
 {{ with $data.feature.feature }}
 {{"<!-- feature -->" | safeHTML}}
 <section class="section section-bg about-2 padding-0" id="feature">
-	<div class="container-fluid">
+	<div class="container">
 		<div class="row">
-			<div class="col-lg-3"></div>
-			<div class="col-lg-6">
+			<div class="col-lg-1"></div>
+			<div class="col-lg-10">
 				<div class="content-block text-center">
 					<h2>{{ .title | markdownify }}</h2>
 					<p>{{ .content | markdownify }}</p>
@@ -30,7 +30,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-lg-3"></div>
+			<div class="col-lg-1"></div>
 		</div>
 	</div>
 </section>

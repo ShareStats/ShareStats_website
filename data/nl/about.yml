@@ -1,0 +1,16 @@
+############################# About ###################################
+about:
+  enable : true
+  title : Over ons
+  about_item :
+  - icon : ti-money # themify icon pack : https://themify.me/themify-icons
+    title : Financiering
+    content : The ShareStats project is nationally funded by [SURF](https://www.surf.nl/sharestats-statistiekopgaven-open-delen-met-een-vakcommunity-van-docenten) the collaborative organisation for ICT in Dutch education. 
+
+  - icon : ti-layout-grid2 # themify icon pack : https://themify.me/themify-icons
+    title : Samenwerking
+    content : In joint collaboration between the UvA, VU, UU and EUR, we set out to create a national item bank.
+
+  - icon : ti-user # themify icon pack : https://themify.me/themify-icons
+    title : Community
+    content : By creating a [community](#cta) of statistics teachers, we aim to make have a wide use of our itembank.

@@ -11,17 +11,17 @@ Op 1 september 2020 is het project ShareStats van start gegaan. Het project loop
 
 Doel van het project is om statistiekopgaven open te delen met de vakcommunity van methoden- en statistiekdocenten in het hoger onderwijs. Met jullie dus!
 
-## WAT GAAN WE DOEN?
+## Wat gaan we doen?
 
 We gaan een omvangrijke databank van statistiekopgaven creëren en beschikbaar stellen onder Creative Commons licentie via een eigen website, op github en SURF ShareKit. We gaan hiervoor bestaand materiaal hergebruiken en doorontwikkelen.
 
 De statistiekopgaven kunnen door docenten uit de vakcommunity op eenvoudige wijze en naar behoefte gebruikt worden, door opgaven te selecteren en te exporteren naar een digitale leer- of toetsomgeving zoals Canvas, Blackboard, TestVision, Remindo en Grasple.
 
-## WAAR BEGINNEN WE MEE?
+## Waar beginnen we mee?
 
 De komende maanden beginnen we met het ontwikkelen van een kwaliteitsmodel en taxonomie. Een kwaliteitsmodel is nodig om de bestaande statistiekopgaven op kwaliteit te beoordelen om zo te kunnen bepalen of een opgave in de databank opgenomen kan worden en eventueel nog gereviseerd moet worden. Een taxonomie is nodig om de opgaven te meta-dateren zodat ze vindbaar worden op bijvoorbeeld onderwerp of type.
 
-## JOIN SHARESTATS
+## Join ShareStats
 
 Wij kunnen het niet alleen! Om het project tot een succes te maken is het cruciaal om de vakcommunity van methoden- en statistiekdocenten zoveel mogelijk te betrekken.
 

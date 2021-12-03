@@ -14,4 +14,4 @@ social:
     link:
 ---
 
-Ik hoop met dit project genoeg (kwalitatief goede) opgaven aan studenten te kunnen aanbieden, zodat ze eindelijk echt genoeg kunnen oefenen met de stof om het in de vingers te krijgen. Hopelijk neemt dat dan vervolgens ook een groot deel van hun angst voor statistiek weg. Leuker kunnen we het niet maken, wel makkelijker!          
+I hope to be able to offer enough (high quality) questions to students, so they can finally practice enough to fully understand it. Hopefully that will eliminate a large portion of their fear for statistics. We cannot make it more fun, but we can make it easier!

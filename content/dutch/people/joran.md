@@ -1,0 +1,17 @@
+---
+title: Joran Jongerling
+image_webp: images/team/joran.webp
+image: images/team/joran.jpg
+designation: Erasmus Universiteit Rotterdam
+social:
+  - icon: ti-facebook # themify icon pack: https://themify.me/themify-icons
+    link:
+  - icon: ti-twitter-alt # themify icon pack: https://themify.me/themify-icons
+    link:
+  - icon: ti-linkedin # themify icon pack: https://themify.me/themify-icons
+    link:
+  - icon: ti-dribbble # themify icon pack: https://themify.me/themify-icons
+    link:
+---
+
+Ik hoop met dit project genoeg (kwalitatief goede) opgaven aan studenten te kunnen aanbieden, zodat ze eindelijk echt genoeg kunnen oefenen met de stof om het in de vingers te krijgen. Hopelijk neemt dat dan vervolgens ook een groot deel van hun angst voor statistiek weg. Leuker kunnen we het niet maken, wel makkelijker!          

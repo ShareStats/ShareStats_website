@@ -78,9 +78,9 @@
 		
 		<form onSubmit="return lunr_search(document.getElementById('lunrsearch').value);">
 			<div>
-				<label for="lunrsearch" style="display: none;">Search</label>
+				<label for="lunrsearch" style="display: none;">{{ i18n "search" }}</label>
 				<input type="search" id="lunrsearch" name="q" maxlength="255" value="" placeholder="" />
-				<input type="submit" value="Search" class="btn-main" />
+				<input type="submit" value="{{ i18n "search" }}" class="btn-main" />
 			</div>
 		</form>
 

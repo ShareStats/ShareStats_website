@@ -7,30 +7,30 @@ image_webp: images/blog/blog-post-3.webp
 title: ShareStats started!
 ---
 
-At 1 september 2020 is het project ShareStats van start gegaan. Het project loopt 2 jaar en wordt gefinancierd door SURF..
+The ShareStats project started on September 1, 2020. The project runs for 2 years and is funded by SURF and the  participating universities.
 
-Doel van het project is om statistiekopgaven open te delen met de vakcommunity van methoden- en statistiekdocenten in het hoger onderwijs. Met jullie dus!
+The aim of the project is to share statistics with the professional community of methods and statistics instructors in higher education. In other words: with you! 
 
-## WAT GAAN WE DOEN?
+## What are we going to do?
 
-We gaan een omvangrijke databank van statistiekopgaven creëren en beschikbaar stellen onder Creative Commons licentie via een eigen website, op github en SURF ShareKit. We gaan hiervoor bestaand materiaal hergebruiken en doorontwikkelen.
+We are going to create and make available a comprehensive database of statistics exercises under Creative Commons license via our own website, on github, and SURF ShareKit. We are going to reuse and adopt existing material for this purpose.
 
-De statistiekopgaven kunnen door docenten uit de vakcommunity op eenvoudige wijze en naar behoefte gebruikt worden, door opgaven te selecteren en te exporteren naar een digitale leer- of toetsomgeving zoals Canvas, Blackboard, TestVision, Remindo en Grasple.
+The statistics exercises can be used by instructors from the professional community in a simple way by selecting and exporting exercises to a digital learning or test environment such as Canvas, Blackboard, TestVision, Remindo and Grasple.
 
-## WAAR BEGINNEN WE MEE?
+## What will we start with?
 
-De komende maanden beginnen we met het ontwikkelen van een kwaliteitsmodel en taxonomie. Een kwaliteitsmodel is nodig om de bestaande statistiekopgaven op kwaliteit te beoordelen om zo te kunnen bepalen of een opgave in de databank opgenomen kan worden en eventueel nog gereviseerd moet worden. Een taxonomie is nodig om de opgaven te meta-dateren zodat ze vindbaar worden op bijvoorbeeld onderwerp of type.
+In the coming months we will start developing a quality model and taxonomy. A quality model is needed to assess the existing statistics exercises on quality in order to determine whether an exercise can be included in the database or possibly still needs to be revised. A taxonomy is necessary to meta-date the exercises so that they can be found by, for example, subject or type.
 
-## JOIN SHARESTATS
+## Join ShareStats
 
-Wij kunnen het niet alleen! Om het project tot een succes te maken is het cruciaal om de vakcommunity van methoden- en statistiekdocenten zoveel mogelijk te betrekken.
+We can't do it alone! In order to make the project a success, it is crucial to involve the professional community of methods and statistics instructors as much as possible.
 
-Welke kennis en ideeën hebben jullie die relevant zijn voor het project? Welke wensen en behoeften hebben jullie wat betreft het open delen van statistiekopgaven? We horen het graag! 
+What knowledge and ideas do you have that are relevant for this project? What wishes and needs do you have when it comes to the open sharing of statistics exercises? We'd love to hear it! 
 
-Laat het ons weten door ons een email te sturen naar: info@sharestats.nl. 
+Let us know by sending an email to:
+sharestats@vu.nl..
 
-Wil je verder op de hoogte blijven?
+Do you want to stay informed?
 
-* Word lid van onze LinkedIn groep 
-* Abonneer je op onze nieuwsbrief via [deze link](https://forms.gle/sQQXngFM3hkg4twh8)
-
+- Join our LinkedIn group
+- Subscribe to our newsletter via [this link](https://forms.gle/sQQXngFM3hkg4twh8)

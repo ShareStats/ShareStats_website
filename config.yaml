@@ -48,39 +48,23 @@ params:
       link: 'https://github.com/ShareStats'
     - icon: ti-linkedin
       link: 'https://www.linkedin.com/groups/12464778/'
-    # - icon: ti-dribbble
-    #   link: '#'
-    # - icon: ti-pinterest
-    #   link: '#'
 Languages:
   en:
     contentDir: content/english
     copyright: Copyright &copy; 2021 - powered by Hugo
     home: Home
     languageCode: en-us
-    languageName: En
+    languageName: EN
     menu:
       main:
         - name: about
           pre: '#'
           url: feature
           weight: 1
-        # - name: services
-        #   pre: '#'
-        #   url: services
-        #   weight: 2
-        # - name: portfolio
-        #   pre: '#'
-        #   url: portfolio
-        #   weight: 3
         - name: team
           pre: '#'
           url: team
           weight: 4
-        # - name: pricing
-        #   pre: '#'
-        #   url: pricing
-        #   weight: 5
         - name: blog
           pre: '#'
           url: blog
@@ -89,50 +73,29 @@ Languages:
           pre: '#'
           url: contact
           weight: 7
-        # - name: themefisher
-        #   pre: ''
-        #   url: https://themefisher.com/
-        #   weight: 8
     weight: 1
-  # fr:
-  #   contentDir: content/french
-  #   copyright: Copyright &copy; 2020 Designed by [Themefisher](https://themefisher.com)
-  #     & Developed by [Gethugothemes](https://gethugothemes.com)
-  #   home: Accueil
-  #   languageCode: fr-fr
-  #   languageName: Fr
-  #   menu:
-  #     main:
-  #       - name: sur
-  #         pre: '#'
-  #         url: about
-  #         weight: 1
-  #       - name: un service
-  #         pre: '#'
-  #         url: services
-  #         weight: 2
-  #       - name: portefeuille
-  #         pre: '#'
-  #         url: portfolio
-  #         weight: 3
-  #       - name: équipe
-  #         pre: '#'
-  #         url: team
-  #         weight: 4
-  #       - name: tarification
-  #         pre: '#'
-  #         url: pricing
-  #         weight: 5
-  #       - name: blog
-  #         pre: '#'
-  #         url: blog
-  #         weight: 6
-  #       - name: contact
-  #         pre: '#'
-  #         url: contact
-  #         weight: 7
-  #       - name: themefisher
-  #         pre: ''
-  #         url: https://themefisher.com/
-  #         weight: 8
-  #   weight: 2
+  nl:
+    contentDir: content/dutch
+    copyright: Copyright &copy; 2021 - powered by Hugo
+    home: Home
+    languageCode: nl-nl
+    languageName: NL
+    menu:
+      main:
+        - name: over
+          pre: 'nl/#'
+          url: feature
+          weight: 1
+        - name: team
+          pre: 'nl/#'
+          url: team
+          weight: 4
+        - name: blog
+          pre: 'nl/#'
+          url: blog
+          weight: 6
+        - name: contact
+          pre: 'nl/#'
+          url: contact
+          weight: 7
+    weight: 2

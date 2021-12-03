@@ -14,4 +14,4 @@ social:
     link:
 ---
 
-Het zal fijn zijn als er een goede samenwerking op gang komt. Het is zonde om allemaal het wiel opnieuw uit te vinden. Informatie, en in dit geval statistiekvragen delen is echt een goede stap in de juiste richting! Life is not about taking something, it is all about sharing everything.
+It will be really nice if we can initiate a good collaboration. It is wastful to re-invent the wheel. Sharing information, in this case statistical questions, is a good step in the right direction! Life is not about taking something, it is all about sharing everything.

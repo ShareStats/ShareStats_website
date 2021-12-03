@@ -1,0 +1,27 @@
+############################# feature ###################################
+feature:
+  enable : true
+  image : images/about/about-sharestats.jpg
+  image_webp : images/about/about-sharestats.webp
+  title : Wij maken statistiek items.
+  content : "In dit project combineren we bestaande itembanken tot een open onderwijsbron."
+  feature_item : 
+      # feature item loop
+    - title : R-exams
+      icon : ti-world # themify icon pack : https://themify.me/themify-icons
+      content : With items in plain text [markdown](https://en.wikipedia.org/wiki/Markdown) format, we use [R-exams](http://www.r-exams.org/intro/oneforall/) to parse to many formats.
+      
+      # feature item loop
+    - title : Project
+      icon : ti-file # themify icon pack : https://themify.me/themify-icons
+      content : Read our initial project [application](files/SHARESTATS_Activiteitenplan_Open_leermateriaal.pdf) (Dutch only).
+
+      # feature item loop
+    - title : OER
+      icon : ti-github # themify icon pack : https://themify.me/themify-icons
+      content : Our itembank will be made available as Open Educational Resource material through our [github](https://github.com/ShareStats) page.
+      
+      # feature item loop
+    - title : Taxonomy
+      icon : ti-list # themify icon pack : https://themify.me/themify-icons
+      content : Our statistics Taxonomy will also be made available through our [github](https://github.com/ShareStats) page.
