@@ -4,7 +4,7 @@ feature:
   image : images/about/about-sharestats.jpg
   image_webp : images/about/about-sharestats.webp
   title : Wij maken statistiek items.
-  content : "In dit project combineren we bestaande itembanken tot een open onderwijsbron."
+  content : "Het doel van dit project is om een vrij toegankelijk uitgebreide verzameling leermaterialen over statistiek te bieden."
   feature_item : 
       # feature item loop
     - title : R-exams

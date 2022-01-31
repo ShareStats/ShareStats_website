@@ -1,15 +1,15 @@
-Question
+Vraag
 ========
 Een steekproef bevat zes personen. Gegeven zijn de volgende scores op een variabele voor deze steekproef: 100, 102, 104, 107, 108 en 109. Bereken de standaarddeviatie.
 
-Answerlist
+Antwoordlijst
 ----------
 * 3.27
 * 3.58
 * 3.42
 * 3.74
 
-Meta-information
+Meta informatie
 ================
 exname: vu-standarddeviation-002-nl
 extype: schoice

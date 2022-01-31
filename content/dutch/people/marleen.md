@@ -9,7 +9,7 @@ social:
   - icon: ti-twitter-alt # themify icon pack: https://themify.me/themify-icons
     link:
   - icon: ti-linkedin # themify icon pack: https://themify.me/themify-icons
-    link:
+    link: https://www.linkedin.com/in/marleen-de-moor-a02061159/
   - icon: ti-dribbble # themify icon pack: https://themify.me/themify-icons
     link:
 ---  

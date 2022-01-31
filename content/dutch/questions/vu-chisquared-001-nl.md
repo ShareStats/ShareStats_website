@@ -1,13 +1,13 @@
-Question
+Vraag
 ========
 Beoordeel de volgende stelling: "Hoe groter de chi-kwadraat toetsingsgrootheid, hoe kleiner de bijbehorende *p*-waarde."
 
-Answerlist
+Antwoordlijst
 ----------
 * Juist
 * Onjuist
 
-Meta-information
+Meta informatie
 ================
 exname: vu-chisquared-001-nl
 extype: schoice

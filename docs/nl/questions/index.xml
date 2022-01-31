@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Questions on ShareStats</title>
+    <link>https://www.sharestats.nl/nl/questions/</link>
+    <description>Recent content in Questions on ShareStats</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>nl-nl</language>
+    <copyright>Copyright &amp;copy; 2021 - powered by Hugo</copyright><atom:link href="https://www.sharestats.nl/nl/questions/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://www.sharestats.nl/nl/questions/vu-ancova-001-nl/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.sharestats.nl/nl/questions/vu-ancova-001-nl/</guid>
+      <description>Vraag In een experiment wordt middels een standaard ANCOVA-analyse het effect van Sociale Stress (Factor met twee groepen: $Z_1$) op Prestatie (Afhankelijke variabele: $y$) onderzocht.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.sharestats.nl/nl/questions/vu-ancova-002-nl/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.sharestats.nl/nl/questions/vu-ancova-002-nl/</guid>
+      <description>Vraag Vul de volgende zin aan: &amp;ldquo;Een reden om een ANCOVA uit te voeren in een experimentele studie is om de power van de F-toets van de &amp;hellip; te &amp;hellip; .</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.sharestats.nl/nl/questions/vu-chisquared-001-nl/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.sharestats.nl/nl/questions/vu-chisquared-001-nl/</guid>
+      <description>Vraag Beoordeel de volgende stelling: &amp;ldquo;Hoe groter de chi-kwadraat toetsingsgrootheid, hoe kleiner de bijbehorende p-waarde.&amp;rdquo;</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.sharestats.nl/nl/questions/vu-standarddeviation-001-nl/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.sharestats.nl/nl/questions/vu-standarddeviation-001-nl/</guid>
+      <description>Vraag Een café heeft een week lang bijgehouden hoeveel chocolademuffins er verkocht zijn per dag. De gemeten aantallen zijn 6, 4, 5, 7, 6, 8, 10.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.sharestats.nl/nl/questions/vu-standarddeviation-002-nl/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.sharestats.nl/nl/questions/vu-standarddeviation-002-nl/</guid>
+      <description>Vraag Een steekproef bevat zes personen. Gegeven zijn de volgende scores op een variabele voor deze steekproef: 100, 102, 104, 107, 108 en 109.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.sharestats.nl/nl/questions/vu-standarddeviation-003-nl/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.sharestats.nl/nl/questions/vu-standarddeviation-003-nl/</guid>
+      <description>Vraag Gegeven zijn zes scores: 2, 4, 3, 5, 6, 3. Bereken de standaarddeviatie van de scores.</description>
+    </item>
+    
+  </channel>
+</rss>

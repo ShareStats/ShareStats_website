@@ -14,4 +14,4 @@ social:
     link: "https://github.com/ShKlinkenberg"
 ---
 
-Als voorzitter van de special interest group digitaal toetsen van SURF heb ik de afgelopen 10 jaar gezien hoe lastig het is om toetsitems te delen. Ondanks de beschikbare standaarden is uitwisseling tussen toetsapplicaties nog steeds een uitdaging. ShareStats moet de bron worden die in iedere toetsapplicatie ingeladen kan worden. Ik zal me bezig houden met het kwaliteitsmodel en toetsvragen uit een eerder SURF project, de statistiek fabriek, geschikt maken voor ShareStats.
+As chairman of SURF's special interest group for digital assessments, I have seen over the past 10 years how difficult it is to share assessment items. Despite the available standards, exchange between testing applications is still a challenge. ShareStats should become the source that can be loaded into any test application. I will work on the quality model and make test questions from an earlier SURF project, the statistics factory, suitable for ShareStats.

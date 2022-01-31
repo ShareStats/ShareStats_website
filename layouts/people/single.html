@@ -30,8 +30,13 @@
 					<hr>
 					<ul class="list-inline">
 						{{ range .Params.Social }}
-						<li class="list-inline-item"><a class="simple-icon" href="{{ .link | safeURL}}"><i
-									class="{{ .icon }}"></i></a></li>
+							{{ if .link }}
+							<li class="list-inline-item">
+								<a class="simple-icon" href="{{ .link | safeURL}}">
+									<i class="{{ .icon }}"></i>
+								</a>
+							</li>
+							{{ end }}
 						{{ end }}
 					</ul>
 				</div>

@@ -10,8 +10,7 @@
 	<div class="block">
 
 		<h1><img src="/images/logo.svg" alt="{{ .title | markdownify }}" /></h1>
-
-		<form action="/search/">
+		<form action="/{{ if eq $.Page.Lang `nl`}}nl/zoeken{{ else }}search{{ end}}/">
 			<div>
 				<label for="lunrsearch" style="display: none;">{{ i18n "search" }}</label>
 				<input type="search" id="lunrsearch" name="q" maxlength="255" value="" placeholder="" />

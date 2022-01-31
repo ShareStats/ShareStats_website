@@ -9,9 +9,9 @@ social:
   - icon: ti-twitter-alt # themify icon pack: https://themify.me/themify-icons
     link:
   - icon: ti-linkedin # themify icon pack: https://themify.me/themify-icons
-    link:
+    link: https://www.linkedin.com/in/marleen-de-moor-a02061159/
   - icon: ti-dribbble # themify icon pack: https://themify.me/themify-icons
     link:
 ---  
 
-Als algemeen projectleider van ShareStats zal ik me bezig houden met de planning en voortgang van het project. Daarnaast behoort kennisdisseminatie tot mijn taken: het opzetten van een actieve vakcommunity om zoveel mogelijk docenten te betrekken bij Sharestats, en docenten op de hoogte te houden van onze mijlpalen! Mijn motto voor ShareStats is “Het geheel is meer dan de som der delen”. Wiskundig gezien klopt dat misschien niet, maar ik hoop wel dat het voor ons project zo werkt! Samenwerken aan een databank van statistiekopgaven verhoogt de kwaliteit van ons onderwijsmateriaal en bespaart docenten tijd!
+As the general project leader of ShareStats I will be responsible for the planning and progress of the project. In addition, knowledge dissemination is one of my tasks: setting up an active subject community to involve as many teachers as possible in Sharestats, and to keep teachers informed about our milestones! My motto for ShareStats is “The whole is greater than the sum of its parts”. Mathematically, that might not be right, but I hope it works that way for our project! Working together on a database of statistical statements increases the quality of our teaching materials and saves teachers time!

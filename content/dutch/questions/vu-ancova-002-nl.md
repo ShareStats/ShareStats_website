@@ -1,15 +1,15 @@
-Question
+Vraag
 ========
 Vul de volgende zin aan: "Een reden om een ANCOVA uit te voeren in een experimentele studie is om de power van de *F*-toets van de ... te ... ."
 
-Answerlist
+Antwoordlijst
 ----------
 * Factor; vergroten.
 * Factor; verkleinen.
 * Covariaat; vergroten.
 * Covariaat; verkleinen.
 
-Meta-information
+Meta informatie
 ================
 exname: vu-ancova-002-nl
 extype: schoice

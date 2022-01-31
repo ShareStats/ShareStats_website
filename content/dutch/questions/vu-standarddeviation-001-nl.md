@@ -1,15 +1,15 @@
-Question
+Vraag
 ========
 Een café heeft een week lang bijgehouden hoeveel chocolademuffins er verkocht zijn per dag. De gemeten aantallen zijn 6, 4, 5, 7, 6, 8, 10. Bereken de standaarddeviatie van deze steekproef:
 
-Answerlist
+Antwoordlijst
 ----------
 * 3.39 
 * 3.95 
 * 1.99 
 * 1.84
 
-Meta-information
+Meta informatie
 ================
 exname: vu-standarddeviation-001-nl
 extype: schoice

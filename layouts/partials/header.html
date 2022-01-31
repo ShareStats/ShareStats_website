@@ -2,6 +2,7 @@
 
 {{ if $data.banner.banner.enable }}
 {{ with $data.banner.banner }}
+
 {{"<!-- Welcome Slider-->" | safeHTML}}
 <section class="hero-area notfullheight" style='background-image: url("{{ .bg_image_webp | absURL }}"); background-attachment: fixed;'>
 	<!-- this image is for trigger this section fallback background image -->
@@ -33,7 +34,7 @@
 		function lunr_search(term) {
 			document.getElementById('lunrsearchresults').innerHTML = '<ul></ul>';
 			if(term) {
-				document.getElementById('lunrsearchresults').innerHTML = "<p>Zoekresultaten voor '" + term + "'</p>" + document.getElementById('lunrsearchresults').innerHTML;
+				document.getElementById('lunrsearchresults').innerHTML = "<p>{{ i18n `resultsFor` }} '" + term + "'</p>" + document.getElementById('lunrsearchresults').innerHTML;
 				var results = idx.search(term);
 				if(results.length>0){
 					for (var i = 0; i < results.length; i++) {
@@ -51,8 +52,8 @@
 				}
 			}
 			if(!term || results.length == 0) {
-					if(term) document.querySelector('#lunrsearchresults').innerHTML = "<p>Geen resultaten gevonden voor '" + term + "'.<p>";
-					else document.querySelector('#lunrsearchresults').innerHTML = "<p>Geen resultaten gevonden...<p>";
+					if(term) document.querySelector('#lunrsearchresults').innerHTML = "<p>{{ i18n `noResultsFor` }} '" + term + "'.<p>";
+					else document.querySelector('#lunrsearchresults').innerHTML = "<p>{{ i18n `noResults` }}<p>";
 			}
 			return false;
 		}

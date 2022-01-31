@@ -1,15 +1,15 @@
-Question
+Vraag
 ========
 Gegeven zijn zes scores: 2, 4, 3, 5, 6, 3. Bereken de standaarddeviatie van de scores.
 
-Answerlist
+Antwoordlijst
 ----------
 * 2.17
 * 1.81
 * 1.47
 * 1.34
 
-Meta-information
+Meta informatie
 ================
 exname: vu-standarddeviation-003-nl
 extype: schoice

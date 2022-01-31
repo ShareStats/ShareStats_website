@@ -9,9 +9,9 @@ social:
   - icon: ti-twitter-alt # themify icon pack: https://themify.me/themify-icons
     link:
   - icon: ti-linkedin # themify icon pack: https://themify.me/themify-icons
-    link:
+    link: https://www.linkedin.com/in/marike-polak-074754112/
   - icon: ti-dribbble # themify icon pack: https://themify.me/themify-icons
     link:
 ---
 
-Ik coördineer samen met Dimitris het reviewen en het reviseren van statistiekopgaven. Hiermee zorgen we dat de al beschikbare opgaven van alle deelnemende universiteiten volgens afgesproken kwaliteitseisen opgemaakt worden en opgenomen kunnen worden in de gratis toegankelijke itembank. Ik verheug me op de uitwisseling met docenten van andere universiteiten. Door het open delen van statistiekopgaven leren we van elkaar en maken we elkaar en onze studenten sterker!
+Together with Dimitris I coordinate the review and revision of statistical statements. With this we ensure that the already available assignments of all participating universities are drawn up in accordance with agreed quality requirements and can be included in the freely accessible item bank. I am looking forward to the exchange with lecturers from other universities. By sharing statistical problems openly, we learn from each other and make each other and our students stronger! 

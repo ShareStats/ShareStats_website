@@ -28,3 +28,7 @@
   translation: Contact
 - id: search
   translation: Search
+- id: noResults
+  translation: No results found...
+- id: noResultsFor
+  translation: No results found for

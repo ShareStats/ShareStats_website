@@ -23,52 +23,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://www.sharestats.nl/questions/vu-ancova-001-nl/</guid>
-      <description>Question In een experiment wordt middels een standaard ANCOVA-analyse het effect van Sociale Stress (Factor met twee groepen: $Z_1$) op Prestatie (Afhankelijke variabele: $y$) onderzocht.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://www.sharestats.nl/questions/vu-ancova-002-nl/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.sharestats.nl/questions/vu-ancova-002-nl/</guid>
-      <description>Question Vul de volgende zin aan: &amp;ldquo;Een reden om een ANCOVA uit te voeren in een experimentele studie is om de power van de F-toets van de &amp;hellip; te &amp;hellip; .</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://www.sharestats.nl/questions/vu-chisquared-001-nl/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.sharestats.nl/questions/vu-chisquared-001-nl/</guid>
-      <description>Question Beoordeel de volgende stelling: &amp;ldquo;Hoe groter de chi-kwadraat toetsingsgrootheid, hoe kleiner de bijbehorende p-waarde.&amp;rdquo;</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://www.sharestats.nl/questions/vu-standarddeviation-001-nl/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.sharestats.nl/questions/vu-standarddeviation-001-nl/</guid>
-      <description>Question Een café heeft een week lang bijgehouden hoeveel chocolademuffins er verkocht zijn per dag. De gemeten aantallen zijn 6, 4, 5, 7, 6, 8, 10.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://www.sharestats.nl/questions/vu-standarddeviation-002-nl/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.sharestats.nl/questions/vu-standarddeviation-002-nl/</guid>
-      <description>Question Een steekproef bevat zes personen. Gegeven zijn de volgende scores op een variabele voor deze steekproef: 100, 102, 104, 107, 108 en 109.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://www.sharestats.nl/questions/vu-standarddeviation-003-nl/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.sharestats.nl/questions/vu-standarddeviation-003-nl/</guid>
-      <description>Question Gegeven zijn zes scores: 2, 4, 3, 5, 6, 3. Bereken de standaarddeviatie van de scores.</description>
+      <description>Question In an experiment, a standard ANCOVA analysis investigates the effect of Social Stress (Two-group Factor: $Z_1$) on Performance (Dependent Variable: $y$).</description>
     </item>
     
     <item>
@@ -78,15 +33,6 @@
       
       <guid>https://www.sharestats.nl/people/dimitris/</guid>
       <description>Together with Marike I will coordinate the quality control. Our goal is to collect a rich set of questions that can be applied directly to education of Methods and Statistics.</description>
-    </item>
-    
-    <item>
-      <title>John Doe</title>
-      <link>https://www.sharestats.nl/author/john-doe/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.sharestats.nl/author/john-doe/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet vulputate augue. Duis auctor lacus id vehicula gravida.</description>
     </item>
     
     <item>
@@ -113,7 +59,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://www.sharestats.nl/people/lidia/</guid>
-      <description>Al jaren proberen we bij allerlei opleidingen en universiteiten leuke, nieuwe, originele statistiekvragen te verzinnen. Elkaar daarbij zien als partners en collega’s, in plaats van concurrenten, opent de deur om onze krachten en ideeën te bundelen zodat we gezamenlijk komen tot beter statistiekonderwijs voor al onze studenten.</description>
+      <description>For years we have been trying to come up with fun, new, original statistics questions at all kinds of study programs and universities.</description>
     </item>
     
     <item>
@@ -122,7 +68,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://www.sharestats.nl/people/marike/</guid>
-      <description>Ik coördineer samen met Dimitris het reviewen en het reviseren van statistiekopgaven. Hiermee zorgen we dat de al beschikbare opgaven van alle deelnemende universiteiten volgens afgesproken kwaliteitseisen opgemaakt worden en opgenomen kunnen worden in de gratis toegankelijke itembank.</description>
+      <description>Together with Dimitris I coordinate the review and revision of statistical statements. With this we ensure that the already available assignments of all participating universities are drawn up in accordance with agreed quality requirements and can be included in the freely accessible item bank.</description>
     </item>
     
     <item>
@@ -131,7 +77,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://www.sharestats.nl/people/marleen/</guid>
-      <description>Als algemeen projectleider van ShareStats zal ik me bezig houden met de planning en voortgang van het project.</description>
+      <description>As the general project leader of ShareStats I will be responsible for the planning and progress of the project.</description>
     </item>
     
     <item>
@@ -140,7 +86,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://www.sharestats.nl/people/niels/</guid>
-      <description>Ik richt me in dit project vooral op het schrijven van R-code om de functionaliteit van het exams package uit te breiden.</description>
+      <description>In this project I mainly focus on writing R code to extend the functionality of the exams package.</description>
     </item>
     
     <item>
@@ -158,7 +104,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://www.sharestats.nl/people/sharon/</guid>
-      <description>Als voorzitter van de special interest group digitaal toetsen van SURF heb ik de afgelopen 10 jaar gezien hoe lastig het is om toetsitems te delen.</description>
+      <description>As chairman of SURF&amp;rsquo;s special interest group for digital assessments, I have seen over the past 10 years how difficult it is to share assessment items.</description>
     </item>
     
   </channel>

@@ -33,27 +33,15 @@
     <lastmod>2020-10-07T12:52:36+06:00</lastmod>
   </url><url>
     <loc>https://www.sharestats.nl/questions/vu-ancova-001-nl/</loc>
-  </url><url>
-    <loc>https://www.sharestats.nl/questions/vu-ancova-002-nl/</loc>
-  </url><url>
-    <loc>https://www.sharestats.nl/questions/vu-chisquared-001-nl/</loc>
-  </url><url>
-    <loc>https://www.sharestats.nl/questions/vu-standarddeviation-001-nl/</loc>
-  </url><url>
-    <loc>https://www.sharestats.nl/questions/vu-standarddeviation-002-nl/</loc>
-  </url><url>
-    <loc>https://www.sharestats.nl/questions/vu-standarddeviation-003-nl/</loc>
-  </url><url>
-    <loc>https://www.sharestats.nl/author/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="nl"
-                href="https://www.sharestats.nl/nl/author/"
+                href="https://www.sharestats.nl/nl/questions/vu-ancova-001-nl/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.sharestats.nl/author/"
+                href="https://www.sharestats.nl/questions/vu-ancova-001-nl/"
                 />
   </url><url>
     <loc>https://www.sharestats.nl/categories/</loc>
@@ -78,18 +66,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://www.sharestats.nl/people/dimitris/"
-                />
-  </url><url>
-    <loc>https://www.sharestats.nl/author/john-doe/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="nl"
-                href="https://www.sharestats.nl/nl/author/john-doe/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://www.sharestats.nl/author/john-doe/"
                 />
   </url><url>
     <loc>https://www.sharestats.nl/people/joran/</loc>
@@ -177,6 +153,16 @@
                 />
   </url><url>
     <loc>https://www.sharestats.nl/questions/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="https://www.sharestats.nl/nl/questions/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.sharestats.nl/questions/"
+                />
   </url><url>
     <loc>https://www.sharestats.nl/search/</loc>
   </url><url>

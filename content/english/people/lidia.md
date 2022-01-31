@@ -9,9 +9,9 @@ social:
   - icon: ti-twitter-alt # themify icon pack: https://themify.me/themify-icons
     link:
   - icon: ti-linkedin # themify icon pack: https://themify.me/themify-icons
-    link:
+    link: https://www.linkedin.com/in/lidia-arends-79723517/
   - icon: ti-dribbble # themify icon pack: https://themify.me/themify-icons
     link:
 ---
 
-Al jaren proberen we bij allerlei opleidingen en universiteiten leuke, nieuwe, originele statistiekvragen te verzinnen. Elkaar daarbij zien als partners en collega’s, in plaats van concurrenten, opent de deur om onze krachten en ideeën te bundelen zodat we gezamenlijk komen tot beter statistiekonderwijs voor al onze studenten. Als raken verbinden wordt, volgt samenwerken vanzelf.
+For years we have been trying to come up with fun, new, original statistics questions at all kinds of study programs and universities. Seeing each other as partners and colleagues, instead of competitors, opens the door to joining forces and ideas so that we jointly achieve better statistics education for all our students. When touch becomes connecting, cooperation follows naturally.

@@ -1,13 +1,13 @@
 Question
 ========
-In een experiment wordt middels een standaard ANCOVA-analyse het effect van Sociale Stress (Factor met twee groepen: $Z_1$) op Prestatie (Afhankelijke variabele: $y$) onderzocht. We controleren hierbij voor Neuroticisme (Covariaat: $X$, met $\overline{X} = 20$). De volgende geschatte regressievergelijking wordt gevonden: $\hat{y} = 25 + 0.8X + 2Z_1$. Bereken de gecorrigeerde gemiddeldes (*adjusted means*) voor beide groepen van de Factor.
+In an experiment, a standard ANCOVA analysis investigates the effect of Social Stress (Two-group Factor: $Z_1$) on Performance (Dependent Variable: $y$). We control for Neuroticism (Covariate: $X$, with $\overline{X} = 20$). The following estimated regression equation is found: $\hat{y} = 25 + 0.8X + 2Z_1$. Calculate the adjusted means (*adjusted means*) for both groups of the Factor.
 
 Answerlist
 ----------
-* 25 en 27.
-* 20 en 25.
-* 16 en 20.
-* 41 en 43.
+* 25 and 27.
+* 20 and 25.
+* 16 and 20.
+* 41 and 43.
 
 Meta-information
 ================
