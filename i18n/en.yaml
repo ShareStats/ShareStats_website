@@ -32,3 +32,5 @@
   translation: No results found...
 - id: noResultsFor
   translation: No results found for
+- id: resultsFor
+  translation: Search results for
