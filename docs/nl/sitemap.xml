@@ -197,5 +197,7 @@
                 hreflang="nl"
                 href="https://www.sharestats.nl/nl/tags/"
                 />
+  </url><url>
+    <loc>https://www.sharestats.nl/nl/zoeken/</loc>
   </url>
 </urlset>
