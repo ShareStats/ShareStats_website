@@ -198,6 +198,16 @@
                 href="https://www.sharestats.nl/nl/tags/"
                 />
   </url><url>
-    <loc>https://www.sharestats.nl/nl/zoeken/</loc>
+    <loc>https://www.sharestats.nl/nl/search/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.sharestats.nl/search/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="https://www.sharestats.nl/nl/search/"
+                />
   </url>
 </urlset>

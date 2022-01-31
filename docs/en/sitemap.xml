@@ -165,6 +165,16 @@
                 />
   </url><url>
     <loc>https://www.sharestats.nl/search/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="https://www.sharestats.nl/nl/search/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.sharestats.nl/search/"
+                />
   </url><url>
     <loc>https://www.sharestats.nl/people/sharon/</loc>
     <xhtml:link
