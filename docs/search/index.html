@@ -127,12 +127,44 @@
 	<img class="d-none" src="https://www.sharestats.nl/images/backgrounds/hero-area-sharestats.webp" onerror="this.onerror=null;this.parentElement.style.backgroundImage= 'url(https:\/\/www.sharestats.nl\/images\/backgrounds\/hero-area-sharestats.jpg)'"/>
 
 	<div class="block">
-		
-		<script src="/js/lunr.js"></script>
+		<script src="../js/lunr.js"></script>
 
-		<script>
-		
-		var documents = [{
+</script>
+<!--import search.js-->
+<script type="module" src="search.js"></script>
+
+
+<script>
+	
+let documents;
+//console.log("localStorage.getItem(documents)",JSON.parse(localStorage.getItem("documents")));
+
+function readTextFile(file)
+{
+    var rawFile = new XMLHttpRequest();
+    rawFile.open("GET", file, false);
+    rawFile.onreadystatechange = function ()
+    {
+        if(rawFile.readyState === 4)
+        {
+            if(rawFile.status === 200 || rawFile.status == 0)
+            {
+                var allText = rawFile.responseText;
+                //console.log(allText);
+				documents = JSON.parse(allText)
+            }
+        }
+    }
+    rawFile.send(null);
+}
+readTextFile("./array.txt");
+console.log(JSON.parse(localStorage.getItem("documents")))
+//var documents = JSON.parse(localStorage.getItem("documents"));
+
+
+
+
+	/*	var documents = [{
 			"id":  0 ,
 			"url": "https:\/\/www.sharestats.nl\/questions\/vu-ancova-001-nl\/",
 			"title": "vu-ancova-001-nl",
@@ -142,8 +174,9 @@
 			"id":  1 ,
 			"url": "https:\/\/www.sharestats.nl\/questions\/vu-ancova-002-nl\/",
 			"title": "vu-ancova-002-nl",
-			"body": "Tasos TEST test\n"
-			},];
+			"body": "TEST test Tasos\n"
+			},]; 
+			*/
 		
 		var idx = lunr(function () {
 			this.ref('id')
