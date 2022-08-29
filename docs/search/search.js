@@ -1,5 +1,6 @@
 import { Octokit } from "https://cdn.skypack.dev/@octokit/core";
 
+
 let oktokit_files = [];
 let questionFolders = [];
 let questionFiles = [];
@@ -10,7 +11,7 @@ var documents = [];
 // https://github.com/octokit/core.js#readme
 
 const octokit = new Octokit({
-  auth: `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`,
+  auth: `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`,
 });
 collectFolders();
 collectFiles(localStorage.getItem('questionFolders'));
@@ -18,19 +19,18 @@ collectFiles(localStorage.getItem('questionFolders'));
 collectContent(localStorage.getItem('questionFiles').split(",") )
 addTextToDocuments();
 
+// Octokit.js
+// https://github.com/octokit/core.js#readme
 
 
 async function collectFolders() {
-  const responseRootFolders = await octokit.request(
-    "GET /repos/{owner}/{repo}/git/trees/{tree_sha}",
-    {
-      owner: "ShareStats",
-      repo: "itembank",
-      tree_sha: "79b7e6ff0adafc33a8866ed72c88851bfb19fc72",
-    }
-  );
-
-  responseRootFolders.data.tree.map(async (e, index) => {
+  const responseRootFolders = await octokit.request('GET /repos/{owner}/{repo}/contents/{path}', {
+    owner: "ShareStats",
+    repo: "itembank",
+    path: ''
+  });
+console.log("responseRootFolders",responseRootFolders)
+  responseRootFolders.data.map(async (e, index) => {
     //console.log(e)
 
     let responseFolders = await octokit.request(
@@ -58,7 +58,7 @@ async function collectFiles(folders) {
     JSON.parse( folders).map(async (eachItem, index1) => {
    //  console.log(eachItem);
     oktokit_files[index1] = new Octokit({
-      auth: `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`,
+      auth: `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`,
     });
     let responseFiles = await oktokit_files[index1].request(
       "GET /repos/{owner}/{repo}/git/trees/{tree_sha}",
@@ -75,7 +75,7 @@ async function collectFiles(folders) {
         path: eachItem.root + "/" +eachItem.path + "/" + eachF.path});
       //questionFiles[i].filePath = eachItem.root + "/"+ eachF.path
     });
-    //console.log("questionFiles", questionFiles);
+    console.log("questionFiles", questionFiles);
     localStorage.setItem('questionFiles',JSON.stringify(questionFiles));
   });
 
@@ -95,7 +95,7 @@ async function collectContent(files) {
             content.push({
                 name:eachFile.name,
                 path:eachFile.path,
-                text: result.split('Meta-information')[1]
+                text: result.split('\n================')[1]
             })
         })
         .catch(error => console.log('error', error));
@@ -109,37 +109,24 @@ async function collectContent(files) {
 function addTextToDocuments () {
     //console.log("JSON.parse(localStorage.getItem('content')",JSON.parse(localStorage.getItem('content')));
     JSON.parse(localStorage.getItem('content')).map( (eachText,index)=>{
-       documents.push({
-        id:index,
-        url:`https://raw.githubusercontent.com/ShareStats/itembank/main/${eachText.path}`,
-        title: eachText.name,
-        body: eachText.text
-       })
+      if(eachText.path.includes('.Rmd')){
+        documents.push({
+          id:index,
+          url:`https://raw.githubusercontent.com/ShareStats/itembank/main/${eachText.path}`,
+          title: eachText.name,
+          body: eachText.text
+        })
+      }
+
     })
     localStorage.setItem('documents',JSON.stringify(documents))
 
 }
 
-
 var documents = JSON.parse(localStorage.getItem("documents"));
+console.log(documents)	
 
-var textFile = null,
-  makeTextFile = function (text) {
-    var data = new Blob([text], {type: 'text/plain'});
 
-    // If we are replacing a previously generated file we need to
-    // manually revoke the object URL to avoid memory leaks.
-    if (textFile !== null) {
-      window.URL.revokeObjectURL(textFile);
-    }
-
-    textFile = window.URL.createObjectURL(data);
-    console.log(text,textFile)
-    // returns a URL you can use as a href
-    return textFile;
-  };
-
-  makeTextFile('tasos');
 
 
 

@@ -117,7 +117,50 @@
 </section>
 
         
+<script>
+    let documents;
+let questionBody;
+//console.log("localStorage.getItem(documents)",JSON.parse(localStorage.getItem("documents")));
 
+function readTextFile(file)
+{
+    var rawFile = new XMLHttpRequest();
+    rawFile.open("GET", file, false);
+    rawFile.onreadystatechange = function ()
+    {
+        if(rawFile.readyState === 4)
+        {
+            if(rawFile.status === 200 || rawFile.status == 0)
+            {
+                var allText = rawFile.responseText;
+                //console.log(allText);
+				documents = JSON.parse(allText)
+            }
+        }
+    }
+    rawFile.send(null);
+}
+readTextFile("./array.txt");
+
+        var requestOptions = {
+            method: 'GET',
+            redirect: 'follow'
+        };
+
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        const questionId = urlParams.get('q');
+
+
+         fetch(documents[questionId].url, requestOptions)
+            .then(response => response.text())
+            .then(result => {
+                document.querySelector('#output').innerHTML = "<p>'"  +result.split("Solution")[0].replace("========",'<br>').replace("----------",'<br>') + "'<p></br><p>Solution: '"  +result.split("Solution")[1].split("Meta-information")[0].replace("========",'<br>').replace("----------",'<br>') + "'<p></br><p>Meta-information: '"  +result.split("Meta-information")[1].replace("================",'<br>') + "'<p><a href='"+documents[questionId].url.split(documents[questionId].title+".Rmd")[0].replace("https://raw.githubusercontent.com/","https://github.com/").replace("main","tree/main")+"'>Show Question Files</a>";
+
+            })
+            .catch(error => console.log('error', error));      
+
+</script>
 
 
 
@@ -125,46 +168,14 @@
 <section class="hero-area notfullheight" style='background-image: url("https://www.sharestats.nl/images/backgrounds/hero-area-sharestats.webp"); background-attachment: fixed;'>
 	
 	<img class="d-none" src="https://www.sharestats.nl/images/backgrounds/hero-area-sharestats.webp" onerror="this.onerror=null;this.parentElement.style.backgroundImage= 'url(https:\/\/www.sharestats.nl\/images\/backgrounds\/hero-area-sharestats.jpg)'"/>
-
-	<div class="block">
-		<script src="../js/lunr.js"></script>
-
-</script>
-<!--import search.js-->
-<script type="module" src="search.js"></script>
-
-        <div>
-            <p>Click below to generate the array to txt and create a download link</p>
-            <button id="btn" onclick="showResult()">Convert and create link</button>
-            <div id="output"></div>
-        </div>
-        <script>
-            function showResult() {
-            var documents = localStorage.getItem("documents");
-            const downloadLink = document.createElement('a');
-            downloadLink.textContent = "Download file!";
-            downloadLink.setAttribute('href', 'data:text/csv;charset=utf-8,' + documents);
-            downloadLink.setAttribute('download', 'array.txt');
-            document.getElementById('output').append(downloadLink);
-            }
-        </script>
-
-
-		<p>The open statistics assessment itembank</p>
-	</div>
 </section>
-<!-- /Welcome Slider-->
+    <div class="container">
+        <p id="output"></p>
+    </div>
 
-
-
-
-<script>
-    term = getParameterByName("q");
-    document.getElementById('lunrsearch').value = term;
-    if(term) lunr_search(term);
-</script>
 
   </div><!-- end Contact Area -->
+
 <footer id="footer" class="section-bg">
 	<div class="container">
 		<div class="row wow fadeInUp" data-wow-duration="500ms">

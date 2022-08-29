@@ -126,17 +126,20 @@
 	
 	<img class="d-none" src="https://www.sharestats.nl/images/backgrounds/hero-area-sharestats.webp" onerror="this.onerror=null;this.parentElement.style.backgroundImage= 'url(https:\/\/www.sharestats.nl\/images\/backgrounds\/hero-area-sharestats.jpg)'"/>
 
+
 	<div class="block">
 		<script src="../js/lunr.js"></script>
+	
 
 </script>
 <!--import search.js-->
-<script type="module" src="search.js"></script>
 
 
 <script>
-	
+
+
 let documents;
+let questionBody;
 //console.log("localStorage.getItem(documents)",JSON.parse(localStorage.getItem("documents")));
 
 function readTextFile(file)
@@ -158,10 +161,6 @@ function readTextFile(file)
     rawFile.send(null);
 }
 readTextFile("./array.txt");
-console.log(JSON.parse(localStorage.getItem("documents")))
-//var documents = JSON.parse(localStorage.getItem("documents"));
-
-
 
 
 	/*	var documents = [{
@@ -203,7 +202,7 @@ console.log(JSON.parse(localStorage.getItem("documents")))
 						body = div.textContent || div.innerText || "";
 						body = body.substring(0,160)+'...';
 		
-						document.querySelector('#lunrsearchresults ul').innerHTML = document.querySelector('#lunrsearchresults ul').innerHTML + "<li class='lunrsearchresult'><a href='" + url + "'><span class='title'>" + title + "</span><br /><span class='body'>"+ body +"</span><br /><span class='url'>"+ url +"</span></a></li>";
+						document.querySelector('#lunrsearchresults ul').innerHTML = document.querySelector('#lunrsearchresults ul').innerHTML + "<li class='lunrsearchresult'><span class='lunrsearchresulttext'></span><a href='./question.html?q="+ ref+"'><span class='title'>" + title + "</span><br /><span class='body'>"+ body +"</span><br /><span class='url'>"+ url +"</span></a></li>";
 					}
 				}
 			}
@@ -220,6 +219,8 @@ console.log(JSON.parse(localStorage.getItem("documents")))
 			return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
 		}
 		
+
+
 		</script>
 		
 		<style>
@@ -230,6 +231,13 @@ console.log(JSON.parse(localStorage.getItem("documents")))
 			.lunrsearchresult a {display: block; color: #505050; text-decoration: none;}
 			.lunrsearchresult a:hover, .lunrsearchresult a:focus {text-decoration: none;}
 			.lunrsearchresult a:hover .title {text-decoration: underline;}
+			.lunrsearchresult:hover .lunrsearchresulttext { display: block;}
+			.lunrsearchresulttext {display: none;
+									background-color: white;
+									margin-left:10px;
+								z-index: 1;
+							position: absolute;}
+					
 		</style>
 		
 		
@@ -251,6 +259,7 @@ console.log(JSON.parse(localStorage.getItem("documents")))
 
     
     <div class="container">
+		
         <div id="lunrsearchresults">
             <p>No results found...</p>
         </div>
