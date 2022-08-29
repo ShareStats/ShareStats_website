@@ -11,7 +11,7 @@ var documents = [];
 // https://github.com/octokit/core.js#readme
 
 const octokit = new Octokit({
-  auth: `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`,
+  auth: `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`,
 });
 collectFolders();
 collectFiles(localStorage.getItem('questionFolders'));
@@ -58,7 +58,7 @@ async function collectFiles(folders) {
     JSON.parse( folders).map(async (eachItem, index1) => {
    //  console.log(eachItem);
     oktokit_files[index1] = new Octokit({
-      auth: `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`,
+      auth: `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`,
     });
     let responseFiles = await oktokit_files[index1].request(
       "GET /repos/{owner}/{repo}/git/trees/{tree_sha}",
