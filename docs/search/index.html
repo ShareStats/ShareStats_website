@@ -153,8 +153,8 @@ function readTextFile(file)
             if(rawFile.status === 200 || rawFile.status == 0)
             {
                 var allText = rawFile.responseText;
-                //console.log(allText);
-				documents = JSON.parse(allText)
+				documents = JSON.parse(allText);
+				console.log(documents[0].url);
             }
         }
     }
@@ -176,7 +176,7 @@ readTextFile("./array.txt");
 			"body": "TEST test Tasos\n"
 			},]; 
 			*/
-		
+
 		var idx = lunr(function () {
 			this.ref('id')
 			this.field('title')
@@ -187,12 +187,15 @@ readTextFile("./array.txt");
 			}, this)
 		});
 		function lunr_search(term) {
+
 			document.getElementById('lunrsearchresults').innerHTML = '<ul></ul>';
 			if(term) {
 				document.getElementById('lunrsearchresults').innerHTML = "<p>Search results for '" + term + "'</p>" + document.getElementById('lunrsearchresults').innerHTML;
 				var results = idx.search(term);
+				console.log("results",results.length);
 				if(results.length>0){
 					for (var i = 0; i < results.length; i++) {
+					
 						var ref = results[i]['ref'];
 						var url = documents[ref]['url'];
 						var title = documents[ref]['title'];
@@ -201,7 +204,6 @@ readTextFile("./array.txt");
 						div.innerHTML = body;
 						body = div.textContent || div.innerText || "";
 						body = body.substring(0,160)+'...';
-		
 						document.querySelector('#lunrsearchresults ul').innerHTML = document.querySelector('#lunrsearchresults ul').innerHTML + "<li class='lunrsearchresult'><span class='lunrsearchresulttext'></span><a href='./question.html?q="+ ref+"'><span class='title'>" + title + "</span><br /><span class='body'>"+ body +"</span><br /><span class='url'>"+ url +"</span></a></li>";
 					}
 				}

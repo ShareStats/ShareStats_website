@@ -11,7 +11,7 @@ var documents = [];
 // https://github.com/octokit/core.js#readme
 
 const octokit = new Octokit({
-  auth: `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`,
+  auth: `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`,
 });
 collectFolders();
 collectFiles(localStorage.getItem('questionFolders'));
@@ -58,7 +58,7 @@ async function collectFiles(folders) {
     JSON.parse( folders).map(async (eachItem, index1) => {
    //  console.log(eachItem);
     oktokit_files[index1] = new Octokit({
-      auth: `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`,
+      auth: `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`,
     });
     let responseFiles = await oktokit_files[index1].request(
       "GET /repos/{owner}/{repo}/git/trees/{tree_sha}",
@@ -107,15 +107,17 @@ async function collectContent(files) {
 }
 
 function addTextToDocuments () {
-    //console.log("JSON.parse(localStorage.getItem('content')",JSON.parse(localStorage.getItem('content')));
+  var i =0;
+    console.log("JSON.parse(localStorage.getItem('content')",JSON.parse(localStorage.getItem('content')));
     JSON.parse(localStorage.getItem('content')).map( (eachText,index)=>{
       if(eachText.path.includes('.Rmd')){
         documents.push({
-          id:index,
+          id:i,
           url:`https://raw.githubusercontent.com/ShareStats/itembank/main/${eachText.path}`,
           title: eachText.name,
-          body: eachText.text
+          body: eachText.text ? eachText.text : " "
         })
+        i++;
       }
 
     })
