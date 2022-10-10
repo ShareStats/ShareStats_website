@@ -37,6 +37,8 @@
     <link rel="shortcut icon" sizes="192x192" href="/images/icon-192x192.png">
     <link rel="apple-touch-icon" href="/images/icon-192x192.png">
 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> 
+
 	
 
 </head>
@@ -135,8 +137,9 @@
 <!--import search.js-->
 
 
-<script>
 
+<!-- > All search -->
+<script>
 
 let documents;
 let questionBody;
@@ -186,12 +189,14 @@ readTextFile("./array.txt");
 				this.add(doc)
 			}, this)
 		});
+		console.log('idx', idx);
 		function lunr_search(term) {
 
 			document.getElementById('lunrsearchresults').innerHTML = '<ul></ul>';
 			if(term) {
-				document.getElementById('lunrsearchresults').innerHTML = "<p>Search results for '" + term + "'</p>" + document.getElementById('lunrsearchresults').innerHTML;
 				var results = idx.search(term);
+				document.getElementById('lunrsearchresults').innerHTML = "<p>Search results for '" + term + "' ("+ results.length + " items)</p>" + document.getElementById('lunrsearchresults').innerHTML;
+				
 				console.log("results",results.length);
 				if(results.length>0){
 					for (var i = 0; i < results.length; i++) {
@@ -200,11 +205,85 @@ readTextFile("./array.txt");
 						var url = documents[ref]['url'];
 						var title = documents[ref]['title'];
 						var body = documents[ref]['body'];
+
+						//test question body
+						var ques = documents[ref]['question'];
+						
+						//tasos start
+						//keep body after 'exsection'; clean the string
+						var body = body.replace('exsection:','exsection:Section:').split('exsection:')[1].replace('exextra[Program]:',"Program:").replace('exextra[Type]:', 'Type:').replace('exextra[Language]:', 'Language:').replace('exextra[Level]:', 'Level:');
+						//split the string by row
+						var bd = body.split(/\r?\n/).filter(element => element); //element used to to erase gaps
+						//make new object var
+						var bdobj = {};
+						//map the object and erase the tag type from the keys (e.g., Section:)
+						bd.forEach(element => {
+  							bdobj[element.split(': ')[0]] = element.split(': ')[1];
+												});						
+						//remove the empty key-pairs
+						Object.keys(bdobj).forEach(k => {if(bdobj[k] == '' || bdobj[k] == 'NA' || bdobj[k] == undefined){delete bdobj[k] }});
+						
+
 						var div = document.createElement("div");
-						div.innerHTML = body;
-						body = div.textContent || div.innerText || "";
-						body = body.substring(0,160)+'...';
-						document.querySelector('#lunrsearchresults ul').innerHTML = document.querySelector('#lunrsearchresults ul').innerHTML + "<li class='lunrsearchresult'><span class='lunrsearchresulttext'></span><a href='./question.html?q="+ ref+"'><span class='title'>" + title + "</span><br /><span class='body'>"+ body +"</span><br /><span class='url'>"+ url +"</span></a></li>";
+						div.innerHTML = bdobj
+						//body = div.textContent || div.innerText || "";
+						//body = body.substring(0,500)+'';
+						
+						// create a function to print the tags (Type, Program, Level, language) as string 
+						let PrintTagsFromObject = (o) => {
+							var res = "";
+							for (var key in o) {
+								//erase 'Section:' tag bc we print it manually later
+  							if(key != "Section" && o[key] != undefined){
+							res += "<b><span class='body'>" + o[key] + "</span></b>" ;
+							}
+							}
+							//console.log(res)
+							return res;
+ 						};
+						
+							// create the QTI path
+						var qti = url.replace(".Rmd", "-qti.zip");
+						// create the TestVision path
+						var tv = url.replace(".Rmd", "-tv.zip");
+						// create the Item file path
+						var ItemFolder = url.replace(".Rmd", "-ItemFolder.zip");
+						//create GitHub repo path
+						var gitrepo = url.split(title+".Rmd")[0].replace("https://raw.githubusercontent.com/","https://github.com/").replace("main","tree/main");
+
+						document.querySelector('#lunrsearchresults ul').innerHTML = document.querySelector('#lunrsearchresults ul').innerHTML + "<li class='lunrsearchresult'><span class='lunrsearchresulttext'> </span>"+
+							"<button type='button' class='collapsible'>" + title +"</button><div class='content'>  <p>" + ques + "</p></div>" +
+							
+							"<b><span class='body'>" + bdobj.Section + "</span></b><br/>"+ 
+							PrintTagsFromObject(bdobj) +
+							"<br/><span class='buttont'><a href='./question.html?q="+ ref+"'><i class='fa fa-eye' aria-hidden='true'></i> View Item </span></a>"+
+							"<span class='buttont'><a href=" + gitrepo + ">Go to GitHub <i class='fa fa-github'></i></span></a>"+
+							"<div class='dropdown'><button class='dropbtn'>&darr; Save File</button>"+
+								"<div class='dropdown-content'>" +
+									"<a href=" + ItemFolder + ">Item Folder</a>"+
+									"<a href=" + qti + ">QTI v2.1</a>"+
+									"<a href=" + tv + ">TestVision</a>"+
+								"</div>"+
+							"</div>"+
+							"</li>"	
+						
+						
+						// start:Function for collapsible
+						var coll = document.getElementsByClassName("collapsible");
+						var i;
+
+						for (i = 0; i < coll.length; i++) {
+						coll[i].addEventListener("click", function() {
+							this.classList.toggle("active");
+							var content = this.nextElementSibling;
+							if (content.style.maxHeight){
+							content.style.maxHeight = null;
+							} else {
+							content.style.maxHeight = content.scrollHeight + "px";
+							}
+						});
+						}
+						// end:Function for collapsible
 					}
 				}
 			}
@@ -221,27 +300,12 @@ readTextFile("./array.txt");
 			return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
 		}
 		
+	</script>
 
-
-		</script>
 		
 		<style>
-			#lunrsearchresults p {margin-bottom: 3em; font-style: italic;}
-			.lunrsearchresult {margin-bottom: 1.5em;}
-			.lunrsearchresult .title {color: #00692D; text-decoration: underline;}
-			.lunrsearchresult .url {color: silver;}
-			.lunrsearchresult a {display: block; color: #505050; text-decoration: none;}
-			.lunrsearchresult a:hover, .lunrsearchresult a:focus {text-decoration: none;}
-			.lunrsearchresult a:hover .title {text-decoration: underline;}
-			.lunrsearchresult:hover .lunrsearchresulttext { display: block;}
-			.lunrsearchresulttext {display: none;
-									background-color: white;
-									margin-left:10px;
-								z-index: 1;
-							position: absolute;}
-					
+			@import '../css/search-style.css';
 		</style>
-		
 		
 		<form onSubmit="return lunr_search(document.getElementById('lunrsearch').value);">
 			<div>
@@ -257,9 +321,6 @@ readTextFile("./array.txt");
 </section>
 <!-- /Welcome Slider-->
 
-
-
-    
     <div class="container">
 		
         <div id="lunrsearchresults">
@@ -273,7 +334,12 @@ readTextFile("./array.txt");
     if(term) lunr_search(term);
 </script>
 
+
+
+
+
   </div><!-- end Contact Area -->
+
 <footer id="footer" class="section-bg">
 	<div class="container">
 		<div class="row wow fadeInUp" data-wow-duration="500ms">
@@ -301,6 +367,7 @@ readTextFile("./array.txt");
 			</div>
 		</div>
 	</div>
+
 </footer>
 <!-- /footer -->
 

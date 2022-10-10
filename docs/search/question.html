@@ -37,7 +37,8 @@
     <link rel="shortcut icon" sizes="192x192" href="/images/icon-192x192.png">
     <link rel="apple-touch-icon" href="/images/icon-192x192.png">
 
-	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> 
+
 
 </head>
 
@@ -117,52 +118,6 @@
 </section>
 
         
-<script>
-    let documents;
-let questionBody;
-//console.log("localStorage.getItem(documents)",JSON.parse(localStorage.getItem("documents")));
-
-function readTextFile(file)
-{
-    var rawFile = new XMLHttpRequest();
-    rawFile.open("GET", file, false);
-    rawFile.onreadystatechange = function ()
-    {
-        if(rawFile.readyState === 4)
-        {
-            if(rawFile.status === 200 || rawFile.status == 0)
-            {
-                var allText = rawFile.responseText;
-                
-				documents = JSON.parse(allText)
-				console.log(documents);
-            }
-        }
-    }
-    rawFile.send(null);
-}
-readTextFile("./array.txt");
-
-        var requestOptions = {
-            method: 'GET',
-            redirect: 'follow'
-        };
-
-        const queryString = window.location.search;
-        const urlParams = new URLSearchParams(queryString);
-        const questionId = urlParams.get('q');
-
-
-         fetch(documents[questionId].url, requestOptions)
-            .then(response => response.text())
-            .then(result => {
-                document.querySelector('#output').innerHTML = "<p>'"  +result.split("Solution")[0].replace("========",'<br>').replace("----------",'<br>') + "'<p></br><p>Solution: '"  +result.split("Solution")[1].split("Meta-information")[0].replace("========",'<br>').replace("----------",'<br>') + "'<p></br><p>Meta-information: '"  +result.split("Meta-information")[1].replace("================",'<br>') + "'<p><a href='"+documents[questionId].url.split(documents[questionId].title+".Rmd")[0].replace("https://raw.githubusercontent.com/","https://github.com/").replace("main","tree/main")+"'>Show Question Files</a>";
-
-            })
-            .catch(error => console.log('error', error));      
-
-</script>
-
 
 
 <!-- Welcome Slider-->
@@ -172,8 +127,13 @@ readTextFile("./array.txt");
 </section>
     <div class="container">
         <p id="output"></p>
+		<div id="htmlRe"></div>
+		<div id="tags"></div>
+		<div id="Rcode"></div>
     </div>
+<script>
 
+</script>
 
   </div><!-- end Contact Area -->
 
@@ -206,6 +166,139 @@ readTextFile("./array.txt");
 	</div>
 </footer>
 <!-- /footer -->
+
+<script>
+    let documents;
+let questionBody;
+//console.log("localStorage.getItem(documents)",JSON.parse(localStorage.getItem("documents")));
+
+function readTextFile(file)
+{
+    var rawFile = new XMLHttpRequest();
+    rawFile.open("GET", file, false);
+    rawFile.onreadystatechange = function ()
+    {
+        if(rawFile.readyState === 4)
+        {
+            if(rawFile.status === 200 || rawFile.status == 0)
+            {
+                var allText = rawFile.responseText;
+                
+				documents = JSON.parse(allText)
+            }
+        }
+    }
+    rawFile.send(null);
+}
+readTextFile("./array.txt");
+
+        var requestOptions = {
+            method: 'GET',
+            redirect: 'follow'
+        };
+
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        const questionId = urlParams.get('q');
+		//let iframeUrl = documents[questionId].url.split(".Rmd")[0]+"1"+".html"+"";
+		//console.log(iframeUrl);
+
+
+
+		//console.log(documents[questionId].url.split(".Rmd")[0]+"1"+".html")
+         fetch(documents[questionId].url.split(".Rmd")[0]+"1"+".html", requestOptions)
+            .then(response => response.text())
+            .then(result => {
+				//console.log(result)
+				var result = result.replace('<h2>Exam 1</h2>', '<h2 align="center">' + title + '</h2><br/>').replace('<h4>Metainformation</h4>', '<h4>• Meta-information</h4>');
+				result = result.replace('<ol>', "").replace('<li>', ""); //remove numbering (1.)
+				result = result.replace('<h4>Question</h4>', "<br/><h4>• Question</h4>").replace('<h4>Solution</h4>', '<h4>• Solution</h4>'); //add some gaps betwwn headers 
+
+					//add tags?
+				console.log(result)
+                //document.querySelector('#output').innerHTML = "<p>'"  +result.split("Solution")[0].replace("========",'<br>').replace("----------",'<br>') + "'<p></br><p>Solution: '"  +result.split("Solution")[1].split("Meta-information")[0].replace("========",'<br>').replace("----------",'<br>') + "'<p></br><p>Meta-information: '"  +result.split("Meta-information")[1].replace("================",'<br>') + "'<p><a href='"+documents[questionId].url.split(documents[questionId].title+".Rmd")[0].replace("https://raw.githubusercontent.com/","https://github.com/").replace("main","tree/main")+"'>Show Question Files</a>";
+				document.querySelector('#htmlRe').innerHTML = "<div>"+ result +"</div>";
+
+
+            })
+            .catch(error => console.log('error', error));     
+			
+			// Buttons start: 
+			
+						var url = documents[questionId]['url'];
+						var title = documents[questionId]['title'];
+						var body = documents[questionId]['body'];
+						
+						//if tags, then add "tasos start" till "foo"
+
+						// create the QTI path
+						var qti = url.replace(".Rmd", "-qti.zip");
+						// create the TestVision path
+						var tv = url.replace(".Rmd", "-tv.zip");
+						//create GitHub repo path
+						var gitrepo = url.split(title+".Rmd")[0].replace("https://raw.githubusercontent.com/","https://github.com/").replace("main","tree/main");
+						// create the Item file path
+						var ItemFolder = url.replace(".Rmd", "-ItemFolder.zip");
+
+						document.querySelector('#tags').innerHTML ="<div align='center' > <span class='buttont'><a href=" + gitrepo + ">Go to GitHub <i class='fa fa-github'></i></span></a>"+
+							"<div class='dropdown'><button class='dropbtn'>&darr; Save File</button>"+
+								"<div class='dropdown-content'>" +
+									"<a href=" + ItemFolder + ">Item Folder</a>"+
+									"<a href=" + qti + ">QTI v2.1</a>"+
+									"<a href=" + tv + ">TestVision</a>"+
+								"</div>"+
+							"</div>"
+
+		
+</script>
+
+
+<style>
+@import '../css/search-style.css';
+
+h2 { font-size: 27px;
+		font-weight: bold;
+}
+h5 {
+	font-size: 20px;
+}
+
+#htmlRe {
+	background-color: white;
+	font-size: 16px;
+	padding: 3em;
+	padding-bottom: 0em;
+	margin-left:75px;
+	margin-right:75px;
+	color: #5a5a5a;
+}
+
+#tags {
+	padding-top: 1em;
+	padding-bottom: 2em;
+}
+#tags .buttont a {
+    display: inline-block;
+    font-size: 14.5px;
+    color: #61b6b7;
+    background: #f4f4f4;
+    padding: 5px 13px 5px 13px;
+    border: .1px solid #f4f4f4;
+    border-radius: 16px 16px 16px 16px;
+    
+    margin-top: .4em;
+    max-width: max-content;
+    margin-right: .5em;
+}
+
+#tags .buttont a:hover {
+    background-color: #54a0a1;
+    color: #f4f4f4;
+    border: .1px solid #54a0a1;
+}
+
+</style>
+
 
 <!-- Google Map API -->
 
