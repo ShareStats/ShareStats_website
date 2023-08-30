@@ -1,0 +1,92 @@
+---
+title: Itembank
+---
+
+```{r, include=FALSE}
+zip_link <- function(folder, name){
+  tmp_link <- paste0('https://github.com/ShareStats/itembank/raw/packages/packages/',
+                     'zip/', folder,'.zip')
+}
+tv_link <- function(folder, name){
+  tmp_link <- paste0('https://github.com/ShareStats/itembank/raw/packages/packages/',
+                     'tv/', folder,'-tv.zip')
+}
+qti_link <- function(folder, name){
+  tmp_link <- paste0('https://github.com/ShareStats/itembank/raw/packages/packages/',
+                     'qti/', folder,'-qti.zip')
+}
+html_link <- function(folder, name){
+  tmp_link <- paste0('https://sharestats.github.io/itembank/packages/docs/',
+                      folder, '/', name, '1.html')
+}
+```
+
+```{r, include = FALSE}
+# Install and load necessary R packages
+
+library(DT)
+library(tidyverse)
+
+data <- read.csv("data/fulldf.csv") %>% 
+  dplyr::select(-X, -id) %>% 
+
+  mutate(
+    # Name-question column
+    Item = paste('<div class="accordion-item">
+    <h3 class="accordion-header" id="headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">',
+    name,'
+      </button>
+    </h3>
+    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" style="">
+      <div class="accordion-body">
+        <small>', question,'</small>
+      </div>
+    </div>
+  </div>'), .before = 1) %>% 
+  
+  # Files button 
+  mutate(View = paste(
+    '<a href="',html_link(folder, name),'">
+       <button type="button" class="btn btn-outline-light">↗</button>
+     </a>'
+    )) %>% 
+  # Dropdown Files button
+  mutate(Files = paste(
+    '<div class="dropdown mt-3">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+        📁
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="">
+        <li><a class="dropdown-item" href="',zip_link(folder, name),'">ZIP Folder</a></li>
+        <li><a class="dropdown-item" href=",',qti_link(folder, name),'">QTI</a></li>
+        <li><a class="dropdown-item" href="',tv_link(folder, name),'">TestVision</a></li>
+      </ul>
+    </div>'
+  )) %>% 
+  
+  # checkbox
+  mutate("✔️"=paste('<fieldset class="form-group">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+        </label>
+      </div>
+    </fieldset>'), .before = 1)
+
+#createLink <- function(val) {
+#    sprintf( '<button type="button" class="btn btn-secondary" #data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" #data-bs-content="%s" data-bs-original-title="Popover Title" #aria-describedby="popover238872">Left</button>',
+#    val)
+#  }
+#data$link <- unlist(lapply(data$Program, createLink))
+
+```
+
+```{r, echo = FALSE, warning=FALSE}
+# Create an interactive table using the DT package
+data %>% dplyr::select(-name, -question, -folder) %>% 
+datatable(., filter = "top", 
+          options = list(pageLength = 10), 
+          style = 'bootstrap', selection = 'multiple', 
+          escape = FALSE)
+```

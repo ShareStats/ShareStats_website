@@ -1,0 +1,53 @@
+project:
+  type: website
+
+
+website:
+  title: ""
+  image: images/homeback.png
+  favicon: images/favicon.png
+  #site-url: https:///
+  repo-url: https://https://github.com/ShareStats/ShareStats_website/
+  navbar:
+    background: '#57cbcc'
+    logo: images/logoWT.png
+    logo-alt: "ShareStats"
+    collapse-below: lg
+    right:
+      - text: "Explore the Itembank"
+        href: items-df.qmd
+      - text: "About ShareStats"
+        menu: 
+        - text: "Who we are"
+          #href: about.qmd
+        - text: "Meet the team"
+          #href: team.qmd
+        - text: "Contact us"
+          #href: contact.qmd
+   
+  
+  page-navigation: true
+  back-to-top-navigation: true        
+  
+  page-footer:
+    #background: "#000000"
+    left: |
+      Copyright &copy; 2023 ShareStats.nl
+    center:  
+      - href: https://github.com/ShareStats/ShareStats_website/
+        icon: github
+        aria-label: GitHub
+    right: |
+      
+
+format:
+  html:
+    theme: morph
+    css: [styles.css, bootstrap.css]
+    toc: false
+    page-layout: full
+    grid:
+      body-width: 1200px
+
+editor: visual
+
