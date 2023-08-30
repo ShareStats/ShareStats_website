@@ -2,9 +2,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Home",
+    "title": "ShareStats",
     "section": "",
-    "text": "Search\n      \n      Explore the Itembank\n\n\n\n Back to top"
+    "text": "Search\n      \n      Explore the Itembank"
   },
   {
     "objectID": "about.html",
@@ -12,26 +12,5 @@
     "title": "About",
     "section": "",
     "text": "About this site\n\n1 + 1\n\n[1] 2"
-  },
-  {
-    "objectID": "test.html#a-title",
-    "href": "test.html#a-title",
-    "title": "q-sharestats",
-    "section": "A title",
-    "text": "A title"
-  },
-  {
-    "objectID": "test.html",
-    "href": "test.html",
-    "title": "Itembank",
-    "section": "",
-    "text": "Back to top"
-  },
-  {
-    "objectID": "items-df.html",
-    "href": "items-df.html",
-    "title": "Itembank",
-    "section": "",
-    "text": "Back to top"
   }
 ]
