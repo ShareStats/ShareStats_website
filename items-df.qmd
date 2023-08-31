@@ -1,6 +1,11 @@
 ---
-title: Itembank
+title: Itembank Search
+format: 
+  html:
+    page-layout: custom
 ---
+
+::: {.itembank}
 
 ```{r, include=FALSE}
 zip_link <- function(folder, name){
@@ -83,6 +88,7 @@ data <- read.csv("data/fulldf.csv") %>%
 ```
 
 ```{r, echo = FALSE, warning=FALSE}
+
 # Create an interactive table using the DT package
 data %>% dplyr::select(-name, -question, -folder) %>% 
 datatable(., filter = "top", 
@@ -90,3 +96,5 @@ datatable(., filter = "top",
           style = 'bootstrap', selection = 'multiple', 
           escape = FALSE)
 ```
+
+:::

@@ -42,7 +42,7 @@ website:
 format:
   html:
     theme: morph
-    css: [styles.css, bootstrap.css]
+    css: [styles.css, bootstrap.css, custom.css]
     toc: false
     page-layout: full
     grid:
