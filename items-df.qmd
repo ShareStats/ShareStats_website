@@ -1,11 +1,12 @@
 ---
-title: Itembank Search
 format: 
   html:
     page-layout: custom
 ---
 
 ::: {.itembank}
+
+# Itembank Search
 
 ```{r, include=FALSE}
 zip_link <- function(folder, name){
