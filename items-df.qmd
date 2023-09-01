@@ -4,8 +4,7 @@ format:
     page-layout: custom
 ---
 
-::: {.itembank}
-
+::: itembank
 # Itembank Search
 
 ```{r, include=FALSE}
@@ -65,7 +64,7 @@ data <- read.csv("data/fulldf.csv") %>%
       </button>
       <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="">
         <li><a class="dropdown-item" href="',zip_link(folder, name),'">ZIP Folder</a></li>
-        <li><a class="dropdown-item" href=",',qti_link(folder, name),'">QTI</a></li>
+        <li><a class="dropdown-item" href="',qti_link(folder, name),'">QTI</a></li>
         <li><a class="dropdown-item" href="',tv_link(folder, name),'">TestVision</a></li>
       </ul>
     </div>'
@@ -97,5 +96,4 @@ datatable(., filter = "top",
           style = 'bootstrap', selection = 'multiple', 
           escape = FALSE)
 ```
-
 :::
