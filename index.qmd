@@ -3,10 +3,25 @@ title: "ShareStats"
 format: html
 ---
 
+```{=js}
+// looking at this example 
+// https://stackoverflow.com/questions/76781732/how-to-show-search-result-in-another-page-using-javascript
+// not working yet
+
+const moviesForm = document.getElementById("movie__searchbox");
+// check when the form is submitted
+moviesForm.addEventListener("submit", (event) => {
+  const searchBarValue = document.getElementById("searchbar").value;
+  event.preventDefault();
+  window.location.href = `items-df.html?value=${searchBarValue}`;
+});
+```
+
+
 ```{=html}
- <form class="d-flex">
-        <input class="form-control me-sm-2" type="search" placeholder="Search">
-        <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-      </form>
-      <a href="items-df.qmd" class="btn btn-outline-primary">Explore the Itembank</a>
+<form action="items-df.html" id="movie__searchbox" class="d-flex">
+  <input id="searchbar" class="form-control me-sm-2" type="text" placeholder="Search">
+  <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+</form>
+<a href="items-df.qmd" class="btn btn-outline-primary">Explore the Itembank</a>
 ```

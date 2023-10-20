@@ -4,6 +4,32 @@ format:
     page-layout: custom
 ---
 
+```{=js}
+    // Retrieve the data from the URL parameters or local storage
+    const urlParams = new URLSearchParams(window.location.search);
+    const value = urlParams.get('value');
+    const movieListEl = document.querySelector(".shows");
+    async function main(event) {
+        const url = `https://www.omdbapi.com/?apikey=39a36280&s=${encodeURI(event)}`;
+        const search = await fetch(`${url}`);
+        const data = await search.json();
+        movieListEl.innerHTML = data.Search.map((movie) => movieHTML(movie)).join("");
+    }
+    main(value);
+    function movieHTML(details) {
+        return `<div class="shows__content">
+    <figure class="shows__poster">
+        <img src="${details.Poster}" alt="" class="poster">
+    </figure>
+       <div class="poster__description">
+        <h4 class="poster__title">${details.Title}</h4>
+        <p class="poster__year">${details.Year}</p>
+    </div>
+</div>`;}
+```
+
+<div class="shows"></div>
+
 ::: itembank
 # Itembank Search
 
