@@ -5,15 +5,16 @@ format:
 ---
 
 ```{ojs}
+//| echo: false
+
 search = new URLSearchParams(window.location.search);
 
-alert(search.get('query'))
+document.getElementById("search_query").innerHTML = search.get('query')
 ```
 
-::: shows
-:::
-
 ::: itembank
+
+<p id="search_query">Search</p>
 
 # Itembank Search
 
@@ -97,7 +98,7 @@ data <- read.csv("data/fulldf.csv") %>%
 
 ```
 
-```{r, echo = FALSE, warning=FALSE, eval=FALSE}
+```{r, echo = FALSE, warning=FALSE, eval=TRUE}
 
 # Create an interactive table using the DT package
 data %>% dplyr::select(-name, -question, -folder) %>% 
