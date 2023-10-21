@@ -6,10 +6,13 @@ format:
 
 ```{ojs}
 //| echo: false
+//| output: false
 
 search = new URLSearchParams(window.location.search);
 
 document.getElementById("search_query").innerHTML = search.get('query')
+
+// dom: DataTables_Table_0_filter -> label -> input type="search"
 ```
 
 ::: itembank
