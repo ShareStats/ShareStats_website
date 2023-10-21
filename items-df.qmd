@@ -4,12 +4,10 @@ format:
     page-layout: custom
 ---
 
-```{=js}
-var data = window.location.search;
-var params = new URLSearchParams(data);
-console.log(params);
-var query = params.get("query");
-alert("Hello");
+```{ojs}
+search = new URLSearchParams(window.location.search);
+
+alert(search.get('query'))
 ```
 
 ::: shows
@@ -99,7 +97,7 @@ data <- read.csv("data/fulldf.csv") %>%
 
 ```
 
-```{r, echo = FALSE, warning=FALSE}
+```{r, echo = FALSE, warning=FALSE, eval=FALSE}
 
 # Create an interactive table using the DT package
 data %>% dplyr::select(-name, -question, -folder) %>% 
