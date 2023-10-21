@@ -5,6 +5,9 @@ format:
 ---
 
 ```{=js}
+var data = window.location.search;
+var params = new URLSearchParams(data);
+console.log(params);
 var query = params.get("query");
 alert("Hello");
 ```
@@ -13,6 +16,7 @@ alert("Hello");
 :::
 
 ::: itembank
+
 # Itembank Search
 
 ```{r, include=FALSE}
@@ -104,4 +108,5 @@ datatable(., filter = "top",
           style = 'bootstrap', selection = 'multiple', 
           escape = FALSE)
 ```
+
 :::
