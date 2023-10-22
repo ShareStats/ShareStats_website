@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     if(inputElement) {
         inputElement.value = search.get('query');
+        inputElement.focus(); 
     }
 });
 ```
