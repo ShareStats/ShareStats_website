@@ -14,6 +14,14 @@ document.addEventListener('DOMContentLoaded', function() {
         inputElement.value = search.get('query');
         inputElement.focus();
         inputElement.click();
+        
+        // Emulate mouse release (mouseup event)
+            var mouseUpEvent = new MouseEvent('mouseup', {
+                bubbles: true,
+                cancelable: true,
+                view: window
+            });
+            inputElement.dispatchEvent(mouseUpEvent);
     }
 });
 ```
