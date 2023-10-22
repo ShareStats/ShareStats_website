@@ -4,20 +4,20 @@ format:
     page-layout: custom
 ---
 
-```{ojs}
-//| echo: false
-//| output: false
+```{js, echo=FALSE}
+var search = new URLSearchParams(window.location.search);
 
-search = new URLSearchParams(window.location.search);
-
-document.getElementById("search_query").innerHTML = search.get('query')
-
-// dom: DataTables_Table_0_filter -> label -> input type="search"
+document.addEventListener('DOMContentLoaded', function() {
+    var inputElement = document.querySelector("#DataTables_Table_0_filter input[type='search']");
+    
+    if(inputElement) {
+        inputElement.value = search.get('query');
+    }
+});
 ```
 
-::: itembank
 
-<p id="search_query">Search</p>
+::: itembank
 
 # Itembank Search
 
