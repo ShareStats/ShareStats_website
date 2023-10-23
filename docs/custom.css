@@ -3,3 +3,26 @@
 .itembank {
   margin: 20px;
 }
+
+      
+#searchBox {
+      margin: 10px;
+      text-align: center;
+    }
+
+#hero {
+\\  background-color: red;
+\\  border: 5px solid;
+  margin: auto;
+  width: 100%;
+  padding: 100px 0 0 0;
+}
+
+#movie__searchbox {
+  width: 60%;
+  margin: auto;
+}
+
+#svg2 {
+  transform: scale(.7);
+}

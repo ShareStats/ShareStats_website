@@ -6,28 +6,21 @@ anchor-sections: false
 format: html
 ---
 
+<div class="column-body">
 
-::: {.column-body}
 
-:::: {.column-screen .text-center #hero}
-
+<div id="hero" class="column-screen text-center">
 
 {{< include images/logo.svg >}}
 
-
-```{=html}
+<div id="searchBox">
 <form method="GET" action="items-df.html" id="movie__searchbox" class="d-flex">
-  <input id="searchbar" class="form-control me-sm-2" type="text" placeholder="Search" name="query">
-  <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+  <input id="searchbar" class="form-control me-sm-2" type="text" placeholder="Search for stat items" name="query">
+  <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
 </form>
-<a href="items-df.qmd" class="btn btn-outline-primary">Explore the Itembank</a>
-```
+<a href="items-df.qmd" class="btn btn-secondary">Explore the Itembank</a>
+</div>
 
+</div>
 
-::::
-
-
-
-
-
-:::
+</div>
