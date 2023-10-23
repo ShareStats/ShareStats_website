@@ -1,7 +1,18 @@
 ---
-title: "ShareStats"
+pagetitle: "ShareStats"
+page-layout: full
+toc: false
+anchor-sections: false
 format: html
 ---
+
+
+::: {.column-body}
+
+:::: {.column-screen .text-center #hero}
+
+
+{{< include images/logo.svg >}}
 
 
 ```{=html}
@@ -11,3 +22,12 @@ format: html
 </form>
 <a href="items-df.qmd" class="btn btn-outline-primary">Explore the Itembank</a>
 ```
+
+
+::::
+
+
+
+
+
+:::

@@ -2,9 +2,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "ShareStats",
+    "title": "",
     "section": "",
-    "text": "Search\n\nExplore the Itembank"
+    "text": "::: {.column-body}\n:::: {.column-screen .text-center #hero}\n\n\n\nimage/svg+xmlShareStats \n\n\n  \n  Search\n\nExplore the Itembank\n::::\n:::"
   },
   {
     "objectID": "about.html",
