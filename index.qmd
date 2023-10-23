@@ -18,9 +18,20 @@ format: html
   <input id="searchbar" class="form-control me-sm-2" type="text" placeholder="Search for stat items" name="query">
   <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
 </form>
+
+The open statistics assessment itemban
+
 <a href="items-df.qmd" class="btn btn-secondary">Explore the Itembank</a>
 </div>
 
 </div>
 
+::: {.column-screen .mx-auto .white}
+
+More body text
+
+:::
+
 </div>
+
+
