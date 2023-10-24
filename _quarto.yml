@@ -8,6 +8,7 @@ website:
   favicon: images/favicon.png
   #site-url: https://
   repo-url: https://https://github.com/ShareStats/ShareStats_website/
+  search: false
   navbar:
     background: '#57cbcc'
     logo: images/logoWT.png

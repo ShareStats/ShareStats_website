@@ -13,15 +13,15 @@ format: html
 
 {{< include images/logo.svg >}}
 
+<p style="color: white;">The open statistics assessment itembank</p>
+
 <div id="searchBox">
-<form method="GET" action="items-df.html" id="movie__searchbox" class="d-flex">
+<form method="GET" action="items-df.html" id="item__searchbox" class="d-flex">
   <input id="searchbar" class="form-control me-sm-2" type="text" placeholder="Search for stat items" name="query">
   <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
 </form>
 
-The open statistics assessment itemban
-
-<a href="items-df.qmd" class="btn btn-secondary">Explore the Itembank</a>
+<!-- <a href="items-df.qmd" class="btn btn-secondary">Explore the Itembank</a> -->
 </div>
 
 </div>
@@ -34,4 +34,18 @@ More body text
 
 </div>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+<script>
+
+anime({
+  targets: 'svg path',
+  strokeDashoffset: [anime.setDashoffset, 0],
+  easing: 'easeInOutSine',
+  duration: 1500,
+  delay: function(el, i) { return i * 250 },
+  direction: 'alternate',
+  loop: true
+});
+
+</script>

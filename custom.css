@@ -3,7 +3,7 @@
 #hero::after {
   content: "";
   background-image: url('images/hero-area-sharestats.webp');
-  opacity: 0.6;
+//  opacity: 0.6;
   filter: brightness(40%);
   top: 0;
   left: 0;
@@ -29,10 +29,10 @@
 \\  border: 5px solid;
   margin: auto;
   width: 100%;
-  padding: 100px 0 0 0;
+  padding: 100px 0 100px 0;
 }
 
-#movie__searchbox {
+#item__searchbox {
   width: 60%;
   margin: auto;
 }
