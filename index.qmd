@@ -36,16 +36,18 @@ More body text
 
 </div>
 
+
 <script>
 
-anime({
+  var tl = anime.timeline({
+});
+
+tl.add({
   targets: '#g26 path',
   strokeDashoffset: [anime.setDashoffset, 0],
+  fill: ['transparent','#FFFFFF'],
   easing: 'easeInOutSine',
-  duration: 1500,
-  delay: function(el, i) { return i * 250 },
-  direction: 'alternate',
-  loop: true
-});
+  duration: 3000
+})
 
 </script>
