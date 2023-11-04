@@ -26,9 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 ```
 
-
 ::: itembank
-
 # Itembank Search
 
 ```{r, include=FALSE}
@@ -52,28 +50,33 @@ html_link <- function(folder, name){
 
 ```{r, include = FALSE}
 # Install and load necessary R packages
-
 library(DT)
 library(tidyverse)
+```
+
+```{r, include = FALSE}
+# Create the columns containing the 'View' and 'Download' buttons
 
 data <- read.csv("data/fulldf.csv") %>% 
   dplyr::select(-X, -id) %>% 
-
-  mutate(
-    # Name-question column
-    Item = paste('<div class="accordion-item">
-    <h3 class="accordion-header" id="headingOne">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">',
-    name,'
-      </button>
-    </h3>
-    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" style="">
-      <div class="accordion-body">
-        <small>', question,'</small>
-      </div>
-    </div>
-  </div>'), .before = 1) %>% 
   
+## Commented code for placing a collapsible column
+## Showing the full item
+#  mutate(
+#    # Name-question column
+#    Item = paste('<div class="accordion-item">
+#    <h3 class="accordion-header" id="headingOne">
+#      <button class="accordion-button" type="button" #data-bs-toggle="collapse" data-bs-target="#collapseOne" #aria-expanded="true" aria-controls="collapseOne">',
+#    name,'
+#      </button>
+#    </h3>
+#    <div id="collapseOne" class="accordion-collapse #collapse" aria-labelledby="headingOne" style="">
+#      <div class="accordion-body">
+#        <small>', question,'</small>
+#      </div>
+#    </div>
+#  </div>'), .before = 1) %>% 
+#  
   # Files button 
   mutate(View = paste(
     '<a href="',html_link(folder, name),'">
@@ -94,20 +97,18 @@ data <- read.csv("data/fulldf.csv") %>%
     </div>'
   )) %>% 
   
-  # checkbox
-  mutate("✔️"=paste('<fieldset class="form-group">
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-        <label class="form-check-label" for="flexCheckDefault">
-        </label>
-      </div>
-    </fieldset>'), .before = 1)
+  mutate(`Item Name` = name, .before = 1)
 
-#createLink <- function(val) {
-#    sprintf( '<button type="button" class="btn btn-secondary" #data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" #data-bs-content="%s" data-bs-original-title="Popover Title" #aria-describedby="popover238872">Left</button>',
-#    val)
-#  }
-#data$link <- unlist(lapply(data$Program, createLink))
+  
+#%>% 
+  # checkbox (REMOVED-Commented)
+#  mutate("✔️"=paste('<fieldset class="form-group">
+#      <div class="form-check">
+#        <input class="form-check-input" type="checkbox" #value="" id="flexCheckDefault">
+#        <label class="form-check-label" for#="flexCheckDefault">
+#        </label>
+#      </div>
+#    </fieldset>'), .before = 1)
 
 ```
 
@@ -120,5 +121,4 @@ datatable(., filter = "top",
           style = 'bootstrap', selection = 'multiple', 
           escape = FALSE)
 ```
-
 :::
