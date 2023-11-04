@@ -30,6 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
 # Itembank Search
 
 ```{r, include=FALSE}
+## Short functions for creating links per item that are used below in the table.
 zip_link <- function(folder, name){
   tmp_link <- paste0('https://github.com/ShareStats/itembank/raw/packages/packages/',
                      'zip/', folder,'.zip')
@@ -43,8 +44,7 @@ qti_link <- function(folder, name){
                      'qti/', folder,'-qti.zip')
 }
 html_link <- function(folder, name){
-  tmp_link <- paste0('https://sharestats.github.io/itembank/packages/docs/',
-                      folder, '/', name, '1.html')
+  tmp_link <- paste0('https://sharestats.github.io/itembank/', folder, '/', name, '1.html')
 }
 ```
 
