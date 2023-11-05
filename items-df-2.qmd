@@ -59,24 +59,8 @@ library(tidyverse)
 
 data <- read.csv("data/fulldf.csv") %>% 
   dplyr::select(-X) %>% 
-  
-## Commented code for placing a collapsible column
-## Showing the full item
-#  mutate(
-#    # Name-question column
-#    Item = paste('<div class="accordion-item">
-#    <h3 class="accordion-header" id="headingOne">
-#      <button class="accordion-button" type="button" #data-bs-toggle="collapse" data-bs-target="#collapseOne" #aria-expanded="true" aria-controls="collapseOne">',
-#    name,'
-#      </button>
-#    </h3>
-#    <div id="collapseOne" class="accordion-collapse #collapse" aria-labelledby="headingOne" style="">
-#      <div class="accordion-body">
-#        <small>', question,'</small>
-#      </div>
-#    </div>
-#  </div>'), .before = 1) %>% 
-#  
+
+# New offcanvas view button:
 mutate(View = paste0(
     '<a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample',id+1,'" role="button" aria-controls="offcanvasExample',id+1,'">
   ↗
@@ -90,9 +74,6 @@ mutate(View = paste0(
 <embed src="',html_link(folder, name),'" width="100%" height="90%">
   </div>
 </div>'
-# '<a href="',html_link(folder, name),'">
-#    <button type="button" class="btn btn-outline-light">↗</button>
-#  </a>'
     )) %>% 
   # Dropdown Files button
   mutate(Files = paste0(
@@ -126,7 +107,7 @@ mutate(View = paste0(
 ```{r, echo = FALSE, warning=FALSE, eval=TRUE}
 
 # Create an interactive table using the DT package
-data %>% dplyr::select(-name, -question, -folder) %>% 
+data %>% dplyr::select(-name, -question, -folder, -id) %>% 
 datatable(., filter = "top", 
           options = list(pageLength = 10), 
           style = 'bootstrap', selection = 'multiple', 
