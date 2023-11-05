@@ -58,7 +58,7 @@ library(tidyverse)
 # Create the columns containing the 'View' and 'Download' buttons
 
 data <- read.csv("data/fulldf.csv") %>% 
-  dplyr::select(-X, -id) %>% 
+  dplyr::select(-X) %>% 
   
 ## Commented code for placing a collapsible column
 ## Showing the full item
@@ -77,18 +77,17 @@ data <- read.csv("data/fulldf.csv") %>%
 #    </div>
 #  </div>'), .before = 1) %>% 
 #  
-  # Files button 
-  mutate(View = paste(
-    '<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+mutate(View = paste0(
+    '<a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample',id+1,'" role="button" aria-controls="offcanvasExample',id+1,'">
   ↗
-</button>
-<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+</a>
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample',id+1,'" aria-labelledby="offcanvasLabel">
   <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasExampleLabel">',name,'</h5>
+    <h5 class="offcanvas-title" id="offcanvasLabel">',name,'</h5>
     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
   <div class="offcanvas-body">
-    <iframe src="',html_link(folder, name),'" width="100%" height="100%"></iframe>
+<embed src="',html_link(folder, name),'" width="100%" height="90%">
   </div>
 </div>'
 # '<a href="',html_link(folder, name),'">
@@ -131,6 +130,7 @@ data %>% dplyr::select(-name, -question, -folder) %>%
 datatable(., filter = "top", 
           options = list(pageLength = 10), 
           style = 'bootstrap', selection = 'multiple', 
-          escape = FALSE)
+          escape = FALSE
+          )
 ```
 :::
