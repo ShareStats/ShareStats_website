@@ -49,7 +49,7 @@ url_name_quest_df <- do.call(rbind, df)
 
 
 # Meta-info Extraction ----------------------------------------------------
-source('/Users/tasospsy/Google Drive/Software_projects/ShareStats/ShareStats-project/extractMeta_function .R')
+source('/Users/tasospsy/Google Drive/Software_projects/ShareStats/ShareStats-project/extractMeta_function.R')
 ErrorsMI <- c()
 metadf <-  list()
 for(i in 1:n){
