@@ -56,8 +56,8 @@ library(tidyverse)
 
 ```{r, include = FALSE}
 # Create the columns containing the 'View' and 'Download' buttons
-data.path <- "data/sharestats_website.csv"
-data <- read.csv(data.path) %>% 
+data.path <- "https://sharestats.github.io/itembank/sharestats_website.csv"
+data <- read_csv(data.path) %>% 
   dplyr::select(-X) %>% 
 
 # New offcanvas view button:
