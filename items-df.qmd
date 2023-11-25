@@ -54,11 +54,15 @@ library(DT)
 library(tidyverse)
 ```
 
-```{r, include = FALSE}
+```{r read-file-from-url, include = FALSE}
 # Create the columns containing the 'View' and 'Download' buttons
 data.path <- "https://sharestats.github.io/itembank/sharestats_website.csv"
-data <- read_csv(data.path) %>% 
-  dplyr::select(-X) %>% 
+dat <- read_csv(data.path) 
+```
+
+```{r, include = FALSE}
+dat <- dat %>% 
+  dplyr::select(-1) %>% 
 
 # New offcanvas view button:
 mutate(View = paste0(
@@ -107,7 +111,7 @@ mutate(View = paste0(
 ```{r, echo = FALSE, warning=FALSE, eval=TRUE}
 
 # Create an interactive table using the DT package
-data %>% dplyr::select(-name, -question, -folder, -id) %>% 
+dat %>% dplyr::select(-name, -question, -folder, -id) %>% 
 datatable(., filter = "top", 
           options = list(pageLength = 10), 
           style = 'bootstrap', selection = 'multiple', 
