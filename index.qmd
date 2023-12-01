@@ -9,17 +9,16 @@ format: html
 ```{=html}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 ```
-::: column-body
-::: {#hero .column-screen .text-center}
+
+<div class="column-body">
+
+<div id="hero" class="column-screen text-center">
+
 {{< include images/logo.svg >}}
 
-<p style="color: white;">
+<p style="color: white;">The open statistics assessment itembank</p>
 
-The open statistics assessment itembank
-
-</p>
-
-::: {#searchBox}
+<div = id="searchBox">
 <form method="GET" action="items-df.html" id="item__searchbox" class="d-flex">
 
 <input id="searchbar" class="form-control me-sm-2" type="text" placeholder="Search for stat items" name="query"> <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
@@ -27,13 +26,36 @@ The open statistics assessment itembank
 </form>
 
 <!-- <a href="items-df.qmd" class="btn btn-secondary">Explore the Itembank</a> -->
-:::
+</div>
+
+</div>
+
+::: {.column-screen .mx-auto .container .grid .p-4}
+
+<div class="card bg-light g-col-12 g-col-md-6 g-col-lg-4">
+<div class="card-body">
+<h5 class="card-title">Collabortation</h5>
+<p class="card-text">In joint collaboration between the UvA, VU, UU and EUR, we set out to create a national itembank for statistics.</p>
+</div>
+</div>
+
+<div class="card bg-light g-col-12 g-col-md-6 g-col-lg-4">
+<div class="card-body">
+<h5 class="card-title">Community</h5>
+<p class="card-text">By creating a community of statistics teachers, we aim to have a wide use of our itembank.</p>
+</div>
+</div>
+
+<div class="card bg-light g-col-12 g-col-md-6 g-col-lg-4">
+<div class="card-body">
+<h5 class="card-title">Funding</h5>
+<p class="card-text">The ShareStats project was nationally funded by [SURF](https://www.surf.nl/sharestats-statistiekopgaven-open-delen-met-een-vakcommunity-van-docenten) the collaborative organisation for ICT in Dutch education.</p>
+</div>
+</div>
+
 :::
 
-::: {.column-screen .mx-auto .white}
-More body text
-:::
-:::
+</div>
 
 ```{=html}
 <script>

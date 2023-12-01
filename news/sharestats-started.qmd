@@ -1,0 +1,36 @@
+---
+author: Marleen de Moor
+page-layout: article
+date: "2020-10-07T12:52:36+06:00"
+description: Nieuwsbrief 1
+image: blog-post-3.jpg
+title: ShareStats started!
+---
+
+The ShareStats project started on September 1, 2020. The project runs for 2 years and is funded by SURF and the  participating universities.
+
+The aim of the project is to share statistics with the professional community of methods and statistics instructors in higher education. In other words: with you! 
+
+## What are we going to do?
+
+We are going to create and make available a comprehensive database of statistics exercises under Creative Commons license via our own website, on github, and SURF ShareKit. We are going to reuse and adopt existing material for this purpose.
+
+The statistics exercises can be used by instructors from the professional community in a simple way by selecting and exporting exercises to a digital learning or test environment such as Canvas, Blackboard, TestVision, Remindo and Grasple.
+
+## What will we start with?
+
+In the coming months we will start developing a quality model and taxonomy. A quality model is needed to assess the existing statistics exercises on quality in order to determine whether an exercise can be included in the database or possibly still needs to be revised. A taxonomy is necessary to meta-date the exercises so that they can be found by, for example, subject or type.
+
+## Join ShareStats
+
+We can't do it alone! In order to make the project a success, it is crucial to involve the professional community of methods and statistics instructors as much as possible.
+
+What knowledge and ideas do you have that are relevant for this project? What wishes and needs do you have when it comes to the open sharing of statistics exercises? We'd love to hear it! 
+
+Let us know by sending an email to:
+sharestats@vu.nl..
+
+Do you want to stay informed?
+
+- Join our LinkedIn group
+- Subscribe to our newsletter via [this link](https://forms.gle/sQQXngFM3hkg4twh8)

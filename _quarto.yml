@@ -15,8 +15,6 @@ website:
     logo-alt: "ShareStats"
     collapse-below: lg
     right:
-      - text: "Explore the Itembank"
-        href: items-df.qmd
       - text: "About ShareStats"
         menu: 
         - text: "Who we are"
@@ -25,8 +23,28 @@ website:
           #href: team.qmd
         - text: "Contact us"
           #href: contact.qmd
-   
-  
+    left: 
+      - text: "Itembank"
+        href: items-df.qmd
+      - text: "Instructions"
+        href: instructions.qmd
+      - text: "Taxonomy"
+        menu: 
+          - text: "Taxonimy Tree"
+            href: taxonomy/taxonomy_tree.qmd
+          - text: "Taxonomy Visual"
+            href: taxonomy/taxonomy_visual.qmd
+          - text: "Tags"
+            href: taxonomy/tags.qmd
+      - text: "Development"
+        menu: 
+          - text: "Item development"
+            href: development/ItemDevelopment.qmd
+          - text: "Quality procedure"
+            href: development/qualityProcedure.qmd
+      - text: "News"
+        href: news/index.qmd
+      
   page-navigation: true
 #  back-to-top-navigation: true        
   

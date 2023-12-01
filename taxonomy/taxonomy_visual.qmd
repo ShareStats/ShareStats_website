@@ -1,0 +1,36 @@
+---
+title: "Taxonomy Visual"
+output:
+  html_document:
+    css: list.css
+    toc: true
+    toc_float: true
+    toc_depth: 2
+---
+
+```{r, echo=FALSE}
+# install.packages("devtools") # if you have not installed "devtools" package
+# devtools::install_github("ShKlinkenberg/collapsibleTree")
+library(readxl)
+library("collapsibleTree")
+assessment.network <- read_excel("taxonomy_tree.xlsx")
+# tooltip.text = '<h3>%s</h3>\n<p>%s</p>\n<p>Go <a href="%s">Here</a></p>'
+# assessment.network$tooltip <- sprintf(tooltip.text, 
+#                                       assessment.network$title, 
+#                                       "Look at this", 
+#                                       "https://www.surf.nl")
+
+# convert parend and child numbers to name string
+
+assessment.network <- merge(assessment.network, assessment.network[,c("child", "name_en")], by.x = "parent", by.y = "child", all.x = TRUE)
+
+assessment.network$parent = assessment.network$name_en.y
+assessment.network$child  = assessment.network$name_en.x
+
+collapsibleTreeNetwork(
+  assessment.network,
+  attribute = "title"
+  # tooltipHtml = "tooltip",
+  # zoomable = FALSE
+)
+```

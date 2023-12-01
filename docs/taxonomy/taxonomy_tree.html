@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Statistics Taxonomy</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<link href="../images/favicon.png" rel="icon" type="image/png">
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="../bootstrap.css">
+<link rel="stylesheet" href="../custom.css">
+</head>
+
+<body class="nav-fixed fullcontent">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../images/logoWT.png" alt="ShareStats" class="navbar-logo">
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../items-df.html" rel="" target="">
+ <span class="menu-text">Itembank</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../instructions.html" rel="" target="">
+ <span class="menu-text">Instructions</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-taxonomy" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">Taxonomy</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-taxonomy">    
+        <li>
+    <a class="dropdown-item" href="../taxonomy/taxonomy_tree.html" rel="" target="">
+ <span class="dropdown-text">Taxonimy Tree</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../taxonomy/taxonomy_visual.html" rel="" target="">
+ <span class="dropdown-text">Taxonomy Visual</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../taxonomy/tags.html" rel="" target="">
+ <span class="dropdown-text">Tags</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-development" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">Development</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-development">    
+        <li>
+    <a class="dropdown-item" href="../development/ItemDevelopment.html" rel="" target="">
+ <span class="dropdown-text">Item development</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../development/qualityProcedure.html" rel="" target="">
+ <span class="dropdown-text">Quality procedure</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../news/index.html" rel="" target="">
+ <span class="menu-text">News</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-about-sharestats" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">About ShareStats</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-about-sharestats">    
+        <li class="dropdown-header">Who we are</li>
+        <li class="dropdown-header">Meet the team</li>
+        <li class="dropdown-header">Contact us</li>
+    </ul>
+  </li>
+</ul>
+            <div class="quarto-navbar-tools">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Statistics Taxonomy</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<script src="copyText.js"></script>
+<section id="assigning-taxonomy" class="level2 tabset">
+<h2 class="tabset anchored" data-anchor-id="assigning-taxonomy">Assigning taxonomy</h2>
+<section id="statistics-taxonomy" class="level3">
+<h3 class="anchored" data-anchor-id="statistics-taxonomy">Statistics Taxonomy</h3>
+<p>To add a taxonomy path to your r-exams markdown file, add <code>exsection:</code> to the <code>Meta-information</code> of your markdown file.</p>
+<p>You can copy the desired paths from the list below. You may add multiple path by separating them with a comma. <strong>No new lines allowed though</strong>.</p>
+<pre><code>Meta-information
+================
+exsection: Descriptive statistics/Summary Statistics/Measures of Location/Median, Descriptive statistics/Summary Statistics/Measures of Spread/Standard Deviation</code></pre>
+<section id="click-to-copy" class="level4">
+<h4 class="anchored" data-anchor-id="click-to-copy">Click to copy</h4>
+<div class="cell">
+<div class="cell-output-display">
+
+<ul>
+<li><span class="tag" onclick="copy_data(c1)" id="c1">Measurement Level</span></li>
+<ul>
+  <li><span class="tag" onclick="copy_data(c2)" id="c2">Measurement Level/Nominal</span></li>
+  <li><span class="tag" onclick="copy_data(c3)" id="c3">Measurement Level/Ordinal</span></li>
+  <li><span class="tag" onclick="copy_data(c4)" id="c4">Measurement Level/Interval</span></li>
+  <li><span class="tag" onclick="copy_data(c5)" id="c5">Measurement Level/Ratio</span></li>
+</ul>
+<li><span class="tag" onclick="copy_data(c6)" id="c6">Variable type</span></li>
+<ul>
+  <li><span class="tag" onclick="copy_data(c7)" id="c7">Variable type/Discrete variable</span></li>
+  <li><span class="tag" onclick="copy_data(c8)" id="c8">Variable type/Continuous variable</span></li>
+</ul>
+<li><span class="tag" onclick="copy_data(c9)" id="c9">Descriptive statistics</span></li>
+<ul>
+  <li><span class="tag" onclick="copy_data(c10)" id="c10">Descriptive statistics/Summary Statistics</span></li>
+<ul>
+    <li><span class="tag" onclick="copy_data(c11)" id="c11">Descriptive statistics/Summary Statistics/Measures of Location</span></li>
+<ul>
+      <li><span class="tag" onclick="copy_data(c12)" id="c12">Descriptive statistics/Summary Statistics/Measures of Location/Mean</span></li>
+      <li><span class="tag" onclick="copy_data(c13)" id="c13">Descriptive statistics/Summary Statistics/Measures of Location/Median</span></li>
+      <li><span class="tag" onclick="copy_data(c14)" id="c14">Descriptive statistics/Summary Statistics/Measures of Location/Mode</span></li>
+</ul>
+    <li><span class="tag" onclick="copy_data(c15)" id="c15">Descriptive statistics/Summary Statistics/Measures of Spread</span></li>
+<ul>
+      <li><span class="tag" onclick="copy_data(c16)" id="c16">Descriptive statistics/Summary Statistics/Measures of Spread/Range</span></li>
+      <li><span class="tag" onclick="copy_data(c17)" id="c17">Descriptive statistics/Summary Statistics/Measures of Spread/Standard Deviation</span></li>
+      <li><span class="tag" onclick="copy_data(c18)" id="c18">Descriptive statistics/Summary Statistics/Measures of Spread/Variance</span></li>
+      <li><span class="tag" onclick="copy_data(c19)" id="c19">Descriptive statistics/Summary Statistics/Measures of Spread/Interquartile Range</span></li>
+</ul>
+    <li><span class="tag" onclick="copy_data(c20)" id="c20">Descriptive statistics/Summary Statistics/Bivariate statistics</span></li>
+<ul>
+      <li><span class="tag" onclick="copy_data(c21)" id="c21">Descriptive statistics/Summary Statistics/Bivariate statistics/Correlation</span></li>
+      <li><span class="tag" onclick="copy_data(c22)" id="c22">Descriptive statistics/Summary Statistics/Bivariate statistics/Covariance</span></li>
+</ul>
+    <li><span class="tag" onclick="copy_data(c23)" id="c23">Descriptive statistics/Summary Statistics/Outliers</span></li>
+    <li><span class="tag" onclick="copy_data(c24)" id="c24">Descriptive statistics/Summary Statistics/Odds ratio</span></li>
+    <li><span class="tag" onclick="copy_data(c25)" id="c25">Descriptive statistics/Summary Statistics/Proportion</span></li>
+    <li><span class="tag" onclick="copy_data(c26)" id="c26">Descriptive statistics/Summary Statistics/Conditional proportion</span></li>
+</ul>
+  <li><span class="tag" onclick="copy_data(c27)" id="c27">Descriptive statistics/Score interpretation</span></li>
+<ul>
+    <li><span class="tag" onclick="copy_data(c28)" id="c28">Descriptive statistics/Score interpretation/z-score</span></li>
+    <li><span class="tag" onclick="copy_data(c29)" id="c29">Descriptive statistics/Score interpretation/Percentile</span></li>
+</ul>
+  <li><span class="tag" onclick="copy_data(c30)" id="c30">Descriptive statistics/Data representation</span></li>
+<ul>
+    <li><span class="tag" onclick="copy_data(c31)" id="c31">Descriptive statistics/Data representation/Graphs</span></li>
+<ul>
+      <li><span class="tag" onclick="copy_data(c32)" id="c32">Descriptive statistics/Data representation/Graphs/Histogram</span></li>
+      <li><span class="tag" onclick="copy_data(c33)" id="c33">Descriptive statistics/Data representation/Graphs/Bar graph</span></li>
+      <li><span class="tag" onclick="copy_data(c34)" id="c34">Descriptive statistics/Data representation/Graphs/Boxplot</span></li>
+      <li><span class="tag" onclick="copy_data(c35)" id="c35">Descriptive statistics/Data representation/Graphs/Scatterplot</span></li>
+      <li><span class="tag" onclick="copy_data(c36)" id="c36">Descriptive statistics/Data representation/Graphs/Pie chart</span></li>
+      <li><span class="tag" onclick="copy_data(c37)" id="c37">Descriptive statistics/Data representation/Graphs/Venn diagram</span></li>
+      <li><span class="tag" onclick="copy_data(c38)" id="c38">Descriptive statistics/Data representation/Graphs/Stem and leaf plot</span></li>
+</ul>
+    <li><span class="tag" onclick="copy_data(c39)" id="c39">Descriptive statistics/Data representation/Tables</span></li>
+<ul>
+      <li><span class="tag" onclick="copy_data(c40)" id="c40">Descriptive statistics/Data representation/Tables/Frequency table</span></li>
+      <li><span class="tag" onclick="copy_data(c41)" id="c41">Descriptive statistics/Data representation/Tables/Contingency table</span></li>
+</ul></ul></ul>
+<li><span class="tag" onclick="copy_data(c42)" id="c42">Inferential Statistics</span></li>
+<ul>
+  <li><span class="tag" onclick="copy_data(c43)" id="c43">Inferential Statistics/Sampling Distributions</span></li>
+<ul>
+    <li><span class="tag" onclick="copy_data(c44)" id="c44">Inferential Statistics/Sampling Distributions/Sample mean</span></li>
+    <li><span class="tag" onclick="copy_data(c45)" id="c45">Inferential Statistics/Sampling Distributions/Sample proportion</span></li>
+    <li><span class="tag" onclick="copy_data(c46)" id="c46">Inferential Statistics/Sampling Distributions/Difference two means</span></li>
+    <li><span class="tag" onclick="copy_data(c47)" id="c47">Inferential Statistics/Sampling Distributions/Correlation</span></li>
+</ul>
+  <li><span class="tag" onclick="copy_data(c48)" id="c48">Inferential Statistics/NHST</span></li>
+<ul>
+    <li><span class="tag" onclick="copy_data(c49)" id="c49">Inferential Statistics/NHST/Hypothesis</span></li>
+<ul>
+      <li><span class="tag" onclick="copy_data(c50)" id="c50">Inferential Statistics/NHST/Hypothesis/Null hypothesis</span></li>
+      <li><span class="tag" onclick="copy_data(c51)" id="c51">Inferential Statistics/NHST/Hypothesis/Alternative hypothesis</span></li>
+      <li><span class="tag" onclick="copy_data(c52)" id="c52">Inferential Statistics/NHST/Hypothesis/One sided hypothesis</span></li>
+      <li><span class="tag" onclick="copy_data(c53)" id="c53">Inferential Statistics/NHST/Hypothesis/Two sided hypothesis</span></li>
+</ul>
+    <li><span class="tag" onclick="copy_data(c54)" id="c54">Inferential Statistics/NHST/Test statistic</span></li>
+<ul>
+      <li><span class="tag" onclick="copy_data(c55)" id="c55">Inferential Statistics/NHST/Test statistic/t-statistic</span></li>
+      <li><span class="tag" onclick="copy_data(c56)" id="c56">Inferential Statistics/NHST/Test statistic/F-statistic</span></li>
+      <li><span class="tag" onclick="copy_data(c57)" id="c57">Inferential Statistics/NHST/Test statistic/Chi-squared</span></li>
+      <li><span class="tag" onclick="copy_data(c58)" id="c58">Inferential Statistics/NHST/Test statistic/z-statistic</span></li>
+</ul>
+    <li><span class="tag" onclick="copy_data(c59)" id="c59">Inferential Statistics/NHST/Statistical errors</span></li>
+<ul>
+      <li><span class="tag" onclick="copy_data(c60)" id="c60">Inferential Statistics/NHST/Statistical errors/Type I error</span></li>
+      <li><span class="tag" onclick="copy_data(c61)" id="c61">Inferential Statistics/NHST/Statistical errors/Type II error</span></li>
+</ul>
+    <li><span class="tag" onclick="copy_data(c62)" id="c62">Inferential Statistics/NHST/Power</span></li>
+    <li><span class="tag" onclick="copy_data(c63)" id="c63">Inferential Statistics/NHST/Significance level</span></li>
+<ul>
+      <li><span class="tag" onclick="copy_data(c64)" id="c64">Inferential Statistics/NHST/Significance level/Critical value</span></li>
+</ul>
+    <li><span class="tag" onclick="copy_data(c65)" id="c65">Inferential Statistics/NHST/p-value</span></li>
+</ul>
+  <li><span class="tag" onclick="copy_data(c66)" id="c66">Inferential Statistics/Effect size</span></li>
+<ul>
+    <li><span class="tag" onclick="copy_data(c67)" id="c67">Inferential Statistics/Effect size/Cohen's d</span></li>
+    <li><span class="tag" onclick="copy_data(c68)" id="c68">Inferential Statistics/Effect size/Cramer's V</span></li>
+    <li><span class="tag" onclick="copy_data(c69)" id="c69">Inferential Statistics/Effect size/Phi coefficient</span></li>
+    <li><span class="tag" onclick="copy_data(c70)" id="c70">Inferential Statistics/Effect size/Eta squared</span></li>
+    <li><span class="tag" onclick="copy_data(c71)" id="c71">Inferential Statistics/Effect size/Omega squared</span></li>
+</ul>
+  <li><span class="tag" onclick="copy_data(c72)" id="c72">Inferential Statistics/Confidence Intervals</span></li>
+<ul>
+    <li><span class="tag" onclick="copy_data(c73)" id="c73">Inferential Statistics/Confidence Intervals/Confidence level</span></li>
+    <li><span class="tag" onclick="copy_data(c74)" id="c74">Inferential Statistics/Confidence Intervals/Testing</span></li>
+    <li><span class="tag" onclick="copy_data(c75)" id="c75">Inferential Statistics/Confidence Intervals/Width</span></li>
+    <li><span class="tag" onclick="copy_data(c76)" id="c76">Inferential Statistics/Confidence Intervals/Margin of error</span></li>
+</ul>
+  <li><span class="tag" onclick="copy_data(c77)" id="c77">Inferential Statistics/Parametric Techniques</span></li>
+<ul>
+    <li><span class="tag" onclick="copy_data(c78)" id="c78">Inferential Statistics/Parametric Techniques/z-test</span></li>
+<ul>
+      <li><span class="tag" onclick="copy_data(c79)" id="c79">Inferential Statistics/Parametric Techniques/z-test/One sample mean</span></li>
+      <li><span class="tag" onclick="copy_data(c80)" id="c80">Inferential Statistics/Parametric Techniques/z-test/Independent samples means</span></li>
+      <li><span class="tag" onclick="copy_data(c81)" id="c81">Inferential Statistics/Parametric Techniques/z-test/One proportion</span></li>
+      <li><span class="tag" onclick="copy_data(c82)" id="c82">Inferential Statistics/Parametric Techniques/z-test/Two proportions</span></li>
+</ul>
+    <li><span class="tag" onclick="copy_data(c83)" id="c83">Inferential Statistics/Parametric Techniques/t-test</span></li>
+<ul>
+      <li><span class="tag" onclick="copy_data(c84)" id="c84">Inferential Statistics/Parametric Techniques/t-test/One sample mean</span></li>
+      <li><span class="tag" onclick="copy_data(c85)" id="c85">Inferential Statistics/Parametric Techniques/t-test/Independent samples means</span></li>
+      <li><span class="tag" onclick="copy_data(c86)" id="c86">Inferential Statistics/Parametric Techniques/t-test/Paired samples</span></li>
+      <li><span class="tag" onclick="copy_data(c87)" id="c87">Inferential Statistics/Parametric Techniques/t-test/Test for correlation</span></li>
+</ul>
+    <li><span class="tag" onclick="copy_data(c88)" id="c88">Inferential Statistics/Parametric Techniques/Correlations</span></li>
+<ul>
+      <li><span class="tag" onclick="copy_data(c89)" id="c89">Inferential Statistics/Parametric Techniques/Correlations/Pearson</span></li>
+      <li><span class="tag" onclick="copy_data(c90)" id="c90">Inferential Statistics/Parametric Techniques/Correlations/Spearman</span></li>
+      <li><span class="tag" onclick="copy_data(c91)" id="c91">Inferential Statistics/Parametric Techniques/Correlations/Point biserial</span></li>
+      <li><span class="tag" onclick="copy_data(c92)" id="c92">Inferential Statistics/Parametric Techniques/Correlations/Biserial</span></li>
+      <li><span class="tag" onclick="copy_data(c93)" id="c93">Inferential Statistics/Parametric Techniques/Correlations/Phi</span></li>
+</ul>
+    <li><span class="tag" onclick="copy_data(c94)" id="c94">Inferential Statistics/Parametric Techniques/Cross tables</span></li>
+<ul>
+      <li><span class="tag" onclick="copy_data(c95)" id="c95">Inferential Statistics/Parametric Techniques/Cross tables/Chi-Squared for Independence</span></li>
+      <li><span class="tag" onclick="copy_data(c96)" id="c96">Inferential Statistics/Parametric Techniques/Cross tables/Chi-Squared for Homogeneity</span></li>
+      <li><span class="tag" onclick="copy_data(c97)" id="c97">Inferential Statistics/Parametric Techniques/Cross tables/Chi-Squared Goodness of Fit</span></li>
+      <li><span class="tag" onclick="copy_data(c98)" id="c98">Inferential Statistics/Parametric Techniques/Cross tables/Fisher's Exact Test</span></li>
+</ul>
+    <li><span class="tag" onclick="copy_data(c99)" id="c99">Inferential Statistics/Parametric Techniques/ANOVA</span></li>
+<ul>
+      <li><span class="tag" onclick="copy_data(c100)" id="c100">Inferential Statistics/Parametric Techniques/ANOVA/Oneway ANOVA</span></li>
+      <li><span class="tag" onclick="copy_data(c101)" id="c101">Inferential Statistics/Parametric Techniques/ANOVA/Twoway ANOVA</span></li>
+      <li><span class="tag" onclick="copy_data(c102)" id="c102">Inferential Statistics/Parametric Techniques/ANOVA/Oneway repeated measures ANOVA</span></li>
+      <li><span class="tag" onclick="copy_data(c103)" id="c103">Inferential Statistics/Parametric Techniques/ANOVA/Twoway repeated measures ANOVA</span></li>
+      <li><span class="tag" onclick="copy_data(c104)" id="c104">Inferential Statistics/Parametric Techniques/ANOVA/Mixed design ANOVA</span></li>
+      <li><span class="tag" onclick="copy_data(c105)" id="c105">Inferential Statistics/Parametric Techniques/ANOVA/ANCOVA</span></li>
+      <li><span class="tag" onclick="copy_data(c106)" id="c106">Inferential Statistics/Parametric Techniques/ANOVA/MANOVA</span></li>
+      <li><span class="tag" onclick="copy_data(c107)" id="c107">Inferential Statistics/Parametric Techniques/ANOVA/MANCOVA</span></li>
+      <li><span class="tag" onclick="copy_data(c108)" id="c108">Inferential Statistics/Parametric Techniques/ANOVA/ANOVA F-test</span></li>
+      <li><span class="tag" onclick="copy_data(c109)" id="c109">Inferential Statistics/Parametric Techniques/ANOVA/Post-hoc test</span></li>
+</ul>
+    <li><span class="tag" onclick="copy_data(c110)" id="c110">Inferential Statistics/Parametric Techniques/Variance</span></li>
+<ul>
+      <li><span class="tag" onclick="copy_data(c111)" id="c111">Inferential Statistics/Parametric Techniques/Variance/One variance</span></li>
+      <li><span class="tag" onclick="copy_data(c112)" id="c112">Inferential Statistics/Parametric Techniques/Variance/Two variances</span></li>
+</ul></ul>
+  <li><span class="tag" onclick="copy_data(c113)" id="c113">Inferential Statistics/Regression</span></li>
+<ul>
+    <li><span class="tag" onclick="copy_data(c114)" id="c114">Inferential Statistics/Regression/Simple linear regression</span></li>
+    <li><span class="tag" onclick="copy_data(c115)" id="c115">Inferential Statistics/Regression/Equation</span></li>
+    <li><span class="tag" onclick="copy_data(c116)" id="c116">Inferential Statistics/Regression/Slope</span></li>
+    <li><span class="tag" onclick="copy_data(c117)" id="c117">Inferential Statistics/Regression/Intercept</span></li>
+    <li><span class="tag" onclick="copy_data(c118)" id="c118">Inferential Statistics/Regression/Prediction</span></li>
+    <li><span class="tag" onclick="copy_data(c119)" id="c119">Inferential Statistics/Regression/Residuals</span></li>
+    <li><span class="tag" onclick="copy_data(c120)" id="c120">Inferential Statistics/Regression/Sum of squares</span></li>
+    <li><span class="tag" onclick="copy_data(c121)" id="c121">Inferential Statistics/Regression/Regression F-test</span></li>
+    <li><span class="tag" onclick="copy_data(c122)" id="c122">Inferential Statistics/Regression/R squared</span></li>
+    <li><span class="tag" onclick="copy_data(c123)" id="c123">Inferential Statistics/Regression/Standard error of the estimate</span></li>
+    <li><span class="tag" onclick="copy_data(c124)" id="c124">Inferential Statistics/Regression/Standardized coefficient</span></li>
+    <li><span class="tag" onclick="copy_data(c125)" id="c125">Inferential Statistics/Regression/Dummies</span></li>
+    <li><span class="tag" onclick="copy_data(c126)" id="c126">Inferential Statistics/Regression/Confidence interval</span></li>
+    <li><span class="tag" onclick="copy_data(c127)" id="c127">Inferential Statistics/Regression/Prediction interval</span></li>
+    <li><span class="tag" onclick="copy_data(c128)" id="c128">Inferential Statistics/Regression/Coefficient t-test</span></li>
+    <li><span class="tag" onclick="copy_data(c129)" id="c129">Inferential Statistics/Regression/Multiple linear regression</span></li>
+<ul>
+      <li><span class="tag" onclick="copy_data(c130)" id="c130">Inferential Statistics/Regression/Multiple linear regression/F-test for comparing (nested) models</span></li>
+      <li><span class="tag" onclick="copy_data(c131)" id="c131">Inferential Statistics/Regression/Multiple linear regression/R squared change</span></li>
+      <li><span class="tag" onclick="copy_data(c132)" id="c132">Inferential Statistics/Regression/Multiple linear regression/Moderation</span></li>
+      <li><span class="tag" onclick="copy_data(c133)" id="c133">Inferential Statistics/Regression/Multiple linear regression/Mediation</span></li>
+      <li><span class="tag" onclick="copy_data(c134)" id="c134">Inferential Statistics/Regression/Multiple linear regression/Suppression</span></li>
+</ul>
+    <li><span class="tag" onclick="copy_data(c135)" id="c135">Inferential Statistics/Regression/Principal axis regression</span></li>
+    <li><span class="tag" onclick="copy_data(c136)" id="c136">Inferential Statistics/Regression/Logistic regression</span></li>
+<ul>
+      <li><span class="tag" onclick="copy_data(c137)" id="c137">Inferential Statistics/Regression/Logistic regression/Odds</span></li>
+      <li><span class="tag" onclick="copy_data(c138)" id="c138">Inferential Statistics/Regression/Logistic regression/Odds ratio</span></li>
+</ul>
+    <li><span class="tag" onclick="copy_data(c139)" id="c139">Inferential Statistics/Regression/Probit regression</span></li>
+    <li><span class="tag" onclick="copy_data(c140)" id="c140">Inferential Statistics/Regression/Multinomial logistic regression</span></li>
+</ul>
+  <li><span class="tag" onclick="copy_data(c141)" id="c141">Inferential Statistics/Non-parametric Techniques</span></li>
+<ul>
+    <li><span class="tag" onclick="copy_data(c142)" id="c142">Inferential Statistics/Non-parametric Techniques/Sign test</span></li>
+    <li><span class="tag" onclick="copy_data(c143)" id="c143">Inferential Statistics/Non-parametric Techniques/Rank Sum test</span></li>
+    <li><span class="tag" onclick="copy_data(c144)" id="c144">Inferential Statistics/Non-parametric Techniques/Signed Rank test</span></li>
+    <li><span class="tag" onclick="copy_data(c145)" id="c145">Inferential Statistics/Non-parametric Techniques/Kruskal-Wallis test</span></li>
+    <li><span class="tag" onclick="copy_data(c146)" id="c146">Inferential Statistics/Non-parametric Techniques/Friedman's test</span></li>
+    <li><span class="tag" onclick="copy_data(c147)" id="c147">Inferential Statistics/Non-parametric Techniques/Permutation test</span></li>
+</ul>
+  <li><span class="tag" onclick="copy_data(c148)" id="c148">Inferential Statistics/Bootstrap</span></li>
+  <li><span class="tag" onclick="copy_data(c149)" id="c149">Inferential Statistics/Bayesian Statistics</span></li>
+<ul>
+    <li><span class="tag" onclick="copy_data(c150)" id="c150">Inferential Statistics/Bayesian Statistics/Prior</span></li>
+    <li><span class="tag" onclick="copy_data(c151)" id="c151">Inferential Statistics/Bayesian Statistics/Likelihood</span></li>
+    <li><span class="tag" onclick="copy_data(c152)" id="c152">Inferential Statistics/Bayesian Statistics/Posterior</span></li>
+    <li><span class="tag" onclick="copy_data(c153)" id="c153">Inferential Statistics/Bayesian Statistics/Credible intervals</span></li>
+    <li><span class="tag" onclick="copy_data(c154)" id="c154">Inferential Statistics/Bayesian Statistics/Hypothesis test</span></li>
+    <li><span class="tag" onclick="copy_data(c155)" id="c155">Inferential Statistics/Bayesian Statistics/Bayes factor</span></li>
+    <li><span class="tag" onclick="copy_data(c156)" id="c156">Inferential Statistics/Bayesian Statistics/Parameter estimation</span></li>
+    <li><span class="tag" onclick="copy_data(c157)" id="c157">Inferential Statistics/Bayesian Statistics/Informative hypothesis testing</span></li>
+</ul>
+  <li><span class="tag" onclick="copy_data(c158)" id="c158">Inferential Statistics/Time Series</span></li>
+<ul>
+    <li><span class="tag" onclick="copy_data(c159)" id="c159">Inferential Statistics/Time Series/Descriptive methods</span></li>
+    <li><span class="tag" onclick="copy_data(c160)" id="c160">Inferential Statistics/Time Series/Autocorrelation</span></li>
+    <li><span class="tag" onclick="copy_data(c161)" id="c161">Inferential Statistics/Time Series/Runs test</span></li>
+    <li><span class="tag" onclick="copy_data(c162)" id="c162">Inferential Statistics/Time Series/Seasonal variation</span></li>
+    <li><span class="tag" onclick="copy_data(c163)" id="c163">Inferential Statistics/Time Series/Arima models</span></li>
+    <li><span class="tag" onclick="copy_data(c164)" id="c164">Inferential Statistics/Time Series/Forecasting</span></li>
+    <li><span class="tag" onclick="copy_data(c165)" id="c165">Inferential Statistics/Time Series/Frequency domain</span></li>
+</ul>
+  <li><span class="tag" onclick="copy_data(c166)" id="c166">Inferential Statistics/Multilevel Analysis</span></li>
+</ul>
+<li><span class="tag" onclick="copy_data(c167)" id="c167">Probability</span></li>
+<ul>
+  <li><span class="tag" onclick="copy_data(c168)" id="c168">Probability/Elementary Probability</span></li>
+<ul>
+    <li><span class="tag" onclick="copy_data(c169)" id="c169">Probability/Elementary Probability/Sample Space</span></li>
+    <li><span class="tag" onclick="copy_data(c170)" id="c170">Probability/Elementary Probability/Events</span></li>
+    <li><span class="tag" onclick="copy_data(c171)" id="c171">Probability/Elementary Probability/General Rules</span></li>
+<ul>
+      <li><span class="tag" onclick="copy_data(c172)" id="c172">Probability/Elementary Probability/General Rules/Intersection</span></li>
+      <li><span class="tag" onclick="copy_data(c173)" id="c173">Probability/Elementary Probability/General Rules/Union</span></li>
+      <li><span class="tag" onclick="copy_data(c174)" id="c174">Probability/Elementary Probability/General Rules/Addition rule</span></li>
+      <li><span class="tag" onclick="copy_data(c175)" id="c175">Probability/Elementary Probability/General Rules/Multiplication rule</span></li>
+      <li><span class="tag" onclick="copy_data(c176)" id="c176">Probability/Elementary Probability/General Rules/Independent events</span></li>
+</ul>
+    <li><span class="tag" onclick="copy_data(c177)" id="c177">Probability/Elementary Probability/Combinations</span></li>
+    <li><span class="tag" onclick="copy_data(c178)" id="c178">Probability/Elementary Probability/Permutations</span></li>
+    <li><span class="tag" onclick="copy_data(c179)" id="c179">Probability/Elementary Probability/Conditional probability</span></li>
+    <li><span class="tag" onclick="copy_data(c180)" id="c180">Probability/Elementary Probability/Random variables</span></li>
+<ul>
+      <li><span class="tag" onclick="copy_data(c181)" id="c181">Probability/Elementary Probability/Random variables/Expected value</span></li>
+      <li><span class="tag" onclick="copy_data(c182)" id="c182">Probability/Elementary Probability/Random variables/Variance</span></li>
+      <li><span class="tag" onclick="copy_data(c183)" id="c183">Probability/Elementary Probability/Random variables/Rules for expected values</span></li>
+      <li><span class="tag" onclick="copy_data(c184)" id="c184">Probability/Elementary Probability/Random variables/Random sample</span></li>
+</ul></ul></ul>
+<li><span class="tag" onclick="copy_data(c185)" id="c185">Distributions</span></li>
+<ul>
+  <li><span class="tag" onclick="copy_data(c186)" id="c186">Distributions/Discrete</span></li>
+<ul>
+    <li><span class="tag" onclick="copy_data(c187)" id="c187">Distributions/Discrete/Binomial</span></li>
+    <li><span class="tag" onclick="copy_data(c188)" id="c188">Distributions/Discrete/Normal approximation to Binomial</span></li>
+    <li><span class="tag" onclick="copy_data(c189)" id="c189">Distributions/Discrete/Bernoulli</span></li>
+    <li><span class="tag" onclick="copy_data(c190)" id="c190">Distributions/Discrete/Geometric</span></li>
+    <li><span class="tag" onclick="copy_data(c191)" id="c191">Distributions/Discrete/Negative Binomial</span></li>
+    <li><span class="tag" onclick="copy_data(c192)" id="c192">Distributions/Discrete/Poisson</span></li>
+    <li><span class="tag" onclick="copy_data(c193)" id="c193">Distributions/Discrete/Hypergeometric</span></li>
+    <li><span class="tag" onclick="copy_data(c194)" id="c194">Distributions/Discrete/Multinominal</span></li>
+</ul>
+  <li><span class="tag" onclick="copy_data(c195)" id="c195">Distributions/Continuous</span></li>
+<ul>
+    <li><span class="tag" onclick="copy_data(c196)" id="c196">Distributions/Continuous/Normal</span></li>
+    <li><span class="tag" onclick="copy_data(c197)" id="c197">Distributions/Continuous/Uniform</span></li>
+    <li><span class="tag" onclick="copy_data(c198)" id="c198">Distributions/Continuous/Exponential</span></li>
+    <li><span class="tag" onclick="copy_data(c199)" id="c199">Distributions/Continuous/Gamma</span></li>
+    <li><span class="tag" onclick="copy_data(c200)" id="c200">Distributions/Continuous/t-distribution</span></li>
+    <li><span class="tag" onclick="copy_data(c201)" id="c201">Distributions/Continuous/F-distribution</span></li>
+    <li><span class="tag" onclick="copy_data(c202)" id="c202">Distributions/Continuous/Chi-squared</span></li>
+    <li><span class="tag" onclick="copy_data(c203)" id="c203">Distributions/Continuous/Beta</span></li>
+</ul>
+  <li><span class="tag" onclick="copy_data(c204)" id="c204">Distributions/Limit Theorems</span></li>
+<ul>
+    <li><span class="tag" onclick="copy_data(c205)" id="c205">Distributions/Limit Theorems/Central Limit Theorem</span></li>
+    <li><span class="tag" onclick="copy_data(c206)" id="c206">Distributions/Limit Theorems/Law of Large Numbers</span></li>
+</ul></ul>
+<li><span class="tag" onclick="copy_data(c207)" id="c207">Assumptions</span></li>
+<ul>
+  <li><span class="tag" onclick="copy_data(c208)" id="c208">Assumptions/Homogeneity of variance</span></li>
+<ul>
+    <li><span class="tag" onclick="copy_data(c209)" id="c209">Assumptions/Homogeneity of variance/Levene's test</span></li>
+    <li><span class="tag" onclick="copy_data(c210)" id="c210">Assumptions/Homogeneity of variance/Ratio of sample size</span></li>
+    <li><span class="tag" onclick="copy_data(c211)" id="c211">Assumptions/Homogeneity of variance/Ratio of variance</span></li>
+</ul>
+  <li><span class="tag" onclick="copy_data(c212)" id="c212">Assumptions/Sphericity</span></li>
+<ul>
+    <li><span class="tag" onclick="copy_data(c213)" id="c213">Assumptions/Sphericity/Mauchly's test</span></li>
+    <li><span class="tag" onclick="copy_data(c214)" id="c214">Assumptions/Sphericity/Epsilon</span></li>
+</ul>
+  <li><span class="tag" onclick="copy_data(c215)" id="c215">Assumptions/Normality</span></li>
+<ul>
+    <li><span class="tag" onclick="copy_data(c216)" id="c216">Assumptions/Normality/Shapiro-Wilks</span></li>
+    <li><span class="tag" onclick="copy_data(c217)" id="c217">Assumptions/Normality/Kolmogorov-Smirnov</span></li>
+    <li><span class="tag" onclick="copy_data(c218)" id="c218">Assumptions/Normality/Q-Q plot</span></li>
+</ul>
+  <li><span class="tag" onclick="copy_data(c219)" id="c219">Assumptions/Linearity</span></li>
+  <li><span class="tag" onclick="copy_data(c220)" id="c220">Assumptions/Homoscedasticity</span></li>
+<ul>
+    <li><span class="tag" onclick="copy_data(c221)" id="c221">Assumptions/Homoscedasticity/Residual plot</span></li>
+</ul>
+  <li><span class="tag" onclick="copy_data(c222)" id="c222">Assumptions/Multicolinearity</span></li>
+<ul>
+    <li><span class="tag" onclick="copy_data(c223)" id="c223">Assumptions/Multicolinearity/VIF</span></li>
+    <li><span class="tag" onclick="copy_data(c224)" id="c224">Assumptions/Multicolinearity/Tolerance</span></li>
+</ul></ul>
+<li><span class="tag" onclick="copy_data(c225)" id="c225">Factor analysis</span></li>
+<ul>
+  <li><span class="tag" onclick="copy_data(c226)" id="c226">Factor analysis/Principle component analysis</span></li>
+  <li><span class="tag" onclick="copy_data(c227)" id="c227">Factor analysis/Exploratory factor analysis</span></li>
+  <li><span class="tag" onclick="copy_data(c228)" id="c228">Factor analysis/Confirmatory factor analysis</span></li>
+  <li><span class="tag" onclick="copy_data(c229)" id="c229">Factor analysis/Rotations</span></li>
+  <li><span class="tag" onclick="copy_data(c230)" id="c230">Factor analysis/Eigenvalues</span></li>
+  <li><span class="tag" onclick="copy_data(c231)" id="c231">Factor analysis/Factor loadings</span></li>
+  <li><span class="tag" onclick="copy_data(c232)" id="c232">Factor analysis/Explained variance</span></li>
+  <li><span class="tag" onclick="copy_data(c233)" id="c233">Factor analysis/Compontent correlation matrix</span></li>
+  <li><span class="tag" onclick="copy_data(c234)" id="c234">Factor analysis/Scree plot</span></li>
+  <li><span class="tag" onclick="copy_data(c235)" id="c235">Factor analysis/Pattern matrix</span></li>
+  <li><span class="tag" onclick="copy_data(c236)" id="c236">Factor analysis/Structure matrix</span></li>
+  <li><span class="tag" onclick="copy_data(c237)" id="c237">Factor analysis/Factor correlation matrix</span></li>
+  <li><span class="tag" onclick="copy_data(c238)" id="c238">Factor analysis/Communalities</span></li>
+  <li><span class="tag" onclick="copy_data(c239)" id="c239">Factor analysis/Factor scores</span></li>
+</ul>
+<li><span class="tag" onclick="copy_data(c240)" id="c240">Reliability</span></li>
+<ul>
+  <li><span class="tag" onclick="copy_data(c241)" id="c241">Reliability/Analysis</span></li>
+<ul>
+    <li><span class="tag" onclick="copy_data(c242)" id="c242">Reliability/Analysis/Cronbach's alpha</span></li>
+    <li><span class="tag" onclick="copy_data(c243)" id="c243">Reliability/Analysis/Split half</span></li>
+    <li><span class="tag" onclick="copy_data(c244)" id="c244">Reliability/Analysis/Test-retest</span></li>
+    <li><span class="tag" onclick="copy_data(c245)" id="c245">Reliability/Analysis/Parallel forms</span></li>
+</ul>
+  <li><span class="tag" onclick="copy_data(c246)" id="c246">Reliability/Descriptives</span></li>
+<ul>
+    <li><span class="tag" onclick="copy_data(c247)" id="c247">Reliability/Descriptives/RIT</span></li>
+    <li><span class="tag" onclick="copy_data(c248)" id="c248">Reliability/Descriptives/RIR</span></li>
+    <li><span class="tag" onclick="copy_data(c249)" id="c249">Reliability/Descriptives/proportion correct</span></li>
+</ul>
+</ul></ul></div>
+</div>
+
+
+</section>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">Copyright © 2023 ShareStats.nl</div>   
+    <div class="nav-footer-center">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/ShareStats/ShareStats_website/">
+      <i class="bi bi-github" role="img" aria-label="GitHub">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+</body></html>
