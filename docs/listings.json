@@ -1,12 +1,6 @@
 [
   {
-    "listing": "/news/index.html",
-    "items": [
-      "/news/sharestats-started.html"
-    ]
-  },
-  {
-    "listing": "/team.html",
+    "listing": "/team/team.html",
     "items": [
       "/team/people/dimitris.html",
       "/team/people/joran.html",
@@ -16,6 +10,12 @@
       "/team/people/marleen.html",
       "/team/people/niels.html",
       "/team/people/sharon.html"
+    ]
+  },
+  {
+    "listing": "/news/index.html",
+    "items": [
+      "/news/sharestats-started.html"
     ]
   }
 ]

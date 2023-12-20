@@ -28,6 +28,13 @@
     "text": "Het zal fijn zijn als er een goede samenwerking op gang komt. Het is zonde om allemaal het wiel opnieuw uit te vinden. Informatie, en in dit geval statistiekvragen delen is echt een goede stap in de juiste richting! Life is not about taking something, it is all about sharing everything."
   },
   {
+    "objectID": "team/team.html",
+    "href": "team/team.html",
+    "title": "Meet the Team",
+    "section": "",
+    "text": "Dimitris Pavlopoulos\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJoran Jongerling\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nKirsten Namesnik-Silvester\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLidia Arends\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMarike Polak\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMarleen de Moor\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNiels Smits\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSharon Klinkenberg\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
     "objectID": "news/index.html",
     "href": "news/index.html",
     "title": "ShareStats Newsletters",
@@ -42,11 +49,25 @@
     "text": "image/svg+xmlShareStats \n\n\nThe open statistics assessment itembank\n\n\n\n\n Search\n\n\n\n\n\n\n\n\n\n\nCollaboration\n\n\nIn joint collaboration between the UvA, VU, UU and EUR, we set out to create a national itembank for statistics.\n\n\n\n\n\n\nCommunity\n\n\nBy creating a community of statistics teachers, we aim to have a wide use of the itembank.\n\n\nJoin the community at:\n\nLinkedin VVSOR\n\n\n\n\n\nFunding\n\n\nThe ShareStats project was nationally funded by SURF the collaborative organisation for ICT in Dutch education."
   },
   {
-    "objectID": "team.html",
-    "href": "team.html",
-    "title": "Meet the Team",
-    "section": "",
-    "text": "Dimitris Pavlopoulos\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJoran Jongerling\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nKirsten Namesnik-Silvester\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLidia Arends\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMarike Polak\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMarleen de Moor\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNiels Smits\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSharon Klinkenberg\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+    "objectID": "development/qualityProcedure.html#checklist-part-1-person-a",
+    "href": "development/qualityProcedure.html#checklist-part-1-person-a",
+    "title": "Quality Procedure",
+    "section": "Checklist part 1: Person A",
+    "text": "Checklist part 1: Person A\nQuestion content\n\nIs the wording of the question simple and concise? (An item is not meant to gauge a student’s verbal understanding over their overall mastery of the question of the subject.)\n\nNo complicated sentence structures or sentences/texts of excessive length.\nNo excessive use of complicated words, jargon, slang, or abbreviations.\nUse of standard statistical terminology.\nAnswer alternatives are formulated in as short a form as possible.\n\nDoes the question include no unclear or double negatives?\n\nNo double negatives in the question.\nNo combinations of a negation in the question and a negation in the answers.\nAl required negatives are made obvious. (By underlining the negative.)\n\nMake sure it is impossible to interpret the question in different ways or with multiple meanings.\n\nQuestions should not assess the correctness of two statements at once.\nQuestions should not have a possibility to supply a different answer than intended. (Play the devil’s advocate, analyze the different meanings terms in the question could possibly have.)\n\nHave universal quantifiers (never, all, always) been used correctly?\n\nIn the phrasing of the question.\nIn the phrasing of the answers.\n\nIs there a solid connection between the answers and the question?\n\nThe phrasing of each answer ties in with the question.\nPreferably integrate as many words into the question instead of restating them in each of the answer alternatives.\n\nAre the answer alternatives exclusive, logical, and clear?\n\nNo wrong answers that can be defended as right answers.\nAvoid, where possible, dummy-alternatives (for example ‘none of the above’).\nNo unintentional directions to either a wrong answer or the correct answer.\nAvoid answer alternatives that rely on a logical inaccuracy.\nAvoid nonsensical alternative answers as much as possible. (Alternative answers that most people would know are untrue/incorrect.)\n\n\nLayout\n\nNo grammar or spelling errors.\nAll figures and graphs are clear and easy to read.\nPunctuation marks such as comma’s, periods, semicolons, etc. are all checked and placed correctly.\nBe consistent in your placement of periods in multiple choice answers: o Numbers and few words require no period at the end of the answer. o Fully formed sentences and phrases do require a period at the end of the answer.\nWhen using an external source (for example graphs, figures or datasets), the proper citation is given. Copyright and Creative Commons No questions protected under copyright are to be added to the item bank. (Questions originating from a published book, or clearly derived questions, datasets, graphs and figures from books or other materials protected under copyright law.) Check the source of the question before adding it to the item bank. Ask your faculty’s project coordinator which sources have possibly been used (for example textbooks from courses, or online materials). Is it original material? Then the item may be added. When in doubt use the following as a basis and consult your project coordinator about the admissibility of the question:\n\nWhen only changing certain objective elements of the question, it falls under partial processing or imitation in a modified form, which still falls under copyright infringement.\nWhen writing a question in another order or with a different/new question, but with similar elements, it does not full under copyright infringement."
+  },
+  {
+    "objectID": "development/qualityProcedure.html#checklist-part-2-person-b",
+    "href": "development/qualityProcedure.html#checklist-part-2-person-b",
+    "title": "Quality Procedure",
+    "section": "Checklist part 2: Person B",
+    "text": "Checklist part 2: Person B\n\nCheck the compiled version of the question. (Question plus layout.)\nGo through part one of this checklist once more.\nCheck that all figures and graphs are included in the question.\nCheck that all necessarily documents are present in the folder.\nAnswer the question yourself and check if the right answer is indicated as being the correct one. Check the alternative answers.\nReturn the question to person A/the project manager."
+  },
+  {
+    "objectID": "development/qualityProcedure.html#download",
+    "href": "development/qualityProcedure.html#download",
+    "title": "Quality Procedure",
+    "section": "Download",
+    "text": "Download\nDownload word document here"
   },
   {
     "objectID": "development/ItemDevelopment.html",
@@ -152,27 +173,6 @@
     "title": "Item Development",
     "section": "Check output",
     "text": "Check output\nYou are required to check if the developed items properly work. Run the exams2html() function as a simple fast check to test your .Rmd file.\nIn addition run the following functions to check if the PDF is compiled correctly and if all the meta information is added properly. \\(\\LaTeX\\) must be installed for the PDF function to work.\n\n# install the develpment version to use browse_excersise()\ninstall.packages(\"exams\", repos = \"http://R-Forge.R-project.org\", dependencies = TRUE, type = \"source\")\nlibrary(exams)\nexams2html(file = \"\")\nexams:::browse_exercise(file = \"\")\nexams2pdf(file = \"\")\nexams2pandoc(file = \"\")"
-  },
-  {
-    "objectID": "development/qualityProcedure.html#checklist-part-1-person-a",
-    "href": "development/qualityProcedure.html#checklist-part-1-person-a",
-    "title": "Quality Procedure",
-    "section": "Checklist part 1: Person A",
-    "text": "Checklist part 1: Person A\nQuestion content\n\nIs the wording of the question simple and concise? (An item is not meant to gauge a student’s verbal understanding over their overall mastery of the question of the subject.)\n\nNo complicated sentence structures or sentences/texts of excessive length.\nNo excessive use of complicated words, jargon, slang, or abbreviations.\nUse of standard statistical terminology.\nAnswer alternatives are formulated in as short a form as possible.\n\nDoes the question include no unclear or double negatives?\n\nNo double negatives in the question.\nNo combinations of a negation in the question and a negation in the answers.\nAl required negatives are made obvious. (By underlining the negative.)\n\nMake sure it is impossible to interpret the question in different ways or with multiple meanings.\n\nQuestions should not assess the correctness of two statements at once.\nQuestions should not have a possibility to supply a different answer than intended. (Play the devil’s advocate, analyze the different meanings terms in the question could possibly have.)\n\nHave universal quantifiers (never, all, always) been used correctly?\n\nIn the phrasing of the question.\nIn the phrasing of the answers.\n\nIs there a solid connection between the answers and the question?\n\nThe phrasing of each answer ties in with the question.\nPreferably integrate as many words into the question instead of restating them in each of the answer alternatives.\n\nAre the answer alternatives exclusive, logical, and clear?\n\nNo wrong answers that can be defended as right answers.\nAvoid, where possible, dummy-alternatives (for example ‘none of the above’).\nNo unintentional directions to either a wrong answer or the correct answer.\nAvoid answer alternatives that rely on a logical inaccuracy.\nAvoid nonsensical alternative answers as much as possible. (Alternative answers that most people would know are untrue/incorrect.)\n\n\nLayout\n\nNo grammar or spelling errors.\nAll figures and graphs are clear and easy to read.\nPunctuation marks such as comma’s, periods, semicolons, etc. are all checked and placed correctly.\nBe consistent in your placement of periods in multiple choice answers: o Numbers and few words require no period at the end of the answer. o Fully formed sentences and phrases do require a period at the end of the answer.\nWhen using an external source (for example graphs, figures or datasets), the proper citation is given. Copyright and Creative Commons No questions protected under copyright are to be added to the item bank. (Questions originating from a published book, or clearly derived questions, datasets, graphs and figures from books or other materials protected under copyright law.) Check the source of the question before adding it to the item bank. Ask your faculty’s project coordinator which sources have possibly been used (for example textbooks from courses, or online materials). Is it original material? Then the item may be added. When in doubt use the following as a basis and consult your project coordinator about the admissibility of the question:\n\nWhen only changing certain objective elements of the question, it falls under partial processing or imitation in a modified form, which still falls under copyright infringement.\nWhen writing a question in another order or with a different/new question, but with similar elements, it does not full under copyright infringement."
-  },
-  {
-    "objectID": "development/qualityProcedure.html#checklist-part-2-person-b",
-    "href": "development/qualityProcedure.html#checklist-part-2-person-b",
-    "title": "Quality Procedure",
-    "section": "Checklist part 2: Person B",
-    "text": "Checklist part 2: Person B\n\nCheck the compiled version of the question. (Question plus layout.)\nGo through part one of this checklist once more.\nCheck that all figures and graphs are included in the question.\nCheck that all necessarily documents are present in the folder.\nAnswer the question yourself and check if the right answer is indicated as being the correct one. Check the alternative answers.\nReturn the question to person A/the project manager."
-  },
-  {
-    "objectID": "development/qualityProcedure.html#download",
-    "href": "development/qualityProcedure.html#download",
-    "title": "Quality Procedure",
-    "section": "Download",
-    "text": "Download\nDownload word document here"
   },
   {
     "objectID": "instructions.html",
