@@ -34,7 +34,7 @@ format: html
 
 <div class="card bg-light g-col-12 g-col-md-6 g-col-lg-4">
 <div class="card-body">
-<h5 class="card-title">Collabortation</h5>
+<h5 class="card-title">Collaboration</h5>
 <p class="card-text">In joint collaboration between the UvA, VU, UU and EUR, we set out to create a national itembank for statistics.</p>
 </div>
 </div>
@@ -42,7 +42,10 @@ format: html
 <div class="card bg-light g-col-12 g-col-md-6 g-col-lg-4">
 <div class="card-body">
 <h5 class="card-title">Community</h5>
-<p class="card-text">By creating a community of statistics teachers, we aim to have a wide use of our itembank.</p>
+<p class="card-text">By creating a community of statistics teachers, we aim to have a wide use of the itembank.</p>
+<p>Join the community at:</p>
+<a href="https://www.linkedin.com/groups/12464778/" class="btn btn-primary btn-outline-primary" role="button">Linkedin</a>
+<a href="https://www.vvsor.nl/education/" class="btn btn-primary btn-outline-primary" role="button">VVSOR</a>
 </div>
 </div>
 
@@ -55,7 +58,11 @@ format: html
 
 :::
 
+
+
+
 </div>
+
 
 ```{=html}
 <script>

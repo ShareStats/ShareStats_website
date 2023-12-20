@@ -17,12 +17,10 @@ website:
     right:
       - text: "About ShareStats"
         menu: 
-        - text: "Who we are"
-          #href: about.qmd
         - text: "Meet the team"
-          #href: team.qmd
+          href: team/team.qmd
         - text: "Contact us"
-          #href: contact.qmd
+          href: mailto:info@sharestats.nl
     left: 
       - text: "Itembank"
         href: items-df.qmd

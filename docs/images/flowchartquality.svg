@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 28.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 2012 2630" style="enable-background:new 0 0 2012 2630;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#53BA9E;stroke:#FFFFFF;stroke-width:4.5833;stroke-miterlimit:8;}
+	.st1{font-family:'ArialMT';}
+	.st2{font-size:48px;}
+	.st3{fill-rule:evenodd;clip-rule:evenodd;fill:#58C5A7;}
+	.st4{fill-rule:evenodd;clip-rule:evenodd;fill:#5DBFA4;stroke:#FFFFFF;stroke-width:4.5833;stroke-miterlimit:8;}
+	.st5{font-family:'Arial-ItalicMT';}
+	.st6{fill-rule:evenodd;clip-rule:evenodd;fill:#63C8AC;}
+	.st7{fill-rule:evenodd;clip-rule:evenodd;fill:#67C4A9;stroke:#FFFFFF;stroke-width:4.5833;stroke-miterlimit:8;}
+	.st8{fill-rule:evenodd;clip-rule:evenodd;fill:#6ECCB1;}
+	.st9{fill-rule:evenodd;clip-rule:evenodd;fill:#72C8AF;stroke:#FFFFFF;stroke-width:4.5833;stroke-miterlimit:8;}
+	.st10{font-size:41px;}
+	.st11{fill-rule:evenodd;clip-rule:evenodd;fill:#79CFB6;}
+	.st12{fill-rule:evenodd;clip-rule:evenodd;fill:#7CCDB4;stroke:#FFFFFF;stroke-width:4.5833;stroke-miterlimit:8;}
+	.st13{fill-rule:evenodd;clip-rule:evenodd;fill:#84D3BB;}
+	.st14{fill-rule:evenodd;clip-rule:evenodd;fill:#86D1BA;stroke:#FFFFFF;stroke-width:4.5833;stroke-miterlimit:8;}
+	.st15{fill-rule:evenodd;clip-rule:evenodd;fill:#8FD7C0;}
+	.st16{fill-rule:evenodd;clip-rule:evenodd;fill:#90D6C0;stroke:#FFFFFF;stroke-width:4.5833;stroke-miterlimit:8;}
+	.st17{fill-rule:evenodd;clip-rule:evenodd;fill:#9ADAC6;}
+	.st18{fill-rule:evenodd;clip-rule:evenodd;fill:#9BDAC6;stroke:#FFFFFF;stroke-width:4.5833;stroke-miterlimit:8;}
+	.st19{fill-rule:evenodd;clip-rule:evenodd;fill:#A5DECB;}
+	.st20{fill-rule:evenodd;clip-rule:evenodd;fill:#A5DECB;stroke:#FFFFFF;stroke-width:4.5833;stroke-miterlimit:8;}
+	.st21{fill-rule:evenodd;clip-rule:evenodd;fill:#7CCDB4;}
+	.st22{fill:none;stroke:#7CCDB4;stroke-miterlimit:8;}
+</style>
+<g transform="matrix(1 0 0 1 0 4)">
+	<g>
+		<path class="st0" d="M421.5,20.7c0-11.2,9-20.2,20.2-20.2h1128.6c11.2,0,20.2,9,20.2,20.2v161.6c0,11.2-9,20.2-20.2,20.2
+			l-1128.6,0c-11.2,0-20.2-9-20.2-20.2V20.7z"/>
+		<text transform="matrix(1 0 0 1 718.059 114.9999)" class="st1 st2">Select a pre-existing question</text>
+		<text transform="matrix(1 0 0 1 946.401 114.9999)" class="st1 st2">-</text>
+		<path class="st3" d="M1032.8,214v38h18.2l-45.5,38L960,252h18.2v-38H1032.8z"/>
+		<path class="st4" d="M421.5,322.7c0-11.2,9-20.2,20.2-20.2h1128.6c11.2,0,20.2,9,20.2,20.2v161.6c0,11.2-9,20.2-20.2,20.2
+			l-1128.6,0c-11.2,0-20.2-9-20.2-20.2V322.7z"/>
+		<text transform="matrix(1 0 0 1 595.9974 390.6867)" class="st1 st2">Check if the question can be separated </text>
+		<text transform="matrix(1 0 0 1 527.7794 442.9997)" class="st5 st2">(not dependent on other questions or answers)</text>
+		<path class="st6" d="M1032.8,517v37.5h18.2l-45.5,37.5L960,554.5h18.2V517H1032.8z"/>
+		<path class="st7" d="M421.5,625.6c0-11.1,9-20.1,20.1-20.1h1128.8c11.1,0,20.1,9,20.1,20.1v160.8c0,11.1-9,20.1-20.1,20.1H441.6
+			c-11.1,0-20.1-9-20.1-20.1V625.6z"/>
+		<text transform="matrix(1 0 0 1 687.167 719)" class="st1 st2">Put the question in R-markdown</text>
+		<path class="st8" d="M1111.4,802l27.3,36.6l14.5-10.8l-9.2,63.4l-63.4-9.3l14.5-10.8l-27.3-36.6L1111.4,802z"/>
+		<path class="st9" d="M867.5,923.7c0-11.2,9.5-20.2,21.3-20.2H1607c11.8,0,21.3,9,21.3,20.2v161.6c0,11.2-9.5,20.2-21.3,20.2H888.8
+			c-11.8,0-21.3-9-21.3-20.2V923.7z"/>
+		<text transform="matrix(1 0 0 1 949.208 970)" class="st1 st10">If an English/Dutch version of the </text>
+		<text transform="matrix(1 0 0 1 935.687 1016)" class="st1 st10">question exists, put it in a separate </text>
+		<text transform="matrix(1 0 0 1 889.212 1061)" class="st1 st10">Markdown document in the same folder</text>
+		<path class="st11" d="M1167.2,1133.8l-30.2,41.5l14.7,10.7l-63.3,9.9l-9.9-63.3l14.7,10.7l30.2-41.5L1167.2,1133.8z"/>
+		<path class="st12" d="M421.5,1229.6c0-11.1,9-20.1,20.1-20.1h1128.8c11.1,0,20.1,9,20.1,20.1v160.8c0,11.1-9,20.1-20.1,20.1H441.6
+			c-11.1,0-20.1-9-20.1-20.1V1229.6z"/>
+		<text transform="matrix(1 0 0 1 758.392 1297)" class="st1 st2">Add labels and taxonomy</text>
+		<text transform="matrix(1 0 0 1 756.674 1350)" class="st1 st2">(including Garfield labels)</text>
+		<path class="st13" d="M1032.8,1423v38h18.2l-45.5,38l-45.5-38h18.2v-38H1032.8z"/>
+		<path class="st14" d="M421.5,1531.7c0-11.2,9-20.2,20.2-20.2h1128.6c11.2,0,20.2,9,20.2,20.2v161.6c0,11.2-9,20.2-20.2,20.2H441.7
+			c-11.2,0-20.2-9-20.2-20.2V1531.7z"/>
+		<text transform="matrix(1 0 0 1 433.6133 1625)" class="st1 st2">Check if Markdown is running the document correctly</text>
+		<path class="st15" d="M1032.8,1725v38h18.2l-45.5,38l-45.5-38h18.2v-38H1032.8z"/>
+		<path class="st16" d="M421.5,1833.7c0-11.2,9-20.2,20.2-20.2h1128.6c11.2,0,20.2,9,20.2,20.2v161.6c0,11.2-9,20.2-20.2,20.2H441.7
+			c-11.2,0-20.2-9-20.2-20.2V1833.7z"/>
+		<text transform="matrix(1 0 0 1 436.0126 1894.2483)" class="st1 st2">Check all aspects of part 1 of the checklist and save </text>
+		<text transform="matrix(1 0 0 1 559.5579 1954)" class="st1 st2">this in the same folder as the question itself</text>
+		<path class="st17" d="M1032.8,2027v38h18.2l-45.5,38l-45.5-38h18.2v-38H1032.8z"/>
+		<path class="st18" d="M421.5,2135.7c0-11.2,9-20.2,20.2-20.2h1128.6c11.2,0,20.2,9,20.2,20.2v161.6c0,11.2-9,20.2-20.2,20.2H441.7
+			c-11.2,0-20.2-9-20.2-20.2V2135.7z"/>
+		<text transform="matrix(1 0 0 1 462.3177 2203)" class="st1 st2">Pass the question on to a colleague for the second</text>
+		<text transform="matrix(1 0 0 1 748.3932 2265.5515)" class="st1 st2">part of the controle phase</text>
+		<path class="st19" d="M1032.8,2329v38h18.2l-45.5,38l-45.5-38h18.2v-38H1032.8z"/>
+		<path class="st20" d="M421.5,2438.6c0-11.1,9-20.1,20.1-20.1h1128.8c11.1,0,20.1,9,20.1,20.1v160.8c0,11.1-9,20.1-20.1,20.1H441.6
+			c-11.1,0-20.1-9-20.1-20.1V2438.6z"/>
+		<text transform="matrix(1 0 0 1 675.01 2532)" class="st1 st2">Final approval by project member</text>
+	</g>
+</g>
+<polygon class="st21" points="572.5,1160.6 594.5,1160.6 594.5,839.5 656.1,839.5 656.1,1160.6 678.2,1160.6 625.3,1193.2 "/>
+<polygon class="st22" points="572.5,1160.6 594.5,1160.6 594.5,839.5 656.1,839.5 656.1,1160.6 678.2,1160.6 625.3,1193.2 "/>
+</svg>

@@ -1,0 +1,7 @@
+---
+title: "Meet the Team"
+listing:
+  contents: team/people
+  type: grid
+---
+
