@@ -24,8 +24,8 @@ website:
     left: 
       - text: "Itembank"
         href: items-df.qmd
-      - text: "Instructions"
-        href: instructions.qmd
+      # - text: "Instructions"
+      #   href: instructions.qmd
       - text: "Taxonomy"
         menu: 
           - text: "Taxonimy Tree"
