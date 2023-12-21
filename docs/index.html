@@ -1,801 +1,477 @@
 <!DOCTYPE html>
-<html lang="en-us">
-<head>
-	<meta charset="utf-8">
-	<title></title>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
-	<!-- mobile responsive meta -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<meta name="description" content="Project site for ShareStats">
-	
-	<meta name="author" content="Themefisher">
-	<meta name="generator" content="Hugo 0.83.1" />
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
 
-	<!-- plugins -->
-	
-	<link rel="stylesheet" href="https://www.sharestats.nl/plugins/bootstrap/bootstrap.min.css">
-	
-	<link rel="stylesheet" href="https://www.sharestats.nl/plugins/themify-icons/themify-icons.css">
-	
-	<link rel="stylesheet" href="https://www.sharestats.nl/plugins/magnific-popup/magnific-popup.css">
-	
-	<link rel="stylesheet" href="https://www.sharestats.nl/plugins/slick/slick.css">
-	
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anaheim%7cQuattrocento&#43;Sans:400,700&amp;display=swap">
-	
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-	<!-- Main Stylesheet -->
-	
-	<link rel="stylesheet" href="https://www.sharestats.nl/css/style.min.css" media="screen">
 
-	<!-- Custom stylesheet - for your changes -->
-	
-  <link rel="stylesheet" href="https://www.sharestats.nl/css/custom.min.css" media="screen">
+<title>ShareStats</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
 
-	<!--Favicon-->
-    <link rel="shortcut icon" type="image/png" href="/images/icon-192x192.png">
-    <link rel="shortcut icon" sizes="192x192" href="/images/icon-192x192.png">
-    <link rel="apple-touch-icon" href="/images/icon-192x192.png">
 
-	
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<link href="./images/favicon.png" rel="icon" type="image/png">
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
 
+
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="bootstrap.css">
+<link rel="stylesheet" href="custom.css">
 </head>
 
+<body class="nav-fixed">
 
-<body id="body" data-spy="scroll" data-target=".navbar" data-offset="55">
-  <div id="content">
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <img src="./images/logoWT.png" alt="ShareStats" class="navbar-logo">
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./items-df.html" rel="" target="">
+ <span class="menu-text">Itembank</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-taxonomy" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">Taxonomy</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-taxonomy">    
+        <li>
+    <a class="dropdown-item" href="./taxonomy/taxonomy_tree.html" rel="" target="">
+ <span class="dropdown-text">Taxonimy Tree</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./taxonomy/taxonomy_visual.html" rel="" target="">
+ <span class="dropdown-text">Taxonomy Visual</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./taxonomy/tags.html" rel="" target="">
+ <span class="dropdown-text">Tags</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-development" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">Development</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-development">    
+        <li>
+    <a class="dropdown-item" href="./development/ItemDevelopment.html" rel="" target="">
+ <span class="dropdown-text">Item development</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./development/qualityProcedure.html" rel="" target="">
+ <span class="dropdown-text">Quality procedure</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="./news/index.html" rel="" target="">
+ <span class="menu-text">News</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-about-sharestats" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">About ShareStats</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-about-sharestats">    
+        <li>
+    <a class="dropdown-item" href="./team/team.html" rel="" target="">
+ <span class="dropdown-text">Meet the team</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="mailto:info@sharestats.nl" rel="" target="">
+ <span class="dropdown-text">Contact us</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+            <div class="quarto-navbar-tools">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
     
-
-
-
-
-
-
-<!-- Welcome Slider-->
-<section class="hero-area" style='background-image: url("https://www.sharestats.nl/images/backgrounds/hero-area-sharestats.webp"); background-attachment: fixed;'>
-	
-	<img class="d-none" src="https://www.sharestats.nl/images/backgrounds/hero-area-sharestats.webp" onerror="this.onerror=null;this.parentElement.style.backgroundImage= 'url(https:\/\/www.sharestats.nl\/images\/backgrounds\/hero-area-sharestats.jpg)'"/>
-
-	<div class="block">
-
-		<h1><img src="/images/logo.svg" alt="ShareStats" /></h1>
-		<form action="/search/">
-			<div>
-				<label for="lunrsearch" style="display: none;">Search</label>
-				<input type="search" id="lunrsearch" name="q" maxlength="255" value="" placeholder="e.g., +ancova +dutch" />
-				<input type="submit" value="Search" class="btn-main" />
-			</div>
-		</form>
-
-		<p>The open statistics assessment itembank</p>
-		
-			
-			<a href="#about" class="btn btn-transparent page-scroll">About Us</a>
-			
-		
-	</div>
-</section>
-<!-- /Welcome Slider-->
-
-
-
-
-<section class="sticky-top navigation">
-	<div class="container">
-		<nav class="navbar navbar-expand-lg navbar-dark">
-			<a class="navbar-brand p-0" href="/">
-				
-				<img class="lozad" data-src="https://www.sharestats.nl/images/InfShareStatsColor.png" alt="ShareStats" height="42">
-				
-			</a>
-
-			<button class="navbar-toggler rounded-0" type="button" data-toggle="collapse" data-target="#navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-
-			<div class="collapse navbar-collapse" id="navigation">
-				<ul class="navbar-nav ml-auto">
-					
-					<li class="nav-item">
-            <a class="nav-link" href="https://www.sharestats.nl#feature">about</a>
-					</li>
-					
-					<li class="nav-item">
-            <a class="nav-link" href="https://www.sharestats.nl#team">team</a>
-					</li>
-					
-					<li class="nav-item">
-            <a class="nav-link" href="https://www.sharestats.nl#blog">blog</a>
-					</li>
-					
-					<li class="nav-item">
-            <a class="nav-link" href="https://www.sharestats.nl#contact">contact</a>
-					</li>
-					
-				</ul>
-				
-				<select id="select-language" onchange="location = this.value;">
-					
-					
-					
-					
-					
-					
-					
-					
-					<option id="en" value="https://www.sharestats.nl/" selected>EN
-					</option>
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					<option id="nl" value="https://www.sharestats.nl/nl/">NL</option>
-					
-					
-					
-					
-				</select>
-				
-			</div>
-		</nav>
-	</div>
-</section>
-
-
-
-
-
-
-<!-- Start About Section -->
-<section class="bg-one about section" id="about">
-	<div class="container">
-		<div class="row justify-content-center">
-			<div class="col-lg-12">
-				<!-- section title -->
-				<div class="title text-center wow fadeIn" data-wow-duration="1500ms">
-					<h2>  About <span class="color">
-						 Us  </span></h2>
-					<div class="border-meghna"></div>
-				</div>
-			</div>
-			<!-- /section title -->
-
-			
-			<!-- About item -->
-			<div class="col-lg-4 text-center wow fadeInUp" data-wow-duration="500ms">
-				<div class="block">
-					<div class="icon-box">
-						<i class="ti-money"></i>
-					</div>
-					<!-- Express About Yourself -->
-					<div class="content text-center">
-						<h3>Funding</h3>
-						<p>The ShareStats project is nationally funded by <a href="https://www.surf.nl/sharestats-statistiekopgaven-open-delen-met-een-vakcommunity-van-docenten">SURF</a> the collaborative organisation for ICT in Dutch education.</p>
-					</div>
-				</div>
-			</div>
-			
-			<!-- About item -->
-			<div class="col-lg-4 text-center wow fadeInUp" data-wow-duration="500ms">
-				<div class="block">
-					<div class="icon-box">
-						<i class="ti-layout-grid2"></i>
-					</div>
-					<!-- Express About Yourself -->
-					<div class="content text-center">
-						<h3>Collaboration</h3>
-						<p>In joint collaboration between the UvA, VU, UU and EUR, we set out to create a national item bank.</p>
-					</div>
-				</div>
-			</div>
-			
-			<!-- About item -->
-			<div class="col-lg-4 text-center wow fadeInUp" data-wow-duration="500ms">
-				<div class="block">
-					<div class="icon-box">
-						<i class="ti-user"></i>
-					</div>
-					<!-- Express About Yourself -->
-					<div class="content text-center">
-						<h3>Community</h3>
-						<p>By creating a <a href="#cta">community</a> of statistics teachers, we aim to make have a wide use of our itembank.</p>
-					</div>
-				</div>
-			</div>
-			
-		</div>
-	</div>
-</section>
-<!-- /about -->
-
-
-
-
-
-
-
-
-<!-- feature -->
-<section class="section section-bg about-2 padding-0" id="feature">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-1"></div>
-			<div class="col-lg-10">
-				<div class="content-block text-center">
-					<h2>We create statistics items.</h2>
-					<p>The goal of this project is to offer a freely accessible extensive collection of learning materials on statistics.</p>
-					<div class="row text-left">
-						
-						<div class="col-lg-6">
-							<div class="media">
-								
-								<div class="align-self-start mr-3">
-									<i class="ti-world"></i>
-								</div>
-								
-								<div class="media-body">
-									<h4 class="media-heading">R-exams</h4>
-									<p>With items in plain text <a href="https://en.wikipedia.org/wiki/Markdown">markdown</a> format, we use <a href="http://www.r-exams.org/intro/oneforall/">R-exams</a> to parse to many formats.</p>
-								</div>
-							</div>
-						</div>
-						
-						<div class="col-lg-6">
-							<div class="media">
-								
-								<div class="align-self-start mr-3">
-									<i class="ti-file"></i>
-								</div>
-								
-								<div class="media-body">
-									<h4 class="media-heading">Project</h4>
-									<p>Read our initial project <a href="files/SHARESTATS_Activiteitenplan_Open_leermateriaal.pdf">application</a> (Dutch only).</p>
-								</div>
-							</div>
-						</div>
-						
-						<div class="col-lg-6">
-							<div class="media">
-								
-								<div class="align-self-start mr-3">
-									<i class="ti-github"></i>
-								</div>
-								
-								<div class="media-body">
-									<h4 class="media-heading">OER</h4>
-									<p>Our itembank will be made available as Open Educational Resource material through our <a href="https://github.com/ShareStats">github</a> page.</p>
-								</div>
-							</div>
-						</div>
-						
-						<div class="col-lg-6">
-							<div class="media">
-								
-								<div class="align-self-start mr-3">
-									<i class="ti-list"></i>
-								</div>
-								
-								<div class="media-body">
-									<h4 class="media-heading">Taxonomy</h4>
-									<p>Our statistics Taxonomy will also be made available through our <a href="https://github.com/ShareStats">github</a> page.</p>
-								</div>
-							</div>
-						</div>
-						
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-1"></div>
-		</div>
-	</div>
-</section>
-<!-- /feature -->
-
-
-
-
-
-
-
-
-<!-- Start Call To Action -->
-<section id="cta" class="call-to-action section-sm bg-1 overly" style='background-image: url("https://www.sharestats.nl/images/backgrounds/bg-white-wall.webp")'>
-	
-	<img src="https://www.sharestats.nl/images/backgrounds/bg-white-wall.webp" style="display: none;" onerror="this.onerror=null;this.parentElement.style.backgroundImage= 'url(https:\/\/www.sharestats.nl\/images\/backgrounds\/bg-white-wall.jpg)'">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12 text-center">
-				<h2>Join our LinkedIn group</h2>
-				<p>Want to stay informed?</p>
-				
-				
-				<a href="https://www.linkedin.com/groups/12464778/" class="btn btn-main page-scroll">Join!</a>
-				
-				
-			</div>
-		</div>
-	</div>
-</section>
-<!-- Start Services Section -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- Start Our Team -->
-<section id="team" class="section">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-12">
-        <!-- section title -->
-        <div class="title text-center wow fadeInUp" data-wow-duration="500ms">
-          <h2> Our <span class="color">
-              Team </span></h2>
-          <div class="border-meghna"></div>
-        </div>
-      </div>
-      <!-- /section title -->
-
-      
-      <!-- team member -->
-      <div class="col-lg-3 col-md-6 col-12 wow fadeInDown" data-wow-duration="500ms">
-        <div class="team-member">
-          <div class="member-photo" onclick="document.location.href='\/people\/dimitris\/';">
-            <!-- member photo -->
-            <img class="img-fluid lozad" data-src="https://www.sharestats.nl/images/team/dimitris.webp" onerror="this.onerror=null;this.src='https:\/\/www.sharestats.nl\/images\/team\/dimitris.jpg'" alt="Dimitris Pavlopoulos">
-
-            <!-- member social profile -->
-            <div class="mask">
-              <ul class="list-inline">
-                
-                  
-                
-                  
-                
-                  <li class="list-inline-item"><a href="https://www.linkedin.com/in/dimitrispavlopoulos/"><i class="ti-linkedin"></i></a></li>
-                
-                  
-                
-              </ul>
-            </div>
-          </div>
-
-          <!-- member name & designation -->
-          <div class="member-meta">
-            <h4>Dimitris Pavlopoulos</h4>
-            <span>Vrije Universiteit Amsterdam</span>
-            <p><p>Together with Marike I will coordinate the quality control. Our goal is to collect a rich set of questions that can be applied directly to education of Methods and Statistics. Embark in the world of …</p></p>
-            <a class="btn btn-transparent" href="/people/dimitris/">Read more</a>
-          </div>
-        </div>
-      </div>
-      <!-- end team member -->
-      
-      <!-- team member -->
-      <div class="col-lg-3 col-md-6 col-12 wow fadeInDown" data-wow-duration="500ms">
-        <div class="team-member">
-          <div class="member-photo" onclick="document.location.href='\/people\/joran\/';">
-            <!-- member photo -->
-            <img class="img-fluid lozad" data-src="https://www.sharestats.nl/images/team/joran.webp" onerror="this.onerror=null;this.src='https:\/\/www.sharestats.nl\/images\/team\/joran.jpg'" alt="Joran Jongerling">
-
-            <!-- member social profile -->
-            <div class="mask">
-              <ul class="list-inline">
-                
-                  
-                
-                  
-                
-                  <li class="list-inline-item"><a href="https://www.linkedin.com/in/joran-jongerling-488b34aa/"><i class="ti-linkedin"></i></a></li>
-                
-                  
-                
-              </ul>
-            </div>
-          </div>
-
-          <!-- member name & designation -->
-          <div class="member-meta">
-            <h4>Joran Jongerling</h4>
-            <span>Erasmus Universiteit Rotterdam</span>
-            <p><p>I hope to be able to offer enough (high quality) questions to students, so they can finally practice enough to fully understand it. Hopefully that will eliminate a large portion of their fear for …</p></p>
-            <a class="btn btn-transparent" href="/people/joran/">Read more</a>
-          </div>
-        </div>
-      </div>
-      <!-- end team member -->
-      
-      <!-- team member -->
-      <div class="col-lg-3 col-md-6 col-12 wow fadeInDown" data-wow-duration="500ms">
-        <div class="team-member">
-          <div class="member-photo" onclick="document.location.href='\/people\/kirsten\/';">
-            <!-- member photo -->
-            <img class="img-fluid lozad" data-src="https://www.sharestats.nl/images/team/kirsten.webp" onerror="this.onerror=null;this.src='https:\/\/www.sharestats.nl\/images\/team\/kirsten.jpg'" alt="Kirsten Namesnik-Silvester">
-
-            <!-- member social profile -->
-            <div class="mask">
-              <ul class="list-inline">
-                
-                  
-                
-                  
-                
-                  <li class="list-inline-item"><a href="https://www.linkedin.com/in/kirsten-namesnik-107580a/"><i class="ti-linkedin"></i></a></li>
-                
-                  
-                
-              </ul>
-            </div>
-          </div>
-
-          <!-- member name & designation -->
-          <div class="member-meta">
-            <h4>Kirsten Namesnik-Silvester</h4>
-            <span>Universiteit Utrecht</span>
-            <p><p>It will be really nice if we can initiate a good collaboration. It is wastful to re-invent the wheel. Sharing information, in this case statistical questions, is a good step in the right direction! …</p></p>
-            <a class="btn btn-transparent" href="/people/kirsten/">Read more</a>
-          </div>
-        </div>
-      </div>
-      <!-- end team member -->
-      
-      <!-- team member -->
-      <div class="col-lg-3 col-md-6 col-12 wow fadeInDown" data-wow-duration="500ms">
-        <div class="team-member">
-          <div class="member-photo" onclick="document.location.href='\/people\/lidia\/';">
-            <!-- member photo -->
-            <img class="img-fluid lozad" data-src="https://www.sharestats.nl/images/team/lidia.webp" onerror="this.onerror=null;this.src='https:\/\/www.sharestats.nl\/images\/team\/lidia.jpg'" alt="Lidia Arends">
-
-            <!-- member social profile -->
-            <div class="mask">
-              <ul class="list-inline">
-                
-                  
-                
-                  
-                
-                  <li class="list-inline-item"><a href="https://www.linkedin.com/in/lidia-arends-79723517/"><i class="ti-linkedin"></i></a></li>
-                
-                  
-                
-              </ul>
-            </div>
-          </div>
-
-          <!-- member name & designation -->
-          <div class="member-meta">
-            <h4>Lidia Arends</h4>
-            <span>Erasmus Universiteit Rotterdam</span>
-            <p><p>For years we have been trying to come up with fun, new, original statistics questions at all kinds of study programs and universities. Seeing each other as partners and colleagues, instead of …</p></p>
-            <a class="btn btn-transparent" href="/people/lidia/">Read more</a>
-          </div>
-        </div>
-      </div>
-      <!-- end team member -->
-      
-      <!-- team member -->
-      <div class="col-lg-3 col-md-6 col-12 wow fadeInDown" data-wow-duration="500ms">
-        <div class="team-member">
-          <div class="member-photo" onclick="document.location.href='\/people\/marike\/';">
-            <!-- member photo -->
-            <img class="img-fluid lozad" data-src="https://www.sharestats.nl/images/team/marike.webp" onerror="this.onerror=null;this.src='https:\/\/www.sharestats.nl\/images\/team\/marike.jpg'" alt="Marike Polak">
-
-            <!-- member social profile -->
-            <div class="mask">
-              <ul class="list-inline">
-                
-                  
-                
-                  
-                
-                  <li class="list-inline-item"><a href="https://www.linkedin.com/in/marike-polak-074754112/"><i class="ti-linkedin"></i></a></li>
-                
-                  
-                
-              </ul>
-            </div>
-          </div>
-
-          <!-- member name & designation -->
-          <div class="member-meta">
-            <h4>Marike Polak</h4>
-            <span>Erasmus Universiteit Rotterdam</span>
-            <p><p>Together with Dimitris I coordinate the review and revision of statistical statements. With this we ensure that the already available assignments of all participating universities are drawn up in …</p></p>
-            <a class="btn btn-transparent" href="/people/marike/">Read more</a>
-          </div>
-        </div>
-      </div>
-      <!-- end team member -->
-      
-      <!-- team member -->
-      <div class="col-lg-3 col-md-6 col-12 wow fadeInDown" data-wow-duration="500ms">
-        <div class="team-member">
-          <div class="member-photo" onclick="document.location.href='\/people\/marleen\/';">
-            <!-- member photo -->
-            <img class="img-fluid lozad" data-src="https://www.sharestats.nl/images/team/marleen.webp" onerror="this.onerror=null;this.src='https:\/\/www.sharestats.nl\/images\/team\/marleen.jpg'" alt="Marleen de Moor">
-
-            <!-- member social profile -->
-            <div class="mask">
-              <ul class="list-inline">
-                
-                  
-                
-                  
-                
-                  <li class="list-inline-item"><a href="https://www.linkedin.com/in/marleen-de-moor-a02061159/"><i class="ti-linkedin"></i></a></li>
-                
-                  
-                
-              </ul>
-            </div>
-          </div>
-
-          <!-- member name & designation -->
-          <div class="member-meta">
-            <h4>Marleen de Moor</h4>
-            <span>Vrije Universiteit Amsterdam</span>
-            <p><p>As the general project leader of ShareStats I will be responsible for the planning and progress of the project. In addition, knowledge dissemination is one of my tasks: setting up an active subject …</p></p>
-            <a class="btn btn-transparent" href="/people/marleen/">Read more</a>
-          </div>
-        </div>
-      </div>
-      <!-- end team member -->
-      
-      <!-- team member -->
-      <div class="col-lg-3 col-md-6 col-12 wow fadeInDown" data-wow-duration="500ms">
-        <div class="team-member">
-          <div class="member-photo" onclick="document.location.href='\/people\/niels\/';">
-            <!-- member photo -->
-            <img class="img-fluid lozad" data-src="https://www.sharestats.nl/images/team/niels.webp" onerror="this.onerror=null;this.src='https:\/\/www.sharestats.nl\/images\/team\/niels.jpg'" alt="Niels Smits">
-
-            <!-- member social profile -->
-            <div class="mask">
-              <ul class="list-inline">
-                
-                  
-                
-                  
-                
-                  <li class="list-inline-item"><a href="https://www.linkedin.com/in/niels-smits-4799581b6/"><i class="ti-linkedin"></i></a></li>
-                
-                  
-                
-              </ul>
-            </div>
-          </div>
-
-          <!-- member name & designation -->
-          <div class="member-meta">
-            <h4>Niels Smits</h4>
-            <span>Universiteit van Amsterdam</span>
-            <p><p>In this project I mainly focus on writing R code to extend the functionality of the exams package. With this I hope to achieve that users have a greater choice in the digital learning or testing …</p></p>
-            <a class="btn btn-transparent" href="/people/niels/">Read more</a>
-          </div>
-        </div>
-      </div>
-      <!-- end team member -->
-      
-      <!-- team member -->
-      <div class="col-lg-3 col-md-6 col-12 wow fadeInDown" data-wow-duration="500ms">
-        <div class="team-member">
-          <div class="member-photo" onclick="document.location.href='\/people\/sharon\/';">
-            <!-- member photo -->
-            <img class="img-fluid lozad" data-src="https://www.sharestats.nl/images/team/sharon.webp" onerror="this.onerror=null;this.src='https:\/\/www.sharestats.nl\/images\/team\/sharon.jpg'" alt="Sharon Klinkenberg">
-
-            <!-- member social profile -->
-            <div class="mask">
-              <ul class="list-inline">
-                
-                  <li class="list-inline-item"><a href="www.klinkenberg.amsterdam"><i class="ti-world"></i></a></li>
-                
-                  <li class="list-inline-item"><a href="https://twitter.com/ShKlinkenberg"><i class="ti-twitter-alt"></i></a></li>
-                
-                  <li class="list-inline-item"><a href="https://www.linkedin.com/in/sharonklinkenberg/"><i class="ti-linkedin"></i></a></li>
-                
-                  <li class="list-inline-item"><a href="https://github.com/ShKlinkenberg"><i class="ti-github"></i></a></li>
-                
-              </ul>
-            </div>
-          </div>
-
-          <!-- member name & designation -->
-          <div class="member-meta">
-            <h4>Sharon Klinkenberg</h4>
-            <span>Universiteit van Amsterdam</span>
-            <p><p>As chairman of SURF&rsquo;s special interest group for digital assessments, I have seen over the past 10 years how difficult it is to share assessment items. Despite the available standards, exchange …</p></p>
-            <a class="btn btn-transparent" href="/people/sharon/">Read more</a>
-          </div>
-        </div>
-      </div>
-      <!-- end team member -->
-      
+<!-- main -->
+<main class="content page-columns page-full column-body" id="quarto-document-content">
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<div class="column-body page-columns page-full">
+
+<div id="hero" class="column-screen text-center">
+
+<!--?xml version="1.0" encoding="UTF-8" standalone="no"?-->
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" id="svg2" space="preserve" width="436.70844" height="245.70392" viewbox="0 0 436.70843 245.70392" sodipodi:docname="logo.svg" inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)">
+<metadata id="metadata8"><rdf:rdf><cc:work rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"></dc:type><dc:title></dc:title></cc:work></rdf:rdf></metadata><defs id="defs6"><clippath clippathunits="userSpaceOnUse" id="clipPath24"><path d="M 0,400 H 400 V 0 H 0 Z" id="path22" inkscape:connector-curvature="0"></path></clippath></defs><sodipodi:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" inkscape:pageopacity="0" inkscape:pageshadow="2" inkscape:window-width="2560" inkscape:window-height="1391" id="namedview4" showgrid="false" fit-margin-top="0" fit-margin-left="0" fit-margin-right="0" fit-margin-bottom="0" inkscape:zoom="2.1226173" inkscape:cx="216.04896" inkscape:cy="67.896578" inkscape:window-x="0" inkscape:window-y="0" inkscape:window-maximized="1" inkscape:current-layer="g10"></sodipodi:namedview><g id="g10" inkscape:groupmode="layer" inkscape:label="InfShareStatsSquare" transform="matrix(1.3333333,0,0,-1.3333333,-51.559933,358.2726)"><text transform="matrix(1,0,0,-1,36.4438,85.001)" style="font-variant:normal;font-weight:500;font-stretch:normal;font-size:71.81130219px;font-family:'Lato Medium';-inkscape-font-specification:Lato-Medium;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;" id="text16"><tspan x="0 38.454952 78.597466 114.4313 139.38573 176.44037 213.88995 239.88565 275.2886 301.2843" y="0" sodipodi:role="line" id="tspan14">ShareStats</tspan></text> <g id="g18" style="fill:#ffffff" transform="matrix(0.60687211,0,0,0.60687211,80.315034,71.540752)"><g id="g20" clip-path="url(#clipPath24)" style="fill:#ffffff"><g id="g26" transform="translate(177.0029,273.2461)" style="fill:#ffffff; stroke-width: 2;"><path d="m 0,0 c -20.01,24.095 -42.491,36.147 -67.454,36.147 -12.693,0 -23.989,-4.195 -33.888,-12.587 -13.122,-11.407 -19.688,-25.608 -19.688,-42.602 0,-11.19 3.767,-21.09 11.297,-29.693 10.544,-12.053 23.994,-18.074 40.343,-18.074 12.698,0 24.962,4.625 36.793,13.878 8.608,6.884 22.163,21.085 40.666,42.603 C 5.704,-6.455 3.016,-3.016 0,0 m 50.994,-38.729 c 20.01,-24.101 42.496,-36.148 67.454,-36.148 12.698,0 23.994,4.301 33.888,12.91 13.127,11.185 19.687,25.279 19.687,42.28 0,11.401 -3.761,21.406 -11.295,30.015 -10.541,12.047 -23.99,18.073 -40.343,18.073 -12.694,0 -24.958,-4.735 -36.793,-14.2 -8.604,-6.672 -22.159,-20.873 -40.666,-42.603 2.581,-3.873 5.274,-7.317 8.068,-10.327 M 33.889,19.365 c 2.799,3.01 5.92,6.021 9.359,9.036 19.365,15.492 42.391,23.238 69.067,23.238 19.154,0 35.291,-6.243 48.413,-18.719 14.846,-14.418 22.269,-31.846 22.269,-52.285 0,-17.217 -5.376,-32.385 -16.138,-45.507 -13.554,-17 -31.088,-25.497 -52.607,-25.497 -9.894,0 -19.576,1.72 -29.047,5.164 -21.513,7.529 -39.909,21.301 -55.189,41.311 -7.101,-7.962 -11.297,-12.587 -12.588,-13.877 -2.793,-3.445 -6.021,-6.456 -9.682,-9.038 -19.365,-15.709 -42.386,-23.56 -69.068,-23.56 -19.148,0 -35.285,6.238 -48.411,18.719 -14.847,14.413 -22.27,31.841 -22.27,52.285 0,17.212 5.381,32.381 16.137,45.507 13.555,16.995 31.095,25.497 52.608,25.497 9.899,0 19.582,-1.724 29.047,-5.164 21.301,-7.317 39.592,-21.089 54.867,-41.311 7.317,8.174 11.73,12.91 13.233,14.201" style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff" id="path28" inkscape:connector-curvature="0"></path></g></g></g></g>
+</svg>
+<p style="color: white;">
+The open statistics assessment itembank
+</p>
+<div =="" id="searchBox">
+<form method="GET" action="items-df.html" id="item__searchbox" class="d-flex">
+
+<input id="searchbar" class="form-control me-sm-2" type="text" placeholder="Search for stat items" name="query"> <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+
+</form>
+
+<!-- <a href="items-df.qmd" class="btn btn-secondary">Explore the Itembank</a> -->
+</div>
+</div>
+<div class="column-screen mx-auto container grid p-4">
+<div class="card bg-light g-col-12 g-col-md-6 g-col-lg-4">
+<div class="card-body">
+<h5 class="card-title">
+Collaboration
+</h5>
+<p class="card-text">
+In joint collaboration between the UvA, VU, UU and EUR, we set out to create a national itembank for statistics.
+</p>
+</div>
+</div>
+<div class="card bg-light g-col-12 g-col-md-6 g-col-lg-4">
+<div class="card-body">
+<h5 class="card-title">
+Community
+</h5>
+<p class="card-text">
+By creating a community of statistics teachers, we aim to have a wide use of the itembank.
+</p>
+<p>
+Join the community at:
+</p>
+<p><a href="https://www.linkedin.com/groups/12464778/" class="btn btn-primary btn-outline-primary" role="button">Linkedin</a> <a href="https://www.vvsor.nl/education/" class="btn btn-primary btn-outline-primary" role="button">VVSOR</a></p>
+</div>
+</div>
+<div class="card bg-light g-col-12 g-col-md-6 g-col-lg-4">
+<div class="card-body">
+<h5 class="card-title">
+Funding
+</h5>
+<p class="card-text">
+The ShareStats project was nationally funded by <a href="https://www.surf.nl/sharestats-statistiekopgaven-open-delen-met-een-vakcommunity-van-docenten">SURF</a> the collaborative organisation for ICT in Dutch education.
+</p>
+</div>
+</div>
+</div>
+</div>
+<script>
+
+  var tl = anime.timeline({
+});
+
+tl.add({
+  targets: '#g26 path',
+  strokeDashoffset: [anime.setDashoffset, 0],
+  fill: ['transparent','#FFFFFF'],
+  easing: 'easeInOutSine',
+  duration: 3000
+})
+
+</script>
+
+
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">Copyright © 2023 ShareStats.nl</div>   
+    <div class="nav-footer-center">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/ShareStats/ShareStats_website/">
+      <i class="bi bi-github" role="img" aria-label="GitHub">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+    <div class="nav-footer-right">
+      &nbsp;
     </div>
   </div>
-</section>
-<!-- /team -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- Start Blog Section -->
-<section id="blog" class="section">
-	<div class="container">
-		<div class="row justify-content-center">
-			<div class="col-lg-12">
-				<!-- section title -->
-				<div class="title text-center wow fadeInDown">
-					<h2>  Latest <span class="color">
-							 Post  </span></h2>
-					<div class="border-meghna"></div>
-				</div>
-			</div>
-			<!-- /section title -->
-
-			
-			<article class="col-lg-4 col-md-6 col-12 clearfix wow fadeInUp mb-4" data-wow-duration="500ms">
-  <div class="post-block">
-    <div class="media-wrapper">
-      <img class="img-fluid lozad" data-src="https://www.sharestats.nl/images/blog/blog-post-3.webp" onerror="this.onerror=null;this.src='https:\/\/www.sharestats.nl\/images\/blog\/blog-post-3.jpg'">
-    </div>
-
-    <div class="content">
-      <h3><a href="https://www.sharestats.nl/blog/sharestats-started/">ShareStats started!</a></h3>
-      <p>The ShareStats project started on September 1, 2020. The project runs for 2 years and is funded by SURF and the participating universities.</p>
-      <a class="btn btn-transparent" href="https://www.sharestats.nl/blog/sharestats-started/">Read more</a>
-    </div>
-  </div>
-</article>
-
-			
-
-			<div class="all-post text-center col-lg-12">
-				<a class="btn btn-main" href="https://www.sharestats.nl/blog">View All Post</a>
-			</div>
-		</div>
-	</div>
-</section>
-<!-- /blog -->
-
-
-
-
-
-
-<!-- Start Contact Us -->
-<section id="contact" class="contact-us section-bg">
-	<div class="container pb-5">
-		<div class="row">
-			<div class="col-lg-12">
-				<!-- section title -->
-				<div class="title text-center wow fadeIn" data-wow-duration="500ms">
-					<h2> Contact <span class="color">
-							  Us </span></h2>
-					<div class="border-meghna"></div>
-				</div>
-			</div>
-			<!-- /section title -->
-
-			<!-- Contact Form -->
-			
-			<div class="contact-details" style="margin: 0 auto;">
-				
-				<div class="con-info clearfix">
-					<i class="ti-email"></i>
-					<span>Email: info@sharestats.nl</span>
-				</div>
-				
-			</div>
-			
-		</div>
-	</div>
-</section>
-<!-- /contact -->
-
-
-
-
-
-
-
-  </div><!-- end Contact Area -->
-<footer id="footer" class="section-bg">
-	<div class="container">
-		<div class="row wow fadeInUp" data-wow-duration="500ms">
-			<div class="col-xl-12">
-
-				<!-- Footer Social Links -->
-				<div class="social-icon">
-					<ul class="list-inline">
-						
-						<li class="list-inline-item"><a href="https://github.com/ShareStats"><i class="ti-github"></i></a></li>
-						
-						<li class="list-inline-item"><a href="https://www.linkedin.com/groups/12464778/"><i class="ti-linkedin"></i></a></li>
-						
-					</ul>
-				</div>
-
-				<!-- copyright -->
-				<div class="copyright text-center">
-					<a href="https://www.sharestats.nl/">
-						<img src="https://www.sharestats.nl/images/InfShareStatsColor.png" alt="ShareStats" height="42" />
-					</a>
-					<br>
-					<p>Copyright © 2021 - powered by Hugo</p>
-				</div>
-			</div>
-		</div>
-	</div>
 </footer>
-<!-- /footer -->
-
-<!-- Google Map API -->
 
 
-<!-- JS Plugins -->
 
-<script src="https://www.sharestats.nl/plugins/jquery/jquery.min.js"></script>
-
-<script src="https://www.sharestats.nl/plugins/bootstrap/bootstrap.min.js"></script>
-
-<script src="https://www.sharestats.nl/plugins/slick/slick.min.js"></script>
-
-<script src="https://www.sharestats.nl/plugins/shuffle/shuffle.min.js"></script>
-
-<script src="https://www.sharestats.nl/plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
-
-<script src="https://www.sharestats.nl/plugins/lazy-load/lozad.min.js"></script>
-
-<script src="https://www.sharestats.nl/plugins/google-map/map.js"></script>
-
-
-<!-- Main Script -->
-
-<script src="https://www.sharestats.nl/js/script.min.5db5ae6f88052715e823d7c52f3fa7a832565352b0f76c1d2cee2a3b564a0716fa9d51878a9965389c3d856f2d7c6330.js" integrity="sha384-XbWub4gFJxXoI9fFLz&#43;nqDJWU1Kw92wdLO4qO1ZKBxb6nVGHipllOJw9hW8tfGMw"></script>
-
-
-</body>
-
-</html>
+</body></html>

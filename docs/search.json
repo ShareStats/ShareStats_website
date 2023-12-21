@@ -1,0 +1,317 @@
+[
+  {
+    "objectID": "team/people/sharon.html",
+    "href": "team/people/sharon.html",
+    "title": "Sharon Klinkenberg",
+    "section": "",
+    "text": "Als voorzitter van de special interest group digitaal toetsen van SURF heb ik de afgelopen 10 jaar gezien hoe lastig het is om toetsitems te delen. Ondanks de beschikbare standaarden is uitwisseling tussen toetsapplicaties nog steeds een uitdaging. ShareStats moet de bron worden die in iedere toetsapplicatie ingeladen kan worden. Ik zal me bezig houden met het kwaliteitsmodel en toetsvragen uit een eerder SURF project, de statistiek fabriek, geschikt maken voor ShareStats."
+  },
+  {
+    "objectID": "team/people/lidia.html",
+    "href": "team/people/lidia.html",
+    "title": "Lidia Arends",
+    "section": "",
+    "text": "Al jaren proberen we bij allerlei opleidingen en universiteiten leuke, nieuwe, originele statistiekvragen te verzinnen. Elkaar daarbij zien als partners en collega’s, in plaats van concurrenten, opent de deur om onze krachten en ideeën te bundelen zodat we gezamenlijk komen tot beter statistiekonderwijs voor al onze studenten. Als raken verbinden wordt, volgt samenwerken vanzelf."
+  },
+  {
+    "objectID": "team/people/dimitris.html",
+    "href": "team/people/dimitris.html",
+    "title": "Dimitris Pavlopoulos",
+    "section": "",
+    "text": "Samen met Marike ga ik de verzameling en de kwalitateitscontrole van toetsvragen coordineren. Ons doel is een rijke pool van vragen te krijgen die direct inzetbaar zijn in het onderwijs van Methoden en Statistiek. Embark in the world of Statistics. It’s not a necessary evil, but a tool to understand how the world works."
+  },
+  {
+    "objectID": "team/people/kirsten.html",
+    "href": "team/people/kirsten.html",
+    "title": "Kirsten Namesnik-Silvester",
+    "section": "",
+    "text": "Het zal fijn zijn als er een goede samenwerking op gang komt. Het is zonde om allemaal het wiel opnieuw uit te vinden. Informatie, en in dit geval statistiekvragen delen is echt een goede stap in de juiste richting! Life is not about taking something, it is all about sharing everything."
+  },
+  {
+    "objectID": "team/team.html",
+    "href": "team/team.html",
+    "title": "Meet the Team",
+    "section": "",
+    "text": "Dimitris Pavlopoulos\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJoran Jongerling\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nKirsten Namesnik-Silvester\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLidia Arends\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMarike Polak\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMarleen de Moor\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNiels Smits\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSharon Klinkenberg\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "news/index.html",
+    "href": "news/index.html",
+    "title": "ShareStats Newsletters",
+    "section": "",
+    "text": "ShareStats started!\n\n\n\n\n\nNieuwsbrief 1\n\n\n\n\n\n\nOct 7, 2020\n\n\nMarleen de Moor\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "",
+    "section": "",
+    "text": "image/svg+xmlShareStats \n\n\nThe open statistics assessment itembank\n\n\n\n\n Search\n\n\n\n\n\n\n\n\n\n\nCollaboration\n\n\nIn joint collaboration between the UvA, VU, UU and EUR, we set out to create a national itembank for statistics.\n\n\n\n\n\n\nCommunity\n\n\nBy creating a community of statistics teachers, we aim to have a wide use of the itembank.\n\n\nJoin the community at:\n\nLinkedin VVSOR\n\n\n\n\n\nFunding\n\n\nThe ShareStats project was nationally funded by SURF the collaborative organisation for ICT in Dutch education."
+  },
+  {
+    "objectID": "development/qualityProcedure.html#checklist-part-1-person-a",
+    "href": "development/qualityProcedure.html#checklist-part-1-person-a",
+    "title": "Quality Procedure",
+    "section": "Checklist part 1: Person A",
+    "text": "Checklist part 1: Person A\nQuestion content\n\nIs the wording of the question simple and concise? (An item is not meant to gauge a student’s verbal understanding over their overall mastery of the question of the subject.)\n\nNo complicated sentence structures or sentences/texts of excessive length.\nNo excessive use of complicated words, jargon, slang, or abbreviations.\nUse of standard statistical terminology.\nAnswer alternatives are formulated in as short a form as possible.\n\nDoes the question include no unclear or double negatives?\n\nNo double negatives in the question.\nNo combinations of a negation in the question and a negation in the answers.\nAl required negatives are made obvious. (By underlining the negative.)\n\nMake sure it is impossible to interpret the question in different ways or with multiple meanings.\n\nQuestions should not assess the correctness of two statements at once.\nQuestions should not have a possibility to supply a different answer than intended. (Play the devil’s advocate, analyze the different meanings terms in the question could possibly have.)\n\nHave universal quantifiers (never, all, always) been used correctly?\n\nIn the phrasing of the question.\nIn the phrasing of the answers.\n\nIs there a solid connection between the answers and the question?\n\nThe phrasing of each answer ties in with the question.\nPreferably integrate as many words into the question instead of restating them in each of the answer alternatives.\n\nAre the answer alternatives exclusive, logical, and clear?\n\nNo wrong answers that can be defended as right answers.\nAvoid, where possible, dummy-alternatives (for example ‘none of the above’).\nNo unintentional directions to either a wrong answer or the correct answer.\nAvoid answer alternatives that rely on a logical inaccuracy.\nAvoid nonsensical alternative answers as much as possible. (Alternative answers that most people would know are untrue/incorrect.)\n\n\nLayout\n\nNo grammar or spelling errors.\nAll figures and graphs are clear and easy to read.\nPunctuation marks such as comma’s, periods, semicolons, etc. are all checked and placed correctly.\nBe consistent in your placement of periods in multiple choice answers: o Numbers and few words require no period at the end of the answer. o Fully formed sentences and phrases do require a period at the end of the answer.\nWhen using an external source (for example graphs, figures or datasets), the proper citation is given. Copyright and Creative Commons No questions protected under copyright are to be added to the item bank. (Questions originating from a published book, or clearly derived questions, datasets, graphs and figures from books or other materials protected under copyright law.) Check the source of the question before adding it to the item bank. Ask your faculty’s project coordinator which sources have possibly been used (for example textbooks from courses, or online materials). Is it original material? Then the item may be added. When in doubt use the following as a basis and consult your project coordinator about the admissibility of the question:\n\nWhen only changing certain objective elements of the question, it falls under partial processing or imitation in a modified form, which still falls under copyright infringement.\nWhen writing a question in another order or with a different/new question, but with similar elements, it does not full under copyright infringement."
+  },
+  {
+    "objectID": "development/qualityProcedure.html#checklist-part-2-person-b",
+    "href": "development/qualityProcedure.html#checklist-part-2-person-b",
+    "title": "Quality Procedure",
+    "section": "Checklist part 2: Person B",
+    "text": "Checklist part 2: Person B\n\nCheck the compiled version of the question. (Question plus layout.)\nGo through part one of this checklist once more.\nCheck that all figures and graphs are included in the question.\nCheck that all necessarily documents are present in the folder.\nAnswer the question yourself and check if the right answer is indicated as being the correct one. Check the alternative answers.\nReturn the question to person A/the project manager."
+  },
+  {
+    "objectID": "development/qualityProcedure.html#download",
+    "href": "development/qualityProcedure.html#download",
+    "title": "Quality Procedure",
+    "section": "Download",
+    "text": "Download\nDownload word document here"
+  },
+  {
+    "objectID": "development/ItemDevelopment.html",
+    "href": "development/ItemDevelopment.html",
+    "title": "Item Development",
+    "section": "",
+    "text": "Rstudio logo\n\n\n\n\n\n\n\nInstall R\nInstall Rstudio\n\n\n\n\n\nRstudio basics"
+  },
+  {
+    "objectID": "development/ItemDevelopment.html#installation",
+    "href": "development/ItemDevelopment.html#installation",
+    "title": "Item Development",
+    "section": "",
+    "text": "Install R\nInstall Rstudio"
+  },
+  {
+    "objectID": "development/ItemDevelopment.html#the-interface",
+    "href": "development/ItemDevelopment.html#the-interface",
+    "title": "Item Development",
+    "section": "",
+    "text": "Rstudio basics"
+  },
+  {
+    "objectID": "development/ItemDevelopment.html#relevant-resources",
+    "href": "development/ItemDevelopment.html#relevant-resources",
+    "title": "Item Development",
+    "section": "Relevant Resources",
+    "text": "Relevant Resources\n\nR/exams website\nFirst Steps"
+  },
+  {
+    "objectID": "development/ItemDevelopment.html#install-rexams",
+    "href": "development/ItemDevelopment.html#install-rexams",
+    "title": "Item Development",
+    "section": "Install R/exams",
+    "text": "Install R/exams\n\ninstall.packages(\"exams\", dependencies = TRUE)\nlibrary(exams)\n\nR/Exams resources page here."
+  },
+  {
+    "objectID": "development/ItemDevelopment.html#multiple-languages",
+    "href": "development/ItemDevelopment.html#multiple-languages",
+    "title": "Item Development",
+    "section": "Multiple languages",
+    "text": "Multiple languages\nWhen you have an item in multiple languages, you can place them in the same item folder and alter the file name.\n\nuva-regression-001-en.Rmd"
+  },
+  {
+    "objectID": "development/ItemDevelopment.html#general-item-structur",
+    "href": "development/ItemDevelopment.html#general-item-structur",
+    "title": "Item Development",
+    "section": "General item structur",
+    "text": "General item structur\nQuestion\n========\n\nSolution\n========\n\nMeta-information\n================\nexname: \nextype: \nexsolution: \nexsection: \nexextra[]:"
+  },
+  {
+    "objectID": "development/ItemDevelopment.html#multiple-choice",
+    "href": "development/ItemDevelopment.html#multiple-choice",
+    "title": "Item Development",
+    "section": "Multiple choice",
+    "text": "Multiple choice\nQuestion\n========\n\nWhat is the average of the numbers 3, 5 and 7?\n\nAnswerlist\n----------\n* 4\n* 5\n* 6\n\nSolution\n========\n\nThe correct answer is 5.\n\nAnswerlist\n----------\n* You got it wrong\n* Yes you got it\n* This is the wrong answer\n\nMeta-information\n================\nexname: Rekens som\nextype: schoice\nexsolution: 010\nexsection: Descriptive statistics / Summary Statistics / Measures of Location/Mean\nexextra[Type]: Calculation"
+  },
+  {
+    "objectID": "development/ItemDevelopment.html#multiple-answer",
+    "href": "development/ItemDevelopment.html#multiple-answer",
+    "title": "Item Development",
+    "section": "Multiple answer",
+    "text": "Multiple answer\nQuestion\n========\n\nWhich are parametric tests?\n\nAnswerlist\n----------\n* t-test\n* signed-rank test\n* ANOVA\n\nSolution\n========\n\nThe correct answer the ANOVA test\n\nAnswerlist\n----------\n* True. t-test\n* False. signed rank test\n* True. ANOVA\n\nMeta-information\n================\nexname: parametric\nextype: mchoice\nexsolution: 101\nexsection: Inferential Statistics / Non-parametric Techniques / Signed Rank test\nexextra[Type]: Conceptual, Test choice\nexextra[Language]: English\nexextra[Level]: Statistical Reasoning"
+  },
+  {
+    "objectID": "development/ItemDevelopment.html#fill-in-the-blank-number",
+    "href": "development/ItemDevelopment.html#fill-in-the-blank-number",
+    "title": "Item Development",
+    "section": "Fill in the blank number",
+    "text": "Fill in the blank number\nQuestion\n========\n\nWhat is the average of the numbers 3, 5 and 7?\n\nSolution\n========\n\nThe correct answer is 5.\n\nMeta-information\n================\nexname: Rekens som\nextype: num\nexsolution: 5\nextol: 0\nexsection: Descriptive statistics / Summary Statistics / Measures of Location/Mean\nexextra[Type]: Calculation"
+  },
+  {
+    "objectID": "development/ItemDevelopment.html#fill-in-the-blank-textessay",
+    "href": "development/ItemDevelopment.html#fill-in-the-blank-textessay",
+    "title": "Item Development",
+    "section": "Fill in the blank text/essay",
+    "text": "Fill in the blank text/essay\nQuestion\n========\n\nWhat statistical test do you need to test the difference between two independent groups, assuming all parametric assumptions are met?\n\nSolution\n========\n\nThe correct answer is independent t-test\n\nMeta-information\n================\nexname: TestSelectionTtest\nextype: string\nexsolution: \"independent t-test\"\nexsection: Inferential Statistics / Parametric Techniques/t-test / Independent samples means\nexextra[Type]: Test choice"
+  },
+  {
+    "objectID": "development/ItemDevelopment.html#combinations",
+    "href": "development/ItemDevelopment.html#combinations",
+    "title": "Item Development",
+    "section": "Combinations",
+    "text": "Combinations\nQuestion\n========\n\nGiven are the following numbers: 1, 2, 3, 4, 5, 6. \n\nAnswerlist\n----------\n\n* What is the sample mean? \n* What is the estimated population standard deviation?\n\nSolution\n========\n\nAnswerlist\n----------\n\n* The sample mean is 3.5.\n* The estimated population standard deviation is 1.87.\n\nMeta-information\n================\nexname: MeandAndSD\nextype: cloze\nexclozetype: num|num\nexsolution: 3.5|1.870829\nextol: 0.01\nexextra[Type]: Calculate"
+  },
+  {
+    "objectID": "development/ItemDevelopment.html#statistics-taxonomy",
+    "href": "development/ItemDevelopment.html#statistics-taxonomy",
+    "title": "Item Development",
+    "section": "Statistics taxonomy",
+    "text": "Statistics taxonomy\nYou can add the taxonomy to the exsection attribute in the meta information.\nMeta-information\n================\nexsection: Descriptive statistics/Summary Statistics/Measures of Spread/Standard Deviation, Inferential Statistics/Parametric Techniques/t-test/One sample mean\n\nThe taxonomy tree can be found here.\nMultiple paths can be added by using a comma as seperator.\nOnly add path that is most specific for the question.\nNew lines are not allowed"
+  },
+  {
+    "objectID": "development/ItemDevelopment.html#adding-tags",
+    "href": "development/ItemDevelopment.html#adding-tags",
+    "title": "Item Development",
+    "section": "Adding Tags",
+    "text": "Adding Tags\nYou can add tags to the exextra[] attribute in the meta information.\nMeta-information\n================\nexextra[Type]: Calculation, Data manipulation\nexextra[Program]: SPSS\nexextra[Language]: English\nexextra[Level]: Statistical Literacy\n\nWe have four categories that can be used tag tab.\nAdditional tags can be added. For example **G*Power** as a program. Though consult with your team leader first.\nMultiple tags can be added by using a comma as seperator.\nType, Language and level are required. Only use Program when needed.\nNew lines are not allowed\nlevel inherits the higher levels. So, statistical thinking implies Statistical Reasoning and Statistical Literacy."
+  },
+  {
+    "objectID": "development/ItemDevelopment.html#check-output",
+    "href": "development/ItemDevelopment.html#check-output",
+    "title": "Item Development",
+    "section": "Check output",
+    "text": "Check output\nYou are required to check if the developed items properly work. Run the exams2html() function as a simple fast check to test your .Rmd file.\nIn addition run the following functions to check if the PDF is compiled correctly and if all the meta information is added properly. \\(\\LaTeX\\) must be installed for the PDF function to work.\n\n# install the develpment version to use browse_excersise()\ninstall.packages(\"exams\", repos = \"http://R-Forge.R-project.org\", dependencies = TRUE, type = \"source\")\nlibrary(exams)\nexams2html(file = \"\")\nexams:::browse_exercise(file = \"\")\nexams2pdf(file = \"\")\nexams2pandoc(file = \"\")"
+  },
+  {
+    "objectID": "instructions.html",
+    "href": "instructions.html",
+    "title": "Instructions",
+    "section": "",
+    "text": "You can search for items in the itembank by browsing"
+  },
+  {
+    "objectID": "instructions.html#search-for-items",
+    "href": "instructions.html#search-for-items",
+    "title": "Instructions",
+    "section": "",
+    "text": "You can search for items in the itembank by browsing"
+  },
+  {
+    "objectID": "instructions.html#preview",
+    "href": "instructions.html#preview",
+    "title": "Instructions",
+    "section": "Preview",
+    "text": "Preview"
+  },
+  {
+    "objectID": "instructions.html#download",
+    "href": "instructions.html#download",
+    "title": "Instructions",
+    "section": "Download",
+    "text": "Download\n\nQTI\n\n\nTestvision\n\n\nZip"
+  },
+  {
+    "objectID": "instructions.html#advanced",
+    "href": "instructions.html#advanced",
+    "title": "Instructions",
+    "section": "Advanced",
+    "text": "Advanced\n\nUsing exams package\n\n\nGithub Repository"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "news/sharestats-started.html",
+    "href": "news/sharestats-started.html",
+    "title": "ShareStats started!",
+    "section": "",
+    "text": "The ShareStats project started on September 1, 2020. The project runs for 2 years and is funded by SURF and the participating universities.\nThe aim of the project is to share statistics with the professional community of methods and statistics instructors in higher education. In other words: with you!"
+  },
+  {
+    "objectID": "news/sharestats-started.html#what-are-we-going-to-do",
+    "href": "news/sharestats-started.html#what-are-we-going-to-do",
+    "title": "ShareStats started!",
+    "section": "What are we going to do?",
+    "text": "What are we going to do?\nWe are going to create and make available a comprehensive database of statistics exercises under Creative Commons license via our own website, on github, and SURF ShareKit. We are going to reuse and adopt existing material for this purpose.\nThe statistics exercises can be used by instructors from the professional community in a simple way by selecting and exporting exercises to a digital learning or test environment such as Canvas, Blackboard, TestVision, Remindo and Grasple."
+  },
+  {
+    "objectID": "news/sharestats-started.html#what-will-we-start-with",
+    "href": "news/sharestats-started.html#what-will-we-start-with",
+    "title": "ShareStats started!",
+    "section": "What will we start with?",
+    "text": "What will we start with?\nIn the coming months we will start developing a quality model and taxonomy. A quality model is needed to assess the existing statistics exercises on quality in order to determine whether an exercise can be included in the database or possibly still needs to be revised. A taxonomy is necessary to meta-date the exercises so that they can be found by, for example, subject or type."
+  },
+  {
+    "objectID": "news/sharestats-started.html#join-sharestats",
+    "href": "news/sharestats-started.html#join-sharestats",
+    "title": "ShareStats started!",
+    "section": "Join ShareStats",
+    "text": "Join ShareStats\nWe can’t do it alone! In order to make the project a success, it is crucial to involve the professional community of methods and statistics instructors as much as possible.\nWhat knowledge and ideas do you have that are relevant for this project? What wishes and needs do you have when it comes to the open sharing of statistics exercises? We’d love to hear it!\nLet us know by sending an email to: sharestats@vu.nl..\nDo you want to stay informed?\n\nJoin our LinkedIn group\nSubscribe to our newsletter via this link"
+  },
+  {
+    "objectID": "team/people/niels.html",
+    "href": "team/people/niels.html",
+    "title": "Niels Smits",
+    "section": "",
+    "text": "Ik richt me in dit project vooral op het schrijven van R-code om de functionaliteit van het exams package uit te breiden. Ik hoop hiermee te bereiken dat gebruikers een grotere keuze hebben in de digitale leer- of toetsomgeving die ze willen gebruiken voor het aanbieden van het oefen- en toetsmateriaal. Het is mooi dat we voor het creëren van ons studiemateriaal niet langer afhankelijk zijn van een commerciële partij of softwareaanbieder!"
+  },
+  {
+    "objectID": "team/people/marike.html",
+    "href": "team/people/marike.html",
+    "title": "Marike Polak",
+    "section": "",
+    "text": "Ik coördineer samen met Dimitris het reviewen en het reviseren van statistiekopgaven. Hiermee zorgen we dat de al beschikbare opgaven van alle deelnemende universiteiten volgens afgesproken kwaliteitseisen opgemaakt worden en opgenomen kunnen worden in de gratis toegankelijke itembank. Ik verheug me op de uitwisseling met docenten van andere universiteiten. Door het open delen van statistiekopgaven leren we van elkaar en maken we elkaar en onze studenten sterker!"
+  },
+  {
+    "objectID": "team/people/joran.html",
+    "href": "team/people/joran.html",
+    "title": "Joran Jongerling",
+    "section": "",
+    "text": "Ik hoop met dit project genoeg (kwalitatief goede) opgaven aan studenten te kunnen aanbieden, zodat ze eindelijk echt genoeg kunnen oefenen met de stof om het in de vingers te krijgen. Hopelijk neemt dat dan vervolgens ook een groot deel van hun angst voor statistiek weg. Leuker kunnen we het niet maken, wel makkelijker!"
+  },
+  {
+    "objectID": "team/people/marleen.html",
+    "href": "team/people/marleen.html",
+    "title": "Marleen de Moor",
+    "section": "",
+    "text": "Als algemeen projectleider van ShareStats zal ik me bezig houden met de planning en voortgang van het project. Daarnaast behoort kennisdisseminatie tot mijn taken: het opzetten van een actieve vakcommunity om zoveel mogelijk docenten te betrekken bij Sharestats, en docenten op de hoogte te houden van onze mijlpalen! Mijn motto voor ShareStats is “Het geheel is meer dan de som der delen”. Wiskundig gezien klopt dat misschien niet, maar ik hoop wel dat het voor ons project zo werkt! Samenwerken aan een databank van statistiekopgaven verhoogt de kwaliteit van ons onderwijsmateriaal en bespaart docenten tijd!"
+  },
+  {
+    "objectID": "taxonomy/taxonomy_tree.html",
+    "href": "taxonomy/taxonomy_tree.html",
+    "title": "Statistics Taxonomy",
+    "section": "",
+    "text": "To add a taxonomy path to your r-exams markdown file, add exsection: to the Meta-information of your markdown file.\nYou can copy the desired paths from the list below. You may add multiple path by separating them with a comma. No new lines allowed though.\nMeta-information\n================\nexsection: Descriptive statistics/Summary Statistics/Measures of Location/Median, Descriptive statistics/Summary Statistics/Measures of Spread/Standard Deviation\n\n\n\n\n\n\nMeasurement Level\n\n  Measurement Level/Nominal\n  Measurement Level/Ordinal\n  Measurement Level/Interval\n  Measurement Level/Ratio\n\nVariable type\n\n  Variable type/Discrete variable\n  Variable type/Continuous variable\n\nDescriptive statistics\n\n  Descriptive statistics/Summary Statistics\n\n    Descriptive statistics/Summary Statistics/Measures of Location\n\n      Descriptive statistics/Summary Statistics/Measures of Location/Mean\n      Descriptive statistics/Summary Statistics/Measures of Location/Median\n      Descriptive statistics/Summary Statistics/Measures of Location/Mode\n\n    Descriptive statistics/Summary Statistics/Measures of Spread\n\n      Descriptive statistics/Summary Statistics/Measures of Spread/Range\n      Descriptive statistics/Summary Statistics/Measures of Spread/Standard Deviation\n      Descriptive statistics/Summary Statistics/Measures of Spread/Variance\n      Descriptive statistics/Summary Statistics/Measures of Spread/Interquartile Range\n\n    Descriptive statistics/Summary Statistics/Bivariate statistics\n\n      Descriptive statistics/Summary Statistics/Bivariate statistics/Correlation\n      Descriptive statistics/Summary Statistics/Bivariate statistics/Covariance\n\n    Descriptive statistics/Summary Statistics/Outliers\n    Descriptive statistics/Summary Statistics/Odds ratio\n    Descriptive statistics/Summary Statistics/Proportion\n    Descriptive statistics/Summary Statistics/Conditional proportion\n\n  Descriptive statistics/Score interpretation\n\n    Descriptive statistics/Score interpretation/z-score\n    Descriptive statistics/Score interpretation/Percentile\n\n  Descriptive statistics/Data representation\n\n    Descriptive statistics/Data representation/Graphs\n\n      Descriptive statistics/Data representation/Graphs/Histogram\n      Descriptive statistics/Data representation/Graphs/Bar graph\n      Descriptive statistics/Data representation/Graphs/Boxplot\n      Descriptive statistics/Data representation/Graphs/Scatterplot\n      Descriptive statistics/Data representation/Graphs/Pie chart\n      Descriptive statistics/Data representation/Graphs/Venn diagram\n      Descriptive statistics/Data representation/Graphs/Stem and leaf plot\n\n    Descriptive statistics/Data representation/Tables\n\n      Descriptive statistics/Data representation/Tables/Frequency table\n      Descriptive statistics/Data representation/Tables/Contingency table\n\nInferential Statistics\n\n  Inferential Statistics/Sampling Distributions\n\n    Inferential Statistics/Sampling Distributions/Sample mean\n    Inferential Statistics/Sampling Distributions/Sample proportion\n    Inferential Statistics/Sampling Distributions/Difference two means\n    Inferential Statistics/Sampling Distributions/Correlation\n\n  Inferential Statistics/NHST\n\n    Inferential Statistics/NHST/Hypothesis\n\n      Inferential Statistics/NHST/Hypothesis/Null hypothesis\n      Inferential Statistics/NHST/Hypothesis/Alternative hypothesis\n      Inferential Statistics/NHST/Hypothesis/One sided hypothesis\n      Inferential Statistics/NHST/Hypothesis/Two sided hypothesis\n\n    Inferential Statistics/NHST/Test statistic\n\n      Inferential Statistics/NHST/Test statistic/t-statistic\n      Inferential Statistics/NHST/Test statistic/F-statistic\n      Inferential Statistics/NHST/Test statistic/Chi-squared\n      Inferential Statistics/NHST/Test statistic/z-statistic\n\n    Inferential Statistics/NHST/Statistical errors\n\n      Inferential Statistics/NHST/Statistical errors/Type I error\n      Inferential Statistics/NHST/Statistical errors/Type II error\n\n    Inferential Statistics/NHST/Power\n    Inferential Statistics/NHST/Significance level\n\n      Inferential Statistics/NHST/Significance level/Critical value\n\n    Inferential Statistics/NHST/p-value\n\n  Inferential Statistics/Effect size\n\n    Inferential Statistics/Effect size/Cohen's d\n    Inferential Statistics/Effect size/Cramer's V\n    Inferential Statistics/Effect size/Phi coefficient\n    Inferential Statistics/Effect size/Eta squared\n    Inferential Statistics/Effect size/Omega squared\n\n  Inferential Statistics/Confidence Intervals\n\n    Inferential Statistics/Confidence Intervals/Confidence level\n    Inferential Statistics/Confidence Intervals/Testing\n    Inferential Statistics/Confidence Intervals/Width\n    Inferential Statistics/Confidence Intervals/Margin of error\n\n  Inferential Statistics/Parametric Techniques\n\n    Inferential Statistics/Parametric Techniques/z-test\n\n      Inferential Statistics/Parametric Techniques/z-test/One sample mean\n      Inferential Statistics/Parametric Techniques/z-test/Independent samples means\n      Inferential Statistics/Parametric Techniques/z-test/One proportion\n      Inferential Statistics/Parametric Techniques/z-test/Two proportions\n\n    Inferential Statistics/Parametric Techniques/t-test\n\n      Inferential Statistics/Parametric Techniques/t-test/One sample mean\n      Inferential Statistics/Parametric Techniques/t-test/Independent samples means\n      Inferential Statistics/Parametric Techniques/t-test/Paired samples\n      Inferential Statistics/Parametric Techniques/t-test/Test for correlation\n\n    Inferential Statistics/Parametric Techniques/Correlations\n\n      Inferential Statistics/Parametric Techniques/Correlations/Pearson\n      Inferential Statistics/Parametric Techniques/Correlations/Spearman\n      Inferential Statistics/Parametric Techniques/Correlations/Point biserial\n      Inferential Statistics/Parametric Techniques/Correlations/Biserial\n      Inferential Statistics/Parametric Techniques/Correlations/Phi\n\n    Inferential Statistics/Parametric Techniques/Cross tables\n\n      Inferential Statistics/Parametric Techniques/Cross tables/Chi-Squared for Independence\n      Inferential Statistics/Parametric Techniques/Cross tables/Chi-Squared for Homogeneity\n      Inferential Statistics/Parametric Techniques/Cross tables/Chi-Squared Goodness of Fit\n      Inferential Statistics/Parametric Techniques/Cross tables/Fisher's Exact Test\n\n    Inferential Statistics/Parametric Techniques/ANOVA\n\n      Inferential Statistics/Parametric Techniques/ANOVA/Oneway ANOVA\n      Inferential Statistics/Parametric Techniques/ANOVA/Twoway ANOVA\n      Inferential Statistics/Parametric Techniques/ANOVA/Oneway repeated measures ANOVA\n      Inferential Statistics/Parametric Techniques/ANOVA/Twoway repeated measures ANOVA\n      Inferential Statistics/Parametric Techniques/ANOVA/Mixed design ANOVA\n      Inferential Statistics/Parametric Techniques/ANOVA/ANCOVA\n      Inferential Statistics/Parametric Techniques/ANOVA/MANOVA\n      Inferential Statistics/Parametric Techniques/ANOVA/MANCOVA\n      Inferential Statistics/Parametric Techniques/ANOVA/ANOVA F-test\n      Inferential Statistics/Parametric Techniques/ANOVA/Post-hoc test\n\n    Inferential Statistics/Parametric Techniques/Variance\n\n      Inferential Statistics/Parametric Techniques/Variance/One variance\n      Inferential Statistics/Parametric Techniques/Variance/Two variances\n\n  Inferential Statistics/Regression\n\n    Inferential Statistics/Regression/Simple linear regression\n    Inferential Statistics/Regression/Equation\n    Inferential Statistics/Regression/Slope\n    Inferential Statistics/Regression/Intercept\n    Inferential Statistics/Regression/Prediction\n    Inferential Statistics/Regression/Residuals\n    Inferential Statistics/Regression/Sum of squares\n    Inferential Statistics/Regression/Regression F-test\n    Inferential Statistics/Regression/R squared\n    Inferential Statistics/Regression/Standard error of the estimate\n    Inferential Statistics/Regression/Standardized coefficient\n    Inferential Statistics/Regression/Dummies\n    Inferential Statistics/Regression/Confidence interval\n    Inferential Statistics/Regression/Prediction interval\n    Inferential Statistics/Regression/Coefficient t-test\n    Inferential Statistics/Regression/Multiple linear regression\n\n      Inferential Statistics/Regression/Multiple linear regression/F-test for comparing (nested) models\n      Inferential Statistics/Regression/Multiple linear regression/R squared change\n      Inferential Statistics/Regression/Multiple linear regression/Moderation\n      Inferential Statistics/Regression/Multiple linear regression/Mediation\n      Inferential Statistics/Regression/Multiple linear regression/Suppression\n\n    Inferential Statistics/Regression/Principal axis regression\n    Inferential Statistics/Regression/Logistic regression\n\n      Inferential Statistics/Regression/Logistic regression/Odds\n      Inferential Statistics/Regression/Logistic regression/Odds ratio\n\n    Inferential Statistics/Regression/Probit regression\n    Inferential Statistics/Regression/Multinomial logistic regression\n\n  Inferential Statistics/Non-parametric Techniques\n\n    Inferential Statistics/Non-parametric Techniques/Sign test\n    Inferential Statistics/Non-parametric Techniques/Rank Sum test\n    Inferential Statistics/Non-parametric Techniques/Signed Rank test\n    Inferential Statistics/Non-parametric Techniques/Kruskal-Wallis test\n    Inferential Statistics/Non-parametric Techniques/Friedman's test\n    Inferential Statistics/Non-parametric Techniques/Permutation test\n\n  Inferential Statistics/Bootstrap\n  Inferential Statistics/Bayesian Statistics\n\n    Inferential Statistics/Bayesian Statistics/Prior\n    Inferential Statistics/Bayesian Statistics/Likelihood\n    Inferential Statistics/Bayesian Statistics/Posterior\n    Inferential Statistics/Bayesian Statistics/Credible intervals\n    Inferential Statistics/Bayesian Statistics/Hypothesis test\n    Inferential Statistics/Bayesian Statistics/Bayes factor\n    Inferential Statistics/Bayesian Statistics/Parameter estimation\n    Inferential Statistics/Bayesian Statistics/Informative hypothesis testing\n\n  Inferential Statistics/Time Series\n\n    Inferential Statistics/Time Series/Descriptive methods\n    Inferential Statistics/Time Series/Autocorrelation\n    Inferential Statistics/Time Series/Runs test\n    Inferential Statistics/Time Series/Seasonal variation\n    Inferential Statistics/Time Series/Arima models\n    Inferential Statistics/Time Series/Forecasting\n    Inferential Statistics/Time Series/Frequency domain\n\n  Inferential Statistics/Multilevel Analysis\n\nProbability\n\n  Probability/Elementary Probability\n\n    Probability/Elementary Probability/Sample Space\n    Probability/Elementary Probability/Events\n    Probability/Elementary Probability/General Rules\n\n      Probability/Elementary Probability/General Rules/Intersection\n      Probability/Elementary Probability/General Rules/Union\n      Probability/Elementary Probability/General Rules/Addition rule\n      Probability/Elementary Probability/General Rules/Multiplication rule\n      Probability/Elementary Probability/General Rules/Independent events\n\n    Probability/Elementary Probability/Combinations\n    Probability/Elementary Probability/Permutations\n    Probability/Elementary Probability/Conditional probability\n    Probability/Elementary Probability/Random variables\n\n      Probability/Elementary Probability/Random variables/Expected value\n      Probability/Elementary Probability/Random variables/Variance\n      Probability/Elementary Probability/Random variables/Rules for expected values\n      Probability/Elementary Probability/Random variables/Random sample\n\nDistributions\n\n  Distributions/Discrete\n\n    Distributions/Discrete/Binomial\n    Distributions/Discrete/Normal approximation to Binomial\n    Distributions/Discrete/Bernoulli\n    Distributions/Discrete/Geometric\n    Distributions/Discrete/Negative Binomial\n    Distributions/Discrete/Poisson\n    Distributions/Discrete/Hypergeometric\n    Distributions/Discrete/Multinominal\n\n  Distributions/Continuous\n\n    Distributions/Continuous/Normal\n    Distributions/Continuous/Uniform\n    Distributions/Continuous/Exponential\n    Distributions/Continuous/Gamma\n    Distributions/Continuous/t-distribution\n    Distributions/Continuous/F-distribution\n    Distributions/Continuous/Chi-squared\n    Distributions/Continuous/Beta\n\n  Distributions/Limit Theorems\n\n    Distributions/Limit Theorems/Central Limit Theorem\n    Distributions/Limit Theorems/Law of Large Numbers\n\nAssumptions\n\n  Assumptions/Homogeneity of variance\n\n    Assumptions/Homogeneity of variance/Levene's test\n    Assumptions/Homogeneity of variance/Ratio of sample size\n    Assumptions/Homogeneity of variance/Ratio of variance\n\n  Assumptions/Sphericity\n\n    Assumptions/Sphericity/Mauchly's test\n    Assumptions/Sphericity/Epsilon\n\n  Assumptions/Normality\n\n    Assumptions/Normality/Shapiro-Wilks\n    Assumptions/Normality/Kolmogorov-Smirnov\n    Assumptions/Normality/Q-Q plot\n\n  Assumptions/Linearity\n  Assumptions/Homoscedasticity\n\n    Assumptions/Homoscedasticity/Residual plot\n\n  Assumptions/Multicolinearity\n\n    Assumptions/Multicolinearity/VIF\n    Assumptions/Multicolinearity/Tolerance\n\nFactor analysis\n\n  Factor analysis/Principle component analysis\n  Factor analysis/Exploratory factor analysis\n  Factor analysis/Confirmatory factor analysis\n  Factor analysis/Rotations\n  Factor analysis/Eigenvalues\n  Factor analysis/Factor loadings\n  Factor analysis/Explained variance\n  Factor analysis/Compontent correlation matrix\n  Factor analysis/Scree plot\n  Factor analysis/Pattern matrix\n  Factor analysis/Structure matrix\n  Factor analysis/Factor correlation matrix\n  Factor analysis/Communalities\n  Factor analysis/Factor scores\n\nReliability\n\n  Reliability/Analysis\n\n    Reliability/Analysis/Cronbach's alpha\n    Reliability/Analysis/Split half\n    Reliability/Analysis/Test-retest\n    Reliability/Analysis/Parallel forms\n\n  Reliability/Descriptives\n\n    Reliability/Descriptives/RIT\n    Reliability/Descriptives/RIR\n    Reliability/Descriptives/proportion correct"
+  },
+  {
+    "objectID": "taxonomy/taxonomy_tree.html#assigning-taxonomy",
+    "href": "taxonomy/taxonomy_tree.html#assigning-taxonomy",
+    "title": "Statistics Taxonomy",
+    "section": "",
+    "text": "To add a taxonomy path to your r-exams markdown file, add exsection: to the Meta-information of your markdown file.\nYou can copy the desired paths from the list below. You may add multiple path by separating them with a comma. No new lines allowed though.\nMeta-information\n================\nexsection: Descriptive statistics/Summary Statistics/Measures of Location/Median, Descriptive statistics/Summary Statistics/Measures of Spread/Standard Deviation\n\n\n\n\n\n\nMeasurement Level\n\n  Measurement Level/Nominal\n  Measurement Level/Ordinal\n  Measurement Level/Interval\n  Measurement Level/Ratio\n\nVariable type\n\n  Variable type/Discrete variable\n  Variable type/Continuous variable\n\nDescriptive statistics\n\n  Descriptive statistics/Summary Statistics\n\n    Descriptive statistics/Summary Statistics/Measures of Location\n\n      Descriptive statistics/Summary Statistics/Measures of Location/Mean\n      Descriptive statistics/Summary Statistics/Measures of Location/Median\n      Descriptive statistics/Summary Statistics/Measures of Location/Mode\n\n    Descriptive statistics/Summary Statistics/Measures of Spread\n\n      Descriptive statistics/Summary Statistics/Measures of Spread/Range\n      Descriptive statistics/Summary Statistics/Measures of Spread/Standard Deviation\n      Descriptive statistics/Summary Statistics/Measures of Spread/Variance\n      Descriptive statistics/Summary Statistics/Measures of Spread/Interquartile Range\n\n    Descriptive statistics/Summary Statistics/Bivariate statistics\n\n      Descriptive statistics/Summary Statistics/Bivariate statistics/Correlation\n      Descriptive statistics/Summary Statistics/Bivariate statistics/Covariance\n\n    Descriptive statistics/Summary Statistics/Outliers\n    Descriptive statistics/Summary Statistics/Odds ratio\n    Descriptive statistics/Summary Statistics/Proportion\n    Descriptive statistics/Summary Statistics/Conditional proportion\n\n  Descriptive statistics/Score interpretation\n\n    Descriptive statistics/Score interpretation/z-score\n    Descriptive statistics/Score interpretation/Percentile\n\n  Descriptive statistics/Data representation\n\n    Descriptive statistics/Data representation/Graphs\n\n      Descriptive statistics/Data representation/Graphs/Histogram\n      Descriptive statistics/Data representation/Graphs/Bar graph\n      Descriptive statistics/Data representation/Graphs/Boxplot\n      Descriptive statistics/Data representation/Graphs/Scatterplot\n      Descriptive statistics/Data representation/Graphs/Pie chart\n      Descriptive statistics/Data representation/Graphs/Venn diagram\n      Descriptive statistics/Data representation/Graphs/Stem and leaf plot\n\n    Descriptive statistics/Data representation/Tables\n\n      Descriptive statistics/Data representation/Tables/Frequency table\n      Descriptive statistics/Data representation/Tables/Contingency table\n\nInferential Statistics\n\n  Inferential Statistics/Sampling Distributions\n\n    Inferential Statistics/Sampling Distributions/Sample mean\n    Inferential Statistics/Sampling Distributions/Sample proportion\n    Inferential Statistics/Sampling Distributions/Difference two means\n    Inferential Statistics/Sampling Distributions/Correlation\n\n  Inferential Statistics/NHST\n\n    Inferential Statistics/NHST/Hypothesis\n\n      Inferential Statistics/NHST/Hypothesis/Null hypothesis\n      Inferential Statistics/NHST/Hypothesis/Alternative hypothesis\n      Inferential Statistics/NHST/Hypothesis/One sided hypothesis\n      Inferential Statistics/NHST/Hypothesis/Two sided hypothesis\n\n    Inferential Statistics/NHST/Test statistic\n\n      Inferential Statistics/NHST/Test statistic/t-statistic\n      Inferential Statistics/NHST/Test statistic/F-statistic\n      Inferential Statistics/NHST/Test statistic/Chi-squared\n      Inferential Statistics/NHST/Test statistic/z-statistic\n\n    Inferential Statistics/NHST/Statistical errors\n\n      Inferential Statistics/NHST/Statistical errors/Type I error\n      Inferential Statistics/NHST/Statistical errors/Type II error\n\n    Inferential Statistics/NHST/Power\n    Inferential Statistics/NHST/Significance level\n\n      Inferential Statistics/NHST/Significance level/Critical value\n\n    Inferential Statistics/NHST/p-value\n\n  Inferential Statistics/Effect size\n\n    Inferential Statistics/Effect size/Cohen's d\n    Inferential Statistics/Effect size/Cramer's V\n    Inferential Statistics/Effect size/Phi coefficient\n    Inferential Statistics/Effect size/Eta squared\n    Inferential Statistics/Effect size/Omega squared\n\n  Inferential Statistics/Confidence Intervals\n\n    Inferential Statistics/Confidence Intervals/Confidence level\n    Inferential Statistics/Confidence Intervals/Testing\n    Inferential Statistics/Confidence Intervals/Width\n    Inferential Statistics/Confidence Intervals/Margin of error\n\n  Inferential Statistics/Parametric Techniques\n\n    Inferential Statistics/Parametric Techniques/z-test\n\n      Inferential Statistics/Parametric Techniques/z-test/One sample mean\n      Inferential Statistics/Parametric Techniques/z-test/Independent samples means\n      Inferential Statistics/Parametric Techniques/z-test/One proportion\n      Inferential Statistics/Parametric Techniques/z-test/Two proportions\n\n    Inferential Statistics/Parametric Techniques/t-test\n\n      Inferential Statistics/Parametric Techniques/t-test/One sample mean\n      Inferential Statistics/Parametric Techniques/t-test/Independent samples means\n      Inferential Statistics/Parametric Techniques/t-test/Paired samples\n      Inferential Statistics/Parametric Techniques/t-test/Test for correlation\n\n    Inferential Statistics/Parametric Techniques/Correlations\n\n      Inferential Statistics/Parametric Techniques/Correlations/Pearson\n      Inferential Statistics/Parametric Techniques/Correlations/Spearman\n      Inferential Statistics/Parametric Techniques/Correlations/Point biserial\n      Inferential Statistics/Parametric Techniques/Correlations/Biserial\n      Inferential Statistics/Parametric Techniques/Correlations/Phi\n\n    Inferential Statistics/Parametric Techniques/Cross tables\n\n      Inferential Statistics/Parametric Techniques/Cross tables/Chi-Squared for Independence\n      Inferential Statistics/Parametric Techniques/Cross tables/Chi-Squared for Homogeneity\n      Inferential Statistics/Parametric Techniques/Cross tables/Chi-Squared Goodness of Fit\n      Inferential Statistics/Parametric Techniques/Cross tables/Fisher's Exact Test\n\n    Inferential Statistics/Parametric Techniques/ANOVA\n\n      Inferential Statistics/Parametric Techniques/ANOVA/Oneway ANOVA\n      Inferential Statistics/Parametric Techniques/ANOVA/Twoway ANOVA\n      Inferential Statistics/Parametric Techniques/ANOVA/Oneway repeated measures ANOVA\n      Inferential Statistics/Parametric Techniques/ANOVA/Twoway repeated measures ANOVA\n      Inferential Statistics/Parametric Techniques/ANOVA/Mixed design ANOVA\n      Inferential Statistics/Parametric Techniques/ANOVA/ANCOVA\n      Inferential Statistics/Parametric Techniques/ANOVA/MANOVA\n      Inferential Statistics/Parametric Techniques/ANOVA/MANCOVA\n      Inferential Statistics/Parametric Techniques/ANOVA/ANOVA F-test\n      Inferential Statistics/Parametric Techniques/ANOVA/Post-hoc test\n\n    Inferential Statistics/Parametric Techniques/Variance\n\n      Inferential Statistics/Parametric Techniques/Variance/One variance\n      Inferential Statistics/Parametric Techniques/Variance/Two variances\n\n  Inferential Statistics/Regression\n\n    Inferential Statistics/Regression/Simple linear regression\n    Inferential Statistics/Regression/Equation\n    Inferential Statistics/Regression/Slope\n    Inferential Statistics/Regression/Intercept\n    Inferential Statistics/Regression/Prediction\n    Inferential Statistics/Regression/Residuals\n    Inferential Statistics/Regression/Sum of squares\n    Inferential Statistics/Regression/Regression F-test\n    Inferential Statistics/Regression/R squared\n    Inferential Statistics/Regression/Standard error of the estimate\n    Inferential Statistics/Regression/Standardized coefficient\n    Inferential Statistics/Regression/Dummies\n    Inferential Statistics/Regression/Confidence interval\n    Inferential Statistics/Regression/Prediction interval\n    Inferential Statistics/Regression/Coefficient t-test\n    Inferential Statistics/Regression/Multiple linear regression\n\n      Inferential Statistics/Regression/Multiple linear regression/F-test for comparing (nested) models\n      Inferential Statistics/Regression/Multiple linear regression/R squared change\n      Inferential Statistics/Regression/Multiple linear regression/Moderation\n      Inferential Statistics/Regression/Multiple linear regression/Mediation\n      Inferential Statistics/Regression/Multiple linear regression/Suppression\n\n    Inferential Statistics/Regression/Principal axis regression\n    Inferential Statistics/Regression/Logistic regression\n\n      Inferential Statistics/Regression/Logistic regression/Odds\n      Inferential Statistics/Regression/Logistic regression/Odds ratio\n\n    Inferential Statistics/Regression/Probit regression\n    Inferential Statistics/Regression/Multinomial logistic regression\n\n  Inferential Statistics/Non-parametric Techniques\n\n    Inferential Statistics/Non-parametric Techniques/Sign test\n    Inferential Statistics/Non-parametric Techniques/Rank Sum test\n    Inferential Statistics/Non-parametric Techniques/Signed Rank test\n    Inferential Statistics/Non-parametric Techniques/Kruskal-Wallis test\n    Inferential Statistics/Non-parametric Techniques/Friedman's test\n    Inferential Statistics/Non-parametric Techniques/Permutation test\n\n  Inferential Statistics/Bootstrap\n  Inferential Statistics/Bayesian Statistics\n\n    Inferential Statistics/Bayesian Statistics/Prior\n    Inferential Statistics/Bayesian Statistics/Likelihood\n    Inferential Statistics/Bayesian Statistics/Posterior\n    Inferential Statistics/Bayesian Statistics/Credible intervals\n    Inferential Statistics/Bayesian Statistics/Hypothesis test\n    Inferential Statistics/Bayesian Statistics/Bayes factor\n    Inferential Statistics/Bayesian Statistics/Parameter estimation\n    Inferential Statistics/Bayesian Statistics/Informative hypothesis testing\n\n  Inferential Statistics/Time Series\n\n    Inferential Statistics/Time Series/Descriptive methods\n    Inferential Statistics/Time Series/Autocorrelation\n    Inferential Statistics/Time Series/Runs test\n    Inferential Statistics/Time Series/Seasonal variation\n    Inferential Statistics/Time Series/Arima models\n    Inferential Statistics/Time Series/Forecasting\n    Inferential Statistics/Time Series/Frequency domain\n\n  Inferential Statistics/Multilevel Analysis\n\nProbability\n\n  Probability/Elementary Probability\n\n    Probability/Elementary Probability/Sample Space\n    Probability/Elementary Probability/Events\n    Probability/Elementary Probability/General Rules\n\n      Probability/Elementary Probability/General Rules/Intersection\n      Probability/Elementary Probability/General Rules/Union\n      Probability/Elementary Probability/General Rules/Addition rule\n      Probability/Elementary Probability/General Rules/Multiplication rule\n      Probability/Elementary Probability/General Rules/Independent events\n\n    Probability/Elementary Probability/Combinations\n    Probability/Elementary Probability/Permutations\n    Probability/Elementary Probability/Conditional probability\n    Probability/Elementary Probability/Random variables\n\n      Probability/Elementary Probability/Random variables/Expected value\n      Probability/Elementary Probability/Random variables/Variance\n      Probability/Elementary Probability/Random variables/Rules for expected values\n      Probability/Elementary Probability/Random variables/Random sample\n\nDistributions\n\n  Distributions/Discrete\n\n    Distributions/Discrete/Binomial\n    Distributions/Discrete/Normal approximation to Binomial\n    Distributions/Discrete/Bernoulli\n    Distributions/Discrete/Geometric\n    Distributions/Discrete/Negative Binomial\n    Distributions/Discrete/Poisson\n    Distributions/Discrete/Hypergeometric\n    Distributions/Discrete/Multinominal\n\n  Distributions/Continuous\n\n    Distributions/Continuous/Normal\n    Distributions/Continuous/Uniform\n    Distributions/Continuous/Exponential\n    Distributions/Continuous/Gamma\n    Distributions/Continuous/t-distribution\n    Distributions/Continuous/F-distribution\n    Distributions/Continuous/Chi-squared\n    Distributions/Continuous/Beta\n\n  Distributions/Limit Theorems\n\n    Distributions/Limit Theorems/Central Limit Theorem\n    Distributions/Limit Theorems/Law of Large Numbers\n\nAssumptions\n\n  Assumptions/Homogeneity of variance\n\n    Assumptions/Homogeneity of variance/Levene's test\n    Assumptions/Homogeneity of variance/Ratio of sample size\n    Assumptions/Homogeneity of variance/Ratio of variance\n\n  Assumptions/Sphericity\n\n    Assumptions/Sphericity/Mauchly's test\n    Assumptions/Sphericity/Epsilon\n\n  Assumptions/Normality\n\n    Assumptions/Normality/Shapiro-Wilks\n    Assumptions/Normality/Kolmogorov-Smirnov\n    Assumptions/Normality/Q-Q plot\n\n  Assumptions/Linearity\n  Assumptions/Homoscedasticity\n\n    Assumptions/Homoscedasticity/Residual plot\n\n  Assumptions/Multicolinearity\n\n    Assumptions/Multicolinearity/VIF\n    Assumptions/Multicolinearity/Tolerance\n\nFactor analysis\n\n  Factor analysis/Principle component analysis\n  Factor analysis/Exploratory factor analysis\n  Factor analysis/Confirmatory factor analysis\n  Factor analysis/Rotations\n  Factor analysis/Eigenvalues\n  Factor analysis/Factor loadings\n  Factor analysis/Explained variance\n  Factor analysis/Compontent correlation matrix\n  Factor analysis/Scree plot\n  Factor analysis/Pattern matrix\n  Factor analysis/Structure matrix\n  Factor analysis/Factor correlation matrix\n  Factor analysis/Communalities\n  Factor analysis/Factor scores\n\nReliability\n\n  Reliability/Analysis\n\n    Reliability/Analysis/Cronbach's alpha\n    Reliability/Analysis/Split half\n    Reliability/Analysis/Test-retest\n    Reliability/Analysis/Parallel forms\n\n  Reliability/Descriptives\n\n    Reliability/Descriptives/RIT\n    Reliability/Descriptives/RIR\n    Reliability/Descriptives/proportion correct"
+  },
+  {
+    "objectID": "taxonomy/tags.html",
+    "href": "taxonomy/tags.html",
+    "title": "Tags",
+    "section": "",
+    "text": "To add tags to your r-exams markdown file add exextra[]:` to theMeta-information` of your markdown file.\nWe have four categories that can be applied."
+  },
+  {
+    "objectID": "taxonomy/tags.html#click-to-copy",
+    "href": "taxonomy/tags.html#click-to-copy",
+    "title": "Tags",
+    "section": "Click to copy",
+    "text": "Click to copy\n\n\nType: Calculation Case Conceptual Creating graphs Data manipulation Interpreting graph Interpreting output Performing analysis Test choice\n\n\nProgram: SPSS JASP R STATA Excel Calculator Jamovi\n\n\nLanguage: English Dutch\n\n\nLevel: Statistical Literacy Statistical Reasoning Statistical Thinking\n\n\nYou can use more than one tag per category.\nMeta-information\n================\nexextra[Type]: Calculation, Data manipulation\nexextra[Program]: SPSS\nexextra[Language]: English\nexextra[Level]: Statistical Literacy"
+  },
+  {
+    "objectID": "taxonomy/tags.html#type-descriptions",
+    "href": "taxonomy/tags.html#type-descriptions",
+    "title": "Tags",
+    "section": "Type descriptions",
+    "text": "Type descriptions\n\nCalculation\n\n\nA question containing simple (hand/calculator) calculations\n\n\nExample:: M1 = 10, M2 = 24, s_pooled = 1.23. What is the value of Cohen’s d?\n\n\nCase\n\n\nQuestions that belong to a longer description of a research study. Oftentimes multiple questions are asked about the same case/description.\n\n\nExample:: NA\n\n\nConceptual\n\n\nBasic question asking about simple facts.\n\n\nExample:: Which of the following properties is not a condition for establishing a causal relationship? a. Alternative explanations for the relationship between cause and effect can be excluded. b. The data shall be collected with a randomized experiment. c. There must be a relationship between the cause and the effect. d. The cause must precede the effect in time.\n\n\nCreating graphs\n\n\nThe student is asked to create a graph using data supplied with the question (either by hand or using a program).\n\n\nExample:: NA\n\n\nData manipulation\n\n\nThe student is asked to combine data, screen data, create new variables in a dataset, or calculate descriptive statistics using the data supplied with the question.\n\n\nExample:: NA\n\n\nInterpreting graph\n\n\nThe graph is supplied with the question. The student is asked to look at the graph and describe what is going on, draw conclusions based on the graph, etc.\n\n\nExample:: NA\n\n\nInterpreting output\n\n\nThe output is either supplied with the question or the student has run an analysis to create the output (combine with “Performing analysis”). The student is asked to look at the output and report results/draw conclusions based on it.\n\n\nExample:: NA\n\n\nPerforming analysis\n\n\nThe student is asked to conduct an analysis using a statistical program (combine with program type).\n\n\nExample:: NA\n\n\nTest choice\n\n\nThe student is presented with a description of research/study and is aksed to choose which hypotheses test should be used.\n\n\nExample:: A researcher randomly assigns 100 students to a control group and an experimental group. All students take a math test. Half of the students in each group take the test on paper and half of the students take the test on a computer. The researcher determines the number of correctly answered questions for each student. With which technique should the researcher analyze his data? a. ANOVA b. Cross-table analysis c. Two-way ANOVA d. ANCOVA\n\n\nLevel descriptions\n\nStatistical Literacy (Bloom: Knowing)\n\n\nIdentify, Describe, Translate, Interpret, Read, Compute\n\n\nExample: Understanding and using the basic language and tools of statistics: knowing what basic statistical terms mean, understanding the use of simple statistical symbols, and recognizing and being able to interpret different representations of data\n\n\nStatistical Reasoning (Bloom: Comprehending)\n\n\nExplain why, Explain how\n\n\nExample: The way people reason with statistical ideas and make sense of statistical information. Statistical reasoning may involve connecting one concept to another (e.g., center and spread) or combining ideas about data and chance. Statistical reasoning involves understanding concepts at a deeper level than literacy, such as understanding why a sampling distribution becomes more normal as the sample size increases. Reasoning also means understanding and being able to explain statistical processes and being able to interpret particular statistical results (e.g., why a mean is much larger or smaller than a median, given the presence of an outlier).\n\n\nStatistical Thinking (Bloom: Application, Analysis, Synthesis, and Evaluation)\n\n\nApply, Critique, Evaluate, Generalize\n\n\nExample: Involves a higher order of thinking than does statistical reasoning. Statistical thinking has been described as the way professional statisticians think. It includes knowing how and why to use a particular method, measure, design or statistical model; deep understanding of the theories underlying statistical processes and methods; as well as understanding the constraints and limitations of statistics and statistical inference. Statistical thinking is also about understanding how statistical models are used to represent random phenomena, understanding how data are produced to estimate probabilities, recognizing how, when, and why to use inferential tools in solving a statistical problem, and being able to understand and utilize the context of a problem to plan and evaluate investigations and to draw conclusions"
+  },
+  {
+    "objectID": "taxonomy/tags.html#sharestats-project",
+    "href": "taxonomy/tags.html#sharestats-project",
+    "title": "Tags",
+    "section": "ShareStats project",
+    "text": "ShareStats project\nMore information on the ShareStats project can be found on our website."
+  }
+]

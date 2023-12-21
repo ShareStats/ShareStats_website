@@ -1,0 +1,74 @@
+---
+title: "Quality Procedure"
+page-layout: article
+format:
+  html:
+    toc: true
+    toc-location: left
+---
+
+## Flowchart
+
+![](../images/flowchartquality.svg)
+
+## Checklist part 1: Person A
+
+Question content
+
+1.	Is the wording of the question simple and concise? 
+(An item is not meant to gauge a student’s verbal understanding over their overall mastery of the question of the subject.) 
+    * No complicated sentence structures or sentences/texts of excessive length.
+    * No excessive use of complicated words, jargon, slang, or abbreviations.
+    * Use of standard statistical terminology.
+    * Answer alternatives are formulated in as short a form as possible.
+2.	Does the question include no unclear or double negatives?
+    * No double negatives in the question.
+    * No combinations of a negation in the question and a negation in the answers.
+    * Al required negatives are made obvious.
+(By underlining the negative.)
+3.	Make sure it is impossible to interpret the question in different ways or with multiple meanings.
+    * Questions should not assess the correctness of two statements at once.
+    * Questions should not have a possibility to supply a different answer than intended.
+(Play the devil’s advocate, analyze the different meanings terms in the question could possibly have.)
+4.	Have universal quantifiers (never, all, always) been used correctly?
+    * In the phrasing of the question.
+    * In the phrasing of the answers.
+5.	Is there a solid connection between the answers and the question? 
+    * The phrasing of each answer ties in with the question.
+    * Preferably integrate as many words into the question instead of restating them in each of the answer alternatives. 
+6.	Are the answer alternatives exclusive, logical, and clear?
+    * No wrong answers that can be defended as right answers.
+    * Avoid, where possible, dummy-alternatives (for example ‘none of the above’). 
+    * No unintentional directions to either a wrong answer or the correct answer.
+    * Avoid answer alternatives that rely on a logical inaccuracy.
+    * Avoid nonsensical alternative answers as much as possible.
+(Alternative answers that most people would know are untrue/incorrect.) 
+
+Layout
+
+1.	No grammar or spelling errors.
+2.	All figures and graphs are clear and easy to read.
+3.	Punctuation marks such as comma’s, periods, semicolons, etc. are all checked and placed correctly.
+4.	Be consistent in your placement of periods in multiple choice answers:
+o	Numbers and few words require no period at the end of the answer.
+o	Fully formed sentences and phrases do require a period at the end of the answer.
+5.	When using an external source (for example graphs, figures or datasets), the proper citation is given.
+Copyright and Creative Commons
+No questions protected under copyright are to be added to the item bank.
+(Questions originating from a published book, or clearly derived questions, datasets, graphs and figures from books or other materials protected under copyright law.)
+Check the source of the question before adding it to the item bank. Ask your faculty’s project coordinator which sources have possibly been used (for example textbooks from courses, or online materials). Is it original material? Then the item may be added. When in doubt use the following as a basis and consult your project coordinator about the admissibility of the question:
+    * When only changing certain objective elements of the question, it falls under partial processing or imitation in a modified form, which still falls under copyright infringement.
+    * When writing a question in another order or with a different/new question, but with similar elements, it does not full under copyright infringement.
+
+## Checklist part 2: Person B
+1.	Check the compiled version of the question. 
+(Question plus layout.)
+2.	Go through part one of this checklist once more.
+3.	Check that all figures and graphs are included in the question.
+4.	Check that all necessarily documents are present in the folder.
+5.	Answer the question yourself and check if the right answer is indicated as being the correct one. Check the alternative answers.
+6.	Return the question to person A/the project manager.
+
+## Download
+
+Download word document [here](ShareStats_Check_List_per_item_incl_FlowChart-EN-version.docx)

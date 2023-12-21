@@ -1,4 +1,0 @@
----
-title: Zoeken
-layout: search
----

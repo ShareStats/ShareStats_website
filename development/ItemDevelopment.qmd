@@ -1,0 +1,337 @@
+---
+title: "Item Development"
+page-layout: article
+format:
+  html:
+    toc: true
+    toc-location: left
+---
+
+
+```{r, echo=FALSE}
+# install.packages("exams", dependencies = TRUE)
+library(exams)
+```
+
+# Rstudio
+
+```{r, echo=FALSE, fig.cap="Rstudio logo", out.width="20%"}
+knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/RStudio_logo_flat.svg/1280px-RStudio_logo_flat.svg.png")
+```
+
+## Installation
+
+- [Install R](https://www.google.com/search?rls=en&q=how+to+install+r&ie=UTF-8&oe=UTF-8)
+- [Install Rstudio](https://www.google.com/search?rls=en&q=how+to+install+rstudio&ie=UTF-8&oe=UTF-8)
+
+## The interface
+
+- [Rstudio basics](https://bookdown.org/gary_a_napier/induction_-_introduction_to_r/rstudio-interface.html)
+
+# The R/exams package
+
+```{r, echo=FALSE, fig.cap="exams output", out.width="50%"}
+knitr::include_graphics("http://www.r-exams.org/images/oneforall.svg")
+```
+
+## Relevant Resources
+
+* [R/exams website](http://www.r-exams.org)
+* [First Steps](http://www.r-exams.org/tutorials/first_steps/)
+
+## Install R/exams
+
+```{r, eval=FALSE}
+install.packages("exams", dependencies = TRUE)
+library(exams)
+```
+
+[R/Exams resources page here](http://www.r-exams.org/resources/). 
+
+# Procedure
+
+Resource: Procedure item development in teams.
+
+1. Go to project folder
+2. Navigate to desired taxonomy level 1 folder
+3. Create a new folder for each new item
+4. Name your item following instruction
+5. Check if items compile to HTML, PDF, etc.
+6. Quality check
+
+# Naming instruction
+
+<small>
+[abbreviation institution]-[lowest taxonomy level for item]-[nummber ###]-[nl/en]
+</small>
+
+All in small caps.
+
+example: 
+
+* uva-regression-001-nl.Rmd
+
+If available:
+
+* uva-regression-001-nl-graph01.jpg 
+* uva-regression-001-nl-data01.sav
+
+## Multiple languages
+
+When you have an item in multiple languages, you can place them in the same item folder and alter the file name.
+
+* uva-regression-001-**en**.Rmd
+
+# Item types
+
+There are five item types available in R exams ([Resource](http://www.r-exams.org/intro/dynamic/)).
+
+* **Multiple choice:** `extype: schoice` (s: single)
+* **Multiple answer:** `extype: mchoice` (m: multiple)
+* **Fill in the blank numbers:** `extype: num`
+* **Fill in the blank text/essay:** `extype: string`
+* **Combinations:** `extype: cloze`
+
+## General item structur
+
+```{}
+Question
+========
+
+Solution
+========
+
+Meta-information
+================
+exname: 
+extype: 
+exsolution: 
+exsection: 
+exextra[]:
+```
+
+## Multiple choice
+
+```{}
+Question
+========
+
+What is the average of the numbers 3, 5 and 7?
+
+Answerlist
+----------
+* 4
+* 5
+* 6
+
+Solution
+========
+
+The correct answer is 5.
+
+Answerlist
+----------
+* You got it wrong
+* Yes you got it
+* This is the wrong answer
+
+Meta-information
+================
+exname: Rekens som
+extype: schoice
+exsolution: 010
+exsection: Descriptive statistics / Summary Statistics / Measures of Location/Mean
+exextra[Type]: Calculation
+```
+
+## Multiple answer
+
+```{}
+Question
+========
+
+Which are parametric tests?
+
+Answerlist
+----------
+* t-test
+* signed-rank test
+* ANOVA
+
+Solution
+========
+
+The correct answer the ANOVA test
+
+Answerlist
+----------
+* True. t-test
+* False. signed rank test
+* True. ANOVA
+
+Meta-information
+================
+exname: parametric
+extype: mchoice
+exsolution: 101
+exsection: Inferential Statistics / Non-parametric Techniques / Signed Rank test
+exextra[Type]: Conceptual, Test choice
+exextra[Language]: English
+exextra[Level]: Statistical Reasoning
+```
+
+## Fill in the blank number
+
+```{}
+Question
+========
+
+What is the average of the numbers 3, 5 and 7?
+
+Solution
+========
+
+The correct answer is 5.
+
+Meta-information
+================
+exname: Rekens som
+extype: num
+exsolution: 5
+extol: 0
+exsection: Descriptive statistics / Summary Statistics / Measures of Location/Mean
+exextra[Type]: Calculation
+```
+
+## Fill in the blank text/essay
+
+```{}
+Question
+========
+
+What statistical test do you need to test the difference between two independent groups, assuming all parametric assumptions are met?
+
+Solution
+========
+
+The correct answer is independent t-test
+
+Meta-information
+================
+exname: TestSelectionTtest
+extype: string
+exsolution: "independent t-test"
+exsection: Inferential Statistics / Parametric Techniques/t-test / Independent samples means
+exextra[Type]: Test choice
+```
+
+## Combinations
+
+```{}
+Question
+========
+
+Given are the following numbers: 1, 2, 3, 4, 5, 6. 
+
+Answerlist
+----------
+
+* What is the sample mean? 
+* What is the estimated population standard deviation?
+
+Solution
+========
+
+Answerlist
+----------
+
+* The sample mean is 3.5.
+* The estimated population standard deviation is 1.87.
+
+Meta-information
+================
+exname: MeandAndSD
+extype: cloze
+exclozetype: num|num
+exsolution: 3.5|1.870829
+extol: 0.01
+exextra[Type]: Calculate
+```
+
+# Adding images or attachments
+
+Adding image or files to your question.
+
+1. Add the image or file (.png .jpg .sav etc.) to the same folder as your question.
+2. Add the code below at the top of your .Rmd file.
+3. Add `![](myImage.png)` at location for image. Replace `myImage` with your own.
+4. Add `[Download](myFile.xls)` at location for the download. Replace `myFile` with your own.
+
+````markdown
+`r ''````{r, echo = FALSE, results = "hide"}
+include_supplement("myImage.png", recursive = TRUE)
+```
+````
+
+# Adding meta information
+
+## Statistics taxonomy
+
+You can add the taxonomy to the `exsection` attribute in the meta information.
+
+```{}
+Meta-information
+================
+exsection: Descriptive statistics/Summary Statistics/Measures of Spread/Standard Deviation, Inferential Statistics/Parametric Techniques/t-test/One sample mean
+```
+
+* The [taxonomy tree can be found here](../taxonomy/taxonomy_tree.qmd).
+* Multiple paths can be added by using a comma as seperator.
+* Only add path that is most specific for the question.
+* **New lines are not allowed**
+
+## Adding Tags
+
+You can add tags to the `exextra[]` attribute in the meta information.
+
+```{}
+Meta-information
+================
+exextra[Type]: Calculation, Data manipulation
+exextra[Program]: SPSS
+exextra[Language]: English
+exextra[Level]: Statistical Literacy
+```
+
+* We have four categories that can be used [tag tab](../taxonomy/tags.qmd).
+* Additional tags can be added. For example **G*Power** as a program. Though consult with your team leader first. 
+* Multiple tags can be added by using a comma as seperator.
+* Type, Language and level are required. Only use Program when needed.
+* **New lines are not allowed**
+* level inherits the higher levels. So, **statistical thinking** implies Statistical Reasoning and Statistical Literacy.
+
+# Using R packages
+
+If a question Rmd-file calls a function from an imported package, please ensure that it's always clear from which particular package the function stems.
+
+Ideally, you explicitly specify the source package for each call of an imported function. R has the double colon operator `::` for this and the syntax looks as follows `packages_name::function_name(..)`. For example, if you want to use the function `kable()` from the package `knitr`, please call `knitr::kable(...)`. By the way: an import of the package is in this case not anymore required.
+
+Alternatively, you could always import all required packages in the Rmd-file (e.g. `library(knitr)`) and simply call the functions by their name (e.g. `kable(...)`). This method is however slightly more error-prone, because packages required for other questions might use the same function name and might thus cause conflicts between different questions.
+
+# Compiling your item
+
+## Check output
+
+You are required to check if the developed items properly work. Run the `exams2html()` function as a simple fast check to test your .Rmd file.
+
+In addition run the following functions to check if the PDF is compiled correctly and if all the meta information is added properly. $\LaTeX$ [must be installed](http:/www.r-exams.org/tutorials/latex) for the PDF function to work.
+
+```{r, eval=FALSE}
+# install the develpment version to use browse_excersise()
+install.packages("exams", repos = "http://R-Forge.R-project.org", dependencies = TRUE, type = "source")
+library(exams)
+exams2html(file = "")
+exams:::browse_exercise(file = "")
+exams2pdf(file = "")
+exams2pandoc(file = "")
+```

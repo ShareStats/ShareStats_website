@@ -1,0 +1,47 @@
+/* custom css styles */
+
+#hero::after {
+  content: "";
+  background-image: url('images/hero-area-sharestats.webp');
+//  opacity: 0.6;
+  filter: brightness(40%);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  margin-top: -100px;
+}
+
+.itembank {
+  margin: 20px;
+}
+
+      
+#searchBox {
+      margin: 10px;
+      text-align: center;
+    }
+
+#hero {
+\\  background-color: red;
+\\  border: 5px solid;
+  margin: auto;
+  width: 100%;
+  padding: 100px 0 100px 0;
+}
+
+#item__searchbox {
+  width: 60%;
+  margin: auto;
+}
+
+#svg2 {
+  transform: scale(.7);
+}
+
+.white {
+  background-color: white;
+  width: 100%;
+}

@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Item Development</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<link href="../images/favicon.png" rel="icon" type="image/png">
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="../bootstrap.css">
+<link rel="stylesheet" href="../custom.css">
+</head>
+
+<body class="floating nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../images/logoWT.png" alt="ShareStats" class="navbar-logo">
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../items-df.html" rel="" target="">
+ <span class="menu-text">Itembank</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-taxonomy" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">Taxonomy</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-taxonomy">    
+        <li>
+    <a class="dropdown-item" href="../taxonomy/taxonomy_tree.html" rel="" target="">
+ <span class="dropdown-text">Taxonimy Tree</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../taxonomy/taxonomy_visual.html" rel="" target="">
+ <span class="dropdown-text">Taxonomy Visual</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../taxonomy/tags.html" rel="" target="">
+ <span class="dropdown-text">Tags</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-development" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">Development</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-development">    
+        <li>
+    <a class="dropdown-item" href="../development/ItemDevelopment.html" rel="" target="">
+ <span class="dropdown-text">Item development</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../development/qualityProcedure.html" rel="" target="">
+ <span class="dropdown-text">Quality procedure</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../news/index.html" rel="" target="">
+ <span class="menu-text">News</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-about-sharestats" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">About ShareStats</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-about-sharestats">    
+        <li>
+    <a class="dropdown-item" href="../team/team.html" rel="" target="">
+ <span class="dropdown-text">Meet the team</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="mailto:info@sharestats.nl" rel="" target="">
+ <span class="dropdown-text">Contact us</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+            <div class="quarto-navbar-tools">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#rstudio" id="toc-rstudio" class="nav-link active" data-scroll-target="#rstudio">Rstudio</a>
+  <ul class="collapse">
+  <li><a href="#installation" id="toc-installation" class="nav-link" data-scroll-target="#installation">Installation</a></li>
+  <li><a href="#the-interface" id="toc-the-interface" class="nav-link" data-scroll-target="#the-interface">The interface</a></li>
+  </ul></li>
+  <li><a href="#the-rexams-package" id="toc-the-rexams-package" class="nav-link" data-scroll-target="#the-rexams-package">The R/exams package</a>
+  <ul class="collapse">
+  <li><a href="#relevant-resources" id="toc-relevant-resources" class="nav-link" data-scroll-target="#relevant-resources">Relevant Resources</a></li>
+  <li><a href="#install-rexams" id="toc-install-rexams" class="nav-link" data-scroll-target="#install-rexams">Install R/exams</a></li>
+  </ul></li>
+  <li><a href="#procedure" id="toc-procedure" class="nav-link" data-scroll-target="#procedure">Procedure</a></li>
+  <li><a href="#naming-instruction" id="toc-naming-instruction" class="nav-link" data-scroll-target="#naming-instruction">Naming instruction</a>
+  <ul class="collapse">
+  <li><a href="#multiple-languages" id="toc-multiple-languages" class="nav-link" data-scroll-target="#multiple-languages">Multiple languages</a></li>
+  </ul></li>
+  <li><a href="#item-types" id="toc-item-types" class="nav-link" data-scroll-target="#item-types">Item types</a>
+  <ul class="collapse">
+  <li><a href="#general-item-structur" id="toc-general-item-structur" class="nav-link" data-scroll-target="#general-item-structur">General item structur</a></li>
+  <li><a href="#multiple-choice" id="toc-multiple-choice" class="nav-link" data-scroll-target="#multiple-choice">Multiple choice</a></li>
+  <li><a href="#multiple-answer" id="toc-multiple-answer" class="nav-link" data-scroll-target="#multiple-answer">Multiple answer</a></li>
+  <li><a href="#fill-in-the-blank-number" id="toc-fill-in-the-blank-number" class="nav-link" data-scroll-target="#fill-in-the-blank-number">Fill in the blank number</a></li>
+  <li><a href="#fill-in-the-blank-textessay" id="toc-fill-in-the-blank-textessay" class="nav-link" data-scroll-target="#fill-in-the-blank-textessay">Fill in the blank text/essay</a></li>
+  <li><a href="#combinations" id="toc-combinations" class="nav-link" data-scroll-target="#combinations">Combinations</a></li>
+  </ul></li>
+  <li><a href="#adding-images-or-attachments" id="toc-adding-images-or-attachments" class="nav-link" data-scroll-target="#adding-images-or-attachments">Adding images or attachments</a></li>
+  <li><a href="#adding-meta-information" id="toc-adding-meta-information" class="nav-link" data-scroll-target="#adding-meta-information">Adding meta information</a>
+  <ul class="collapse">
+  <li><a href="#statistics-taxonomy" id="toc-statistics-taxonomy" class="nav-link" data-scroll-target="#statistics-taxonomy">Statistics taxonomy</a></li>
+  <li><a href="#adding-tags" id="toc-adding-tags" class="nav-link" data-scroll-target="#adding-tags">Adding Tags</a></li>
+  </ul></li>
+  <li><a href="#using-r-packages" id="toc-using-r-packages" class="nav-link" data-scroll-target="#using-r-packages">Using R packages</a></li>
+  <li><a href="#compiling-your-item" id="toc-compiling-your-item" class="nav-link" data-scroll-target="#compiling-your-item">Compiling your item</a>
+  <ul class="collapse">
+  <li><a href="#check-output" id="toc-check-output" class="nav-link" data-scroll-target="#check-output">Check output</a></li>
+  </ul></li>
+  </ul>
+</nav>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Item Development</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="rstudio" class="level1">
+<h1>Rstudio</h1>
+<div class="cell">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/RStudio_logo_flat.svg/1280px-RStudio_logo_flat.svg.png" class="img-fluid figure-img" style="width:20.0%"></p>
+<figcaption class="figure-caption">Rstudio logo</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<section id="installation" class="level2">
+<h2 class="anchored" data-anchor-id="installation">Installation</h2>
+<ul>
+<li><a href="https://www.google.com/search?rls=en&amp;q=how+to+install+r&amp;ie=UTF-8&amp;oe=UTF-8">Install R</a></li>
+<li><a href="https://www.google.com/search?rls=en&amp;q=how+to+install+rstudio&amp;ie=UTF-8&amp;oe=UTF-8">Install Rstudio</a></li>
+</ul>
+</section>
+<section id="the-interface" class="level2">
+<h2 class="anchored" data-anchor-id="the-interface">The interface</h2>
+<ul>
+<li><a href="https://bookdown.org/gary_a_napier/induction_-_introduction_to_r/rstudio-interface.html">Rstudio basics</a></li>
+</ul>
+</section>
+</section>
+<section id="the-rexams-package" class="level1">
+<h1>The R/exams package</h1>
+<div class="cell">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="http://www.r-exams.org/images/oneforall.svg" class="img-fluid figure-img" style="width:50.0%"></p>
+<figcaption class="figure-caption">exams output</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<section id="relevant-resources" class="level2">
+<h2 class="anchored" data-anchor-id="relevant-resources">Relevant Resources</h2>
+<ul>
+<li><a href="http://www.r-exams.org">R/exams website</a></li>
+<li><a href="http://www.r-exams.org/tutorials/first_steps/">First Steps</a></li>
+</ul>
+</section>
+<section id="install-rexams" class="level2">
+<h2 class="anchored" data-anchor-id="install-rexams">Install R/exams</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"exams"</span>, <span class="at">dependencies =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(exams)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><a href="http://www.r-exams.org/resources/">R/Exams resources page here</a>.</p>
+</section>
+</section>
+<section id="procedure" class="level1">
+<h1>Procedure</h1>
+<p>Resource: Procedure item development in teams.</p>
+<ol type="1">
+<li>Go to project folder</li>
+<li>Navigate to desired taxonomy level 1 folder</li>
+<li>Create a new folder for each new item</li>
+<li>Name your item following instruction</li>
+<li>Check if items compile to HTML, PDF, etc.</li>
+<li>Quality check</li>
+</ol>
+</section>
+<section id="naming-instruction" class="level1">
+<h1>Naming instruction</h1>
+<p><small> [abbreviation institution]-[lowest taxonomy level for item]-[nummber ###]-[nl/en] </small></p>
+<p>All in small caps.</p>
+<p>example:</p>
+<ul>
+<li>uva-regression-001-nl.Rmd</li>
+</ul>
+<p>If available:</p>
+<ul>
+<li>uva-regression-001-nl-graph01.jpg</li>
+<li>uva-regression-001-nl-data01.sav</li>
+</ul>
+<section id="multiple-languages" class="level2">
+<h2 class="anchored" data-anchor-id="multiple-languages">Multiple languages</h2>
+<p>When you have an item in multiple languages, you can place them in the same item folder and alter the file name.</p>
+<ul>
+<li>uva-regression-001-<strong>en</strong>.Rmd</li>
+</ul>
+</section>
+</section>
+<section id="item-types" class="level1">
+<h1>Item types</h1>
+<p>There are five item types available in R exams (<a href="http://www.r-exams.org/intro/dynamic/">Resource</a>).</p>
+<ul>
+<li><strong>Multiple choice:</strong> <code>extype: schoice</code> (s: single)</li>
+<li><strong>Multiple answer:</strong> <code>extype: mchoice</code> (m: multiple)</li>
+<li><strong>Fill in the blank numbers:</strong> <code>extype: num</code></li>
+<li><strong>Fill in the blank text/essay:</strong> <code>extype: string</code></li>
+<li><strong>Combinations:</strong> <code>extype: cloze</code></li>
+</ul>
+<section id="general-item-structur" class="level2">
+<h2 class="anchored" data-anchor-id="general-item-structur">General item structur</h2>
+<pre><code>Question
+========
+
+Solution
+========
+
+Meta-information
+================
+exname: 
+extype: 
+exsolution: 
+exsection: 
+exextra[]:</code></pre>
+</section>
+<section id="multiple-choice" class="level2">
+<h2 class="anchored" data-anchor-id="multiple-choice">Multiple choice</h2>
+<pre><code>Question
+========
+
+What is the average of the numbers 3, 5 and 7?
+
+Answerlist
+----------
+* 4
+* 5
+* 6
+
+Solution
+========
+
+The correct answer is 5.
+
+Answerlist
+----------
+* You got it wrong
+* Yes you got it
+* This is the wrong answer
+
+Meta-information
+================
+exname: Rekens som
+extype: schoice
+exsolution: 010
+exsection: Descriptive statistics / Summary Statistics / Measures of Location/Mean
+exextra[Type]: Calculation</code></pre>
+</section>
+<section id="multiple-answer" class="level2">
+<h2 class="anchored" data-anchor-id="multiple-answer">Multiple answer</h2>
+<pre><code>Question
+========
+
+Which are parametric tests?
+
+Answerlist
+----------
+* t-test
+* signed-rank test
+* ANOVA
+
+Solution
+========
+
+The correct answer the ANOVA test
+
+Answerlist
+----------
+* True. t-test
+* False. signed rank test
+* True. ANOVA
+
+Meta-information
+================
+exname: parametric
+extype: mchoice
+exsolution: 101
+exsection: Inferential Statistics / Non-parametric Techniques / Signed Rank test
+exextra[Type]: Conceptual, Test choice
+exextra[Language]: English
+exextra[Level]: Statistical Reasoning</code></pre>
+</section>
+<section id="fill-in-the-blank-number" class="level2">
+<h2 class="anchored" data-anchor-id="fill-in-the-blank-number">Fill in the blank number</h2>
+<pre><code>Question
+========
+
+What is the average of the numbers 3, 5 and 7?
+
+Solution
+========
+
+The correct answer is 5.
+
+Meta-information
+================
+exname: Rekens som
+extype: num
+exsolution: 5
+extol: 0
+exsection: Descriptive statistics / Summary Statistics / Measures of Location/Mean
+exextra[Type]: Calculation</code></pre>
+</section>
+<section id="fill-in-the-blank-textessay" class="level2">
+<h2 class="anchored" data-anchor-id="fill-in-the-blank-textessay">Fill in the blank text/essay</h2>
+<pre><code>Question
+========
+
+What statistical test do you need to test the difference between two independent groups, assuming all parametric assumptions are met?
+
+Solution
+========
+
+The correct answer is independent t-test
+
+Meta-information
+================
+exname: TestSelectionTtest
+extype: string
+exsolution: "independent t-test"
+exsection: Inferential Statistics / Parametric Techniques/t-test / Independent samples means
+exextra[Type]: Test choice</code></pre>
+</section>
+<section id="combinations" class="level2">
+<h2 class="anchored" data-anchor-id="combinations">Combinations</h2>
+<pre><code>Question
+========
+
+Given are the following numbers: 1, 2, 3, 4, 5, 6. 
+
+Answerlist
+----------
+
+* What is the sample mean? 
+* What is the estimated population standard deviation?
+
+Solution
+========
+
+Answerlist
+----------
+
+* The sample mean is 3.5.
+* The estimated population standard deviation is 1.87.
+
+Meta-information
+================
+exname: MeandAndSD
+extype: cloze
+exclozetype: num|num
+exsolution: 3.5|1.870829
+extol: 0.01
+exextra[Type]: Calculate</code></pre>
+</section>
+</section>
+<section id="adding-images-or-attachments" class="level1">
+<h1>Adding images or attachments</h1>
+<p>Adding image or files to your question.</p>
+<ol type="1">
+<li>Add the image or file (.png .jpg .sav etc.) to the same folder as your question.</li>
+<li>Add the code below at the top of your .Rmd file.</li>
+<li>Add <code>![](myImage.png)</code> at location for image. Replace <code>myImage</code> with your own.</li>
+<li>Add <code>[Download](myFile.xls)</code> at location for the download. Replace <code>myFile</code> with your own.</li>
+</ol>
+<div class="sourceCode" id="cb8"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r, echo = FALSE, results = "hide"}</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">include_supplement</span>(<span class="st">"myImage.png"</span>, <span class="at">recursive =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="adding-meta-information" class="level1">
+<h1>Adding meta information</h1>
+<section id="statistics-taxonomy" class="level2">
+<h2 class="anchored" data-anchor-id="statistics-taxonomy">Statistics taxonomy</h2>
+<p>You can add the taxonomy to the <code>exsection</code> attribute in the meta information.</p>
+<pre><code>Meta-information
+================
+exsection: Descriptive statistics/Summary Statistics/Measures of Spread/Standard Deviation, Inferential Statistics/Parametric Techniques/t-test/One sample mean</code></pre>
+<ul>
+<li>The <a href="../taxonomy/taxonomy_tree.html">taxonomy tree can be found here</a>.</li>
+<li>Multiple paths can be added by using a comma as seperator.</li>
+<li>Only add path that is most specific for the question.</li>
+<li><strong>New lines are not allowed</strong></li>
+</ul>
+</section>
+<section id="adding-tags" class="level2">
+<h2 class="anchored" data-anchor-id="adding-tags">Adding Tags</h2>
+<p>You can add tags to the <code>exextra[]</code> attribute in the meta information.</p>
+<pre><code>Meta-information
+================
+exextra[Type]: Calculation, Data manipulation
+exextra[Program]: SPSS
+exextra[Language]: English
+exextra[Level]: Statistical Literacy</code></pre>
+<ul>
+<li>We have four categories that can be used <a href="../taxonomy/tags.html">tag tab</a>.</li>
+<li>Additional tags can be added. For example **G*Power** as a program. Though consult with your team leader first.</li>
+<li>Multiple tags can be added by using a comma as seperator.</li>
+<li>Type, Language and level are required. Only use Program when needed.</li>
+<li><strong>New lines are not allowed</strong></li>
+<li>level inherits the higher levels. So, <strong>statistical thinking</strong> implies Statistical Reasoning and Statistical Literacy.</li>
+</ul>
+</section>
+</section>
+<section id="using-r-packages" class="level1">
+<h1>Using R packages</h1>
+<p>If a question Rmd-file calls a function from an imported package, please ensure that it’s always clear from which particular package the function stems.</p>
+<p>Ideally, you explicitly specify the source package for each call of an imported function. R has the double colon operator <code>::</code> for this and the syntax looks as follows <code>packages_name::function_name(..)</code>. For example, if you want to use the function <code>kable()</code> from the package <code>knitr</code>, please call <code>knitr::kable(...)</code>. By the way: an import of the package is in this case not anymore required.</p>
+<p>Alternatively, you could always import all required packages in the Rmd-file (e.g.&nbsp;<code>library(knitr)</code>) and simply call the functions by their name (e.g.&nbsp;<code>kable(...)</code>). This method is however slightly more error-prone, because packages required for other questions might use the same function name and might thus cause conflicts between different questions.</p>
+</section>
+<section id="compiling-your-item" class="level1">
+<h1>Compiling your item</h1>
+<section id="check-output" class="level2">
+<h2 class="anchored" data-anchor-id="check-output">Check output</h2>
+<p>You are required to check if the developed items properly work. Run the <code>exams2html()</code> function as a simple fast check to test your .Rmd file.</p>
+<p>In addition run the following functions to check if the PDF is compiled correctly and if all the meta information is added properly. <span class="math inline">\(\LaTeX\)</span> <a href="http:/www.r-exams.org/tutorials/latex">must be installed</a> for the PDF function to work.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># install the develpment version to use browse_excersise()</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"exams"</span>, <span class="at">repos =</span> <span class="st">"http://R-Forge.R-project.org"</span>, <span class="at">dependencies =</span> <span class="cn">TRUE</span>, <span class="at">type =</span> <span class="st">"source"</span>)</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(exams)</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="fu">exams2html</span>(<span class="at">file =</span> <span class="st">""</span>)</span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>exams<span class="sc">:::</span><span class="fu">browse_exercise</span>(<span class="at">file =</span> <span class="st">""</span>)</span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a><span class="fu">exams2pdf</span>(<span class="at">file =</span> <span class="st">""</span>)</span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a><span class="fu">exams2pandoc</span>(<span class="at">file =</span> <span class="st">""</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">Copyright © 2023 ShareStats.nl</div>   
+    <div class="nav-footer-center">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/ShareStats/ShareStats_website/">
+      <i class="bi bi-github" role="img" aria-label="GitHub">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+</body></html>
