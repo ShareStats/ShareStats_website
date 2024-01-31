@@ -39,35 +39,49 @@
     "href": "news/index.html",
     "title": "ShareStats Newsletters",
     "section": "",
-    "text": "ShareStats started!\n\n\n\n\n\nNieuwsbrief 1\n\n\n\n\n\n\nOct 7, 2020\n\n\nMarleen de Moor\n\n\n\n\n\n\nNo matching items"
+    "text": "ShareStats started!\n\n\nNieuwsbrief 1\n\n\n\nMarleen de Moor\n\n\nOct 7, 2020\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTeacher meeting\n\n\nNewsletter 4\n\n\n\nMarleen de Moor\n\n\nDec 22, 2021\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
     "section": "",
-    "text": "image/svg+xmlShareStats \n\n\nThe open statistics assessment itembank\n\n\n\n\n Search\n\n\n\n\n\n\n\n\n\n\nCollaboration\n\n\nIn joint collaboration between the UvA, VU, UU and EUR, we set out to create a national itembank for statistics.\n\n\n\n\n\n\nCommunity\n\n\nBy creating a community of statistics teachers, we aim to have a wide use of the itembank.\n\n\nJoin the community at:\n\nLinkedin VVSOR\n\n\n\n\n\nFunding\n\n\nThe ShareStats project was nationally funded by SURF the collaborative organisation for ICT in Dutch education."
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
   },
   {
-    "objectID": "development/qualityProcedure.html#checklist-part-1-person-a",
-    "href": "development/qualityProcedure.html#checklist-part-1-person-a",
-    "title": "Quality Procedure",
-    "section": "Checklist part 1: Person A",
-    "text": "Checklist part 1: Person A\nQuestion content\n\nIs the wording of the question simple and concise? (An item is not meant to gauge a student’s verbal understanding over their overall mastery of the question of the subject.)\n\nNo complicated sentence structures or sentences/texts of excessive length.\nNo excessive use of complicated words, jargon, slang, or abbreviations.\nUse of standard statistical terminology.\nAnswer alternatives are formulated in as short a form as possible.\n\nDoes the question include no unclear or double negatives?\n\nNo double negatives in the question.\nNo combinations of a negation in the question and a negation in the answers.\nAl required negatives are made obvious. (By underlining the negative.)\n\nMake sure it is impossible to interpret the question in different ways or with multiple meanings.\n\nQuestions should not assess the correctness of two statements at once.\nQuestions should not have a possibility to supply a different answer than intended. (Play the devil’s advocate, analyze the different meanings terms in the question could possibly have.)\n\nHave universal quantifiers (never, all, always) been used correctly?\n\nIn the phrasing of the question.\nIn the phrasing of the answers.\n\nIs there a solid connection between the answers and the question?\n\nThe phrasing of each answer ties in with the question.\nPreferably integrate as many words into the question instead of restating them in each of the answer alternatives.\n\nAre the answer alternatives exclusive, logical, and clear?\n\nNo wrong answers that can be defended as right answers.\nAvoid, where possible, dummy-alternatives (for example ‘none of the above’).\nNo unintentional directions to either a wrong answer or the correct answer.\nAvoid answer alternatives that rely on a logical inaccuracy.\nAvoid nonsensical alternative answers as much as possible. (Alternative answers that most people would know are untrue/incorrect.)\n\n\nLayout\n\nNo grammar or spelling errors.\nAll figures and graphs are clear and easy to read.\nPunctuation marks such as comma’s, periods, semicolons, etc. are all checked and placed correctly.\nBe consistent in your placement of periods in multiple choice answers: o Numbers and few words require no period at the end of the answer. o Fully formed sentences and phrases do require a period at the end of the answer.\nWhen using an external source (for example graphs, figures or datasets), the proper citation is given. Copyright and Creative Commons No questions protected under copyright are to be added to the item bank. (Questions originating from a published book, or clearly derived questions, datasets, graphs and figures from books or other materials protected under copyright law.) Check the source of the question before adding it to the item bank. Ask your faculty’s project coordinator which sources have possibly been used (for example textbooks from courses, or online materials). Is it original material? Then the item may be added. When in doubt use the following as a basis and consult your project coordinator about the admissibility of the question:\n\nWhen only changing certain objective elements of the question, it falls under partial processing or imitation in a modified form, which still falls under copyright infringement.\nWhen writing a question in another order or with a different/new question, but with similar elements, it does not full under copyright infringement."
+    "objectID": "instructions.html",
+    "href": "instructions.html",
+    "title": "Instructions",
+    "section": "",
+    "text": "You can search for items in the itembank by browsing"
   },
   {
-    "objectID": "development/qualityProcedure.html#checklist-part-2-person-b",
-    "href": "development/qualityProcedure.html#checklist-part-2-person-b",
-    "title": "Quality Procedure",
-    "section": "Checklist part 2: Person B",
-    "text": "Checklist part 2: Person B\n\nCheck the compiled version of the question. (Question plus layout.)\nGo through part one of this checklist once more.\nCheck that all figures and graphs are included in the question.\nCheck that all necessarily documents are present in the folder.\nAnswer the question yourself and check if the right answer is indicated as being the correct one. Check the alternative answers.\nReturn the question to person A/the project manager."
+    "objectID": "instructions.html#search-for-items",
+    "href": "instructions.html#search-for-items",
+    "title": "Instructions",
+    "section": "",
+    "text": "You can search for items in the itembank by browsing"
   },
   {
-    "objectID": "development/qualityProcedure.html#download",
-    "href": "development/qualityProcedure.html#download",
-    "title": "Quality Procedure",
+    "objectID": "instructions.html#preview",
+    "href": "instructions.html#preview",
+    "title": "Instructions",
+    "section": "Preview",
+    "text": "Preview"
+  },
+  {
+    "objectID": "instructions.html#download",
+    "href": "instructions.html#download",
+    "title": "Instructions",
     "section": "Download",
-    "text": "Download\nDownload word document here"
+    "text": "Download\n\nQTI\n\n\nTestvision\n\n\nZip"
+  },
+  {
+    "objectID": "instructions.html#advanced",
+    "href": "instructions.html#advanced",
+    "title": "Instructions",
+    "section": "Advanced",
+    "text": "Advanced\n\nUsing exams package\n\n\nGithub Repository"
   },
   {
     "objectID": "development/ItemDevelopment.html",
@@ -175,46 +189,74 @@
     "text": "Check output\nYou are required to check if the developed items properly work. Run the exams2html() function as a simple fast check to test your .Rmd file.\nIn addition run the following functions to check if the PDF is compiled correctly and if all the meta information is added properly. \\(\\LaTeX\\) must be installed for the PDF function to work.\n\n# install the develpment version to use browse_excersise()\ninstall.packages(\"exams\", repos = \"http://R-Forge.R-project.org\", dependencies = TRUE, type = \"source\")\nlibrary(exams)\nexams2html(file = \"\")\nexams:::browse_exercise(file = \"\")\nexams2pdf(file = \"\")\nexams2pandoc(file = \"\")"
   },
   {
-    "objectID": "instructions.html",
-    "href": "instructions.html",
-    "title": "Instructions",
-    "section": "",
-    "text": "You can search for items in the itembank by browsing"
+    "objectID": "development/qualityProcedure.html#checklist-part-1-person-a",
+    "href": "development/qualityProcedure.html#checklist-part-1-person-a",
+    "title": "Quality Procedure",
+    "section": "Checklist part 1: Person A",
+    "text": "Checklist part 1: Person A\nQuestion content\n\nIs the wording of the question simple and concise? (An item is not meant to gauge a student’s verbal understanding over their overall mastery of the question of the subject.)\n\nNo complicated sentence structures or sentences/texts of excessive length.\nNo excessive use of complicated words, jargon, slang, or abbreviations.\nUse of standard statistical terminology.\nAnswer alternatives are formulated in as short a form as possible.\n\nDoes the question include no unclear or double negatives?\n\nNo double negatives in the question.\nNo combinations of a negation in the question and a negation in the answers.\nAl required negatives are made obvious. (By underlining the negative.)\n\nMake sure it is impossible to interpret the question in different ways or with multiple meanings.\n\nQuestions should not assess the correctness of two statements at once.\nQuestions should not have a possibility to supply a different answer than intended. (Play the devil’s advocate, analyze the different meanings terms in the question could possibly have.)\n\nHave universal quantifiers (never, all, always) been used correctly?\n\nIn the phrasing of the question.\nIn the phrasing of the answers.\n\nIs there a solid connection between the answers and the question?\n\nThe phrasing of each answer ties in with the question.\nPreferably integrate as many words into the question instead of restating them in each of the answer alternatives.\n\nAre the answer alternatives exclusive, logical, and clear?\n\nNo wrong answers that can be defended as right answers.\nAvoid, where possible, dummy-alternatives (for example ‘none of the above’).\nNo unintentional directions to either a wrong answer or the correct answer.\nAvoid answer alternatives that rely on a logical inaccuracy.\nAvoid nonsensical alternative answers as much as possible. (Alternative answers that most people would know are untrue/incorrect.)\n\n\nLayout\n\nNo grammar or spelling errors.\nAll figures and graphs are clear and easy to read.\nPunctuation marks such as comma’s, periods, semicolons, etc. are all checked and placed correctly.\nBe consistent in your placement of periods in multiple choice answers: o Numbers and few words require no period at the end of the answer. o Fully formed sentences and phrases do require a period at the end of the answer.\nWhen using an external source (for example graphs, figures or datasets), the proper citation is given. Copyright and Creative Commons No questions protected under copyright are to be added to the item bank. (Questions originating from a published book, or clearly derived questions, datasets, graphs and figures from books or other materials protected under copyright law.) Check the source of the question before adding it to the item bank. Ask your faculty’s project coordinator which sources have possibly been used (for example textbooks from courses, or online materials). Is it original material? Then the item may be added. When in doubt use the following as a basis and consult your project coordinator about the admissibility of the question:\n\nWhen only changing certain objective elements of the question, it falls under partial processing or imitation in a modified form, which still falls under copyright infringement.\nWhen writing a question in another order or with a different/new question, but with similar elements, it does not full under copyright infringement."
   },
   {
-    "objectID": "instructions.html#search-for-items",
-    "href": "instructions.html#search-for-items",
-    "title": "Instructions",
-    "section": "",
-    "text": "You can search for items in the itembank by browsing"
+    "objectID": "development/qualityProcedure.html#checklist-part-2-person-b",
+    "href": "development/qualityProcedure.html#checklist-part-2-person-b",
+    "title": "Quality Procedure",
+    "section": "Checklist part 2: Person B",
+    "text": "Checklist part 2: Person B\n\nCheck the compiled version of the question. (Question plus layout.)\nGo through part one of this checklist once more.\nCheck that all figures and graphs are included in the question.\nCheck that all necessarily documents are present in the folder.\nAnswer the question yourself and check if the right answer is indicated as being the correct one. Check the alternative answers.\nReturn the question to person A/the project manager."
   },
   {
-    "objectID": "instructions.html#preview",
-    "href": "instructions.html#preview",
-    "title": "Instructions",
-    "section": "Preview",
-    "text": "Preview"
-  },
-  {
-    "objectID": "instructions.html#download",
-    "href": "instructions.html#download",
-    "title": "Instructions",
+    "objectID": "development/qualityProcedure.html#download",
+    "href": "development/qualityProcedure.html#download",
+    "title": "Quality Procedure",
     "section": "Download",
-    "text": "Download\n\nQTI\n\n\nTestvision\n\n\nZip"
+    "text": "Download\nDownload word document here"
   },
   {
-    "objectID": "instructions.html#advanced",
-    "href": "instructions.html#advanced",
-    "title": "Instructions",
-    "section": "Advanced",
-    "text": "Advanced\n\nUsing exams package\n\n\nGithub Repository"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "",
     "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
+    "text": "image/svg+xmlShareStats \n\n\nThe open statistics assessment itembank\n\n\n\n\n Search\n\n\n\n\n\n\n\n\n\n\nCollaboration\n\n\nIn joint collaboration between the UvA, VU, UU and EUR, we set out to create a national itembank for statistics.\n\n\n\n\n\n\nCommunity\n\n\nBy creating a community of statistics teachers, we aim to have a wide use of the itembank.\n\n\nJoin the community at:\n\nLinkedin VVSOR\n\n\n\n\n\nFunding\n\n\nThe ShareStats project was nationally funded by SURF the collaborative organisation for ICT in Dutch education."
+  },
+  {
+    "objectID": "news/4-newsletter.html",
+    "href": "news/4-newsletter.html",
+    "title": "Teacher meeting",
+    "section": "",
+    "text": "The ShareStats project runs from September 1, 2020 to August 31, 2022. In this fourth newsletter we will give you an update about our project!"
+  },
+  {
+    "objectID": "news/4-newsletter.html#high-turnout-at-second-meeting-with-teachers",
+    "href": "news/4-newsletter.html#high-turnout-at-second-meeting-with-teachers",
+    "title": "Teacher meeting",
+    "section": "High turnout at second meeting with teachers",
+    "text": "High turnout at second meeting with teachers\nOn November 26, 2021, we had another ShareStats professional community meeting. There were more than 20 participants from more than 10 universities or other organizations; a great success!\nAfter an introduction by Marike Polak (EUR) about the items created in ShareStats, we discussed some first example questions from the ShareStats database in break-out rooms. We looked both at content and at the taxonomy used. Niels Smits (UvA) then talked about R/Exams and how ShareStats can be used in the future. We were able to immediately take inventory of the wishes of the participants of the meeting who will be using the item bank in the future.\nThe evaluation showed that the participants thought all parts were interesting and instructive. For many, the existence of R/Exams was a real eye-opener and they liked to now have a better view of the entire project. It was striking that apart from the development of the items, the contact with other statistics teachers was highly appreciated. During the meeting, many experiences and educational materials were exchanged. This once again showed the usefulness of creating a professional community! All in all, we had a very enthusiastic and inspiring afternoon."
+  },
+  {
+    "objectID": "news/4-newsletter.html#over-1500-statistics-exercises-have-been-made",
+    "href": "news/4-newsletter.html#over-1500-statistics-exercises-have-been-made",
+    "title": "Teacher meeting",
+    "section": "Over 1500 statistics exercises have been made!",
+    "text": "Over 1500 statistics exercises have been made!\nThere are already 1500 items ready in R Markdown format at the moment. That’s about 25% of the intended 6500 items we want to deliver! Soon, 2000 items from the Statistics Factory (Statistiekfabriek, UvA) will be added in 1 swoop. In April we will deliver a first beta version of the item bank that we will present to the professional community!"
+  },
+  {
+    "objectID": "news/4-newsletter.html#export-to-online-learning-and-testing-environments",
+    "href": "news/4-newsletter.html#export-to-online-learning-and-testing-environments",
+    "title": "Teacher meeting",
+    "section": "EXPORT TO ONLINE LEARNING AND TESTING ENVIRONMENTS",
+    "text": "EXPORT TO ONLINE LEARNING AND TESTING ENVIRONMENTS\nAs part of the ShareStats project, export and import functions are written in R. This way, users of the item bank can easily export questions from R Markdown to an online learning environment or test application of their choice. Think for example of TestVision, Canvas, Remindo, Blackboard and Grasple.\nThe functions exams2blackboard, exams2canvas and exams2testvision are ready. We are currently working hard on the conversion to Remindo and Grasple. As a result of the meeting with the professional community, wishes have emerged to also develop export functions for other programs (ANS, d2l BrightSpace, Moodle). We are investigating whether these functions can still be made."
+  },
+  {
+    "objectID": "news/4-newsletter.html#example-of-an-item-in-the-sharestats-itembank",
+    "href": "news/4-newsletter.html#example-of-an-item-in-the-sharestats-itembank",
+    "title": "Teacher meeting",
+    "section": "EXAMPLE OF AN ITEM IN THE SHARESTATS ITEMBANK",
+    "text": "EXAMPLE OF AN ITEM IN THE SHARESTATS ITEMBANK\nItem in Rmarkdown\n\nQuestion\n========\n\nEen arbeids- en organisatiepsychologe is geïnteresseerd in de relatie tussen de mate van binding met het bedrijf (intervalschaal) en het aantal dagen ziekte in een jaar. In een aselecte steekproef van 30 werknemers vindt zij een correlatie van $r = .37$.\n\nWat is de nulhypothese wanneer de aanwezigheid van een correlatie getoetst wordt?\n\nAnswerlist\n----------\n* $H_0: r = 0$\n* $H_0: r &gt; 0$\n* $H_0: \\rho = 0$\n* $H_0: \\rho &gt; 0$\n\nSolution\n========\n  \nEen hypothese is een statement over de waarde in de populatie ($\\rho$). In een nulhypothese staat altijd dat er géén correlatie is: ($\\rho=0$).\n\nAnswerlist\n----------\n* Een hypothese is een statement over de waarde in de populatie en niet in de steekproef.\n* Een hypothese is een statement over de waarde in de populatie en niet in de steekproef.\n* Dit is de juiste nulhypothese.\n* In een nulhypothese staat altijd dat er géén correlatie is.\n\nMeta-information\n================\nexname: uu-Null hypothesis-801-nl.Rmd\nextype: schoice\nexsolution: 0010\nexsection: Inferential Statistics/NHST/Hypothesis/Null hypothesis\nexextra[Type]: Case\nexextra[Program]:\nexextra[Language]: Dutch\nexextra[Level]: Statistical Literacy```"
+  },
+  {
+    "objectID": "news/4-newsletter.html#in-the-spotlight",
+    "href": "news/4-newsletter.html#in-the-spotlight",
+    "title": "Teacher meeting",
+    "section": "In the spotlight",
+    "text": "In the spotlight\nShareStats is an initiative of five departments of four universities. In every newsletter we introduce one of the project members.\n\nNiels Smits (University of Amsterdam)\n\n\n\nNiels Smits\n\n\nI am an assistant professor in the department of pedagogical and educational sciences. I have been teaching methods and techniques for almost 20 years. Think of courses such as research methodology, statistics and test theory. When it comes to education, I get my inspiration from good statistics books. There are a number of authors who are very good at telling a conceptual story while omitting distracting technical details. I also do research; my interests are in the field of psychometrics. I’ve written the most about adaptive testing and test construction.\nFor the project I mainly work on the output functions in R/Exams. In addition to the planned output formats, I also think about conversion to new test applications and the conversion the other way, for example, convert collections of questions that are in TestVision to R/Exams format. I have already contributed to the development ofthe R/Exams package in the past and now I can spend even more time on it. I especially like programming and enjoy creating questions/items that not only look beautiful, but also in such a way that students can learn something from it. In addition, I hope that through my efforts statistics teachers will not only use the collection of questions produced by ShareStats, but also create their own questions in our format so that they can benefit from the possibility of interchangeability and efficient question management."
   },
   {
     "objectID": "news/sharestats-started.html",
@@ -270,7 +312,7 @@
     "href": "team/people/marleen.html",
     "title": "Marleen de Moor",
     "section": "",
-    "text": "Als algemeen projectleider van ShareStats zal ik me bezig houden met de planning en voortgang van het project. Daarnaast behoort kennisdisseminatie tot mijn taken: het opzetten van een actieve vakcommunity om zoveel mogelijk docenten te betrekken bij Sharestats, en docenten op de hoogte te houden van onze mijlpalen! Mijn motto voor ShareStats is “Het geheel is meer dan de som der delen”. Wiskundig gezien klopt dat misschien niet, maar ik hoop wel dat het voor ons project zo werkt! Samenwerken aan een databank van statistiekopgaven verhoogt de kwaliteit van ons onderwijsmateriaal en bespaart docenten tijd!"
+    "text": "Als algemeen projectleider van ShareStats houd ik me bezig met de planning en voortzetting van het project. Daarnaast behoort kennisdisseminatie tot mijn taken: we hebben een actieve vakcommunity van docenten opgezet via LinkedIn en de Statistics Education sectie van de Vereniging voor Statistics en Operations Research (VVSOR)! Mijn motto voor ShareStats is “Het geheel is meer dan de som der delen”. Wiskundig gezien klopt dat misschien niet, maar voor ons project werkt het toch echt zo! We hopen dat veel docenten van de door ons ontwikkelde open itembank gebruikmaken."
   },
   {
     "objectID": "taxonomy/taxonomy_tree.html",

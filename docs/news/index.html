@@ -62,9 +62,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -201,35 +201,57 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1602053556000" data-listing-file-modified-sort="1703171200599" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
-<div class="thumbnail">
-<p><a href="../news/sharestats-started.html"> <img src="../news/blog-post-3.jpg" class="thumbnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="../news/sharestats-started.html">
-<h3 class="no-anchor listing-title">
+<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-listing-date-sort="1602053556000" data-listing-file-modified-sort="1703171200599" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<a href="../news/sharestats-started.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="../news/blog-post-3.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
 ShareStats started!
-</h3>
-<div class="listing-subtitle">
-
+</h5>
+<div class="card-text listing-description">
+Nieuwsbrief 1
 </div>
-<div class="listing-description">
-<p>Nieuwsbrief 1</p>
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="../news/sharestats-started.html">
-<div class="listing-date">
-Oct 7, 2020
-</div>
+<div class="card-attribution card-text-small justify">
 <div class="listing-author">
 Marleen de Moor
 </div>
+<div class="listing-date">
+Oct 7, 2020
+</div>
+</div>
+</div>
+</div>
 </a>
 </div>
+<div class="g-col-1" data-index="1" data-listing-date-sort="1640155956000" data-listing-file-modified-sort="1703179461246" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5">
+<a href="../news/4-newsletter.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="../team/people/images/niels.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Teacher meeting
+</h5>
+<div class="card-text listing-description">
+Newsletter 4
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Marleen de Moor
+</div>
+<div class="listing-date">
+Dec 22, 2021
+</div>
+</div>
+</div>
+</div>
+</a>
 </div>
 </div>
 <div class="listing-no-matching d-none">
