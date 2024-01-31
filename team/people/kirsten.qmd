@@ -1,6 +1,6 @@
 ---
 title: Kirsten Namesnik-Silvester
-image_webp: images/kirsten.webp
+#image_webp: images/kirsten.webp
 image: images/kirsten.jpg
 designation: Universiteit Utrecht
 social:
