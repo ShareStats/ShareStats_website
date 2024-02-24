@@ -32,7 +32,7 @@
     "href": "team/team.html",
     "title": "Meet the Team",
     "section": "",
-    "text": "Dimitris Pavlopoulos\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJoran Jongerling\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nKirsten Namesnik-Silvester\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLidia Arends\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMarike Polak\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMarleen de Moor\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNiels Smits\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSharon Klinkenberg\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Dimitris Pavlopoulos\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJoran Jongerling\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nKirsten Namesnik-Silvester\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLidia Arends\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMarike Polak\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMarleen de Moor\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNiels Smits\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSharon Klinkenberg\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTasos Psychogyiopoulos\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "news/index.html",
@@ -313,5 +313,12 @@
     "title": "Tags",
     "section": "ShareStats project",
     "text": "ShareStats project\nMore information on the ShareStats project can be found on our website."
+  },
+  {
+    "objectID": "team/people/tasos.html",
+    "href": "team/people/tasos.html",
+    "title": "Tasos Psychogyiopoulos",
+    "section": "",
+    "text": "My role in ShareStats includes maintaining the item bank and developing related code to ensure a pleasant experience for the end user. I am grateful to contribute a small part to this wonderful project and further support the open science movement."
   }
 ]
