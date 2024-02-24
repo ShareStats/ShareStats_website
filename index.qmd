@@ -9,15 +9,17 @@ format: html
 ```{=html}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 ```
-
-<div class="column-body">
-
-<div id="hero" class="column-screen text-center">
-
+::: column-body
+::: {#hero .column-screen .text-center}
 {{< include images/logo.svg >}}
 
-<p style="color: white;">The open statistics assessment itembank</p>
+<p style="color: white;">
 
+The open statistics assessment itembank
+
+</p>
+
+```{=html}
 <div = id="searchBox">
 <form method="GET" action="items-df.html" id="item__searchbox" class="d-flex">
 
@@ -27,42 +29,63 @@ format: html
 
 <!-- <a href="items-df.qmd" class="btn btn-secondary">Explore the Itembank</a> -->
 </div>
-
-</div>
-
-::: {.column-screen .mx-auto .container .grid .p-4}
-
-<div class="card bg-light g-col-12 g-col-md-6 g-col-lg-4">
-<div class="card-body">
-<h5 class="card-title">Collaboration</h5>
-<p class="card-text">In joint collaboration between the UvA, VU, UU and EUR, we set out to create a national itembank for statistics.</p>
-</div>
-</div>
-
-<div class="card bg-light g-col-12 g-col-md-6 g-col-lg-4">
-<div class="card-body">
-<h5 class="card-title">Community</h5>
-<p class="card-text">By creating a community of statistics teachers, we aim to have a wide use of the itembank.</p>
-<p>Join the community at:</p>
-<a href="https://www.linkedin.com/groups/12464778/" class="btn btn-primary btn-outline-primary" role="button">Linkedin</a>
-<a href="https://www.vvsor.nl/education/" class="btn btn-primary btn-outline-primary" role="button">VVSOR</a>
-</div>
-</div>
-
-<div class="card bg-light g-col-12 g-col-md-6 g-col-lg-4">
-<div class="card-body">
-<h5 class="card-title">Funding</h5>
-<p class="card-text">The ShareStats project was nationally funded by [SURF](https://www.surf.nl/sharestats-statistiekopgaven-open-delen-met-een-vakcommunity-van-docenten) the collaborative organisation for ICT in Dutch education.</p>
-</div>
-</div>
-
+```
 :::
 
+::: {.column-screen .mx-auto .container .grid .p-4}
+::: {.card .bg-light .g-col-12 .g-col-md-6 .g-col-lg-4}
+::: card-body
+<h5 class="card-title">
 
+Collaboration
 
+</h5>
 
-</div>
+<p class="card-text">
 
+In joint collaboration between the UvA, VU, UU and EUR, we set out to create a national itembank for statistics.
+
+</p>
+:::
+:::
+
+::: {.card .bg-light .g-col-12 .g-col-md-6 .g-col-lg-4}
+::: card-body
+<h5 class="card-title">
+
+Community
+
+</h5>
+
+<p class="card-text">
+
+By creating a community of statistics teachers, we aim to have a wide use of the itembank.
+
+</p>
+
+<p>Join the community at:</p>
+
+<a href="https://www.linkedin.com/groups/12464778/" class="btn btn-primary btn-outline-primary" role="button">Linkedin</a> <a href="https://www.vvsor.nl/education/" class="btn btn-primary btn-outline-primary" role="button">VVSOR</a>
+:::
+:::
+
+::: {.card .bg-light .g-col-12 .g-col-md-6 .g-col-lg-4}
+::: card-body
+<h5 class="card-title">
+
+Funding
+
+</h5>
+
+<p class="card-text">
+
+The ShareStats project was nationally funded by [SURF](https://www.surf.nl/sharestats-statistiekopgaven-open-delen-met-een-vakcommunity-van-docenten) the collaborative organisation for ICT in Dutch education.
+
+</p>
+:::
+:::
+:::
+:::
 
 ```{=html}
 <script>
