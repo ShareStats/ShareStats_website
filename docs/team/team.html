@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.550">
+<meta name="generator" content="quarto-1.3.450">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -47,7 +47,6 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
-    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -86,33 +85,6 @@ ul.task-list li input[type="checkbox"] {
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
 <link rel="stylesheet" href="../styles.css">
 <link rel="stylesheet" href="../bootstrap.css">
 <link rel="stylesheet" href="../custom.css">
@@ -122,9 +94,9 @@ window.Quarto = {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container mx-auto">
+      <div class="navbar-brand-container">
     <a href="../index.html" class="navbar-brand navbar-brand-logo">
     <img src="../images/logoWT.png" alt="ShareStats" class="navbar-logo">
     </a>
@@ -135,68 +107,68 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../items-df.html"> 
-<span class="menu-text">Itembank</span></a>
+    <a class="nav-link" href="../items-df.html" rel="" target="">
+ <span class="menu-text">Itembank</span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-taxonomy" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-taxonomy" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
  <span class="menu-text">Taxonomy</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-taxonomy">    
         <li>
-    <a class="dropdown-item" href="../taxonomy/taxonomy_tree.html">
+    <a class="dropdown-item" href="../taxonomy/taxonomy_tree.html" rel="" target="">
  <span class="dropdown-text">Taxonimy Tree</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../taxonomy/taxonomy_visual.html">
+    <a class="dropdown-item" href="../taxonomy/taxonomy_visual.html" rel="" target="">
  <span class="dropdown-text">Taxonomy Visual</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../taxonomy/tags.html">
+    <a class="dropdown-item" href="../taxonomy/tags.html" rel="" target="">
  <span class="dropdown-text">Tags</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-development" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-development" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
  <span class="menu-text">Development</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-development">    
         <li>
-    <a class="dropdown-item" href="../development/ItemDevelopment.html">
+    <a class="dropdown-item" href="../development/ItemDevelopment.html" rel="" target="">
  <span class="dropdown-text">Item development</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../development/qualityProcedure.html">
+    <a class="dropdown-item" href="../development/qualityProcedure.html" rel="" target="">
  <span class="dropdown-text">Quality procedure</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../news/index.html"> 
-<span class="menu-text">News</span></a>
+    <a class="nav-link" href="../news/index.html" rel="" target="">
+ <span class="menu-text">News</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-about-sharestats" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-about-sharestats" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
  <span class="menu-text">About ShareStats</span>
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-about-sharestats">    
         <li>
-    <a class="dropdown-item" href="../team/team.html">
+    <a class="dropdown-item" href="../team/team.html" rel="" target="">
  <span class="dropdown-text">Meet the team</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="mailto:info@sharestats.nl">
+    <a class="dropdown-item" href="mailto:info@sharestats.nl" rel="" target="">
  <span class="dropdown-text">Contact us</span></a>
   </li>  
     </ul>
   </li>
 </ul>
-          </div> <!-- /navcollapse -->
-          <div class="quarto-navbar-tools">
+            <div class="quarto-navbar-tools">
 </div>
+          </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -215,7 +187,7 @@ window.Quarto = {
 
 
 
-<div class="quarto-title-meta column-page">
+<div class="quarto-title-meta">
 
     
   
@@ -223,9 +195,7 @@ window.Quarto = {
   </div>
   
 
-
 </header>
-
 
 
 
@@ -233,7 +203,7 @@ window.Quarto = {
 
 <div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1708762665124" data-listing-reading-time-sort="1" data-listing-word-count-sort="54">
+<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1703171200602" data-listing-reading-time-sort="1">
 <a href="../team/people/dimitris.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -244,7 +214,7 @@ window.Quarto = {
 Dimitris Pavlopoulos
 </h5>
 <div class="card-text listing-description">
-Samen met Marike ga ik de verzameling en de kwalitateitscontrole van toetsvragen coordineren. Ons doel is een rijke pool van vragen te krijgen die direct inzetbaar zijn in…
+Samen met Marike ga ik de verzameling en de kwalitateitscontrole van toetsvragen coordineren. Ons doel is een rijke pool van vragen te krijgen…
 </div>
 <div class="card-attribution card-text-small start">
 <div class="listing-author">
@@ -255,7 +225,7 @@ Samen met Marike ga ik de verzameling en de kwalitateitscontrole van toetsvragen
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1708762665131" data-listing-reading-time-sort="1" data-listing-word-count-sort="64">
+<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1703171200608" data-listing-reading-time-sort="1">
 <a href="../team/people/joran.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -266,7 +236,7 @@ Samen met Marike ga ik de verzameling en de kwalitateitscontrole van toetsvragen
 Joran Jongerling
 </h5>
 <div class="card-text listing-description">
-Ik hoop met dit project genoeg (kwalitatief goede) opgaven aan studenten te kunnen aanbieden, zodat ze eindelijk echt genoeg kunnen oefenen met de stof om het in de vingers…
+Ik hoop met dit project genoeg (kwalitatief goede) opgaven aan studenten te kunnen aanbieden, zodat ze eindelijk echt genoeg kunnen oefenen met…
 </div>
 <div class="card-attribution card-text-small start">
 <div class="listing-author">
@@ -277,7 +247,7 @@ Ik hoop met dit project genoeg (kwalitatief goede) opgaven aan studenten te kunn
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1708766661477" data-listing-reading-time-sort="1" data-listing-word-count-sort="89">
+<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1706720335707" data-listing-reading-time-sort="1">
 <a href="../team/people/kirsten.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -299,7 +269,7 @@ In dit project heb ik binnen de Universiteit Utrecht het verzamelen, reviewen en
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="3" data-listing-file-modified-sort="1708762665131" data-listing-reading-time-sort="1" data-listing-word-count-sort="54">
+<div class="g-col-1" data-index="3" data-listing-file-modified-sort="1703171200608" data-listing-reading-time-sort="1">
 <a href="../team/people/lidia.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -321,7 +291,7 @@ Al jaren proberen we bij allerlei opleidingen en universiteiten leuke, nieuwe, o
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="4" data-listing-file-modified-sort="1708762665132" data-listing-reading-time-sort="1" data-listing-word-count-sort="67">
+<div class="g-col-1" data-index="4" data-listing-file-modified-sort="1703171200609" data-listing-reading-time-sort="1">
 <a href="../team/people/marike.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -343,7 +313,7 @@ Ik coördineer samen met Dimitris het reviewen en het reviseren van statistiekop
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="5" data-listing-file-modified-sort="1708762665132" data-listing-reading-time-sort="1" data-listing-word-count-sort="89">
+<div class="g-col-1" data-index="5" data-listing-file-modified-sort="1706704490210" data-listing-reading-time-sort="1">
 <a href="../team/people/marleen.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -365,7 +335,7 @@ Als algemeen projectleider van ShareStats houd ik me bezig met de planning en vo
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="6" data-listing-file-modified-sort="1708762665132" data-listing-reading-time-sort="1" data-listing-word-count-sort="73">
+<div class="g-col-1" data-index="6" data-listing-file-modified-sort="1703171200609" data-listing-reading-time-sort="1">
 <a href="../team/people/niels.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -387,7 +357,7 @@ Ik richt me in dit project vooral op het schrijven van R-code om de functionalit
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="7" data-listing-file-modified-sort="1708762665132" data-listing-reading-time-sort="1" data-listing-word-count-sort="72">
+<div class="g-col-1" data-index="7" data-listing-file-modified-sort="1703171200609" data-listing-reading-time-sort="1">
 <a href="../team/people/sharon.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -399,28 +369,6 @@ Sharon Klinkenberg
 </h5>
 <div class="card-text listing-description">
 Als voorzitter van de special interest group digitaal toetsen van SURF heb ik de afgelopen 10 jaar gezien hoe lastig het is om toetsitems te delen. Ondanks de beschikbare…
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="8" data-listing-file-modified-sort="1708768646407" data-listing-reading-time-sort="1" data-listing-word-count-sort="41">
-<a href="../team/people/tasos.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="../team/people/images/tasos.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Tasos Psychogyiopoulos
-</h5>
-<div class="card-text listing-description">
-My role in ShareStats includes maintaining the item bank and developing related code to ensure a pleasant experience for the end user. I am grateful to contribute a small…
 </div>
 <div class="card-attribution card-text-small start">
 <div class="listing-author">
@@ -515,9 +463,10 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+  function tippyHover(el, contentFn) {
     const config = {
       allowHTML: true,
+      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -527,17 +476,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start',
+      placement: 'bottom-start'
     };
-    if (contentFn) {
-      config.content = contentFn;
-    }
-    if (onTriggerFn) {
-      config.onTrigger = onTriggerFn;
-    }
-    if (onUntriggerFn) {
-      config.onUntrigger = onUntriggerFn;
-    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -550,125 +490,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
-    });
-  }
-  const xrefs = window.document.querySelectorAll('a.quarto-xref');
-  const processXRef = (id, note) => {
-    // Strip column container classes
-    const stripColumnClz = (el) => {
-      el.classList.remove("page-full", "page-columns");
-      if (el.children) {
-        for (const child of el.children) {
-          stripColumnClz(child);
-        }
-      }
-    }
-    stripColumnClz(note)
-    if (id === null || id.startsWith('sec-')) {
-      // Special case sections, only their first couple elements
-      const container = document.createElement("div");
-      if (note.children && note.children.length > 2) {
-        container.appendChild(note.children[0].cloneNode(true));
-        for (let i = 1; i < note.children.length; i++) {
-          const child = note.children[i];
-          if (child.tagName === "P" && child.innerText === "") {
-            continue;
-          } else {
-            container.appendChild(child.cloneNode(true));
-            break;
-          }
-        }
-        if (window.Quarto?.typesetMath) {
-          window.Quarto.typesetMath(container);
-        }
-        return container.innerHTML
-      } else {
-        if (window.Quarto?.typesetMath) {
-          window.Quarto.typesetMath(note);
-        }
-        return note.innerHTML;
-      }
-    } else {
-      // Remove any anchor links if they are present
-      const anchorLink = note.querySelector('a.anchorjs-link');
-      if (anchorLink) {
-        anchorLink.remove();
-      }
-      if (window.Quarto?.typesetMath) {
-        window.Quarto.typesetMath(note);
-      }
-      // TODO in 1.5, we should make sure this works without a callout special case
-      if (note.classList.contains("callout")) {
-        return note.outerHTML;
-      } else {
-        return note.innerHTML;
-      }
-    }
-  }
-  for (var i=0; i<xrefs.length; i++) {
-    const xref = xrefs[i];
-    tippyHover(xref, undefined, function(instance) {
-      instance.disable();
-      let url = xref.getAttribute('href');
-      let hash = undefined; 
-      if (url.startsWith('#')) {
-        hash = url;
-      } else {
-        try { hash = new URL(url).hash; } catch {}
-      }
-      if (hash) {
-        const id = hash.replace(/^#\/?/, "");
-        const note = window.document.getElementById(id);
-        if (note !== null) {
-          try {
-            const html = processXRef(id, note.cloneNode(true));
-            instance.setContent(html);
-          } finally {
-            instance.enable();
-            instance.show();
-          }
-        } else {
-          // See if we can fetch this
-          fetch(url.split('#')[0])
-          .then(res => res.text())
-          .then(html => {
-            const parser = new DOMParser();
-            const htmlDoc = parser.parseFromString(html, "text/html");
-            const note = htmlDoc.getElementById(id);
-            if (note !== null) {
-              const html = processXRef(id, note);
-              instance.setContent(html);
-            } 
-          }).finally(() => {
-            instance.enable();
-            instance.show();
-          });
-        }
-      } else {
-        // See if we can fetch a full url (with no hash to target)
-        // This is a special case and we should probably do some content thinning / targeting
-        fetch(url)
-        .then(res => res.text())
-        .then(html => {
-          const parser = new DOMParser();
-          const htmlDoc = parser.parseFromString(html, "text/html");
-          const note = htmlDoc.querySelector('main.content');
-          if (note !== null) {
-            // This should only happen for chapter cross references
-            // (since there is no id in the URL)
-            // remove the first header
-            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
-              note.children[0].remove();
-            }
-            const html = processXRef(null, note);
-            instance.setContent(html);
-          } 
-        }).finally(() => {
-          instance.enable();
-          instance.show();
-        });
-      }
-    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -712,7 +533,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
-            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -738,32 +558,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
-        // Handle positioning of the toggle
-    window.addEventListener(
-      "resize",
-      throttle(() => {
-        elRect = undefined;
-        if (selectedAnnoteEl) {
-          selectCodeLines(selectedAnnoteEl);
-        }
-      }, 10)
-    );
-    function throttle(fn, ms) {
-    let throttle = false;
-    let timer;
-      return (...args) => {
-        if(!throttle) { // first call gets through
-            fn.apply(this, args);
-            throttle = true;
-        } else { // all the others get throttled
-            if(timer) clearTimeout(timer); // cancel #2
-            timer = setTimeout(() => {
-              fn.apply(this, args);
-              timer = throttle = false;
-            }, ms);
-        }
-      };
-    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -826,9 +620,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-    <div class="nav-footer-left">
-<p>Copyright © 2023 ShareStats.nl</p>
-</div>   
+    <div class="nav-footer-left">Copyright © 2023 ShareStats.nl</div>   
     <div class="nav-footer-center">
       <ul class="footer-items list-unstyled">
     <li class="nav-item compact">
@@ -844,7 +636,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>
   </div>
 </footer>
-
 
 
 
