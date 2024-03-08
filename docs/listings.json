@@ -1,5 +1,11 @@
 [
   {
+    "listing": "/news/index.html",
+    "items": [
+      "/news/sharestats-started.html"
+    ]
+  },
+  {
     "listing": "/team/team.html",
     "items": [
       "/team/people/dimitris.html",
@@ -11,12 +17,6 @@
       "/team/people/niels.html",
       "/team/people/sharon.html",
       "/team/people/tasos.html"
-    ]
-  },
-  {
-    "listing": "/news/index.html",
-    "items": [
-      "/news/sharestats-started.html"
     ]
   }
 ]
