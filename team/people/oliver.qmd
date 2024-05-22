@@ -1,0 +1,17 @@
+---
+title: Oliver Lindemann
+image: images/oliver.jpg
+designation: Universiteit van Amsterdam
+about:
+  template: jolla
+  image: images/oliver.jpg
+  links:
+  - icon: globe # themify icon pack : https://themify.me/themify-icons
+    href: https://www.eur.nl/people/oliver-lindemann
+  - icon: linkedin # themify icon pack : https://themify.me/themify-icons
+    href: "https://www.linkedin.com/in/oliver-lindemann-7b086412/?originalSubdomain=nl"
+  - icon: github # themify icon pack : https://themify.me/themify-icons
+    href: "https://github.com/lindemann09"
+---
+
+I'm involved in the maintenance of the item database and the develop of software for linting item codes, automatized quality checks and the continuous integration process for converting markdown items into other formats.

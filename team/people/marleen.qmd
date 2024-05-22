@@ -3,15 +3,12 @@ title: Marleen de Moor
 image_webp: images/marleen.webp
 image: images/marleen.jpg
 designation: Vrije Universiteit Amsterdam
-social:
-  - icon: ti-facebook # themify icon pack: https://themify.me/themify-icons
-    link:
-  - icon: ti-twitter-alt # themify icon pack: https://themify.me/themify-icons
-    link:
-  - icon: ti-linkedin # themify icon pack: https://themify.me/themify-icons
-    link: https://www.linkedin.com/in/marleen-de-moor-a02061159/
-  - icon: ti-dribbble # themify icon pack: https://themify.me/themify-icons
-    link:
+about:
+  template: jolla
+  image: images/marleen.jpg
+  links:
+  - icon: linkedin # themify icon pack: https://themify.me/themify-icons
+    href: https://www.linkedin.com/in/marleen-de-moor-a02061159/
 ---  
 
 Als algemeen projectleider van ShareStats houd ik me bezig met de planning en voortzetting van het project. Daarnaast behoort kennisdisseminatie tot mijn taken: we hebben een actieve vakcommunity van docenten opgezet via LinkedIn en de Statistics Education sectie van de Vereniging voor Statistics en Operations Research (VVSOR)! Mijn motto voor ShareStats is “Het geheel is meer dan de som der delen”. Wiskundig gezien klopt dat misschien niet, maar voor ons project werkt het toch echt zo! We hopen dat veel docenten van de door ons ontwikkelde open itembank gebruikmaken.

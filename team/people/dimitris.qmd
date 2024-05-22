@@ -2,15 +2,12 @@
 title: Dimitris Pavlopoulos
 image: images/dimitris.jpg
 designation: Vrije Universiteit Amsterdam
-social:
-  - icon: ti-facebook # themify icon pack: https://themify.me/themify-icons
-    link:
-  - icon: ti-twitter-alt # themify icon pack: https://themify.me/themify-icons
-    link:
-  - icon: ti-linkedin # themify icon pack: https://themify.me/themify-icons
-    link: https://www.linkedin.com/in/dimitrispavlopoulos/
-  - icon: ti-dribbble # themify icon pack: https://themify.me/themify-icons
-    link:
+about:
+  template: jolla
+  image: images/dimitris.jpg
+  links:
+    - icon: linkedin # themify icon pack: https://themify.me/themify-icons
+      href: https://www.linkedin.com/in/dimitrispavlopoulos/
 ---
 
 Samen met Marike ga ik de verzameling en de kwalitateitscontrole van toetsvragen coordineren. Ons doel is een rijke pool van vragen te krijgen die direct inzetbaar zijn in het onderwijs van Methoden en Statistiek. Embark in the world of Statistics. It’s not a necessary evil, but a tool to understand how the world works.

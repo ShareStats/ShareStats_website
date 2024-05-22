@@ -3,15 +3,12 @@ title: Kirsten Namesnik-Silvester
 image_webp: images/kirsten.webp
 image: images/kirsten.jpg
 designation: Universiteit Utrecht
-social:
-  - icon: ti-facebook # themify icon pack: https://themify.me/themify-icons
-    link:
-  - icon: ti-twitter-alt # themify icon pack: https://themify.me/themify-icons
-    link:
-  - icon: ti-linkedin # themify icon pack: https://themify.me/themify-icons
-    link: https://www.linkedin.com/in/kirsten-namesnik-107580a/
-  - icon: ti-dribbble # themify icon pack: https://themify.me/themify-icons
-    link:
+about:
+  template: jolla
+  image: images/kirsten.jpg
+  links:
+    - icon: linkedin # themify icon pack: https://themify.me/themify-icons
+      href: https://www.linkedin.com/in/kirsten-namesnik-107580a/
 ---
 
 In dit project heb ik binnen de Universiteit Utrecht het verzamelen, reviewen en reviseren van statistiekopdrachten gecoördineerd. Ook heb ik gewerkt aan kennisdisseminatie via de nieuwsbrieven en de verschillende bijeenkomsten en workshops. Ik vind het heel fijn dat er uit dit project een goede samenwerking tussen verschillende universiteiten is ontstaan. Het is zonde om allemaal het wiel opnieuw uit te vinden. Informatie, en in dit geval statistiekvragen delen is echt een goede stap in de juiste richting! __Life is not about taking something, it is all about sharing everything.__
