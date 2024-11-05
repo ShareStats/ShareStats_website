@@ -40,8 +40,8 @@ website:
             href: development/ItemDevelopment.qmd
           - text: "Quality procedure"
             href: development/qualityProcedure.qmd
-      - text: "News"
-        href: news/index.qmd
+      - text: "Instructions"
+        href: instructions/index.qmd
       
   page-navigation: true
 #  back-to-top-navigation: true        

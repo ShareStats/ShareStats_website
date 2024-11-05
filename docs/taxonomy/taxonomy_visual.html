@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.5.45">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -45,12 +45,14 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
   }
 }</script>
-<script src="../site_libs/htmlwidgets-1.6.2/htmlwidgets.js"></script>
+<link href="../site_libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet">
+<script src="../site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
 <script src="../site_libs/d3-4.10.2/d3.min.js"></script>
 <link href="../site_libs/collapsibleTree-0.1.6/collapsibleTree.css" rel="stylesheet">
 <script src="../site_libs/collapsibleTree-binding-0.1.8/collapsibleTree.js"></script>
@@ -65,81 +67,81 @@ ul.task-list li input[type="checkbox"] {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
+      <div class="navbar-brand-container mx-auto">
     <a href="../index.html" class="navbar-brand navbar-brand-logo">
     <img src="../images/logoWT.png" alt="ShareStats" class="navbar-logo">
     </a>
   </div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../items-df.html" rel="" target="">
- <span class="menu-text">Itembank</span></a>
+    <a class="nav-link" href="../items-df.html"> 
+<span class="menu-text">Itembank</span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-taxonomy" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-taxonomy" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Taxonomy</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-taxonomy">    
         <li>
-    <a class="dropdown-item" href="../taxonomy/taxonomy_tree.html" rel="" target="">
+    <a class="dropdown-item" href="../taxonomy/taxonomy_tree.html">
  <span class="dropdown-text">Taxonimy Tree</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../taxonomy/taxonomy_visual.html" rel="" target="">
+    <a class="dropdown-item" href="../taxonomy/taxonomy_visual.html">
  <span class="dropdown-text">Taxonomy Visual</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../taxonomy/tags.html" rel="" target="">
+    <a class="dropdown-item" href="../taxonomy/tags.html">
  <span class="dropdown-text">Tags</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-development" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-development" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Development</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-development">    
         <li>
-    <a class="dropdown-item" href="../development/ItemDevelopment.html" rel="" target="">
+    <a class="dropdown-item" href="../development/ItemDevelopment.html">
  <span class="dropdown-text">Item development</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../development/qualityProcedure.html" rel="" target="">
+    <a class="dropdown-item" href="../development/qualityProcedure.html">
  <span class="dropdown-text">Quality procedure</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../news/index.html" rel="" target="">
- <span class="menu-text">News</span></a>
+    <a class="nav-link" href="../news/index.html"> 
+<span class="menu-text">News</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-about-sharestats" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-about-sharestats" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">About ShareStats</span>
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-about-sharestats">    
         <li>
-    <a class="dropdown-item" href="../team/team.html" rel="" target="">
+    <a class="dropdown-item" href="../team/team.html">
  <span class="dropdown-text">Meet the team</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="mailto:info@sharestats.nl" rel="" target="">
+    <a class="dropdown-item" href="mailto:info@sharestats.nl">
  <span class="dropdown-text">Contact us</span></a>
   </li>  
     </ul>
   </li>
 </ul>
+          </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
 </div>
-          </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -158,7 +160,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-page">
 
     
   
@@ -166,13 +168,14 @@ ul.task-list li input[type="checkbox"] {
   </div>
   
 
+
 </header>
+
 
 <div class="cell">
 <div class="cell-output-display">
-
-<div class="collapsibleTree html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-1da3d55359c7d211ad0e" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-1da3d55359c7d211ad0e">{"x":{"data":{"name":"Statistics Taxonomy","WeightOfNode":"Statistics Taxonomy","children":[{"name":"Measurement Level","WeightOfNode":"Measurement Level","children":[{"name":"Ordinal","WeightOfNode":"Measurement Level/Ordinal"},{"name":"Interval","WeightOfNode":"Measurement Level/Interval"},{"name":"Ratio","WeightOfNode":"Measurement Level/Ratio"},{"name":"Nominal","WeightOfNode":"Measurement Level/Nominal"}]},{"name":"Inferential Statistics","WeightOfNode":"Inferential Statistics","children":[{"name":"Sampling Distributions","WeightOfNode":"Inferential Statistics/Sampling Distributions","children":[{"name":"Sample proportion","WeightOfNode":"Inferential Statistics/Sampling Distributions/Sample proportion"},{"name":"Sample mean","WeightOfNode":"Inferential Statistics/Sampling Distributions/Sample mean"},{"name":"Correlation","WeightOfNode":"Inferential Statistics/Sampling Distributions/Correlation"},{"name":"Difference two means","WeightOfNode":"Inferential Statistics/Sampling Distributions/Difference two means"}]},{"name":"NHST","WeightOfNode":"Inferential Statistics/NHST","children":[{"name":"Significance level","WeightOfNode":"Inferential Statistics/NHST/Significance level","children":[{"name":"Critical value","WeightOfNode":"Inferential Statistics/NHST/Significance level/Critical value"}]},{"name":"Test statistic","WeightOfNode":"Inferential Statistics/NHST/Test statistic","children":[{"name":"Chi-squared","WeightOfNode":"Inferential Statistics/NHST/Test statistic/Chi-squared"},{"name":"F-statistic","WeightOfNode":"Inferential Statistics/NHST/Test statistic/F-statistic"},{"name":"z-statistic","WeightOfNode":"Inferential Statistics/NHST/Test statistic/z-statistic"},{"name":"t-statistic","WeightOfNode":"Inferential Statistics/NHST/Test statistic/t-statistic"}]},{"name":"Statistical errors","WeightOfNode":"Inferential Statistics/NHST/Statistical errors","children":[{"name":"Type I error","WeightOfNode":"Inferential Statistics/NHST/Statistical errors/Type I error"},{"name":"Type II error","WeightOfNode":"Inferential Statistics/NHST/Statistical errors/Type II error"}]},{"name":"Hypothesis","WeightOfNode":"Inferential Statistics/NHST/Hypothesis","children":[{"name":"One sided hypothesis","WeightOfNode":"Inferential Statistics/NHST/Hypothesis/One sided hypothesis"},{"name":"Null hypothesis","WeightOfNode":"Inferential Statistics/NHST/Hypothesis/Null hypothesis"},{"name":"Alternative hypothesis","WeightOfNode":"Inferential Statistics/NHST/Hypothesis/Alternative hypothesis"},{"name":"Two sided hypothesis","WeightOfNode":"Inferential Statistics/NHST/Hypothesis/Two sided hypothesis"}]},{"name":"Power","WeightOfNode":"Inferential Statistics/NHST/Power"},{"name":"p-value","WeightOfNode":"Inferential Statistics/NHST/p-value"}]},{"name":"Multilevel Analysis","WeightOfNode":"Inferential Statistics/Multilevel Analysis"},{"name":"Parametric Techniques","WeightOfNode":"Inferential Statistics/Parametric Techniques","children":[{"name":"Cross tables","WeightOfNode":"Inferential Statistics/Parametric Techniques/Cross tables","children":[{"name":"Chi-Squared for Independence","WeightOfNode":"Inferential Statistics/Parametric Techniques/Cross tables/Chi-Squared for Independence"},{"name":"Chi-Squared for Homogeneity","WeightOfNode":"Inferential Statistics/Parametric Techniques/Cross tables/Chi-Squared for Homogeneity"},{"name":"Fisher's Exact Test","WeightOfNode":"Inferential Statistics/Parametric Techniques/Cross tables/Fisher's Exact Test"},{"name":"Chi-Squared Goodness of Fit","WeightOfNode":"Inferential Statistics/Parametric Techniques/Cross tables/Chi-Squared Goodness of Fit"}]},{"name":"Correlations","WeightOfNode":"Inferential Statistics/Parametric Techniques/Correlations","children":[{"name":"Spearman","WeightOfNode":"Inferential Statistics/Parametric Techniques/Correlations/Spearman"},{"name":"Pearson","WeightOfNode":"Inferential Statistics/Parametric Techniques/Correlations/Pearson"},{"name":"Point biserial","WeightOfNode":"Inferential Statistics/Parametric Techniques/Correlations/Point biserial"},{"name":"Phi","WeightOfNode":"Inferential Statistics/Parametric Techniques/Correlations/Phi"},{"name":"Biserial","WeightOfNode":"Inferential Statistics/Parametric Techniques/Correlations/Biserial"}]},{"name":"ANOVA","WeightOfNode":"Inferential Statistics/Parametric Techniques/ANOVA","children":[{"name":"Twoway repeated measures ANOVA","WeightOfNode":"Inferential Statistics/Parametric Techniques/ANOVA/Twoway repeated measures ANOVA"},{"name":"Mixed design ANOVA","WeightOfNode":"Inferential Statistics/Parametric Techniques/ANOVA/Mixed design ANOVA"},{"name":"Oneway repeated measures ANOVA","WeightOfNode":"Inferential Statistics/Parametric Techniques/ANOVA/Oneway repeated measures ANOVA"},{"name":"MANCOVA","WeightOfNode":"Inferential Statistics/Parametric Techniques/ANOVA/MANCOVA"},{"name":"MANOVA","WeightOfNode":"Inferential Statistics/Parametric Techniques/ANOVA/MANOVA"},{"name":"Twoway ANOVA","WeightOfNode":"Inferential Statistics/Parametric Techniques/ANOVA/Twoway ANOVA"},{"name":"ANCOVA","WeightOfNode":"Inferential Statistics/Parametric Techniques/ANOVA/ANCOVA"},{"name":"Post-hoc test","WeightOfNode":"Inferential Statistics/Parametric Techniques/ANOVA/Post-hoc test"},{"name":"ANOVA F-test","WeightOfNode":"Inferential Statistics/Parametric Techniques/ANOVA/ANOVA F-test"},{"name":"Oneway ANOVA","WeightOfNode":"Inferential Statistics/Parametric Techniques/ANOVA/Oneway ANOVA"}]},{"name":"Variance","WeightOfNode":"Inferential Statistics/Parametric Techniques/Variance","children":[{"name":"Two variances","WeightOfNode":"Inferential Statistics/Parametric Techniques/Variance/Two variances"},{"name":"One variance","WeightOfNode":"Inferential Statistics/Parametric Techniques/Variance/One variance"}]},{"name":"z-test","WeightOfNode":"Inferential Statistics/Parametric Techniques/z-test","children":[{"name":"One sample mean","WeightOfNode":"Inferential Statistics/Parametric Techniques/z-test/One sample mean"},{"name":"One proportion","WeightOfNode":"Inferential Statistics/Parametric Techniques/z-test/One proportion"},{"name":"Two proportions","WeightOfNode":"Inferential Statistics/Parametric Techniques/z-test/Two proportions"},{"name":"Independent samples means","WeightOfNode":"Inferential Statistics/Parametric Techniques/z-test/Independent samples means"}]},{"name":"t-test","WeightOfNode":"Inferential Statistics/Parametric Techniques/t-test","children":[{"name":"Independent samples means","WeightOfNode":"Inferential Statistics/Parametric Techniques/t-test/Independent samples means"},{"name":"Test for correlation","WeightOfNode":"Inferential Statistics/Parametric Techniques/t-test/Test for correlation"},{"name":"One sample mean","WeightOfNode":"Inferential Statistics/Parametric Techniques/t-test/One sample mean"},{"name":"Paired samples","WeightOfNode":"Inferential Statistics/Parametric Techniques/t-test/Paired samples"}]}]},{"name":"Bayesian Statistics","WeightOfNode":"Inferential Statistics/Bayesian Statistics","children":[{"name":"Posterior","WeightOfNode":"Inferential Statistics/Bayesian Statistics/Posterior"},{"name":"Prior","WeightOfNode":"Inferential Statistics/Bayesian Statistics/Prior"},{"name":"Likelihood","WeightOfNode":"Inferential Statistics/Bayesian Statistics/Likelihood"},{"name":"Parameter estimation","WeightOfNode":"Inferential Statistics/Bayesian Statistics/Parameter estimation"},{"name":"Informative hypothesis testing","WeightOfNode":"Inferential Statistics/Bayesian Statistics/Informative hypothesis testing"},{"name":"Credible intervals","WeightOfNode":"Inferential Statistics/Bayesian Statistics/Credible intervals"},{"name":"Hypothesis test","WeightOfNode":"Inferential Statistics/Bayesian Statistics/Hypothesis test"},{"name":"Bayes factor","WeightOfNode":"Inferential Statistics/Bayesian Statistics/Bayes factor"}]},{"name":"Time Series","WeightOfNode":"Inferential Statistics/Time Series","children":[{"name":"Runs test","WeightOfNode":"Inferential Statistics/Time Series/Runs test"},{"name":"Seasonal variation","WeightOfNode":"Inferential Statistics/Time Series/Seasonal variation"},{"name":"Arima models","WeightOfNode":"Inferential Statistics/Time Series/Arima models"},{"name":"Forecasting","WeightOfNode":"Inferential Statistics/Time Series/Forecasting"},{"name":"Frequency domain","WeightOfNode":"Inferential Statistics/Time Series/Frequency domain"},{"name":"Autocorrelation","WeightOfNode":"Inferential Statistics/Time Series/Autocorrelation"},{"name":"Descriptive methods","WeightOfNode":"Inferential Statistics/Time Series/Descriptive methods"}]},{"name":"Effect size","WeightOfNode":"Inferential Statistics/Effect size","children":[{"name":"Omega squared","WeightOfNode":"Inferential Statistics/Effect size/Omega squared"},{"name":"Cohen's d","WeightOfNode":"Inferential Statistics/Effect size/Cohen's d"},{"name":"Eta squared","WeightOfNode":"Inferential Statistics/Effect size/Eta squared"},{"name":"Phi coefficient","WeightOfNode":"Inferential Statistics/Effect size/Phi coefficient"},{"name":"Cramer's V","WeightOfNode":"Inferential Statistics/Effect size/Cramer's V"}]},{"name":"Bootstrap","WeightOfNode":"Inferential Statistics/Bootstrap"},{"name":"Regression","WeightOfNode":"Inferential Statistics/Regression","children":[{"name":"Intercept","WeightOfNode":"Inferential Statistics/Regression/Intercept"},{"name":"Slope","WeightOfNode":"Inferential Statistics/Regression/Slope"},{"name":"Regression F-test","WeightOfNode":"Inferential Statistics/Regression/Regression F-test"},{"name":"Simple linear regression","WeightOfNode":"Inferential Statistics/Regression/Simple linear regression"},{"name":"Standardized coefficient","WeightOfNode":"Inferential Statistics/Regression/Standardized coefficient"},{"name":"Dummies","WeightOfNode":"Inferential Statistics/Regression/Dummies"},{"name":"Sum of squares","WeightOfNode":"Inferential Statistics/Regression/Sum of squares"},{"name":"R squared","WeightOfNode":"Inferential Statistics/Regression/R squared"},{"name":"Residuals","WeightOfNode":"Inferential Statistics/Regression/Residuals"},{"name":"Multiple linear regression","WeightOfNode":"Inferential Statistics/Regression/Multiple linear regression","children":[{"name":"R squared change","WeightOfNode":"Inferential Statistics/Regression/Multiple linear regression/R squared change"},{"name":"F-test for comparing (nested) models","WeightOfNode":"Inferential Statistics/Regression/Multiple linear regression/F-test for comparing (nested) models"},{"name":"Suppression","WeightOfNode":"Inferential Statistics/Regression/Multiple linear regression/Suppression"},{"name":"Mediation","WeightOfNode":"Inferential Statistics/Regression/Multiple linear regression/Mediation"},{"name":"Moderation","WeightOfNode":"Inferential Statistics/Regression/Multiple linear regression/Moderation"}]},{"name":"Prediction interval","WeightOfNode":"Inferential Statistics/Regression/Prediction interval"},{"name":"Probit regression","WeightOfNode":"Inferential Statistics/Regression/Probit regression"},{"name":"Standard error of the estimate","WeightOfNode":"Inferential Statistics/Regression/Standard error of the estimate"},{"name":"Equation","WeightOfNode":"Inferential Statistics/Regression/Equation"},{"name":"Coefficient t-test","WeightOfNode":"Inferential Statistics/Regression/Coefficient t-test"},{"name":"Multinomial logistic regression","WeightOfNode":"Inferential Statistics/Regression/Multinomial logistic regression"},{"name":"Prediction","WeightOfNode":"Inferential Statistics/Regression/Prediction"},{"name":"Principal axis regression","WeightOfNode":"Inferential Statistics/Regression/Principal axis regression"},{"name":"Logistic regression","WeightOfNode":"Inferential Statistics/Regression/Logistic regression","children":[{"name":"Odds","WeightOfNode":"Inferential Statistics/Regression/Logistic regression/Odds"},{"name":"Odds ratio","WeightOfNode":"Inferential Statistics/Regression/Logistic regression/Odds ratio"}]},{"name":"Confidence interval","WeightOfNode":"Inferential Statistics/Regression/Confidence interval"}]},{"name":"Non-parametric Techniques","WeightOfNode":"Inferential Statistics/Non-parametric Techniques","children":[{"name":"Rank Sum test","WeightOfNode":"Inferential Statistics/Non-parametric Techniques/Rank Sum test"},{"name":"Signed Rank test","WeightOfNode":"Inferential Statistics/Non-parametric Techniques/Signed Rank test"},{"name":"Sign test","WeightOfNode":"Inferential Statistics/Non-parametric Techniques/Sign test"},{"name":"Permutation test","WeightOfNode":"Inferential Statistics/Non-parametric Techniques/Permutation test"},{"name":"Friedman's test","WeightOfNode":"Inferential Statistics/Non-parametric Techniques/Friedman's test"},{"name":"Kruskal-Wallis test","WeightOfNode":"Inferential Statistics/Non-parametric Techniques/Kruskal-Wallis test"}]},{"name":"Confidence Intervals","WeightOfNode":"Inferential Statistics/Confidence Intervals","children":[{"name":"Margin of error","WeightOfNode":"Inferential Statistics/Confidence Intervals/Margin of error"},{"name":"Width","WeightOfNode":"Inferential Statistics/Confidence Intervals/Width"},{"name":"Testing","WeightOfNode":"Inferential Statistics/Confidence Intervals/Testing"},{"name":"Confidence level","WeightOfNode":"Inferential Statistics/Confidence Intervals/Confidence level"}]}]},{"name":"Probability","WeightOfNode":"Probability","children":[{"name":"Elementary Probability","WeightOfNode":"Probability/Elementary Probability","children":[{"name":"General Rules","WeightOfNode":"Probability/Elementary Probability/General Rules","children":[{"name":"Multiplication rule","WeightOfNode":"Probability/Elementary Probability/General Rules/Multiplication rule"},{"name":"Independent events","WeightOfNode":"Probability/Elementary Probability/General Rules/Independent events"},{"name":"Union","WeightOfNode":"Probability/Elementary Probability/General Rules/Union"},{"name":"Addition rule","WeightOfNode":"Probability/Elementary Probability/General Rules/Addition rule"},{"name":"Intersection","WeightOfNode":"Probability/Elementary Probability/General Rules/Intersection"}]},{"name":"Events","WeightOfNode":"Probability/Elementary Probability/Events"},{"name":"Conditional probability","WeightOfNode":"Probability/Elementary Probability/Conditional probability"},{"name":"Random variables","WeightOfNode":"Probability/Elementary Probability/Random variables","children":[{"name":"Random sample","WeightOfNode":"Probability/Elementary Probability/Random variables/Random sample"},{"name":"Variance","WeightOfNode":"Probability/Elementary Probability/Random variables/Variance","children":[{"name":"Two variances","WeightOfNode":"Inferential Statistics/Parametric Techniques/Variance/Two variances"},{"name":"One variance","WeightOfNode":"Inferential Statistics/Parametric Techniques/Variance/One variance"}]},{"name":"Rules for expected values","WeightOfNode":"Probability/Elementary Probability/Random variables/Rules for expected values"},{"name":"Expected value","WeightOfNode":"Probability/Elementary Probability/Random variables/Expected value"}]},{"name":"Sample Space","WeightOfNode":"Probability/Elementary Probability/Sample Space"},{"name":"Permutations","WeightOfNode":"Probability/Elementary Probability/Permutations"},{"name":"Combinations","WeightOfNode":"Probability/Elementary Probability/Combinations"}]}]},{"name":"Assumptions","WeightOfNode":"Assumptions","children":[{"name":"Multicolinearity","WeightOfNode":"Assumptions/Multicolinearity","children":[{"name":"Tolerance","WeightOfNode":"Assumptions/Multicolinearity/Tolerance"},{"name":"VIF","WeightOfNode":"Assumptions/Multicolinearity/VIF"}]},{"name":"Normality","WeightOfNode":"Assumptions/Normality","children":[{"name":"Shapiro-Wilks","WeightOfNode":"Assumptions/Normality/Shapiro-Wilks"},{"name":"Kolmogorov-Smirnov","WeightOfNode":"Assumptions/Normality/Kolmogorov-Smirnov"},{"name":"Q-Q plot","WeightOfNode":"Assumptions/Normality/Q-Q plot"}]},{"name":"Homogeneity of variance","WeightOfNode":"Assumptions/Homogeneity of variance","children":[{"name":"Ratio of sample size","WeightOfNode":"Assumptions/Homogeneity of variance/Ratio of sample size"},{"name":"Levene's test","WeightOfNode":"Assumptions/Homogeneity of variance/Levene's test"},{"name":"Ratio of variance","WeightOfNode":"Assumptions/Homogeneity of variance/Ratio of variance"}]},{"name":"Sphericity","WeightOfNode":"Assumptions/Sphericity","children":[{"name":"Mauchly's test","WeightOfNode":"Assumptions/Sphericity/Mauchly's test"},{"name":"Epsilon","WeightOfNode":"Assumptions/Sphericity/Epsilon"}]},{"name":"Linearity","WeightOfNode":"Assumptions/Linearity"},{"name":"Homoscedasticity","WeightOfNode":"Assumptions/Homoscedasticity","children":[{"name":"Residual plot","WeightOfNode":"Assumptions/Homoscedasticity/Residual plot"}]}]},{"name":"Descriptive statistics","WeightOfNode":"Descriptive statistics","children":[{"name":"Measures of Spread","WeightOfNode":"Descriptive statistics/Summary Statistics/Measures of Spread","children":[{"name":"Variance","WeightOfNode":"Descriptive statistics/Summary Statistics/Measures of Spread/Variance","children":[{"name":"Two variances","WeightOfNode":"Inferential Statistics/Parametric Techniques/Variance/Two variances"},{"name":"One variance","WeightOfNode":"Inferential Statistics/Parametric Techniques/Variance/One variance"}]},{"name":"Standard Deviation","WeightOfNode":"Descriptive statistics/Summary Statistics/Measures of Spread/Standard Deviation"},{"name":"Interquartile Range","WeightOfNode":"Descriptive statistics/Summary Statistics/Measures of Spread/Interquartile Range"},{"name":"Range","WeightOfNode":"Descriptive statistics/Summary Statistics/Measures of Spread/Range"}]},{"name":"Score interpretation","WeightOfNode":"Descriptive statistics/Score interpretation","children":[{"name":"z-score","WeightOfNode":"Descriptive statistics/Score interpretation/z-score"},{"name":"Percentile","WeightOfNode":"Descriptive statistics/Score interpretation/Percentile"}]},{"name":"Summary Statistics","WeightOfNode":"Descriptive statistics/Summary Statistics","children":[{"name":"Measures of Location","WeightOfNode":"Descriptive statistics/Summary Statistics/Measures of Location","children":[{"name":"Mean","WeightOfNode":"Descriptive statistics/Summary Statistics/Measures of Location/Mean"},{"name":"Median","WeightOfNode":"Descriptive statistics/Summary Statistics/Measures of Location/Median"},{"name":"Mode","WeightOfNode":"Descriptive statistics/Summary Statistics/Measures of Location/Mode"}]},{"name":"Conditional proportion","WeightOfNode":"Descriptive statistics/Summary Statistics/Conditional proportion"},{"name":"Outliers","WeightOfNode":"Descriptive statistics/Summary Statistics/Outliers"},{"name":"Odds ratio","WeightOfNode":"Descriptive statistics/Summary Statistics/Odds ratio"},{"name":"Proportion","WeightOfNode":"Descriptive statistics/Summary Statistics/Proportion"}]},{"name":"Bivariate statistics","WeightOfNode":"Descriptive statistics/Summary Statistics/Bivariate statistics","children":[{"name":"Correlation","WeightOfNode":"Descriptive statistics/Summary Statistics/Bivariate statistics/Correlation"},{"name":"Covariance","WeightOfNode":"Descriptive statistics/Summary Statistics/Bivariate statistics/Covariance"}]},{"name":"Data representation","WeightOfNode":"Descriptive statistics/Data representation","children":[{"name":"Tables","WeightOfNode":"Descriptive statistics/Data representation/Tables","children":[{"name":"Contingency table","WeightOfNode":"Descriptive statistics/Data representation/Tables/Contingency table"},{"name":"Frequency table","WeightOfNode":"Descriptive statistics/Data representation/Tables/Frequency table"}]},{"name":"Graphs","WeightOfNode":"Descriptive statistics/Data representation/Graphs","children":[{"name":"Bar graph","WeightOfNode":"Descriptive statistics/Data representation/Graphs/Bar graph"},{"name":"Histogram","WeightOfNode":"Descriptive statistics/Data representation/Graphs/Histogram"},{"name":"Venn diagram","WeightOfNode":"Descriptive statistics/Data representation/Graphs/Venn diagram"},{"name":"Stem and leaf plot","WeightOfNode":"Descriptive statistics/Data representation/Graphs/Stem and leaf plot"},{"name":"Boxplot","WeightOfNode":"Descriptive statistics/Data representation/Graphs/Boxplot"},{"name":"Pie chart","WeightOfNode":"Descriptive statistics/Data representation/Graphs/Pie chart"},{"name":"Scatterplot","WeightOfNode":"Descriptive statistics/Data representation/Graphs/Scatterplot"}]}]}]},{"name":"Variable type","WeightOfNode":"Variable type","children":[{"name":"Discrete variable","WeightOfNode":"Variable type/Discrete variable"},{"name":"Continuous variable","WeightOfNode":"Variable type/Continuous variable"}]},{"name":"Distributions","WeightOfNode":"Distributions","children":[{"name":"Limit Theorems","WeightOfNode":"Distributions/Limit Theorems","children":[{"name":"Central Limit Theorem","WeightOfNode":"Distributions/Limit Theorems/Central Limit Theorem"},{"name":"Law of Large Numbers","WeightOfNode":"Distributions/Limit Theorems/Law of Large Numbers"}]},{"name":"Continuous","WeightOfNode":"Distributions/Continuous","children":[{"name":"Uniform","WeightOfNode":"Distributions/Continuous/Uniform"},{"name":"Exponential","WeightOfNode":"Distributions/Continuous/Exponential"},{"name":"F-distribution","WeightOfNode":"Distributions/Continuous/F-distribution"},{"name":"Chi-squared","WeightOfNode":"Distributions/Continuous/Chi-squared"},{"name":"Normal","WeightOfNode":"Distributions/Continuous/Normal"},{"name":"t-distribution","WeightOfNode":"Distributions/Continuous/t-distribution"},{"name":"Beta","WeightOfNode":"Distributions/Continuous/Beta"},{"name":"Gamma","WeightOfNode":"Distributions/Continuous/Gamma"}]},{"name":"Discrete","WeightOfNode":"Distributions/Discrete","children":[{"name":"Normal approximation to Binomial","WeightOfNode":"Distributions/Discrete/Normal approximation to Binomial"},{"name":"Bernoulli","WeightOfNode":"Distributions/Discrete/Bernoulli"},{"name":"Poisson","WeightOfNode":"Distributions/Discrete/Poisson"},{"name":"Hypergeometric","WeightOfNode":"Distributions/Discrete/Hypergeometric"},{"name":"Geometric","WeightOfNode":"Distributions/Discrete/Geometric"},{"name":"Binomial","WeightOfNode":"Distributions/Discrete/Binomial"},{"name":"Negative Binomial","WeightOfNode":"Distributions/Discrete/Negative Binomial"},{"name":"Multinominal","WeightOfNode":"Distributions/Discrete/Multinominal"}]}]},{"name":"Factor analysis","WeightOfNode":"Factor analysis","children":[{"name":"Principle component analysis","WeightOfNode":"Factor analysis/Principle component analysis"},{"name":"Confirmatory factor analysis","WeightOfNode":"Factor analysis/Confirmatory factor analysis"},{"name":"Rotations","WeightOfNode":"Factor analysis/Rotations"},{"name":"Eigenvalues","WeightOfNode":"Factor analysis/Eigenvalues"},{"name":"Factor loadings","WeightOfNode":"Factor analysis/Factor loadings"},{"name":"Explained variance","WeightOfNode":"Factor analysis/Explained variance"},{"name":"Compontent correlation matrix","WeightOfNode":"Factor analysis/Compontent correlation matrix"},{"name":"Scree plot","WeightOfNode":"Factor analysis/Scree plot"},{"name":"Pattern matrix","WeightOfNode":"Factor analysis/Pattern matrix"},{"name":"Structure matrix","WeightOfNode":"Factor analysis/Structure matrix"},{"name":"Factor correlation matrix","WeightOfNode":"Factor analysis/Factor correlation matrix"},{"name":"Communalities","WeightOfNode":"Factor analysis/Communalities"},{"name":"Factor scores","WeightOfNode":"Factor analysis/Factor scores"},{"name":"Exploratory factor analysis","WeightOfNode":"Factor analysis/Exploratory factor analysis"}]},{"name":"Reliability","WeightOfNode":"Reliability","children":[{"name":"Analysis","WeightOfNode":"Reliability/Analysis","children":[{"name":"Split half","WeightOfNode":"Reliability/Analysis/Split half"},{"name":"Test-retest","WeightOfNode":"Reliability/Analysis/Test-retest"},{"name":"Parallel forms","WeightOfNode":"Reliability/Analysis/Parallel forms"},{"name":"Cronbach's alpha","WeightOfNode":"Reliability/Analysis/Cronbach's alpha"}]},{"name":"Descriptives","WeightOfNode":"Reliability/Descriptives","children":[{"name":"RIT","WeightOfNode":"Reliability/Descriptives/RIT"},{"name":"RIR","WeightOfNode":"Reliability/Descriptives/RIR"},{"name":"proportion correct","WeightOfNode":"Reliability/Descriptives/proportion correct"}]}]}]},"options":{"hierarchy":[1,2,3,4,5,6],"input":null,"attribute":"title","linkLength":null,"fontSize":10,"tooltip":true,"collapsed":true,"zoomable":true,"margin":{"top":20,"bottom":20,"left":120,"right":90},"fill":"lightsteelblue"}},"evals":[],"jsHooks":[]}</script>
+<div class="collapsibleTree html-widget html-fill-item" id="htmlwidget-eba514d695d8b7cf522b" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-eba514d695d8b7cf522b">{"x":{"data":{"name":"Statistics Taxonomy","WeightOfNode":"Statistics Taxonomy","children":[{"name":"Measurement Level","WeightOfNode":"Measurement Level","children":[{"name":"Ordinal","WeightOfNode":"Measurement Level/Ordinal"},{"name":"Interval","WeightOfNode":"Measurement Level/Interval"},{"name":"Ratio","WeightOfNode":"Measurement Level/Ratio"},{"name":"Nominal","WeightOfNode":"Measurement Level/Nominal"}]},{"name":"Inferential Statistics","WeightOfNode":"Inferential Statistics","children":[{"name":"Sampling Distributions","WeightOfNode":"Inferential Statistics/Sampling Distributions","children":[{"name":"Sample proportion","WeightOfNode":"Inferential Statistics/Sampling Distributions/Sample proportion"},{"name":"Sample mean","WeightOfNode":"Inferential Statistics/Sampling Distributions/Sample mean"},{"name":"Correlation","WeightOfNode":"Inferential Statistics/Sampling Distributions/Correlation"},{"name":"Difference two means","WeightOfNode":"Inferential Statistics/Sampling Distributions/Difference two means"}]},{"name":"NHST","WeightOfNode":"Inferential Statistics/NHST","children":[{"name":"Significance level","WeightOfNode":"Inferential Statistics/NHST/Significance level","children":[{"name":"Critical value","WeightOfNode":"Inferential Statistics/NHST/Significance level/Critical value"}]},{"name":"Test statistic","WeightOfNode":"Inferential Statistics/NHST/Test statistic","children":[{"name":"Chi-squared","WeightOfNode":"Inferential Statistics/NHST/Test statistic/Chi-squared"},{"name":"F-statistic","WeightOfNode":"Inferential Statistics/NHST/Test statistic/F-statistic"},{"name":"z-statistic","WeightOfNode":"Inferential Statistics/NHST/Test statistic/z-statistic"},{"name":"t-statistic","WeightOfNode":"Inferential Statistics/NHST/Test statistic/t-statistic"}]},{"name":"Statistical errors","WeightOfNode":"Inferential Statistics/NHST/Statistical errors","children":[{"name":"Type I error","WeightOfNode":"Inferential Statistics/NHST/Statistical errors/Type I error"},{"name":"Type II error","WeightOfNode":"Inferential Statistics/NHST/Statistical errors/Type II error"}]},{"name":"Hypothesis","WeightOfNode":"Inferential Statistics/NHST/Hypothesis","children":[{"name":"One sided hypothesis","WeightOfNode":"Inferential Statistics/NHST/Hypothesis/One sided hypothesis"},{"name":"Null hypothesis","WeightOfNode":"Inferential Statistics/NHST/Hypothesis/Null hypothesis"},{"name":"Alternative hypothesis","WeightOfNode":"Inferential Statistics/NHST/Hypothesis/Alternative hypothesis"},{"name":"Two sided hypothesis","WeightOfNode":"Inferential Statistics/NHST/Hypothesis/Two sided hypothesis"}]},{"name":"Power","WeightOfNode":"Inferential Statistics/NHST/Power"},{"name":"p-value","WeightOfNode":"Inferential Statistics/NHST/p-value"}]},{"name":"Multilevel Analysis","WeightOfNode":"Inferential Statistics/Multilevel Analysis"},{"name":"Parametric Techniques","WeightOfNode":"Inferential Statistics/Parametric Techniques","children":[{"name":"Cross tables","WeightOfNode":"Inferential Statistics/Parametric Techniques/Cross tables","children":[{"name":"Chi-Squared for Independence","WeightOfNode":"Inferential Statistics/Parametric Techniques/Cross tables/Chi-Squared for Independence"},{"name":"Chi-Squared for Homogeneity","WeightOfNode":"Inferential Statistics/Parametric Techniques/Cross tables/Chi-Squared for Homogeneity"},{"name":"Fisher's Exact Test","WeightOfNode":"Inferential Statistics/Parametric Techniques/Cross tables/Fisher's Exact Test"},{"name":"Chi-Squared Goodness of Fit","WeightOfNode":"Inferential Statistics/Parametric Techniques/Cross tables/Chi-Squared Goodness of Fit"}]},{"name":"Correlations","WeightOfNode":"Inferential Statistics/Parametric Techniques/Correlations","children":[{"name":"Spearman","WeightOfNode":"Inferential Statistics/Parametric Techniques/Correlations/Spearman"},{"name":"Pearson","WeightOfNode":"Inferential Statistics/Parametric Techniques/Correlations/Pearson"},{"name":"Point biserial","WeightOfNode":"Inferential Statistics/Parametric Techniques/Correlations/Point biserial"},{"name":"Phi","WeightOfNode":"Inferential Statistics/Parametric Techniques/Correlations/Phi"},{"name":"Biserial","WeightOfNode":"Inferential Statistics/Parametric Techniques/Correlations/Biserial"}]},{"name":"ANOVA","WeightOfNode":"Inferential Statistics/Parametric Techniques/ANOVA","children":[{"name":"Twoway repeated measures ANOVA","WeightOfNode":"Inferential Statistics/Parametric Techniques/ANOVA/Twoway repeated measures ANOVA"},{"name":"Mixed design ANOVA","WeightOfNode":"Inferential Statistics/Parametric Techniques/ANOVA/Mixed design ANOVA"},{"name":"Oneway repeated measures ANOVA","WeightOfNode":"Inferential Statistics/Parametric Techniques/ANOVA/Oneway repeated measures ANOVA"},{"name":"MANCOVA","WeightOfNode":"Inferential Statistics/Parametric Techniques/ANOVA/MANCOVA"},{"name":"MANOVA","WeightOfNode":"Inferential Statistics/Parametric Techniques/ANOVA/MANOVA"},{"name":"Twoway ANOVA","WeightOfNode":"Inferential Statistics/Parametric Techniques/ANOVA/Twoway ANOVA"},{"name":"ANCOVA","WeightOfNode":"Inferential Statistics/Parametric Techniques/ANOVA/ANCOVA"},{"name":"Post-hoc test","WeightOfNode":"Inferential Statistics/Parametric Techniques/ANOVA/Post-hoc test"},{"name":"ANOVA F-test","WeightOfNode":"Inferential Statistics/Parametric Techniques/ANOVA/ANOVA F-test"},{"name":"Oneway ANOVA","WeightOfNode":"Inferential Statistics/Parametric Techniques/ANOVA/Oneway ANOVA"}]},{"name":"Variance","WeightOfNode":"Inferential Statistics/Parametric Techniques/Variance","children":[{"name":"Two variances","WeightOfNode":"Inferential Statistics/Parametric Techniques/Variance/Two variances"},{"name":"One variance","WeightOfNode":"Inferential Statistics/Parametric Techniques/Variance/One variance"}]},{"name":"z-test","WeightOfNode":"Inferential Statistics/Parametric Techniques/z-test","children":[{"name":"One sample mean","WeightOfNode":"Inferential Statistics/Parametric Techniques/z-test/One sample mean"},{"name":"One proportion","WeightOfNode":"Inferential Statistics/Parametric Techniques/z-test/One proportion"},{"name":"Two proportions","WeightOfNode":"Inferential Statistics/Parametric Techniques/z-test/Two proportions"},{"name":"Independent samples means","WeightOfNode":"Inferential Statistics/Parametric Techniques/z-test/Independent samples means"}]},{"name":"t-test","WeightOfNode":"Inferential Statistics/Parametric Techniques/t-test","children":[{"name":"Independent samples means","WeightOfNode":"Inferential Statistics/Parametric Techniques/t-test/Independent samples means"},{"name":"Test for correlation","WeightOfNode":"Inferential Statistics/Parametric Techniques/t-test/Test for correlation"},{"name":"One sample mean","WeightOfNode":"Inferential Statistics/Parametric Techniques/t-test/One sample mean"},{"name":"Paired samples","WeightOfNode":"Inferential Statistics/Parametric Techniques/t-test/Paired samples"}]}]},{"name":"Bayesian Statistics","WeightOfNode":"Inferential Statistics/Bayesian Statistics","children":[{"name":"Posterior","WeightOfNode":"Inferential Statistics/Bayesian Statistics/Posterior"},{"name":"Prior","WeightOfNode":"Inferential Statistics/Bayesian Statistics/Prior"},{"name":"Likelihood","WeightOfNode":"Inferential Statistics/Bayesian Statistics/Likelihood"},{"name":"Parameter estimation","WeightOfNode":"Inferential Statistics/Bayesian Statistics/Parameter estimation"},{"name":"Informative hypothesis testing","WeightOfNode":"Inferential Statistics/Bayesian Statistics/Informative hypothesis testing"},{"name":"Credible intervals","WeightOfNode":"Inferential Statistics/Bayesian Statistics/Credible intervals"},{"name":"Hypothesis test","WeightOfNode":"Inferential Statistics/Bayesian Statistics/Hypothesis test"},{"name":"Bayes factor","WeightOfNode":"Inferential Statistics/Bayesian Statistics/Bayes factor"}]},{"name":"Time Series","WeightOfNode":"Inferential Statistics/Time Series","children":[{"name":"Runs test","WeightOfNode":"Inferential Statistics/Time Series/Runs test"},{"name":"Seasonal variation","WeightOfNode":"Inferential Statistics/Time Series/Seasonal variation"},{"name":"Arima models","WeightOfNode":"Inferential Statistics/Time Series/Arima models"},{"name":"Forecasting","WeightOfNode":"Inferential Statistics/Time Series/Forecasting"},{"name":"Frequency domain","WeightOfNode":"Inferential Statistics/Time Series/Frequency domain"},{"name":"Autocorrelation","WeightOfNode":"Inferential Statistics/Time Series/Autocorrelation"},{"name":"Descriptive methods","WeightOfNode":"Inferential Statistics/Time Series/Descriptive methods"}]},{"name":"Effect size","WeightOfNode":"Inferential Statistics/Effect size","children":[{"name":"Omega squared","WeightOfNode":"Inferential Statistics/Effect size/Omega squared"},{"name":"Cohen's d","WeightOfNode":"Inferential Statistics/Effect size/Cohen's d"},{"name":"Eta squared","WeightOfNode":"Inferential Statistics/Effect size/Eta squared"},{"name":"Phi coefficient","WeightOfNode":"Inferential Statistics/Effect size/Phi coefficient"},{"name":"Cramer's V","WeightOfNode":"Inferential Statistics/Effect size/Cramer's V"}]},{"name":"Bootstrap","WeightOfNode":"Inferential Statistics/Bootstrap"},{"name":"Regression","WeightOfNode":"Inferential Statistics/Regression","children":[{"name":"Intercept","WeightOfNode":"Inferential Statistics/Regression/Intercept"},{"name":"Slope","WeightOfNode":"Inferential Statistics/Regression/Slope"},{"name":"Regression F-test","WeightOfNode":"Inferential Statistics/Regression/Regression F-test"},{"name":"Simple linear regression","WeightOfNode":"Inferential Statistics/Regression/Simple linear regression"},{"name":"Standardized coefficient","WeightOfNode":"Inferential Statistics/Regression/Standardized coefficient"},{"name":"Dummies","WeightOfNode":"Inferential Statistics/Regression/Dummies"},{"name":"Sum of squares","WeightOfNode":"Inferential Statistics/Regression/Sum of squares"},{"name":"R squared","WeightOfNode":"Inferential Statistics/Regression/R squared"},{"name":"Residuals","WeightOfNode":"Inferential Statistics/Regression/Residuals"},{"name":"Multiple linear regression","WeightOfNode":"Inferential Statistics/Regression/Multiple linear regression","children":[{"name":"R squared change","WeightOfNode":"Inferential Statistics/Regression/Multiple linear regression/R squared change"},{"name":"F-test for comparing (nested) models","WeightOfNode":"Inferential Statistics/Regression/Multiple linear regression/F-test for comparing (nested) models"},{"name":"Suppression","WeightOfNode":"Inferential Statistics/Regression/Multiple linear regression/Suppression"},{"name":"Mediation","WeightOfNode":"Inferential Statistics/Regression/Multiple linear regression/Mediation"},{"name":"Moderation","WeightOfNode":"Inferential Statistics/Regression/Multiple linear regression/Moderation"}]},{"name":"Prediction interval","WeightOfNode":"Inferential Statistics/Regression/Prediction interval"},{"name":"Probit regression","WeightOfNode":"Inferential Statistics/Regression/Probit regression"},{"name":"Standard error of the estimate","WeightOfNode":"Inferential Statistics/Regression/Standard error of the estimate"},{"name":"Equation","WeightOfNode":"Inferential Statistics/Regression/Equation"},{"name":"Coefficient t-test","WeightOfNode":"Inferential Statistics/Regression/Coefficient t-test"},{"name":"Multinomial logistic regression","WeightOfNode":"Inferential Statistics/Regression/Multinomial logistic regression"},{"name":"Prediction","WeightOfNode":"Inferential Statistics/Regression/Prediction"},{"name":"Principal axis regression","WeightOfNode":"Inferential Statistics/Regression/Principal axis regression"},{"name":"Logistic regression","WeightOfNode":"Inferential Statistics/Regression/Logistic regression","children":[{"name":"Odds","WeightOfNode":"Inferential Statistics/Regression/Logistic regression/Odds"},{"name":"Odds ratio","WeightOfNode":"Inferential Statistics/Regression/Logistic regression/Odds ratio"}]},{"name":"Confidence interval","WeightOfNode":"Inferential Statistics/Regression/Confidence interval"}]},{"name":"Non-parametric Techniques","WeightOfNode":"Inferential Statistics/Non-parametric Techniques","children":[{"name":"Rank Sum test","WeightOfNode":"Inferential Statistics/Non-parametric Techniques/Rank Sum test"},{"name":"Signed Rank test","WeightOfNode":"Inferential Statistics/Non-parametric Techniques/Signed Rank test"},{"name":"Sign test","WeightOfNode":"Inferential Statistics/Non-parametric Techniques/Sign test"},{"name":"Permutation test","WeightOfNode":"Inferential Statistics/Non-parametric Techniques/Permutation test"},{"name":"Friedman's test","WeightOfNode":"Inferential Statistics/Non-parametric Techniques/Friedman's test"},{"name":"Kruskal-Wallis test","WeightOfNode":"Inferential Statistics/Non-parametric Techniques/Kruskal-Wallis test"}]},{"name":"Confidence Intervals","WeightOfNode":"Inferential Statistics/Confidence Intervals","children":[{"name":"Margin of error","WeightOfNode":"Inferential Statistics/Confidence Intervals/Margin of error"},{"name":"Width","WeightOfNode":"Inferential Statistics/Confidence Intervals/Width"},{"name":"Testing","WeightOfNode":"Inferential Statistics/Confidence Intervals/Testing"},{"name":"Confidence level","WeightOfNode":"Inferential Statistics/Confidence Intervals/Confidence level"}]}]},{"name":"Probability","WeightOfNode":"Probability","children":[{"name":"Elementary Probability","WeightOfNode":"Probability/Elementary Probability","children":[{"name":"General Rules","WeightOfNode":"Probability/Elementary Probability/General Rules","children":[{"name":"Multiplication rule","WeightOfNode":"Probability/Elementary Probability/General Rules/Multiplication rule"},{"name":"Independent events","WeightOfNode":"Probability/Elementary Probability/General Rules/Independent events"},{"name":"Union","WeightOfNode":"Probability/Elementary Probability/General Rules/Union"},{"name":"Addition rule","WeightOfNode":"Probability/Elementary Probability/General Rules/Addition rule"},{"name":"Intersection","WeightOfNode":"Probability/Elementary Probability/General Rules/Intersection"}]},{"name":"Events","WeightOfNode":"Probability/Elementary Probability/Events"},{"name":"Conditional probability","WeightOfNode":"Probability/Elementary Probability/Conditional probability"},{"name":"Random variables","WeightOfNode":"Probability/Elementary Probability/Random variables","children":[{"name":"Random sample","WeightOfNode":"Probability/Elementary Probability/Random variables/Random sample"},{"name":"Variance","WeightOfNode":"Probability/Elementary Probability/Random variables/Variance","children":[{"name":"Two variances","WeightOfNode":"Inferential Statistics/Parametric Techniques/Variance/Two variances"},{"name":"One variance","WeightOfNode":"Inferential Statistics/Parametric Techniques/Variance/One variance"}]},{"name":"Rules for expected values","WeightOfNode":"Probability/Elementary Probability/Random variables/Rules for expected values"},{"name":"Expected value","WeightOfNode":"Probability/Elementary Probability/Random variables/Expected value"}]},{"name":"Sample Space","WeightOfNode":"Probability/Elementary Probability/Sample Space"},{"name":"Permutations","WeightOfNode":"Probability/Elementary Probability/Permutations"},{"name":"Combinations","WeightOfNode":"Probability/Elementary Probability/Combinations"}]}]},{"name":"Assumptions","WeightOfNode":"Assumptions","children":[{"name":"Multicolinearity","WeightOfNode":"Assumptions/Multicolinearity","children":[{"name":"Tolerance","WeightOfNode":"Assumptions/Multicolinearity/Tolerance"},{"name":"VIF","WeightOfNode":"Assumptions/Multicolinearity/VIF"}]},{"name":"Normality","WeightOfNode":"Assumptions/Normality","children":[{"name":"Shapiro-Wilks","WeightOfNode":"Assumptions/Normality/Shapiro-Wilks"},{"name":"Kolmogorov-Smirnov","WeightOfNode":"Assumptions/Normality/Kolmogorov-Smirnov"},{"name":"Q-Q plot","WeightOfNode":"Assumptions/Normality/Q-Q plot"}]},{"name":"Homogeneity of variance","WeightOfNode":"Assumptions/Homogeneity of variance","children":[{"name":"Ratio of sample size","WeightOfNode":"Assumptions/Homogeneity of variance/Ratio of sample size"},{"name":"Levene's test","WeightOfNode":"Assumptions/Homogeneity of variance/Levene's test"},{"name":"Ratio of variance","WeightOfNode":"Assumptions/Homogeneity of variance/Ratio of variance"}]},{"name":"Sphericity","WeightOfNode":"Assumptions/Sphericity","children":[{"name":"Mauchly's test","WeightOfNode":"Assumptions/Sphericity/Mauchly's test"},{"name":"Epsilon","WeightOfNode":"Assumptions/Sphericity/Epsilon"}]},{"name":"Linearity","WeightOfNode":"Assumptions/Linearity"},{"name":"Homoscedasticity","WeightOfNode":"Assumptions/Homoscedasticity","children":[{"name":"Residual plot","WeightOfNode":"Assumptions/Homoscedasticity/Residual plot"}]}]},{"name":"Descriptive statistics","WeightOfNode":"Descriptive statistics","children":[{"name":"Measures of Spread","WeightOfNode":"Descriptive statistics/Summary Statistics/Measures of Spread","children":[{"name":"Variance","WeightOfNode":"Descriptive statistics/Summary Statistics/Measures of Spread/Variance","children":[{"name":"Two variances","WeightOfNode":"Inferential Statistics/Parametric Techniques/Variance/Two variances"},{"name":"One variance","WeightOfNode":"Inferential Statistics/Parametric Techniques/Variance/One variance"}]},{"name":"Standard Deviation","WeightOfNode":"Descriptive statistics/Summary Statistics/Measures of Spread/Standard Deviation"},{"name":"Interquartile Range","WeightOfNode":"Descriptive statistics/Summary Statistics/Measures of Spread/Interquartile Range"},{"name":"Range","WeightOfNode":"Descriptive statistics/Summary Statistics/Measures of Spread/Range"}]},{"name":"Score interpretation","WeightOfNode":"Descriptive statistics/Score interpretation","children":[{"name":"z-score","WeightOfNode":"Descriptive statistics/Score interpretation/z-score"},{"name":"Percentile","WeightOfNode":"Descriptive statistics/Score interpretation/Percentile"}]},{"name":"Summary Statistics","WeightOfNode":"Descriptive statistics/Summary Statistics","children":[{"name":"Measures of Location","WeightOfNode":"Descriptive statistics/Summary Statistics/Measures of Location","children":[{"name":"Mean","WeightOfNode":"Descriptive statistics/Summary Statistics/Measures of Location/Mean"},{"name":"Median","WeightOfNode":"Descriptive statistics/Summary Statistics/Measures of Location/Median"},{"name":"Mode","WeightOfNode":"Descriptive statistics/Summary Statistics/Measures of Location/Mode"}]},{"name":"Conditional proportion","WeightOfNode":"Descriptive statistics/Summary Statistics/Conditional proportion"},{"name":"Outliers","WeightOfNode":"Descriptive statistics/Summary Statistics/Outliers"},{"name":"Odds ratio","WeightOfNode":"Descriptive statistics/Summary Statistics/Odds ratio"},{"name":"Proportion","WeightOfNode":"Descriptive statistics/Summary Statistics/Proportion"}]},{"name":"Bivariate statistics","WeightOfNode":"Descriptive statistics/Summary Statistics/Bivariate statistics","children":[{"name":"Correlation","WeightOfNode":"Descriptive statistics/Summary Statistics/Bivariate statistics/Correlation"},{"name":"Covariance","WeightOfNode":"Descriptive statistics/Summary Statistics/Bivariate statistics/Covariance"}]},{"name":"Data representation","WeightOfNode":"Descriptive statistics/Data representation","children":[{"name":"Tables","WeightOfNode":"Descriptive statistics/Data representation/Tables","children":[{"name":"Contingency table","WeightOfNode":"Descriptive statistics/Data representation/Tables/Contingency table"},{"name":"Frequency table","WeightOfNode":"Descriptive statistics/Data representation/Tables/Frequency table"}]},{"name":"Graphs","WeightOfNode":"Descriptive statistics/Data representation/Graphs","children":[{"name":"Bar graph","WeightOfNode":"Descriptive statistics/Data representation/Graphs/Bar graph"},{"name":"Histogram","WeightOfNode":"Descriptive statistics/Data representation/Graphs/Histogram"},{"name":"Venn diagram","WeightOfNode":"Descriptive statistics/Data representation/Graphs/Venn diagram"},{"name":"Stem and leaf plot","WeightOfNode":"Descriptive statistics/Data representation/Graphs/Stem and leaf plot"},{"name":"Boxplot","WeightOfNode":"Descriptive statistics/Data representation/Graphs/Boxplot"},{"name":"Pie chart","WeightOfNode":"Descriptive statistics/Data representation/Graphs/Pie chart"},{"name":"Scatterplot","WeightOfNode":"Descriptive statistics/Data representation/Graphs/Scatterplot"}]}]}]},{"name":"Variable type","WeightOfNode":"Variable type","children":[{"name":"Discrete variable","WeightOfNode":"Variable type/Discrete variable"},{"name":"Continuous variable","WeightOfNode":"Variable type/Continuous variable"}]},{"name":"Distributions","WeightOfNode":"Distributions","children":[{"name":"Limit Theorems","WeightOfNode":"Distributions/Limit Theorems","children":[{"name":"Central Limit Theorem","WeightOfNode":"Distributions/Limit Theorems/Central Limit Theorem"},{"name":"Law of Large Numbers","WeightOfNode":"Distributions/Limit Theorems/Law of Large Numbers"}]},{"name":"Continuous","WeightOfNode":"Distributions/Continuous","children":[{"name":"Uniform","WeightOfNode":"Distributions/Continuous/Uniform"},{"name":"Exponential","WeightOfNode":"Distributions/Continuous/Exponential"},{"name":"F-distribution","WeightOfNode":"Distributions/Continuous/F-distribution"},{"name":"Chi-squared","WeightOfNode":"Distributions/Continuous/Chi-squared"},{"name":"Normal","WeightOfNode":"Distributions/Continuous/Normal"},{"name":"t-distribution","WeightOfNode":"Distributions/Continuous/t-distribution"},{"name":"Beta","WeightOfNode":"Distributions/Continuous/Beta"},{"name":"Gamma","WeightOfNode":"Distributions/Continuous/Gamma"}]},{"name":"Discrete","WeightOfNode":"Distributions/Discrete","children":[{"name":"Normal approximation to Binomial","WeightOfNode":"Distributions/Discrete/Normal approximation to Binomial"},{"name":"Bernoulli","WeightOfNode":"Distributions/Discrete/Bernoulli"},{"name":"Poisson","WeightOfNode":"Distributions/Discrete/Poisson"},{"name":"Hypergeometric","WeightOfNode":"Distributions/Discrete/Hypergeometric"},{"name":"Geometric","WeightOfNode":"Distributions/Discrete/Geometric"},{"name":"Binomial","WeightOfNode":"Distributions/Discrete/Binomial"},{"name":"Negative Binomial","WeightOfNode":"Distributions/Discrete/Negative Binomial"},{"name":"Multinominal","WeightOfNode":"Distributions/Discrete/Multinominal"}]}]},{"name":"Factor analysis","WeightOfNode":"Factor analysis","children":[{"name":"Principle component analysis","WeightOfNode":"Factor analysis/Principle component analysis"},{"name":"Confirmatory factor analysis","WeightOfNode":"Factor analysis/Confirmatory factor analysis"},{"name":"Rotations","WeightOfNode":"Factor analysis/Rotations"},{"name":"Eigenvalues","WeightOfNode":"Factor analysis/Eigenvalues"},{"name":"Factor loadings","WeightOfNode":"Factor analysis/Factor loadings"},{"name":"Explained variance","WeightOfNode":"Factor analysis/Explained variance"},{"name":"Compontent correlation matrix","WeightOfNode":"Factor analysis/Compontent correlation matrix"},{"name":"Scree plot","WeightOfNode":"Factor analysis/Scree plot"},{"name":"Pattern matrix","WeightOfNode":"Factor analysis/Pattern matrix"},{"name":"Structure matrix","WeightOfNode":"Factor analysis/Structure matrix"},{"name":"Factor correlation matrix","WeightOfNode":"Factor analysis/Factor correlation matrix"},{"name":"Communalities","WeightOfNode":"Factor analysis/Communalities"},{"name":"Factor scores","WeightOfNode":"Factor analysis/Factor scores"},{"name":"Exploratory factor analysis","WeightOfNode":"Factor analysis/Exploratory factor analysis"}]},{"name":"Reliability","WeightOfNode":"Reliability","children":[{"name":"Analysis","WeightOfNode":"Reliability/Analysis","children":[{"name":"Split half","WeightOfNode":"Reliability/Analysis/Split half"},{"name":"Test-retest","WeightOfNode":"Reliability/Analysis/Test-retest"},{"name":"Parallel forms","WeightOfNode":"Reliability/Analysis/Parallel forms"},{"name":"Cronbach's alpha","WeightOfNode":"Reliability/Analysis/Cronbach's alpha"}]},{"name":"Descriptives","WeightOfNode":"Reliability/Descriptives","children":[{"name":"RIT","WeightOfNode":"Reliability/Descriptives/RIT"},{"name":"RIR","WeightOfNode":"Reliability/Descriptives/RIR"},{"name":"proportion correct","WeightOfNode":"Reliability/Descriptives/proportion correct"}]}]}]},"options":{"hierarchy":[1,2,3,4,5,6],"input":null,"attribute":"title","linkLength":null,"fontSize":10,"tooltip":true,"collapsed":true,"zoomable":true,"margin":{"top":20,"bottom":20,"left":120,"right":90},"fill":"lightsteelblue"}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 
@@ -214,18 +217,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -257,11 +249,50 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
-  function tippyHover(el, contentFn) {
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -271,8 +302,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -284,7 +324,130 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -328,6 +491,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -353,6 +517,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -415,7 +605,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-    <div class="nav-footer-left">Copyright © 2023 ShareStats.nl</div>   
+    <div class="nav-footer-left">
+<p>Copyright © 2023 ShareStats.nl</p>
+</div>   
     <div class="nav-footer-center">
       <ul class="footer-items list-unstyled">
     <li class="nav-item compact">
@@ -431,6 +623,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>
   </div>
 </footer>
+
 
 
 

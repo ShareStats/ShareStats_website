@@ -1,5 +1,11 @@
 [
   {
+    "listing": "/instructions/index.html",
+    "items": [
+      "/instructions/searching-itembank-upload-to-testvision.html"
+    ]
+  },
+  {
     "listing": "/news/index.html",
     "items": [
       "/news/sharestats-started.html"
