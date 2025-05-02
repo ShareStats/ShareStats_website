@@ -1,5 +1,12 @@
 [
   {
+    "objectID": "items-df.html#RreadCSV",
+    "href": "items-df.html#RreadCSV",
+    "title": "",
+    "section": "Read search table into R",
+    "text": "Read search table into R\nYou can also load the search table into R as a dataframe. Just copy the code below and you will have access to all the meta information of the items and the github folder location.\n\n# Read csv\nall.items &lt;- read.csv(\"https://sharestats.github.io/itembank/sharestats_website.csv\")\n\n# Add github url\nall.items$Path &lt;- paste0(\"https://github.com/ShareStats/itembank/tree/main/\", all.items$folder)"
+  },
+  {
     "objectID": "team/people/sharon.html",
     "href": "team/people/sharon.html",
     "title": "Sharon Klinkenberg",
