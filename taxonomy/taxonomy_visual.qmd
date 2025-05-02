@@ -13,7 +13,8 @@ output:
 # devtools::install_github("ShKlinkenberg/collapsibleTree")
 library(readxl)
 library("collapsibleTree")
-assessment.network <- read_excel("taxonomy_tree.xlsx")
+
+assessment.network <- read.csv2("taxonomy_tree.csv")
 # tooltip.text = '<h3>%s</h3>\n<p>%s</p>\n<p>Go <a href="%s">Here</a></p>'
 # assessment.network$tooltip <- sprintf(tooltip.text, 
 #                                       assessment.network$title, 
@@ -29,8 +30,8 @@ assessment.network$child  = assessment.network$name_en.x
 
 collapsibleTreeNetwork(
   assessment.network,
-  attribute = "title"
-  # tooltipHtml = "tooltip",
+  # attribute = "name_en.x"
+  # tooltipHtml = "tooltip"
   # zoomable = FALSE
 )
 ```

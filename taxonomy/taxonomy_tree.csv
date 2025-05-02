@@ -1,0 +1,251 @@
+﻿parent;child;name_en
+;1;Statistics Taxonomy
+1;2;Measurement Level
+2;3;Nominal
+2;4;Ordinal
+2;5;Interval
+2;6;Ratio
+1;7;Variable type
+7;8;Discrete variable
+7;9;Continuous variable
+1;10;Descriptive statistics
+10;11;Summary Statistics
+11;12;Measures of Location
+12;13;Mean
+12;14;Median
+12;15;Mode
+10;16;Measures of Spread
+16;17;Range
+16;18;Standard Deviation
+16;19;Variance
+16;20;Interquartile Range
+10;21;Bivariate statistics
+21;22;Correlation
+21;23;Covariance
+11;24;Outliers
+11;25;Odds ratio
+11;26;Proportion
+11;27;Conditional proportion
+10;28;Score interpretation
+28;29;z-score
+28;30;Percentile
+10;31;Data representation
+31;32;Graphs
+32;33;Histogram
+32;34;Bar graph
+32;35;Boxplot
+32;36;Scatterplot
+32;37;Pie chart
+32;38;Venn diagram
+32;39;Stem and leaf plot
+31;40;Tables
+40;41;Frequency table
+40;42;Contingency table
+1;43;Inferential Statistics
+43;44;Sampling Distributions
+44;45;Sample mean
+44;46;Sample proportion
+44;47;Difference two means
+44;48;Correlation
+43;49;NHST
+49;50;Hypothesis
+50;51;Null hypothesis
+50;52;Alternative hypothesis
+50;53;One sided hypothesis
+50;54;Two sided hypothesis
+49;55;Test statistic
+55;56;t-statistic
+55;57;F-statistic
+55;58;Chi-squared
+55;59;z-statistic
+49;60;Statistical errors
+60;61;Type I error
+60;62;Type II error
+49;63;Power
+49;64;Significance level
+64;65;Critical value
+49;66;p-value
+43;67;Effect size
+67;68;Cohen's d
+67;69;Cramer's V
+67;70;Phi coefficient
+67;71;Eta squared
+67;72;Omega squared
+43;73;Confidence Intervals
+73;74;Confidence level
+73;75;Testing
+73;76;Width
+73;77;Margin of error
+43;78;Parametric Techniques
+78;79;z-test
+79;80;One sample mean
+79;81;Independent samples means
+79;82;One proportion
+79;83;Two proportions
+78;84;t-test
+84;85;One sample mean
+84;86;Independent samples means
+84;87;Paired samples
+84;88;Test for correlation
+78;89;Correlations
+89;90;Pearson
+89;91;Spearman
+89;92;Point biserial
+89;93;Biserial
+89;94;Phi
+78;95;Cross tables
+95;96;Chi-Squared for Independence
+95;97;Chi-Squared for Homogeneity
+95;98;Chi-Squared Goodness of Fit
+95;99;Fisher's Exact Test
+78;100;ANOVA
+100;101;Oneway ANOVA
+100;102;Twoway ANOVA
+100;103;Oneway repeated measures ANOVA
+100;104;Twoway repeated measures ANOVA
+100;105;Mixed design ANOVA
+100;106;ANCOVA
+100;107;MANOVA
+100;108;MANCOVA
+100;109;ANOVA F-test
+100;110;Post-hoc test
+78;111;Variance
+111;112;One variance
+111;113;Two variances
+43;114;Regression
+114;115;Simple linear regression
+114;116;Equation
+114;117;Slope
+114;118;Intercept
+114;119;Prediction
+114;120;Residuals
+114;121;Sum of squares
+114;122;Regression F-test
+114;123;R squared
+114;124;Standard error of the estimate
+114;125;Standardized coefficient
+114;126;Dummies
+114;127;Confidence interval
+114;128;Prediction interval
+114;129;Coefficient t-test
+114;130;Multiple linear regression
+130;131;F-test for comparing (nested) models
+130;132;R squared change
+130;133;Moderation
+130;134;Mediation
+130;135;Suppression
+114;136;Principal axis regression
+114;137;Logistic regression
+137;138;Odds
+137;139;Odds ratio
+114;140;Probit regression
+114;141;Multinomial logistic regression
+43;142;Non-parametric Techniques
+142;143;Sign test
+142;144;Rank Sum test
+142;145;Signed Rank test
+142;146;Kruskal-Wallis test
+142;147;Friedman's test
+142;148;Permutation test
+43;149;Bootstrap
+43;150;Bayesian Statistics
+150;151;Prior
+150;152;Likelihood
+150;153;Posterior
+150;154;Credible intervals
+150;155;Hypothesis test
+150;156;Bayes factor
+150;157;Parameter estimation
+150;158;Informative hypothesis testing
+43;159;Time Series
+159;160;Descriptive methods
+159;161;Autocorrelation
+159;162;Runs test
+159;163;Seasonal variation
+159;164;Arima models
+159;165;Forecasting
+159;166;Frequency domain
+43;167;Multilevel Analysis
+1;168;Probability
+168;169;Elementary Probability
+169;170;Sample Space
+169;171;Events
+169;172;General Rules
+172;173;Intersection
+172;174;Union
+172;175;Addition rule
+172;176;Multiplication rule
+172;177;Independent events
+169;178;Combinations
+169;179;Permutations
+169;180;Conditional probability
+169;181;Random variables
+181;182;Expected value
+181;183;Variance
+181;184;Rules for expected values
+181;185;Random sample
+1;186;Distributions
+186;187;Discrete
+187;188;Binomial
+187;189;Normal approximation to Binomial
+187;190;Bernoulli
+187;191;Geometric
+187;192;Negative Binomial
+187;193;Poisson
+187;194;Hypergeometric
+187;195;Multinominal
+186;196;Continuous
+196;197;Normal
+196;198;Uniform
+196;199;Exponential
+196;200;Gamma
+196;201;t-distribution
+196;202;F-distribution
+196;203;Chi-squared
+196;204;Beta
+186;205;Limit Theorems
+205;206;Central Limit Theorem
+205;207;Law of Large Numbers
+1;208;Assumptions
+208;209;Homogeneity of variance
+209;210;Levene's test
+209;211;Ratio of sample size
+209;212;Ratio of variance
+208;213;Sphericity
+213;214;Mauchly's test
+213;215;Epsilon
+208;216;Normality
+216;217;Shapiro-Wilks
+216;218;Kolmogorov-Smirnov
+216;219;Q-Q plot
+208;220;Linearity
+208;221;Homoscedasticity
+221;222;Residual plot
+208;223;Multicolinearity
+223;224;VIF
+223;225;Tolerance
+1;226;Factor analysis
+226;227;Principle component analysis
+226;228;Exploratory factor analysis
+226;229;Confirmatory factor analysis
+226;230;Rotations
+226;231;Eigenvalues
+226;232;Factor loadings
+226;233;Explained variance
+226;234;component correlation matrix
+226;235;Scree plot
+226;236;Pattern matrix
+226;237;Structure matrix
+226;238;Factor correlation matrix
+226;239;Communalities
+226;240;Factor scores
+1;241;Reliability
+241;242;Analysis
+242;243;Cronbach's alpha
+242;244;Split half
+242;245;Test-retest
+242;246;Parallel forms
+241;247;Descriptives
+247;248;RIT
+247;249;RIR
+247;250;proportion correct

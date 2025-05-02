@@ -43,7 +43,7 @@ library(htmltools)
 library(dplyr)
 
 #load taxonomy file
-data <- read_excel("taxonomy_tree.xlsx")
+data <- read.csv2("taxonomy_tree.csv")
 
 # Create a named list for quick lookup: child -> list(parent, name_en)
 node_map <- split(data, data$child)
