@@ -67,7 +67,7 @@ dat <- dat %>%
 # New offcanvas view button:
 mutate(View = paste0(
     '<a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample',id+1,'" role="button" aria-controls="offcanvasExample',id+1,'">
-  🔍
+  <i class="bi bi-eye"></i>
 </a>
 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample',id+1,'" aria-labelledby="offcanvasLabel">
   <div class="offcanvas-header">
