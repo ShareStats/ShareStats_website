@@ -72,7 +72,7 @@ pathString <- gsub("Statistics Taxonomy/", "", data$pathString)
 
 pathString <- paste0('<li><a href="https://www.sharestats.nl/items-df.html?query=', pathString,'">', pathString, '</a></li>')
 
-cat("<lo>")
+cat("<ol>")
 cat(pathString[-1], sep='\n')
 cat("</ol>")
 ```
