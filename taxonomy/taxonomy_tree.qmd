@@ -32,7 +32,63 @@ exsection: Descriptive statistics/Summary Statistics/Measures of Location/Median
 
 #### Click to copy
 
-```{r, echo=FALSE}
+```{r, echo=FALSE, eval=FALSE}
 htmltools::includeHTML("taxonomy_list.html")
+```
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+library(readxl)
+library(data.tree)
+library(htmltools)
+library(dplyr)
+
+#load taxonomy file
+data <- read_excel("taxonomy_tree.xlsx")
+
+# Create a named list for quick lookup: child -> list(parent, name_en)
+node_map <- split(data, data$child)
+
+# Function to build the complete path
+build_path <- function(child_id) {
+  path <- c()
+  current_id <- child_id
+  
+  while(TRUE) {
+    node <- node_map[[as.character(current_id)]]
+    if (is.null(node)) break
+    path <- c(node$name_en, path)
+    parent_id <- node$parent
+    if (is.na(parent_id)) break
+    current_id <- as.integer(parent_id)
+  }
+  
+  paste(path, collapse = "/")
+}
+
+# Apply the function to each row
+data <- data %>%
+  rowwise() %>%
+  mutate(pathString = build_path(child)) %>%
+  ungroup()
+
+tree <- as.Node(data, pathName = "pathString", pathDelimiter = "/")
+
+# Function to recursively convert the tree to nested <ul> and <li>
+tree_to_html <- function(node) {
+  if (node$isLeaf) {
+    tags$li(node$name)
+  } else {
+    tags$li(
+      node$name,
+      tags$ul(lapply(node$children, tree_to_html))
+    )
+  }
+}
+
+# Convert the entire tree to HTML
+html_list <- tags$ul(tree_to_html(tree))
+
+# Print the HTML in your R console
+browsable(html_list)
 ```
 
