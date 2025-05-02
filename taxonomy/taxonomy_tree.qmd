@@ -9,32 +9,7 @@ output:
     toc_depth: 2
 ---
 
-<script src="copyText.js"></script>
-
-```{r, echo=FALSE}
-source("functions.R")
-```
-
-
-## Assigning taxonomy {.tabset}
-
-### Statistics Taxonomy
-
-To add a taxonomy path to your r-exams markdown file, add `exsection:` to the `Meta-information` of your markdown file.
-
-You can copy the desired paths from the list below. You may add multiple path by separating them with a comma. **No new lines allowed though**.
-
-```{}
-Meta-information
-================
-exsection: Descriptive statistics/Summary Statistics/Measures of Location/Median, Descriptive statistics/Summary Statistics/Measures of Spread/Standard Deviation
-```
-
-#### Click to copy
-
-```{r, echo=FALSE, eval=FALSE}
-htmltools::includeHTML("taxonomy_list.html")
-```
+Below you can find the statistics taxonomy used in ShareStats. You can click on each taxonomy level te get a sub selection of only those items in the itembank.
 
 ```{r, echo=FALSE, warning=FALSE, message=FALSE}
 library(readxl)
@@ -80,7 +55,7 @@ tree_to_html <- function(node) {
   } else {
     tags$li(
       node$name,
-      tags$ul(lapply(node$children, tree_to_html))
+      tags$ol(lapply(node$children, tree_to_html))
     )
   }
 }
@@ -89,6 +64,28 @@ tree_to_html <- function(node) {
 html_list <- tags$ul(tree_to_html(tree))
 
 # Print the HTML in your R console
-browsable(html_list)
+# browsable(html_list)
 ```
 
+```{r, echo=FALSE, eval=TRUE, results = "asis"}
+pathString <- gsub("Statistics Taxonomy/", "", data$pathString)
+
+pathString <- paste0('<li><a href="https://www.sharestats.nl/items-df.html?query=', pathString,'">', pathString, '</a></li>')
+
+cat("<lo>")
+cat(pathString[-1], sep='\n')
+cat("</ol>")
+```
+<br>
+
+## Taxonomy for item creation
+
+To add a taxonomy path to your r-exams markdown file, add `exsection:` to the `Meta-information` of your markdown file.
+
+You can copy the desired paths from the list below. You may add multiple path by separating them with a comma. **No new lines allowed though**.
+
+```{}
+Meta-information
+================
+exsection: Descriptive statistics/Summary Statistics/Measures of Location/Median, Descriptive statistics/Summary Statistics/Measures of Spread/Standard Deviation
+```
