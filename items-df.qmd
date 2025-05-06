@@ -67,7 +67,7 @@ dat <- dat %>%
 # New offcanvas view button:
 mutate(View = paste0(
     '<a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample',id+1,'" role="button" aria-controls="offcanvasExample',id+1,'">
-  <i class="bi bi-eye"></i>
+  <i class="bi bi-eye fs-4"></i>
 </a>
 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample',id+1,'" aria-labelledby="offcanvasLabel">
   <div class="offcanvas-header">
@@ -83,7 +83,7 @@ mutate(View = paste0(
   mutate(Files = paste0(
     '<div class="dropdown mt-3">
       <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-        <i class="bi bi-cloud-download"></i>
+        <i class="bi bi-cloud-download fs-4"></i>
       </button>
       <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="">
         <li><a class="dropdown-item" href="',zip_link(folder, name),'">ZIP Folder</a></li>
