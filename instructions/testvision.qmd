@@ -25,6 +25,9 @@ install.packages("exams")
 
 You can use the following script to compile this question. Note that you can also download multiple questions and combine them in the script below to upload multiple questions at once to TestVision.
 
+::: {.panel-tabset}
+## Single Question
+
 ```{r, eval=FALSE}
 library("exams")
 
@@ -44,5 +47,31 @@ exams2testvision(file.paths,
                  # Make sure no numbers are added to mc questions
                  schoice=list(enumerate = FALSE))
 ```
+
+## Multiple Questions
+
+```{r, eval=FALSE}
+library("exams")
+
+# Add file path to list. Multiple paths can be added here list("path1.rmd", "path2.rmd")
+file.paths = list("filepath1.rmd",
+                  "filepath2.rmd",
+                  "filepath3.rmd")
+
+# Create preview
+exams2html(file.paths)
+
+# Set directory where you want to store the .zip package that will be created
+directory = ""
+
+# Create TvO package
+exams2testvision(file.paths, 
+                 dir  = directory, 
+                 name = "exam_name",
+                 # Make sure no numbers are added to mc questions
+                 schoice=list(enumerate = FALSE))
+```
+
+:::
 
 The newly created `.zip` file can be uploaded to Testvision as described in the video above.
