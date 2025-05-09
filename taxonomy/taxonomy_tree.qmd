@@ -9,7 +9,7 @@ output:
     toc_depth: 2
 ---
 
-Below you can find the statistics taxonomy used in ShareStats. You can click on each taxonomy level te get a sub selection of only those items in the itembank.
+Below you can find the statistics taxonomy used in ShareStats. You can click on each taxonomy level to get a sub selection of only those items in the itembank.
 
 ```{r, echo=FALSE, warning=FALSE, message=FALSE}
 library(readxl)

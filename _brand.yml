@@ -1,17 +1,7 @@
 color:
-  palette:
-    dark-grey: "#222222"
-    blue: "#57CBCC"
-  background: #57CBCC
-  foreground: dark-grey
-  primary: black
+  foreground: "#485785"
+  primary:    "#57CBCC"
+  link: "#485785"
 
 logo: 
   medium: images/logoWT.png
-
-typography:
-  fonts:
-    - family: Jura
-      source: google
-  base: Jura
-  headings: Jura
