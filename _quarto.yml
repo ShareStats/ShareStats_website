@@ -2,6 +2,8 @@ project:
   type: website
   output-dir: docs
 
+brand: _brand.yml
+
 website:
   title: ""
   image: images/homeback.png
@@ -10,7 +12,7 @@ website:
   repo-url: https://https://github.com/ShareStats/ShareStats_website/
   search: false
   navbar:
-    background: '#57cbcc'
+#    background: '#57cbcc'
     logo: images/logoWT.png
     logo-alt: "ShareStats"
     collapse-below: lg
@@ -58,9 +60,11 @@ website:
 
 format:
   html:
-    theme: morph
-    css: [styles.css, bootstrap.css, custom.css]
+#    theme: morph
+    # css: [styles.css, bootstrap.css, custom.css]
+    css: [styles.css, custom.css]
     toc: false
     page-layout: full
     grid:
       body-width: 1200px
+
