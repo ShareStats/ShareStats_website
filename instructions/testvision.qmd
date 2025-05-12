@@ -53,7 +53,7 @@ exams2testvision(file.paths,
 ```{r, eval=FALSE}
 library("exams")
 
-# Add file path to list. Multiple paths can be added here list("path1.rmd", "path2.rmd")
+# Add file path to list. Multiple paths can be added here list("path1/file1.rmd", "path2/file2.rmd")
 file.paths = list("itemFolder1/itemFile1.rmd",
                   "itemFolder2/itemFile2.rmd",
                   "itemFolder3/itemFile3.rmd")
