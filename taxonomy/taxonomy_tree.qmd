@@ -76,16 +76,3 @@ cat("<ol>")
 cat(pathString[-1], sep='\n')
 cat("</ol>")
 ```
-<br>
-
-## Taxonomy for item creation
-
-To add a taxonomy path to your r-exams markdown file, add `exsection:` to the `Meta-information` of your markdown file.
-
-You can copy the desired paths from the list below. You may add multiple path by separating them with a comma. **No new lines allowed though**.
-
-```{}
-Meta-information
-================
-exsection: Descriptive statistics/Summary Statistics/Measures of Location/Median, Descriptive statistics/Summary Statistics/Measures of Spread/Standard Deviation
-```

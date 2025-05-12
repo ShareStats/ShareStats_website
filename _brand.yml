@@ -1,7 +1,8 @@
 color:
   foreground: "#485785"
   primary:    "#57CBCC"
-  link: "#485785"
+  link:       "#485785"
+  
 
 logo: 
   medium: images/logoWT.png
