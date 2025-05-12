@@ -15,7 +15,7 @@ Testvision packages are already available as download from the ShareStats search
 
 ## Manual compile
 
-It is also possible to download the **ZIP Folder** with all the raw files from the [itembank search page](items-df). When you unpack the zip you will have a folder containing the item `.Rmd` file, and date or image files.
+It is also possible to download the **ZIP Folder** with all the raw files from the [itembank search page](https://www.sharestats.nl/items-df.html). When you unpack the zip you will have a folder containing the item `.Rmd` file, and date or image files.
 
 We recommend to create a folder your items set this to your working directory and save the extracted ZIP folders in there. In this folder you can ad an R file with the code below to compile the items for uploading.
 
