@@ -94,7 +94,7 @@ There are five item types available in R exams ([Resource](http://www.r-exams.or
 
 ## General item structur
 
-```{}
+```{md}
 Question
 ========
 
@@ -112,7 +112,7 @@ exextra[]:
 
 ## Multiple choice
 
-```{}
+```{md}
 Question
 ========
 
@@ -146,7 +146,7 @@ exextra[Type]: Calculation
 
 ## Multiple answer
 
-```{}
+```{md}
 Question
 ========
 
@@ -182,7 +182,7 @@ exextra[Level]: Statistical Reasoning
 
 ## Fill in the blank number
 
-```{}
+```{md}
 Question
 ========
 
@@ -205,7 +205,7 @@ exextra[Type]: Calculation
 
 ## Fill in the blank text/essay
 
-```{}
+```{md}
 Question
 ========
 
@@ -227,7 +227,7 @@ exextra[Type]: Test choice
 
 ## Combinations
 
-```{}
+```{md}
 Question
 ========
 
@@ -279,7 +279,7 @@ include_supplement("myImage.png", recursive = TRUE)
 
 You can add the taxonomy to the `exsection` attribute in the meta information.
 
-```{}
+```{md}
 Meta-information
 ================
 exsection: Descriptive statistics/Summary Statistics/Measures of Spread/Standard Deviation, Inferential Statistics/Parametric Techniques/t-test/One sample mean
@@ -294,7 +294,7 @@ exsection: Descriptive statistics/Summary Statistics/Measures of Spread/Standard
 
 You can add tags to the `exextra[]` attribute in the meta information.
 
-```{}
+```{md}
 Meta-information
 ================
 exextra[Type]: Calculation, Data manipulation

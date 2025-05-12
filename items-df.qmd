@@ -125,12 +125,15 @@ datatable(., filter = "top",
 
 You can also load the search table into R as a dataframe. Just copy the code below and you will have access to all the meta information of the items and the github folder location.
 
-```{r}
+```{r, eval=FALSE}
 # Read csv
 all.items <- read.csv("https://sharestats.github.io/itembank/sharestats_website.csv")
 
 # Add github url
 all.items$Path <- paste0("https://github.com/ShareStats/itembank/tree/main/", all.items$folder)
+
+# Show names
+names(all.items)
 ```
 
 :::
