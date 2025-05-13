@@ -113,7 +113,13 @@ mutate(View = paste0(
 # Create an interactive table using the DT package
 dat %>% dplyr::select(-name, -question, -folder, -id) %>% 
 datatable(., filter = "top", 
-          options = list(pageLength = 10), 
+          options = list(pageLength = 10
+                         # ,
+                         # dom = 'Pfrtip', 
+                         # columnDefs = list(list(searchPanes = list(show = FALSE), 
+                         #                        targets     = 1:3 ))
+                         ),
+          # extensions = c('Select', 'SearchPanes'),
           style = 'bootstrap', selection = 'multiple', 
           escape = FALSE
           )
