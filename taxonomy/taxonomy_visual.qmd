@@ -30,6 +30,7 @@ assessment.network$child  = assessment.network$name_en.x
 
 collapsibleTreeNetwork(
   assessment.network,
+  fill = "#57CBCC"
   # attribute = "name_en.x"
   # tooltipHtml = "tooltip"
   # zoomable = FALSE

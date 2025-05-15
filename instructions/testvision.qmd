@@ -54,9 +54,9 @@ exams2testvision(file.paths,
 library("exams")
 
 # Add file path to list. Multiple paths can be added here list("path1/file1.rmd", "path2/file2.rmd")
-file.paths = list("itemFolder1/itemFile1.rmd",
-                  "itemFolder2/itemFile2.rmd",
-                  "itemFolder3/itemFile3.rmd")
+file.paths <- list("itemFolder1/itemFile1.rmd",
+                   "itemFolder2/itemFile2.rmd",
+                   "itemFolder3/itemFile3.rmd")
 
 # Create preview
 exams2html(file.paths)
