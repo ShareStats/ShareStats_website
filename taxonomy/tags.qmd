@@ -19,21 +19,21 @@ To add tags to your r-exams markdown file add ```exextra[]:` to the ```Meta-info
 
 We have four categories that can be applied.
 
-## Click to copy
+## Click to search
 
 <ol class="bullet">
-<li><strong>`r copyOnClick("Type")`:</strong>
-<span id="calc"  class="tag" onclick="copy_data(calc)">Calculation</span>
-<span id="cas1"  class="tag" onclick="copy_data(cas1)">Case</span>
-<span id="conc"  class="tag" onclick="copy_data(conc)">Conceptual</span>
-<span id="crg"   class="tag" onclick="copy_data(crg)">Creating graphs</span>
-<span id="dat"   class="tag" onclick="copy_data(dat)">Data manipulation</span>
-<span id="intgr" class="tag" onclick="copy_data(intgr)">Interpreting graph</span>
-<span id="intou" class="tag" onclick="copy_data(intou)">Interpreting output</span>
-<span id="an"    class="tag" onclick="copy_data(an)">Performing analysis</span>
-<span id="tch"   class="tag" onclick="copy_data(tch)">Test choice</span>
+<li><strong>Type</strong>:
+`r copyOnClick("Calculation")`
+`r copyOnClick("Case")`
+`r copyOnClick("Conceptual")`
+`r copyOnClick("Creating graphs")`
+`r copyOnClick("Data manipulation")`
+`r copyOnClick("Interpreting graph")`
+`r copyOnClick("Interpreting output")`
+`r copyOnClick("Performing analysis")`
+`r copyOnClick("Test choice")`
 </li>
-<li><strong>`r copyOnClick("Program")`</strong>:
+<li><strong>Program</strong>:
 `r copyOnClick("SPSS")`
 `r copyOnClick("JASP")`
 `r copyOnClick("R")`
@@ -42,11 +42,11 @@ We have four categories that can be applied.
 `r copyOnClick("Calculator")`
 `r copyOnClick("Jamovi")`
 </li>
-<li><strong>`r copyOnClick("Language")`</strong>:
+<li><strong>Language</strong>:
 `r copyOnClick("English")`
 `r copyOnClick("Dutch")`
 </li>
-<li><strong>`r copyOnClick("Level")`</strong>:
+<li><strong>Level</strong>:
 `r copyOnClick("Statistical Literacy")`
 `r copyOnClick("Statistical Reasoning")`
 `r copyOnClick("Statistical Thinking")`

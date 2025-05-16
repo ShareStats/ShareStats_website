@@ -242,7 +242,7 @@
     "href": "instructions/index.html",
     "title": "Instructional pages",
     "section": "",
-    "text": "How to search\n\n\nInstructional video on how to search for exercises in the itembank and upload them to TestVision\n\n\n\n\n\nOct 7, 2020\n\n\nSharon Klinkenberg\n\n\n\n\n\n\n\n\n\n\n\n\nTestVision\n\n\nInstructional video on how to upload a sharestats question to TestVision\n\n\n\n\n\nMay 15, 2025\n\n\nSharon Klinkenberg\n\n\n\n\n\nNo matching items"
+    "text": "How to search\n\n\nInstructional video on how to search for exercises in the itembank and upload them to TestVision\n\n\n\n\n\nOct 7, 2020\n\n\nSharon Klinkenberg\n\n\n\n\n\n\n\n\n\n\n\n\nTestVision\n\n\nInstructional video on how to upload a sharestats question to TestVision\n\n\n\n\n\nMay 16, 2025\n\n\nSharon Klinkenberg\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "development/qualityProcedure.html#checklist-part-1-person-a",
@@ -329,11 +329,11 @@
     "text": "To add tags to your r-exams markdown file add exextra[]:` to theMeta-information` of your markdown file.\nWe have four categories that can be applied."
   },
   {
-    "objectID": "taxonomy/tags.html#click-to-copy",
-    "href": "taxonomy/tags.html#click-to-copy",
+    "objectID": "taxonomy/tags.html#click-to-search",
+    "href": "taxonomy/tags.html#click-to-search",
     "title": "Tags",
-    "section": "Click to copy",
-    "text": "Click to copy\n\n\nType: Calculation Case Conceptual Creating graphs Data manipulation Interpreting graph Interpreting output Performing analysis Test choice\n\n\nProgram: SPSS JASP R STATA Excel Calculator Jamovi\n\n\nLanguage: English Dutch\n\n\nLevel: Statistical Literacy Statistical Reasoning Statistical Thinking\n\n\nYou can use more than one tag per category.\nMeta-information\n================\nexextra[Type]: Calculation, Data manipulation\nexextra[Program]: SPSS\nexextra[Language]: English\nexextra[Level]: Statistical Literacy"
+    "section": "Click to search",
+    "text": "Click to search\n\n\nType: Calculation Case Conceptual Creating graphs Data manipulation Interpreting graph Interpreting output Performing analysis Test choice\n\n\nProgram: SPSS JASP R STATA Excel Calculator Jamovi\n\n\nLanguage: English Dutch\n\n\nLevel: Statistical Literacy Statistical Reasoning Statistical Thinking\n\n\nYou can use more than one tag per category.\nMeta-information\n================\nexextra[Type]: Calculation, Data manipulation\nexextra[Program]: SPSS\nexextra[Language]: English\nexextra[Level]: Statistical Literacy"
   },
   {
     "objectID": "taxonomy/tags.html#type-descriptions",

@@ -1,12 +1,18 @@
-copyOnClick <- function (text, class = "tag") {
+copyOnClick <- function(text, class = "tag") {
   
-  # Get rid of all white spaces for use as id
-  id = gsub("[[:space:]]", "", text)
+  # Remove all white space to create a valid ID
+  id <- gsub("[[:space:]]", "", text)
   
-  # Create HTML string
-  html.markup <- paste0('<span id="',id,'" class="',class,'" onclick="copy_data(',id,')">',text,'</span>')
+  # URL encode the text for use in a query string
+  query <- utils::URLencode(text, reserved = TRUE)
   
-  return(html.markup);
+  # Create the HTML hyperlink
+  html.markup <- paste0('<a id="', id, '" class="', class, 
+                        '" href="https://www.sharestats.nl/items-df.html?query=', query, 
+                        '">', text, '</a>')
+  
+  return(html.markup)
 }
 
+# Example usage:
 # copyOnClick("Mijn mooie tag")
