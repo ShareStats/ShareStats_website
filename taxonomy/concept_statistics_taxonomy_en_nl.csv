@@ -1,0 +1,251 @@
+parent;child;name_en;name_nl
+;1;Statistics Taxonomy;Statistische Taxonomie
+1;2;Measurement Level;Meetschaalniveau
+2;3;Nominal;Nominaal
+2;4;Ordinal;Ordinaal
+2;5;Interval;Interval
+2;6;Ratio;Ratio
+1;7;Variable type;Variabele type
+7;8;Discrete variable;Discrete variabele
+7;9;Continuous variable;Continue variabele
+1;10;Descriptive statistics;Beschrijvende statistiek
+10;11;Summary Statistics;Samenvattende statistieken
+11;12;Measures of Location;Maat van centrale tendentie
+12;13;Mean;Gemiddelde
+12;14;Median;Mediaan
+12;15;Mode;Modus
+10;16;Measures of Spread;Spreidingsmaten
+16;17;Range;Bereik
+16;18;Standard Deviation;Standaarddeviatie
+16;19;Variance;Variantie
+16;20;Interquartile Range;Interkwartielafstand
+10;21;Bivariate statistics;Bivariate statistiek
+21;22;Correlation;Correlatie
+21;23;Covariance;Covariantie
+11;24;Outliers;Uitschieters
+11;25;Odds ratio;Kansverhouding
+11;26;Proportion;Proportie
+11;27;Conditional proportion;Voorwaardelijke proportie
+10;28;Score interpretation;Interpretatie van scores
+28;29;z-score;z-score
+28;30;Percentile;Percentiel
+10;31;Data representation;Gegevensrepresentatie
+31;32;Graphs;Grafieken
+32;33;Histogram;Histogram
+32;34;Bar graph;Staafdiagram
+32;35;Boxplot;Boxplot
+32;36;Scatterplot;Spreidingsdiagram
+32;37;Pie chart;Cirkeldiagram
+32;38;Venn diagram;Venndiagram
+32;39;Stem and leaf plot;Steel-en-bladdiagram
+31;40;Tables;Tabellen
+40;41;Frequency table;Frequentietabel
+40;42;Contingency table;Contingentietabel
+1;43;Inferential Statistics;Inferenti‘le Statistiek
+43;44;Sampling Distributions;Steekproevenverdelingen
+44;45;Sample mean;Steekproefgemiddelde
+44;46;Sample proportion;Steekproefproportie
+44;47;Difference two means;Verschil tussen twee gemiddelden
+44;48;Correlation;Correlatie
+43;49;NHST;Nulhypothesetoetsing (NHST)
+49;50;Hypothesis;Hypothese
+50;51;Null hypothesis;Nulhypothese
+50;52;Alternative hypothesis;Alternatieve hypothese
+50;53;One sided hypothesis;Eenzijdige hypothese
+50;54;Two sided hypothesis;Twee-zijdige hypothese
+49;55;Test statistic;Toetsingsgrootheid
+55;56;t-statistic;t-toets
+55;57;F-statistic;F-toets
+55;58;Chi-squared;Chi-kwadraat
+55;59;z-statistic;z-toets
+49;60;Statistical errors;Statistische fouten
+60;61;Type I error;Type I fout
+60;62;Type II error;Type II fout
+49;63;Power;Power
+49;64;Significance level;Significantieniveau
+64;65;Critical value;Kritieke waarde
+49;66;p-value;p-waarde
+43;67;Effect size;Effectgrootte
+67;68;Cohen's d;Cohen's d
+67;69;Cramer's V;Cramer's V
+67;70;Phi coefficient;Phi-co‘ffici‘nt
+67;71;Eta squared;Eta kwadraat
+67;72;Omega squared;Omega kwadraat
+43;73;Confidence Intervals;Betrouwbaarheidsintervallen
+73;74;Confidence level;Betrouwbaarheidsniveau
+73;75;Testing;Toetsing
+73;76;Width;Breedte
+73;77;Margin of error;Foutmarge
+43;78;Parametric Techniques;Parametrische technieken
+78;79;z-test;z-toets
+79;80;One sample mean;EŽn steekproefgemiddelde
+79;81;Independent samples means;Onafhankelijke steekproefgemiddelden
+79;82;One proportion;EŽn proportie
+79;83;Two proportions;Twee proporties
+78;84;t-test;t-toets
+84;85;One sample mean;EŽn steekproefgemiddelde
+84;86;Independent samples means;Onafhankelijke steekproefgemiddelden
+84;87;Paired samples;Gepaard steekproeven
+84;88;Test for correlation;Correlatietoets
+78;89;Correlations;Correlaties
+89;90;Pearson;Pearson
+89;91;Spearman;Spearman
+89;92;Point biserial;Punt-biserieel
+89;93;Biserial;Biserieel
+89;94;Phi;Phi
+78;95;Cross tables;Kruistabellen
+95;96;Chi-Squared for Independence;Chi-kwadraat voor onafhankelijkheid
+95;97;Chi-Squared for Homogeneity;Chi-kwadraat voor homogeniteit
+95;98;Chi-Squared Goodness of Fit;Chi-kwadraat voor passendheid
+95;99;Fisher's Exact Test;Fisher's exacte toets
+78;100;ANOVA;ANOVA
+100;101;Oneway ANOVA;Eenweg ANOVA
+100;102;Twoway ANOVA;Tweeweg ANOVA
+100;103;Oneway repeated measures ANOVA;Eenweg herhaalde metingen ANOVA
+100;104;Twoway repeated measures ANOVA;Tweeweg herhaalde metingen ANOVA
+100;105;Mixed design ANOVA;Gemengd ontwerp ANOVA
+100;106;ANCOVA;ANCOVA
+100;107;MANOVA;MANOVA
+100;108;MANCOVA;MANCOVA
+100;109;ANOVA F-test;ANOVA F-toets
+100;110;Post-hoc test;Post-hoc toets
+78;111;Variance;Variantie
+111;112;One variance;EŽn variantie
+111;113;Two variances;Twee varianties
+43;114;Regression;Regressie
+114;115;Simple linear regression;Eenvoudige lineaire regressie
+114;116;Equation;Vergelijking
+114;117;Slope;Hellingshoek
+114;118;Intercept;Intercept
+114;119;Prediction;Voorspelling
+114;120;Residuals;Residuen
+114;121;Sum of squares;Kwadratensom
+114;122;Regression F-test;Regressie F-toets
+114;123;R squared;R kwadraat
+114;124;Standard error of the estimate;Standaardfout van de schatting
+114;125;Standardized coefficient;Gestandaardiseerde co‘ffici‘nt
+114;126;Dummies;Dummyvariabelen
+114;127;Confidence interval;Betrouwbaarheidsinterval
+114;128;Prediction interval;Voorspellingsinterval
+114;129;Coefficient t-test;Co‘ffici‘nt t-toets
+114;130;Multiple linear regression;Meervoudige lineaire regressie
+130;131;F-test for comparing (nested) models;F-toets voor geneste modellen
+130;132;R squared change;Verandering in R kwadraat
+130;133;Moderation;Moderatie
+130;134;Mediation;Mediatie
+130;135;Suppression;Onderdrukking
+114;136;Principal axis regression;Hoofdasregressie
+114;137;Logistic regression;Logistische regressie
+137;138;Odds;Kansen
+137;139;Odds ratio;Kansverhouding
+114;140;Probit regression;Probit regressie
+114;141;Multinomial logistic regression;Multinomiale logistische regressie
+43;142;Non-parametric Techniques;Niet-parametrische technieken
+142;143;Sign test;Teken toets
+142;144;Rank Sum test;Rangsomtoets
+142;145;Signed Rank test;Teken-rang toets
+142;146;Kruskal-Wallis test;Kruskal-Wallis toets
+142;147;Friedman's test;Friedman toets
+142;148;Permutation test;Permutatietoets
+43;149;Bootstrap;Bootstrap
+43;150;Bayesian Statistics;Bayesiaanse statistiek
+150;151;Prior;Prior
+150;152;Likelihood;Waarschijnlijkheid
+150;153;Posterior;Posterior
+150;154;Credible intervals;Geloofwaardige intervallen
+150;155;Hypothesis test;Hypothesetoets
+150;156;Bayes factor;Bayes-factor
+150;157;Parameter estimation;Parameter schatting
+150;158;Informative hypothesis testing;Informele hypothesetoetsing
+43;159;Time Series;Tijdreeksen
+159;160;Descriptive methods;Beschrijvende methoden
+159;161;Autocorrelation;Autocorrelatie
+159;162;Runs test;Runs toets
+159;163;Seasonal variation;Seizoensvariatie
+159;164;Arima models;ARIMA-modellen
+159;165;Forecasting;Voorspelling
+159;166;Frequency domain;Frequentiedomein
+43;167;Multilevel Analysis;Multiniveauanalyse
+1;168;Probability;Kansrekening
+168;169;Elementary Probability;Elementaire kansrekening
+169;170;Sample Space;Uitkomstenruimte
+169;171;Events;Gebeurtenissen
+169;172;General Rules;Algemene regels
+172;173;Intersection;Doorsnede
+172;174;Union;Unie
+172;175;Addition rule;Optelregel
+172;176;Multiplication rule;Vermenigvuldigingsregel
+172;177;Independent events;Onafhankelijke gebeurtenissen
+169;178;Combinations;Combinaties
+169;179;Permutations;Permutaties
+169;180;Conditional probability;Voorwaardelijke kans
+169;181;Random variables;Kansvariabelen
+181;182;Expected value;Verwachtingswaarde
+181;183;Variance;Variantie
+181;184;Rules for expected values;Regels voor verwachtingswaarden
+181;185;Random sample;Aselecte steekproef
+1;186;Distributions;Verdelingen
+186;187;Discrete;Discreet
+187;188;Binomial;Binomiaal
+187;189;Normal approximation to Binomial;Normale benadering van binomiaal
+187;190;Bernoulli;Bernoulli
+187;191;Geometric;Geometrisch
+187;192;Negative Binomial;Negatieve binomiale
+187;193;Poisson;Poisson
+187;194;Hypergeometric;Hypergeometrisch
+187;195;Multinominal;Multinomiaal
+186;196;Continuous;Continu
+196;197;Normal;Normaal
+196;198;Uniform;Uniform
+196;199;Exponential;Exponentieel
+196;200;Gamma;Gamma
+196;201;t-distribution;t-verdeling
+196;202;F-distribution;F-verdeling
+196;203;Chi-squared;Chi-kwadraat
+196;204;Beta;Beta
+186;205;Limit Theorems;Limietstellingen
+205;206;Central Limit Theorem;Centrale limietstelling
+205;207;Law of Large Numbers;Wet van de grote aantallen
+1;208;Assumptions;Aannames
+208;209;Homogeneity of variance;Homogeniteit van variantie
+209;210;Levene's test;Levene's toets
+209;211;Ratio of sample size;Verhouding steekproefgrootte
+209;212;Ratio of variance;Verhouding variantie
+208;213;Sphericity;Sfericiteit
+213;214;Mauchly's test;Mauchly's toets
+213;215;Epsilon;Epsilon
+208;216;Normality;Normaliteit
+216;217;Shapiro-Wilks;Shapiro-Wilks
+216;218;Kolmogorov-Smirnov;Kolmogorov-Smirnov
+216;219;Q-Q plot;Q-Q plot
+208;220;Linearity;Lineariteit
+208;221;Homoscedasticity;Homoscedasticiteit
+221;222;Residual plot;Residuenplot
+208;223;Multicolinearity;Multicollineariteit
+223;224;VIF;VIF
+223;225;Tolerance;Tolerantie
+1;226;Factor analysis;Factoranalyse
+226;227;Principle component analysis;Principale componentenanalyse
+226;228;Exploratory factor analysis;Verkennende factoranalyse
+226;229;Confirmatory factor analysis;Bevestigende factoranalyse
+226;230;Rotations;Rotaties
+226;231;Eigenvalues;Eigenwaarden
+226;232;Factor loadings;Factorladingen
+226;233;Explained variance;Verklaarde variantie
+226;234;Component correlation matrix;Component correlatiematrix
+226;235;Scree plot;Scree plot
+226;236;Pattern matrix;Patroonmatrix
+226;237;Structure matrix;Structuurmatrix
+226;238;Factor correlation matrix;Factorcorrelatiematrix
+226;239;Communalities;Gemeenschappelijkheid
+226;240;Factor scores;Factorscores
+1;241;Reliability;Betrouwbaarheid
+241;242;Analysis;Analyse
+242;243;Cronbach's alpha;Cronbach's alfa
+242;244;Split half;Split-half methode
+242;245;Test-retest;Test-hertest methode
+242;246;Parallel forms;Parallele tests
+241;247;Descriptives;Beschrijvende statistieken
+247;248;RIT;RIT
+247;249;RIR;RIR
+247;250;proportion correct;Proportie correct
