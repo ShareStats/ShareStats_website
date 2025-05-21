@@ -7,13 +7,13 @@ title: TestVision
 description: Instructional video on how to upload a sharestats question to TestVision
 ---
 
-## Download TestVision zip
+## Upload to TestVision
 
-Testvision packages are already available as download from the ShareStats search table. Follow the instructions below on how to upload the zip file to Testvision.
+TestVision packages are already available as download from the ShareStats search table. Follow the instructions below on how to upload the zip file to Testvision.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ogFJaVt3fE8?si=DqGGD3SUfVYH2awp&amp;start=73" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-## Manual compile
+## Create TestVision package
 
 It is also possible to download the **ZIP Folder** with all the raw files from the [itembank search page](https://www.sharestats.nl/items-df.html). When you unpack the zip you will have a folder containing the item `.Rmd` file, and date or image files.
 
@@ -72,4 +72,4 @@ exams2testvision(file.paths,
 
 :::
 
-The newly created `.zip` file can be uploaded to Testvision as described in the video above.
+The newly created `.zip` file can be uploaded to TestVision as described in the video above.
