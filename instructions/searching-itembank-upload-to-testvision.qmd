@@ -1,10 +1,25 @@
 ---
 author: Sharon Klinkenberg
 page-layout: article
-date: "2020-10-07T12:52:36+06:00"
+date: now
 # image: 
 title: How to search
 description: Instructional video on how to search for exercises in the itembank and upload them to TestVision
 ---
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ogFJaVt3fE8?si=gMc7nPbg1mcteGxd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+## Using the search field on the landing page
+
+On the [ShareStats landing page](https://www.sharestats.nl) you can search for items by entering keywords in the search field. The search will direct you to the itembank table with a selection of matches to your keywords in their title, description, meta information or question body. In addition you can refine your search by using the filters at the top of the table.
+
+## Adding tags
+
+An overview of all the tags used in the itembank can be found on the [tags page](https://www.sharestats.nl/taxonomy/tags.html). You can use these tags to filter your search results. 
+
+Some useful combinations of tags are for example th e the `Type`, in which you can indicate that you want an item that is about `Performing analysis` or `Data manipulation`, and the `Section`, in which you can indicate that you want an item that is about a specific statistical topic from the  taxonomy.
+
+## Perusing the taxonomy
+
+The complete taxonomy tree can be visually inspected on the [taxonomy visual](https://www.sharestats.nl/taxonomy/taxonomy_tree.html) page. The entire taxonomy list can be found on the [taxonomy tree](https://www.sharestats.nl/taxonomy/taxonomy_list.html). Here you can click on the taxonomy level of interest and this wil direct you back to the [itembank](https://www.sharestats.nl/items-df.html) search table with all the items that are tagged with this taxonomy level.
+

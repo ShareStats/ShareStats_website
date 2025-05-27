@@ -217,6 +217,27 @@
     "text": "Check output\nYou are required to check if the developed items properly work. Run the exams2html() function as a simple fast check to test your .Rmd file.\nIn addition run the following functions to check if the PDF is compiled correctly and if all the meta information is added properly. \\(\\LaTeX\\) must be installed for the PDF function to work.\n\n# install the develpment version to use browse_excersise()\ninstall.packages(\"exams\", repos = \"http://R-Forge.R-project.org\", dependencies = TRUE, type = \"source\")\nlibrary(exams)\nexams2html(file = \"\")\nexams:::browse_exercise(file = \"\")\nexams2pdf(file = \"\")\nexams2pandoc(file = \"\")"
   },
   {
+    "objectID": "instructions/searching-itembank-upload-to-testvision.html#using-the-search-field-on-the-landing-page",
+    "href": "instructions/searching-itembank-upload-to-testvision.html#using-the-search-field-on-the-landing-page",
+    "title": "How to search",
+    "section": "Using the search field on the landing page",
+    "text": "Using the search field on the landing page\nOn the ShareStats landing page you can search for items by entering keywords in the search field. The search will direct you to the itembank table with a selection of matches to your keywords in their title, description, meta information or question body. In addition you can refine your search by using the filters at the top of the table."
+  },
+  {
+    "objectID": "instructions/searching-itembank-upload-to-testvision.html#adding-tags",
+    "href": "instructions/searching-itembank-upload-to-testvision.html#adding-tags",
+    "title": "How to search",
+    "section": "Adding tags",
+    "text": "Adding tags\nAn overview of all the tags used in the itembank can be found on the tags page. You can use these tags to filter your search results.\nSome useful combinations of tags are for example th e the Type, in which you can indicate that you want an item that is about Performing analysis or Data manipulation, and the Section, in which you can indicate that you want an item that is about a specific statistical topic from the taxonomy."
+  },
+  {
+    "objectID": "instructions/searching-itembank-upload-to-testvision.html#perusing-the-taxonomy",
+    "href": "instructions/searching-itembank-upload-to-testvision.html#perusing-the-taxonomy",
+    "title": "How to search",
+    "section": "Perusing the taxonomy",
+    "text": "Perusing the taxonomy\nThe complete taxonomy tree can be visually inspected on the taxonomy visual page. The entire taxonomy list can be found on the taxonomy tree. Here you can click on the taxonomy level of interest and this wil direct you back to the itembank search table with all the items that are tagged with this taxonomy level."
+  },
+  {
     "objectID": "instructions/testvision.html",
     "href": "instructions/testvision.html",
     "title": "TestVision",
@@ -242,7 +263,7 @@
     "href": "instructions/index.html",
     "title": "Instructional pages",
     "section": "",
-    "text": "How to search\n\n\nInstructional video on how to search for exercises in the itembank and upload them to TestVision\n\n\n\n\n\nOct 7, 2020\n\n\nSharon Klinkenberg\n\n\n\n\n\n\n\n\n\n\n\n\nTestVision\n\n\nInstructional video on how to upload a sharestats question to TestVision\n\n\n\n\n\nMay 21, 2025\n\n\nSharon Klinkenberg\n\n\n\n\n\nNo matching items"
+    "text": "How to search\n\n\nInstructional video on how to search for exercises in the itembank and upload them to TestVision\n\n\n\n\n\nMay 27, 2025\n\n\nSharon Klinkenberg\n\n\n\n\n\n\n\n\n\n\n\n\nTestVision\n\n\nInstructional video on how to upload a sharestats question to TestVision\n\n\n\n\n\nMay 27, 2025\n\n\nSharon Klinkenberg\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "development/qualityProcedure.html#checklist-part-1-person-a",
