@@ -7,7 +7,7 @@ title: How to search
 description: Instructional video on how to search for exercises in the itembank and upload them to TestVision
 ---
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ogFJaVt3fE8?si=gMc7nPbg1mcteGxd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/TJP_0Fiuuao?si=T0PLxN0O86LuCIFr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Using the search field on the landing page
 
