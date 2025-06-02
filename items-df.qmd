@@ -46,6 +46,10 @@ qti_link <- function(folder, name){
 html_link <- function(folder, name){
   tmp_link <- paste0('https://sharestats.github.io/itembank/', folder, '/', name, '1.html')
 }
+canvas_link <- function(folder, name){
+  tmp_link <- paste0('https://github.com/ShareStats/itembank/raw/packages/packages/',
+                     'canvas/', folder,'-canvas.zip')
+}
 ```
 
 ```{r, include = FALSE}
@@ -89,6 +93,7 @@ mutate(View = paste0(
         <li><a class="dropdown-item" href="',zip_link(folder, name),'">ZIP Folder</a></li>
         <li><a class="dropdown-item" href="',qti_link(folder, name),'">QTI</a></li>
         <li><a class="dropdown-item" href="',tv_link(folder, name),'">TestVision</a></li>
+        <li><a class="dropdown-item" href="',canvas_link(folder, name),'">Canvas</a></li>
       </ul>
     </div>'
   )) %>% 
