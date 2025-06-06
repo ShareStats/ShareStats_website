@@ -11,7 +11,7 @@ description: Instructional video on how to upload a sharestats question to Canva
 
 Canvas packages are already available as download from the ShareStats search table. Follow the instructions below on how to upload the zip file to Canvas.
 
-
+<!-- Video here -->
 
 ## Create Canvas package
 
