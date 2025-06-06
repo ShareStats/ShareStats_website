@@ -2,7 +2,10 @@
   {
     "listing": "/instructions/index.html",
     "items": [
+      "/instructions/ans.html",
+      "/instructions/canvas.html",
       "/instructions/searching-itembank-upload-to-testvision.html",
+      "/instructions/using-r-exams.html",
       "/instructions/testvision.html"
     ]
   },

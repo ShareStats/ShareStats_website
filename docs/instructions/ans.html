@@ -8,9 +8,9 @@
 
 <meta name="author" content="Sharon Klinkenberg">
 <meta name="dcterms.date" content="2025-06-07">
-<meta name="description" content="Instructional video on how to search for exercises in the itembank and upload them to TestVision">
+<meta name="description" content="Instructional video on how to upload a sharestats question to ANS">
 
-<title>How to search</title>
+<title>ANS instructions</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,6 +22,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -154,12 +189,12 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">How to search</h1>
+<h1 class="title">ANS instructions</h1>
 </div>
 
 <div>
   <div class="description">
-    Instructional video on how to search for exercises in the itembank and upload them to TestVision
+    Instructional video on how to upload a sharestats question to ANS
   </div>
 </div>
 
@@ -188,20 +223,69 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/TJP_0Fiuuao?si=T0PLxN0O86LuCIFr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
-</iframe>
-<section id="using-the-search-field-on-the-landing-page" class="level2">
-<h2 class="anchored" data-anchor-id="using-the-search-field-on-the-landing-page">Using the search field on the landing page</h2>
-<p>On the <a href="https://www.sharestats.nl">ShareStats landing page</a> you can search for items by entering keywords in the search field. The search will direct you to the itembank table with a selection of matches to your keywords in their title, description, meta information or question body. In addition you can refine your search by using the filters at the top of the table.</p>
+<section id="video-instructions" class="level2">
+<h2 class="anchored" data-anchor-id="video-instructions">Video instructions</h2>
 </section>
-<section id="adding-tags" class="level2">
-<h2 class="anchored" data-anchor-id="adding-tags">Adding tags</h2>
-<p>An overview of all the tags used in the itembank can be found on the <a href="https://www.sharestats.nl/taxonomy/tags.html">tags page</a>. You can use these tags to filter your search results.</p>
-<p>Some useful combinations of tags are for example the <code>Type</code>, in which you can indicate that you want an item that is about <code>Performing analysis</code> or <code>Data manipulation</code>, and the <code>Section</code>, in which you can indicate that you want an item that is about a specific statistical topic from the taxonomy.</p>
+<section id="upload-to-ans" class="level2">
+<h2 class="anchored" data-anchor-id="upload-to-ans">Upload to ANS</h2>
+<p>ANS packages are already available as download from the ShareStats search table. Follow the instructions below on how to upload the zip file to ANS.</p>
+<!-- Video here -->
 </section>
-<section id="perusing-the-taxonomy" class="level2">
-<h2 class="anchored" data-anchor-id="perusing-the-taxonomy">Perusing the taxonomy</h2>
-<p>The complete taxonomy tree can be visually inspected on the <a href="https://www.sharestats.nl/taxonomy/taxonomy_tree.html">taxonomy visual</a> page. The entire taxonomy list can be found on the <a href="https://www.sharestats.nl/taxonomy/taxonomy_list.html">taxonomy tree</a>. Here you can click on the taxonomy level of interest and this wil direct you back to the <a href="https://www.sharestats.nl/items-df.html">itembank</a> search table with all the items that are tagged with this taxonomy level.</p>
+<section id="create-ans-package" class="level2">
+<h2 class="anchored" data-anchor-id="create-ans-package">Create ANS package</h2>
+<p>It is also possible to download the <strong>ZIP Folder</strong> with all the raw files from the <a href="https://www.sharestats.nl/items-df.html">itembank search page</a>. When you unpack the zip you will have a folder containing the item <code>.Rmd</code> file, and data or image files.</p>
+<p>We recommend to create a folder your items set this to your working directory and save the extracted ZIP folders in there. In this folder you can ad an R file with the code below to compile the items for uploading.</p>
+<p>For compiling the items to a ANS ZIP you can use the <code>exams2ans</code> funcion from the exams package. Make sure to first install the exams package to R if you do not have it installed already.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"exams"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>You can use the script below to compile a question. Note that you can also download multiple questions and combine them to upload multiple questions at once to ANS.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">Single Question</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Multiple Questions</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">"exams"</span>)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Add file path to list. Multiple paths can be added here list("path1.rmd", "path2.rmd")</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>file.paths <span class="ot">&lt;-</span> <span class="fu">list</span>(<span class="st">"itemFolder1/itemFile1.rmd"</span>)</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Create preview</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="fu">exams2html</span>(file.paths)</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Set directory where you want to store the .zip package that will be created</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>directory <span class="ot">&lt;-</span> <span class="fu">getwd</span>()</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Create ANS package</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="fu">exams2ans</span>(file.paths, </span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>                 <span class="at">dir  =</span> directory, </span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>                 <span class="at">name =</span> <span class="st">"exam_name"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">"exams"</span>)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Add file path to list. Multiple paths can be added here list("path1/file1.rmd", "path2/file2.rmd")</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>file.paths <span class="ot">&lt;-</span> <span class="fu">list</span>(<span class="st">"itemFolder1/itemFile1.rmd"</span>,</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>                   <span class="st">"itemFolder2/itemFile2.rmd"</span>,</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>                   <span class="st">"itemFolder3/itemFile3.rmd"</span>)</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Create preview</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="fu">exams2html</span>(file.paths)</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Set directory where you want to store the .zip package that will be created</span></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>directory <span class="ot">&lt;-</span> <span class="fu">getwd</span>()</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Create TvO package</span></span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a><span class="fu">exams2ans</span>(file.paths, </span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>                 <span class="at">dir  =</span> directory, </span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>                 <span class="at">name =</span> <span class="st">"exam_name"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
+</div>
+<p>The newly created <code>.zip</code> file can be uploaded to ANS as described in the video above.</p>
 
 
 </section>
