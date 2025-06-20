@@ -31,25 +31,21 @@ document.addEventListener('DOMContentLoaded', function() {
 
 ```{r, include=FALSE}
 ## Short functions for creating links per item that are used below in the table.
-zip_link <- function(folder, name){
-  tmp_link <- paste0('https://github.com/ShareStats/itembank/raw/packages/packages/',
-                     'zip/', folder,'.zip')
+get_link <- function(what, folder, name){
+  packages_link <- 'https://github.com/ShareStats/itembank/raw/packages/packages/'
+  repo_link <- 'https://sharestats.github.io/itembank/'
+  link <- switch(what,
+                 zip = paste0(packages_link, 'zip/', folder, '.zip'),
+                 tv = paste0(packages_link, 'tv/', folder,'-tv.zip'),
+                 qti =  paste0(packages_link,'qti/', folder,'-qti.zip'),
+                 canvas = paste0(packages_link, 'canvas/', folder,'-canvas.zip'),
+                 ans = paste0(packages_link, 'ans/', folder,'-ans.zip'),
+                 wooclap = paste0(packages_link, 'wooclap/', folder, '-wooclap.xml'),
+                 html = paste0(repo_link, folder, '/', name, '1.html'), 
+                 NULL
+                 )
 }
-tv_link <- function(folder, name){
-  tmp_link <- paste0('https://github.com/ShareStats/itembank/raw/packages/packages/',
-                     'tv/', folder,'-tv.zip')
-}
-qti_link <- function(folder, name){
-  tmp_link <- paste0('https://github.com/ShareStats/itembank/raw/packages/packages/',
-                     'qti/', folder,'-qti.zip')
-}
-html_link <- function(folder, name){
-  tmp_link <- paste0('https://sharestats.github.io/itembank/', folder, '/', name, '1.html')
-}
-canvas_link <- function(folder, name){
-  tmp_link <- paste0('https://github.com/ShareStats/itembank/raw/packages/packages/',
-                     'canvas/', folder,'-canvas.zip')
-}
+
 ```
 
 ```{r, include = FALSE}
@@ -79,7 +75,7 @@ mutate(View = paste0(
     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
   <div class="offcanvas-body">
-<embed src="',html_link(folder, name),'" width="100%" height="90%">
+<embed src="',get_link("html", folder, name),'" width="100%" height="90%">
   </div>
 </div>'
     )) %>% 
@@ -90,10 +86,12 @@ mutate(View = paste0(
         <i class="bi bi-cloud-download fs-4"></i>
       </button>
       <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="">
-        <li><a class="dropdown-item" href="',zip_link(folder, name),'">ZIP Folder</a></li>
-        <li><a class="dropdown-item" href="',qti_link(folder, name),'">QTI</a></li>
-        <li><a class="dropdown-item" href="',tv_link(folder, name),'">TestVision</a></li>
-        <li><a class="dropdown-item" href="',canvas_link(folder, name),'">Canvas</a></li>
+        <li><a class="dropdown-item" href="',get_link("zip", folder, name),'">ZIP Folder</a></li>
+        <li><a class="dropdown-item" href="',get_link("qti", folder, name),'">QTI</a></li>
+        <li><a class="dropdown-item" href="',get_link("tv", folder, name),'">TestVision</a></li>
+        <li><a class="dropdown-item" href="',get_link("canvas", folder, name),'">Canvas</a></li>
+        <li><a class="dropdown-item" href="',get_link("ans", folder, name),'">Ans</a></li>
+        <li><a class="dropdown-item" href="',get_link("wooclap", folder, name),'">Wooclap</a></li>
       </ul>
     </div>'
   )) %>% 
