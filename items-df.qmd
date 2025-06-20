@@ -91,7 +91,7 @@ mutate(View = paste0(
         <li><a class="dropdown-item" href="',get_link("tv", folder, name),'">TestVision</a></li>
         <li><a class="dropdown-item" href="',get_link("canvas", folder, name),'">Canvas</a></li>
         <li><a class="dropdown-item" href="',get_link("ans", folder, name),'">Ans</a></li>
-        <li><a class="dropdown-item" href="',get_link("wooclap", folder, name),'">Wooclap</a></li>
+    <!--    <li><a class="dropdown-item" href="',get_link("wooclap", folder, name),'">Wooclap</a></li> -->
       </ul>
     </div>'
   )) %>% 
