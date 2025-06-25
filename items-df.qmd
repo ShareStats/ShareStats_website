@@ -24,6 +24,20 @@ document.addEventListener('DOMContentLoaded', function() {
             inputElement.dispatchEvent(mouseUpEvent);
     }
 });
+
+// Function to force download XML files from github
+// Does not work with raw github urls. It needs a Content delivery network (CDN)
+function forceDownload(url, filename) {
+  fetch(url)
+    .then(resp => resp.blob())
+    .then(blob => {
+      const link = document.createElement('a');
+      link.href = window.URL.createObjectURL(blob);
+      link.download = filename;
+      link.click();
+    })
+    .catch(console.error);
+}
 ```
 
 ::: itembank
@@ -34,18 +48,18 @@ document.addEventListener('DOMContentLoaded', function() {
 get_link <- function(what, folder, name){
   packages_link <- 'https://github.com/ShareStats/itembank/raw/packages/packages/'
   repo_link <- 'https://sharestats.github.io/itembank/'
+  cdn_link <- 'https://cdn.jsdelivr.net/gh/ShareStats/itembank@packages/packages/' # for XML
   link <- switch(what,
                  zip = paste0(packages_link, 'zip/', folder, '.zip'),
                  tv = paste0(packages_link, 'tv/', folder,'-tv.zip'),
                  qti =  paste0(packages_link,'qti/', folder,'-qti.zip'),
                  canvas = paste0(packages_link, 'canvas/', folder,'-canvas.zip'),
                  ans = paste0(packages_link, 'ans/', folder,'-ans.zip'),
-                 wooclap = paste0(packages_link, 'wooclap/', folder, '-wooclap.xml'),
+                 wooclap = paste0(cdn_link, 'wooclap/', folder, '-wooclap.xml'),
                  html = paste0(repo_link, folder, '/', name, '1.html'), 
                  NULL
                  )
 }
-
 ```
 
 ```{r, include = FALSE}
@@ -91,23 +105,12 @@ mutate(View = paste0(
         <li><a class="dropdown-item" href="',get_link("tv", folder, name),'">TestVision</a></li>
         <li><a class="dropdown-item" href="',get_link("canvas", folder, name),'">Canvas</a></li>
         <li><a class="dropdown-item" href="',get_link("ans", folder, name),'">Ans</a></li>
-        <li><a class="dropdown-item" href="',get_link("wooclap", folder, name),'">Wooclap</a></li>
+        <li><a class="dropdown-item" href="#" onclick="forceDownload(\'', get_link("wooclap", folder, name), '\', \'', name, '-wooclap.xml\'); return false;">Wooclap</a></li>
       </ul>
     </div>'
   )) %>% 
   
   mutate(`Item Name` = name, .before = 1)
-
-  
-#%>% 
-  # checkbox (REMOVED-Commented)
-#  mutate("✔️"=paste('<fieldset class="form-group">
-#      <div class="form-check">
-#        <input class="form-check-input" type="checkbox" #value="" id="flexCheckDefault">
-#        <label class="form-check-label" for#="flexCheckDefault">
-#        </label>
-#      </div>
-#    </fieldset>'), .before = 1)
 
 ```
 
