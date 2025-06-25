@@ -101,7 +101,7 @@ mutate(View = paste0(
       </button>
       <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="">
         <li><a class="dropdown-item" href="',get_link("zip", folder, name),'">ZIP Folder</a></li>
-        <li><a class="dropdown-item" href="',get_link("qti", folder, name),'">QTI</a></li>
+        <li><a class="dropdown-item" href="',get_link("qti", folder, name),'">QTI 2.1</a></li>
         <li><a class="dropdown-item" href="',get_link("tv", folder, name),'">TestVision</a></li>
         <li><a class="dropdown-item" href="',get_link("canvas", folder, name),'">Canvas</a></li>
         <li><a class="dropdown-item" href="',get_link("ans", folder, name),'">Ans</a></li>
