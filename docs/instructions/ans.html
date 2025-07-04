@@ -7,10 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Sharon Klinkenberg">
-<meta name="dcterms.date" content="2025-06-26">
-<meta name="description" content="Instructional video on how to upload a sharestats question to ANS">
+<meta name="dcterms.date" content="2025-07-04">
+<meta name="description" content="Instructional video on how to upload a sharestats question to ans">
 
-<title>ANS instructions</title>
+<title>Ans instructions</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -94,7 +94,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <link rel="stylesheet" href="../styles.css">
 <link rel="stylesheet" href="../custom.css">
-<link rel="stylesheet" href="custom-theme-elements.scss">
 </head>
 
 <body class="nav-fixed fullcontent quarto-light">
@@ -189,12 +188,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">ANS instructions</h1>
+<h1 class="title">Ans instructions</h1>
 </div>
 
 <div>
   <div class="description">
-    Instructional video on how to upload a sharestats question to ANS
+    Instructional video on how to upload a sharestats question to ans
   </div>
 </div>
 
@@ -211,7 +210,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">June 26, 2025</p>
+      <p class="date">July 4, 2025</p>
     </div>
   </div>
   
@@ -225,21 +224,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="video-instructions" class="level2">
 <h2 class="anchored" data-anchor-id="video-instructions">Video instructions</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qCTwzbtBw1U?si=jQEfcpgux26eAYwp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
+</iframe>
 </section>
 <section id="upload-to-ans" class="level2">
-<h2 class="anchored" data-anchor-id="upload-to-ans">Upload to ANS</h2>
-<p>ANS packages are already available as download from the ShareStats search table. Follow the instructions below on how to upload the zip file to ANS.</p>
+<h2 class="anchored" data-anchor-id="upload-to-ans">Upload to ans</h2>
+<p>Ans ZIP is already available as download from the ShareStats search table. Follow the instructions below on how to upload the ZIP file to ans.</p>
 <!-- Video here -->
 </section>
 <section id="create-ans-package" class="level2">
-<h2 class="anchored" data-anchor-id="create-ans-package">Create ANS package</h2>
+<h2 class="anchored" data-anchor-id="create-ans-package">Create ans package</h2>
 <p>It is also possible to download the <strong>ZIP Folder</strong> with all the raw files from the <a href="https://www.sharestats.nl/items-df.html">itembank search page</a>. When you unpack the zip you will have a folder containing the item <code>.Rmd</code> file, and data or image files.</p>
-<p>We recommend to create a folder your items set this to your working directory and save the extracted ZIP folders in there. In this folder you can ad an R file with the code below to compile the items for uploading.</p>
-<p>For compiling the items to a ANS ZIP you can use the <code>exams2ans</code> funcion from the exams package. Make sure to first install the exams package to R if you do not have it installed already.</p>
+<p>We recommend to create a folder for your items and set this to your working directory and save the extracted ZIP folders in there. In this folder you can ad an R file with the code below to compile the items for uploading.</p>
+<p>For compiling the items to a ans ZIP you can use the <code>exams2ans</code> function from the exams package. Make sure to first install the exams package to R if you do not have it installed already.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"exams"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>You can use the script below to compile a question. Note that you can also download multiple questions and combine them to upload multiple questions at once to ANS.</p>
+<p>You can use the script below to compile a question. Note that you can also download multiple questions and combine them to upload multiple questions at once to ans.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">Single Question</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Multiple Questions</a></li></ul>
 <div class="tab-content">
@@ -256,7 +257,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Set directory where you want to store the .zip package that will be created</span></span>
 <span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>directory <span class="ot">&lt;-</span> <span class="fu">getwd</span>()</span>
 <span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Create ANS package</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Create ans package</span></span>
 <span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="fu">exams2ans</span>(file.paths, </span>
 <span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>                 <span class="at">dir  =</span> directory, </span>
 <span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>                 <span class="at">name =</span> <span class="st">"exam_name"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -279,13 +280,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Create TvO package</span></span>
 <span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a><span class="fu">exams2ans</span>(file.paths, </span>
-<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>                 <span class="at">dir  =</span> directory, </span>
-<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>                 <span class="at">name =</span> <span class="st">"exam_name"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>              <span class="at">dir  =</span> directory, </span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>              <span class="at">name =</span> <span class="st">"exam_name"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </div>
 </div>
-<p>The newly created <code>.zip</code> file can be uploaded to ANS as described in the video above.</p>
+<p>The newly created <code>.zip</code> file can be uploaded to ans as described in the video above.</p>
 
 
 </section>

@@ -3,33 +3,33 @@ author: Sharon Klinkenberg
 page-layout: article
 date: now
 # image: 
-title: ANS instructions
-description: Instructional video on how to upload a sharestats question to ANS
+title: Ans instructions
+description: Instructional video on how to upload a sharestats question to ans
 ---
 
 ## Video instructions
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qCTwzbtBw1U?si=jQEfcpgux26eAYwp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+## Upload to ans
 
-## Upload to ANS
-
-ANS packages are already available as download from the ShareStats search table. Follow the instructions below on how to upload the zip file to ANS.
+Ans ZIP is already available as download from the ShareStats search table. Follow the instructions below on how to upload the ZIP file to ans.
 
 <!-- Video here -->
 
-## Create ANS package
+## Create ans package
 
 It is also possible to download the **ZIP Folder** with all the raw files from the [itembank search page](https://www.sharestats.nl/items-df.html). When you unpack the zip you will have a folder containing the item `.Rmd` file, and data or image files.
 
-We recommend to create a folder your items set this to your working directory and save the extracted ZIP folders in there. In this folder you can ad an R file with the code below to compile the items for uploading.
+We recommend to create a folder for your items and set this to your working directory and save the extracted ZIP folders in there. In this folder you can ad an R file with the code below to compile the items for uploading.
 
-For compiling the items to a ANS ZIP you can use the `exams2ans` funcion from the exams package. Make sure to first install the exams package to R if you do not have it installed already.
+For compiling the items to a ans ZIP you can use the `exams2ans` function from the exams package. Make sure to first install the exams package to R if you do not have it installed already.
 
 ```{r, eval=FALSE}
 install.packages("exams")
 ```
 
-You can use the script below to compile a question. Note that you can also download multiple questions and combine them to upload multiple questions at once to ANS.
+You can use the script below to compile a question. Note that you can also download multiple questions and combine them to upload multiple questions at once to ans.
 
 ::: {.panel-tabset}
 ## Single Question
@@ -46,7 +46,7 @@ exams2html(file.paths)
 # Set directory where you want to store the .zip package that will be created
 directory <- getwd()
 
-# Create ANS package
+# Create ans package
 exams2ans(file.paths, 
                  dir  = directory, 
                  name = "exam_name")
@@ -70,10 +70,10 @@ directory <- getwd()
 
 # Create TvO package
 exams2ans(file.paths, 
-                 dir  = directory, 
-                 name = "exam_name")
+              dir  = directory, 
+              name = "exam_name")
 ```
 
 :::
 
-The newly created `.zip` file can be uploaded to ANS as described in the video above.
+The newly created `.zip` file can be uploaded to ans as described in the video above.

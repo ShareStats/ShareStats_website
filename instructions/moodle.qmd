@@ -1,0 +1,79 @@
+---
+author: Sharon Klinkenberg
+page-layout: article
+date: now
+# image: 
+title: Moodle instructions
+description: Instructional video on how to upload a sharestats question to moodle
+---
+
+## Video instructions
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qCTwzbtBw1U?si=jQEfcpgux26eAYwp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+## Upload to moodle
+
+Moodle XML is already available as download from the ShareStats search table. Follow the instructions below on how to upload the XML file to moodle.
+
+<!-- Video here -->
+
+## Create moodle package
+
+It is also possible to download the **ZIP Folder** with all the raw files from the [itembank search page](https://www.sharestats.nl/items-df.html). When you unpack the zip you will have a folder containing the item `.Rmd` file, and data or image files.
+
+We recommend to create a folder for your items and set this to your working directory and save the extracted ZIP folders in there. In this folder you can ad an R file with the code below to compile the items for uploading.
+
+For compiling the items to a moodle ZIP you can use the `exams2moodle` function from the exams package. Make sure to first install the exams package to R if you do not have it installed already.
+
+```{r, eval=FALSE}
+install.packages("exams")
+```
+
+You can use the script below to compile a question. Note that you can also download multiple questions and combine them to upload multiple questions at once to moodle.
+
+::: {.panel-tabset}
+## Single Question
+
+```{r, eval=FALSE}
+library("exams")
+
+# Add file path to list. Multiple paths can be added here list("path1.rmd", "path2.rmd")
+file.paths <- list("itemFolder1/itemFile1.rmd")
+
+# Create preview
+exams2html(file.paths)
+
+# Set directory where you want to store the .zip package that will be created
+directory <- getwd()
+
+# Create moodle package
+exams2moodle(file.paths, 
+                 dir  = directory, 
+                 name = "exam_name")
+```
+
+## Multiple Questions
+
+```{r, eval=FALSE}
+library("exams")
+
+# Add file path to list. Multiple paths can be added here list("path1/file1.rmd", "path2/file2.rmd")
+file.paths <- list("itemFolder1/itemFile1.rmd",
+                   "itemFolder2/itemFile2.rmd",
+                   "itemFolder3/itemFile3.rmd")
+
+# Create preview
+exams2html(file.paths)
+
+# Set directory where you want to store the .zip package that will be created
+directory <- getwd()
+
+# Create TvO package
+exams2moodle(file.paths, 
+              dir  = directory, 
+              name = "exam_name")
+```
+
+:::
+
+The newly created `.xml` file can be uploaded to moodle as described in the video above.

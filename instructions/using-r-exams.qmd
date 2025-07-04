@@ -9,21 +9,21 @@ description: Instructions on how to use the R exams package to create exam quest
 
 ## The R exams package
 
-The R exams package is a powerful tool for creating and managing exam questions in R. It allows you to create questions in various formats, including HTML, PDF, and Canvas packages, which can be used in online learning platforms. The various learning and assessment platforms require slightly different versions of the QTI standard. R exams provides functions to create packages for the specific requirements for these platforms, such as `exams2canvas`, `exams2testvision`, and `exams2ans`. But it also provides regular QTI packages that can be used in any platform that supports QTI, such as `exams2qti21`. The platform specific QTI packages can be uploaded to the platform directly.
+The R exams package is a powerful tool for creating and managing exam questions in R. It allows you to create questions in various formats, including HTML, PDF, and Canvas packages, which can be used in online learning platforms. The various learning and assessment platforms require slightly different versions of the QTI standard. R exams provides functions to create content for the specific requirements for these platforms, such as `exams2canvas`, `exams2testvision`, and `exams2ans`. But it also provides regular QTI packages that can be used in any platform that supports QTI, such as `exams2qti21`. The platform specific QTI packages can be uploaded to the platform directly.
 
 The video and instructions below will guide you through the process of using the R exams package to create exam question packages that can be uploaded to platforms like Canvas or TestVision.
 
-## Instructional vidoe
+## Instructional video
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/-KiNpUS-w1c?si=01TyWg8edR_dND7M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-## Create packages
+## Create content
 
-In the ShareStats [itembank](https://www.sharestats.nl/items-df.html) it is possible to downlodad the **ZIP Folder** with all the raw files for each question. When you unpack the zip you will have a folder containing the item `.Rmd` file, and data or image files.
+In the ShareStats [itembank](https://www.sharestats.nl/items-df.html) it is possible to download the **ZIP Folder** with all the raw files for each question. When you unpack the zip you will have a folder containing the item `.Rmd` file, and data or image files.
 
-We recommend to create a folder your items set this to your working directory and save the extracted ZIP folders in there. In this folder you can ad an R file with the code below to compile the items for uploading.
+We recommend to create a folder for your items and set this to your working directory and save the extracted ZIP folders in there. In this folder you can ad an R file with the code below to compile the items for uploading.
 
-For compiling the items you can use the `exams2ans, exams2testvision, exams3canvas`, or any of the other `exams2...` funcions from the exams package. It is also possible to compile items to word or PDF documents using the 'exams2word' or `exams2pdf` fundions.  Make sure to first install the exams package to R if you do not have it installed already.
+For compiling the items you can use the `exams2ans, exams2testvision, exams2canvas`, or any of the other `exams2...` functions from the exams package. It is also possible to compile items to word or PDF documents using the 'exams2word' or `exams2pdf` functions.  Make sure to first install the exams package to R if you do not have it installed already.
 
 ```{r, eval=FALSE}
 install.packages("exams")
