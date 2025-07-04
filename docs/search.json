@@ -245,11 +245,18 @@
     "text": "Ans instructions\n\n\nInstructional video on how to upload a sharestats question to ans\n\n\n\n\n\nJul 4, 2025\n\n\nSharon Klinkenberg\n\n\n\n\n\n\n\n\n\n\n\n\nCanvas instructions\n\n\nInstructional video on how to upload a sharestats question to Canvas\n\n\n\n\n\nJul 4, 2025\n\n\nSharon Klinkenberg\n\n\n\n\n\n\n\n\n\n\n\n\nHow to search\n\n\nInstructional video on how to search for exercises in the itembank and upload them to TestVision\n\n\n\n\n\nJul 4, 2025\n\n\nSharon Klinkenberg\n\n\n\n\n\n\n\n\n\n\n\n\nHow use the R exams package\n\n\nInstructions on how to use the R exams package to create exam question packages\n\n\n\n\n\nJul 4, 2025\n\n\nSharon Klinkenberg\n\n\n\n\n\n\n\n\n\n\n\n\nMoodle instructions\n\n\nInstructional video on how to upload a sharestats question to moodle\n\n\n\n\n\nJul 4, 2025\n\n\nSharon Klinkenberg\n\n\n\n\n\n\n\n\n\n\n\n\nTestVision instructions\n\n\nInstructional video on how to upload a sharestats question to TestVision\n\n\n\n\n\nJul 4, 2025\n\n\nSharon Klinkenberg\n\n\n\n\n\n\n\n\n\n\n\n\nWooclap instructions\n\n\nInstructional video on how to upload a sharestats question to wooclap\n\n\n\n\n\nJul 4, 2025\n\n\nSharon Klinkenberg\n\n\n\n\n\nNo matching items"
   },
   {
+    "objectID": "instructions/ans.html",
+    "href": "instructions/ans.html",
+    "title": "Ans instructions",
+    "section": "",
+    "text": "Ans ZIP is already available as download from the ShareStats search table. Follow the instructions below on how to upload the ZIP file to ans."
+  },
+  {
     "objectID": "instructions/ans.html#upload-to-ans",
     "href": "instructions/ans.html#upload-to-ans",
     "title": "Ans instructions",
-    "section": "Upload to ans",
-    "text": "Upload to ans\nAns ZIP is already available as download from the ShareStats search table. Follow the instructions below on how to upload the ZIP file to ans."
+    "section": "",
+    "text": "Ans ZIP is already available as download from the ShareStats search table. Follow the instructions below on how to upload the ZIP file to ans."
   },
   {
     "objectID": "instructions/ans.html#create-ans-package",
@@ -329,11 +336,18 @@
     "text": "Create content\nIn the ShareStats itembank it is possible to download the ZIP Folder with all the raw files for each question. When you unpack the zip you will have a folder containing the item .Rmd file, and data or image files.\nWe recommend to create a folder for your items and set this to your working directory and save the extracted ZIP folders in there. In this folder you can ad an R file with the code below to compile the items for uploading.\nFor compiling the items you can use the exams2ans, exams2testvision, exams2canvas, or any of the other exams2... functions from the exams package. It is also possible to compile items to word or PDF documents using the ‘exams2word’ or exams2pdf functions. Make sure to first install the exams package to R if you do not have it installed already.\n\ninstall.packages(\"exams\")\n\nYou can use the script below to compile a question. Note that you can also download multiple questions and combine them to upload multiple questions at once to canvas.\n\nSingle QuestionMultiple Questions\n\n\n\nlibrary(\"exams\")\n\n# Add file path to list. Multiple paths can be added here list(\"path1.rmd\", \"path2.rmd\")\nfile.paths &lt;- list(\"itemFolder1/itemFile1.rmd\")\n\n# Create preview\nexams2html(file.paths)\n\n# Set directory where you want to store the .zip package that will be created\ndirectory &lt;- getwd()\n\n# Create Canvas package\nexams2canvas(file.paths, \n                 dir  = directory, \n                 name = \"exam_name\")\n\n\n\n\nlibrary(\"exams\")\n\n# Add file path to list. Multiple paths can be added here list(\"path1/file1.rmd\", \"path2/file2.rmd\")\nfile.paths &lt;- list(\"itemFolder1/itemFile1.rmd\",\n                   \"itemFolder2/itemFile2.rmd\",\n                   \"itemFolder3/itemFile3.rmd\")\n\n# Create preview\nexams2html(file.paths)\n\n# Set directory where you want to store the .zip package that will be created\ndirectory &lt;- getwd()\n\n# Create Canvas package\nexams2canvas(file.paths, \n                 dir  = directory, \n                 name = \"exam_name\")\n\n\n\n\nThe newly created .zip file can be uploaded to Canvas as described in the video above."
   },
   {
+    "objectID": "instructions/wooclap.html",
+    "href": "instructions/wooclap.html",
+    "title": "Wooclap instructions",
+    "section": "",
+    "text": "Wooclap packages are already available as download from the ShareStats search table. Follow the instructions below on how to upload the XML file to wooclap."
+  },
+  {
     "objectID": "instructions/wooclap.html#upload-to-wooclap",
     "href": "instructions/wooclap.html#upload-to-wooclap",
     "title": "Wooclap instructions",
-    "section": "Upload to wooclap",
-    "text": "Upload to wooclap\nWooclap packages are already available as download from the ShareStats search table. Follow the instructions below on how to upload the XML file to wooclap."
+    "section": "",
+    "text": "Wooclap packages are already available as download from the ShareStats search table. Follow the instructions below on how to upload the XML file to wooclap."
   },
   {
     "objectID": "instructions/wooclap.html#create-wooclap-package",
@@ -343,11 +357,18 @@
     "text": "Create wooclap package\nIt is also possible to download the ZIP Folder with all the raw files from the itembank search page. When you unpack the zip you will have a folder containing the item .Rmd file, and data or image files.\nWe recommend to create a folder for your items and set this to your working directory and save the extracted ZIP folders in there. In this folder you can ad an R file with the code below to compile the items for uploading.\nFor compiling the items to a wooclap XML you can use the exams2wooclap function from the exams package. Make sure to first install the exams package to R if you do not have it installed already.\n\ninstall.packages(\"exams\")\n\nYou can use the script below to compile a question. Note that you can also download multiple questions and combine them to upload multiple questions at once to wooclap.\n\nSingle QuestionMultiple Questions\n\n\n\nlibrary(\"exams\")\n\n# Add file path to list. Multiple paths can be added here list(\"path1.rmd\", \"path2.rmd\")\nfile.paths &lt;- list(\"itemFolder1/itemFile1.rmd\")\n\n# Create preview\nexams2html(file.paths)\n\n# Set directory where you want to store the .xml file that will be created\ndirectory &lt;- getwd()\n\n# Create wooclap package\nexams2wooclap(file.paths, \n                 dir  = directory, \n                 name = \"exam_name\")\n\n\n\n\nlibrary(\"exams\")\n\n# Add file path to list. Multiple paths can be added here list(\"path1/file1.rmd\", \"path2/file2.rmd\")\nfile.paths &lt;- list(\"itemFolder1/itemFile1.rmd\",\n                   \"itemFolder2/itemFile2.rmd\",\n                   \"itemFolder3/itemFile3.rmd\")\n\n# Create preview\nexams2html(file.paths)\n\n# Set directory where you want to store the .xml file that will be created\ndirectory &lt;- getwd()\n\n# Create TvO package\nexams2wooclap(file.paths, \n                 dir  = directory, \n                 name = \"exam_name\")\n\n\n\n\nThe newly created .xml file can be uploaded to wooclap as described in the video above."
   },
   {
+    "objectID": "instructions/moodle.html",
+    "href": "instructions/moodle.html",
+    "title": "Moodle instructions",
+    "section": "",
+    "text": "Moodle XML is already available as download from the ShareStats search table. Follow the instructions below on how to upload the XML file to moodle."
+  },
+  {
     "objectID": "instructions/moodle.html#upload-to-moodle",
     "href": "instructions/moodle.html#upload-to-moodle",
     "title": "Moodle instructions",
-    "section": "Upload to moodle",
-    "text": "Upload to moodle\nMoodle XML is already available as download from the ShareStats search table. Follow the instructions below on how to upload the XML file to moodle."
+    "section": "",
+    "text": "Moodle XML is already available as download from the ShareStats search table. Follow the instructions below on how to upload the XML file to moodle."
   },
   {
     "objectID": "instructions/moodle.html#create-moodle-package",

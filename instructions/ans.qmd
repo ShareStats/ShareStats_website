@@ -7,15 +7,11 @@ title: Ans instructions
 description: Instructional video on how to upload a sharestats question to ans
 ---
 
-## Video instructions
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/qCTwzbtBw1U?si=jQEfcpgux26eAYwp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-## Upload to ans
+## Upload to Ans
 
 Ans ZIP is already available as download from the ShareStats search table. Follow the instructions below on how to upload the ZIP file to ans.
 
-<!-- Video here -->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Fd4uu2fB49g?si=u0-nKlb-J5XftWiE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Create ans package
 
