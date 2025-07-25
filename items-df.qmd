@@ -56,6 +56,7 @@ get_link <- function(what, folder, name){
                  canvas = paste0(packages_link, 'canvas/', folder,'-canvas.zip'),
                  ans = paste0(packages_link, 'ans/', folder,'-ans.zip'),
                  wooclap = paste0(cdn_link, 'wooclap/', folder, '-wooclap.xml'),
+                 moodle = paste0(cdn_link, 'moodle/', folder, '-moodle.xml'),
                  html = paste0(repo_link, folder, '/', name, '1.html'), 
                  NULL
                  )
@@ -106,6 +107,7 @@ mutate(View = paste0(
         <li><a class="dropdown-item" href="',get_link("canvas", folder, name),'">Canvas QTI</a></li>
         <li><a class="dropdown-item" href="',get_link("ans", folder, name),'">Ans QTI</a></li>
         <li><a class="dropdown-item" href="#" onclick="forceDownload(\'', get_link("wooclap", folder, name), '\', \'', name, '-wooclap.xml\'); return false;">Wooclap XML</a></li>
+        <li><a class="dropdown-item" href="#" onclick="forceDownload(\'', get_link("moodle", folder, name), '\', \'', name, '-moodle.xml\'); return false;">Moodle XML</a></li>
       </ul>
     </div>'
   )) %>% 
