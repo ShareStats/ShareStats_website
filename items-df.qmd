@@ -49,6 +49,7 @@ get_link <- function(what, folder, name){
   packages_link <- 'https://github.com/ShareStats/itembank/raw/packages/packages/'
   repo_link <- 'https://sharestats.github.io/itembank/'
   cdn_link <- 'https://cdn.jsdelivr.net/gh/ShareStats/itembank@packages/packages/' # for XML
+  grasple_link <- 'https://app.grasple.com/#/challenge/' # for direct link to grasple
   link <- switch(what,
                  zip = paste0(packages_link, 'zip/', folder, '.zip'),
                  tv = paste0(packages_link, 'tv/', folder,'-tv.zip'),
@@ -72,7 +73,11 @@ library(tidyverse)
 ```{r read-file-from-url, include = FALSE}
 # Create the columns containing the 'View' and 'Download' buttons
 data.path <- "https://sharestats.github.io/itembank/sharestats_website.csv"
-dat <- read_csv(data.path) 
+grasple.links <- read.csv("20250813-ShareStats-Grasple-Links.csv")
+grasple.links <- grasple.links[,c('item.name', 'exercise.id')]
+
+dat <- read_csv(data.path)
+# dat <- merge(dat, grasple.links, by.x = "name", by.y = "item.name")
 ```
 
 ```{r, include = FALSE}
@@ -108,6 +113,7 @@ mutate(View = paste0(
         <li><a class="dropdown-item" href="',get_link("ans", folder, name),'">Ans QTI</a></li>
         <li><a class="dropdown-item" href="#" onclick="forceDownload(\'', get_link("wooclap", folder, name), '\', \'', name, '-wooclap.xml\'); return false;">Wooclap XML</a></li>
         <li><a class="dropdown-item" href="#" onclick="forceDownload(\'', get_link("moodle", folder, name), '\', \'', name, '-moodle.xml\'); return false;">Moodle XML</a></li>
+        <!-- <li><a class="dropdown-item" href="#">Grasple</a></li> -->
       </ul>
     </div>'
   )) %>% 
