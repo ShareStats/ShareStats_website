@@ -242,70 +242,7 @@
     "href": "instructions/index.html",
     "title": "Instructional pages",
     "section": "",
-    "text": "Ans instructions\n\n\nInstructional video on how to upload a sharestats question to ans\n\n\n\n\n\nAug 11, 2025\n\n\nSharon Klinkenberg\n\n\n\n\n\n\n\n\n\n\n\n\nCanvas instructions\n\n\nInstructional video on how to upload a sharestats question to Canvas\n\n\n\n\n\nAug 11, 2025\n\n\nSharon Klinkenberg\n\n\n\n\n\n\n\n\n\n\n\n\nHow to search\n\n\nInstructional video on how to search for exercises in the itembank and upload them to TestVision\n\n\n\n\n\nAug 11, 2025\n\n\nSharon Klinkenberg\n\n\n\n\n\n\n\n\n\n\n\n\nHow use the R exams package\n\n\nInstructions on how to use the R exams package to create exam question packages\n\n\n\n\n\nAug 11, 2025\n\n\nSharon Klinkenberg\n\n\n\n\n\n\n\n\n\n\n\n\nMoodle instructions\n\n\nInstructional video on how to upload a sharestats question to moodle\n\n\n\n\n\nAug 11, 2025\n\n\nSharon Klinkenberg\n\n\n\n\n\n\n\n\n\n\n\n\nTestVision instructions\n\n\nInstructional video on how to upload a sharestats question to TestVision\n\n\n\n\n\nAug 11, 2025\n\n\nSharon Klinkenberg\n\n\n\n\n\n\n\n\n\n\n\n\nWooclap instructions\n\n\nInstructional video on how to upload a sharestats question to wooclap\n\n\n\n\n\nAug 11, 2025\n\n\nSharon Klinkenberg\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "instructions/ans.html",
-    "href": "instructions/ans.html",
-    "title": "Ans instructions",
-    "section": "",
-    "text": "Ans ZIP is already available as download from the ShareStats search table. Follow the instructions below on how to upload the ZIP file to ans."
-  },
-  {
-    "objectID": "instructions/ans.html#upload-to-ans",
-    "href": "instructions/ans.html#upload-to-ans",
-    "title": "Ans instructions",
-    "section": "",
-    "text": "Ans ZIP is already available as download from the ShareStats search table. Follow the instructions below on how to upload the ZIP file to ans."
-  },
-  {
-    "objectID": "instructions/ans.html#create-ans-package",
-    "href": "instructions/ans.html#create-ans-package",
-    "title": "Ans instructions",
-    "section": "Create ans package",
-    "text": "Create ans package\nIt is also possible to download the ZIP Folder with all the raw files from the itembank search page. When you unpack the zip you will have a folder containing the item .Rmd file, and data or image files.\nWe recommend to create a folder for your items and set this to your working directory and save the extracted ZIP folders in there. In this folder you can ad an R file with the code below to compile the items for uploading.\nFor compiling the items to a ans ZIP you can use the exams2ans function from the exams package. Make sure to first install the exams package to R if you do not have it installed already.\n\ninstall.packages(\"exams\")\n\nYou can use the script below to compile a question. Note that you can also download multiple questions and combine them to upload multiple questions at once to ans.\n\nSingle QuestionMultiple Questions\n\n\n\nlibrary(\"exams\")\n\n# Add file path to list. Multiple paths can be added here list(\"path1.rmd\", \"path2.rmd\")\nfile.paths &lt;- list(\"itemFolder1/itemFile1.rmd\")\n\n# Create preview\nexams2html(file.paths)\n\n# Set directory where you want to store the .zip package that will be created\ndirectory &lt;- getwd()\n\n# Create ans package\nexams2ans(file.paths, \n                 dir  = directory, \n                 name = \"exam_name\")\n\n\n\n\nlibrary(\"exams\")\n\n# Add file path to list. Multiple paths can be added here list(\"path1/file1.rmd\", \"path2/file2.rmd\")\nfile.paths &lt;- list(\"itemFolder1/itemFile1.rmd\",\n                   \"itemFolder2/itemFile2.rmd\",\n                   \"itemFolder3/itemFile3.rmd\")\n\n# Create preview\nexams2html(file.paths)\n\n# Set directory where you want to store the .zip package that will be created\ndirectory &lt;- getwd()\n\n# Create TvO package\nexams2ans(file.paths, \n              dir  = directory, \n              name = \"exam_name\")\n\n\n\n\nThe newly created .zip file can be uploaded to ans as described in the video above."
-  },
-  {
-    "objectID": "instructions/testvision.html",
-    "href": "instructions/testvision.html",
-    "title": "TestVision instructions",
-    "section": "",
-    "text": "TestVision packages are already available as download from the ShareStats search table. Follow the instructions below on how to upload the zip file to Testvision."
-  },
-  {
-    "objectID": "instructions/testvision.html#upload-to-testvision",
-    "href": "instructions/testvision.html#upload-to-testvision",
-    "title": "TestVision instructions",
-    "section": "",
-    "text": "TestVision packages are already available as download from the ShareStats search table. Follow the instructions below on how to upload the zip file to Testvision."
-  },
-  {
-    "objectID": "instructions/testvision.html#create-testvision-package",
-    "href": "instructions/testvision.html#create-testvision-package",
-    "title": "TestVision instructions",
-    "section": "Create TestVision package",
-    "text": "Create TestVision package\nIt is also possible to download the ZIP Folder with all the raw files from the itembank search page. When you unpack the zip you will have a folder containing the item .Rmd file, and data or image files.\nWe recommend to create a folder for your items and set this to your working directory and save the extracted ZIP folders in there. In this folder you can ad an R file with the code below to compile the items for uploading.\nFor compiling the items to a Testvision ZIP you can use the exams2testvision function from the exams package. Make sure to first install the exams package to R if you do not have it installed already.\n\ninstall.packages(\"exams\")\n\nYou can use the script below to compile a question. Note that you can also download multiple questions and combine them to upload multiple questions at once to TestVision.\n\nSingle QuestionMultiple Questions\n\n\n\nlibrary(\"exams\")\n\n# Add file path to list. Multiple paths can be added here list(\"path1.rmd\", \"path2.rmd\")\nfile.paths &lt;- list(\"itemFolder1/itemFile1.rmd\")\n\n# Create preview\nexams2html(file.paths)\n\n# Set directory where you want to store the .zip package that will be created\ndirectory &lt;- getwd()\n\n# Create TvO package\nexams2testvision(file.paths, \n                 dir  = directory, \n                 name = \"exam_name\")\n\n\n\n\nlibrary(\"exams\")\n\n# Add file path to list. Multiple paths can be added here list(\"path1/file1.rmd\", \"path2/file2.rmd\")\nfile.paths &lt;- list(\"itemFolder1/itemFile1.rmd\",\n                   \"itemFolder2/itemFile2.rmd\",\n                   \"itemFolder3/itemFile3.rmd\")\n\n# Create preview\nexams2html(file.paths)\n\n# Set directory where you want to store the .zip package that will be created\ndirectory &lt;- getwd()\n\n# Create TvO package\nexams2testvision(file.paths, \n                 dir  = directory, \n                 name = \"exam_name\")\n\n\n\n\nThe newly created .zip file can be uploaded to TestVision as described in the video above."
-  },
-  {
-    "objectID": "instructions/searching-itembank-upload-to-testvision.html#using-the-search-field-on-the-landing-page",
-    "href": "instructions/searching-itembank-upload-to-testvision.html#using-the-search-field-on-the-landing-page",
-    "title": "How to search",
-    "section": "Using the search field on the landing page",
-    "text": "Using the search field on the landing page\nOn the ShareStats landing page you can search for items by entering keywords in the search field. The search will direct you to the itembank table with a selection of matches to your keywords in their title, description, meta information or question body. In addition you can refine your search by using the filters at the top of the table."
-  },
-  {
-    "objectID": "instructions/searching-itembank-upload-to-testvision.html#adding-tags",
-    "href": "instructions/searching-itembank-upload-to-testvision.html#adding-tags",
-    "title": "How to search",
-    "section": "Adding tags",
-    "text": "Adding tags\nAn overview of all the tags used in the itembank can be found on the tags page. You can use these tags to filter your search results.\nSome useful combinations of tags are for example the Type, in which you can indicate that you want an item that is about Performing analysis or Data manipulation, and the Section, in which you can indicate that you want an item that is about a specific statistical topic from the taxonomy."
-  },
-  {
-    "objectID": "instructions/searching-itembank-upload-to-testvision.html#perusing-the-taxonomy",
-    "href": "instructions/searching-itembank-upload-to-testvision.html#perusing-the-taxonomy",
-    "title": "How to search",
-    "section": "Perusing the taxonomy",
-    "text": "Perusing the taxonomy\nThe complete taxonomy tree can be visually inspected on the taxonomy visual page. The entire taxonomy list can be found on the taxonomy tree. Here you can click on the taxonomy level of interest and this wil direct you back to the itembank search table with all the items that are tagged with this taxonomy level."
+    "text": "Ans instructions\n\n\nInstructional video on how to upload a sharestats question to ans\n\n\n\n\n\nSep 19, 2025\n\n\nSharon Klinkenberg\n\n\n\n\n\n\n\n\n\n\n\n\nCanvas instructions\n\n\nInstructional video on how to upload a sharestats question to Canvas\n\n\n\n\n\nSep 19, 2025\n\n\nSharon Klinkenberg\n\n\n\n\n\n\n\n\n\n\n\n\nGrasple instructions\n\n\nInstructio on how to access sharestats questions in Grasple\n\n\n\n\n\nSep 19, 2025\n\n\nSharon Klinkenberg\n\n\n\n\n\n\n\n\n\n\n\n\nHow to search\n\n\nInstructional video on how to search for exercises in the itembank and upload them to TestVision\n\n\n\n\n\nSep 19, 2025\n\n\nSharon Klinkenberg\n\n\n\n\n\n\n\n\n\n\n\n\nHow use the R exams package\n\n\nInstructions on how to use the R exams package to create exam question packages\n\n\n\n\n\nSep 19, 2025\n\n\nSharon Klinkenberg\n\n\n\n\n\n\n\n\n\n\n\n\nMoodle instructions\n\n\nInstructional video on how to upload a sharestats question to moodle\n\n\n\n\n\nSep 19, 2025\n\n\nSharon Klinkenberg\n\n\n\n\n\n\n\n\n\n\n\n\nTestVision instructions\n\n\nInstructional video on how to upload a sharestats question to TestVision\n\n\n\n\n\nSep 19, 2025\n\n\nSharon Klinkenberg\n\n\n\n\n\n\n\n\n\n\n\n\nWooclap instructions\n\n\nInstructional video on how to upload a sharestats question to wooclap\n\n\n\n\n\nSep 19, 2025\n\n\nSharon Klinkenberg\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "instructions/using-r-exams.html",
@@ -334,6 +271,76 @@
     "title": "How use the R exams package",
     "section": "Create content",
     "text": "Create content\nIn the ShareStats itembank it is possible to download the ZIP Folder with all the raw files for each question. When you unpack the zip you will have a folder containing the item .Rmd file, and data or image files.\nWe recommend to create a folder for your items and set this to your working directory and save the extracted ZIP folders in there. In this folder you can ad an R file with the code below to compile the items for uploading.\nFor compiling the items you can use the exams2ans, exams2testvision, exams2canvas, or any of the other exams2... functions from the exams package. It is also possible to compile items to word or PDF documents using the ‘exams2word’ or exams2pdf functions. Make sure to first install the exams package to R if you do not have it installed already.\n\ninstall.packages(\"exams\")\n\nYou can use the script below to compile a question. Note that you can also download multiple questions and combine them to upload multiple questions at once to canvas.\n\nSingle QuestionMultiple Questions\n\n\n\nlibrary(\"exams\")\n\n# Add file path to list. Multiple paths can be added here list(\"path1.rmd\", \"path2.rmd\")\nfile.paths &lt;- list(\"itemFolder1/itemFile1.rmd\")\n\n# Create preview\nexams2html(file.paths)\n\n# Set directory where you want to store the .zip package that will be created\ndirectory &lt;- getwd()\n\n# Create Canvas package\nexams2canvas(file.paths, \n                 dir  = directory, \n                 name = \"exam_name\")\n\n\n\n\nlibrary(\"exams\")\n\n# Add file path to list. Multiple paths can be added here list(\"path1/file1.rmd\", \"path2/file2.rmd\")\nfile.paths &lt;- list(\"itemFolder1/itemFile1.rmd\",\n                   \"itemFolder2/itemFile2.rmd\",\n                   \"itemFolder3/itemFile3.rmd\")\n\n# Create preview\nexams2html(file.paths)\n\n# Set directory where you want to store the .zip package that will be created\ndirectory &lt;- getwd()\n\n# Create Canvas package\nexams2canvas(file.paths, \n                 dir  = directory, \n                 name = \"exam_name\")\n\n\n\n\nThe newly created .zip file can be uploaded to Canvas as described in the video above."
+  },
+  {
+    "objectID": "instructions/searching-itembank-upload-to-testvision.html#using-the-search-field-on-the-landing-page",
+    "href": "instructions/searching-itembank-upload-to-testvision.html#using-the-search-field-on-the-landing-page",
+    "title": "How to search",
+    "section": "Using the search field on the landing page",
+    "text": "Using the search field on the landing page\nOn the ShareStats landing page you can search for items by entering keywords in the search field. The search will direct you to the itembank table with a selection of matches to your keywords in their title, description, meta information or question body. In addition you can refine your search by using the filters at the top of the table."
+  },
+  {
+    "objectID": "instructions/searching-itembank-upload-to-testvision.html#adding-tags",
+    "href": "instructions/searching-itembank-upload-to-testvision.html#adding-tags",
+    "title": "How to search",
+    "section": "Adding tags",
+    "text": "Adding tags\nAn overview of all the tags used in the itembank can be found on the tags page. You can use these tags to filter your search results.\nSome useful combinations of tags are for example the Type, in which you can indicate that you want an item that is about Performing analysis or Data manipulation, and the Section, in which you can indicate that you want an item that is about a specific statistical topic from the taxonomy."
+  },
+  {
+    "objectID": "instructions/searching-itembank-upload-to-testvision.html#perusing-the-taxonomy",
+    "href": "instructions/searching-itembank-upload-to-testvision.html#perusing-the-taxonomy",
+    "title": "How to search",
+    "section": "Perusing the taxonomy",
+    "text": "Perusing the taxonomy\nThe complete taxonomy tree can be visually inspected on the taxonomy visual page. The entire taxonomy list can be found on the taxonomy tree. Here you can click on the taxonomy level of interest and this wil direct you back to the itembank search table with all the items that are tagged with this taxonomy level."
+  },
+  {
+    "objectID": "instructions/testvision.html",
+    "href": "instructions/testvision.html",
+    "title": "TestVision instructions",
+    "section": "",
+    "text": "TestVision packages are already available as download from the ShareStats search table. Follow the instructions below on how to upload the zip file to Testvision."
+  },
+  {
+    "objectID": "instructions/testvision.html#upload-to-testvision",
+    "href": "instructions/testvision.html#upload-to-testvision",
+    "title": "TestVision instructions",
+    "section": "",
+    "text": "TestVision packages are already available as download from the ShareStats search table. Follow the instructions below on how to upload the zip file to Testvision."
+  },
+  {
+    "objectID": "instructions/testvision.html#create-testvision-package",
+    "href": "instructions/testvision.html#create-testvision-package",
+    "title": "TestVision instructions",
+    "section": "Create TestVision package",
+    "text": "Create TestVision package\nIt is also possible to download the ZIP Folder with all the raw files from the itembank search page. When you unpack the zip you will have a folder containing the item .Rmd file, and data or image files.\nWe recommend to create a folder for your items and set this to your working directory and save the extracted ZIP folders in there. In this folder you can ad an R file with the code below to compile the items for uploading.\nFor compiling the items to a Testvision ZIP you can use the exams2testvision function from the exams package. Make sure to first install the exams package to R if you do not have it installed already.\n\ninstall.packages(\"exams\")\n\nYou can use the script below to compile a question. Note that you can also download multiple questions and combine them to upload multiple questions at once to TestVision.\n\nSingle QuestionMultiple Questions\n\n\n\nlibrary(\"exams\")\n\n# Add file path to list. Multiple paths can be added here list(\"path1.rmd\", \"path2.rmd\")\nfile.paths &lt;- list(\"itemFolder1/itemFile1.rmd\")\n\n# Create preview\nexams2html(file.paths)\n\n# Set directory where you want to store the .zip package that will be created\ndirectory &lt;- getwd()\n\n# Create TvO package\nexams2testvision(file.paths, \n                 dir  = directory, \n                 name = \"exam_name\")\n\n\n\n\nlibrary(\"exams\")\n\n# Add file path to list. Multiple paths can be added here list(\"path1/file1.rmd\", \"path2/file2.rmd\")\nfile.paths &lt;- list(\"itemFolder1/itemFile1.rmd\",\n                   \"itemFolder2/itemFile2.rmd\",\n                   \"itemFolder3/itemFile3.rmd\")\n\n# Create preview\nexams2html(file.paths)\n\n# Set directory where you want to store the .zip package that will be created\ndirectory &lt;- getwd()\n\n# Create TvO package\nexams2testvision(file.paths, \n                 dir  = directory, \n                 name = \"exam_name\")\n\n\n\n\nThe newly created .zip file can be uploaded to TestVision as described in the video above."
+  },
+  {
+    "objectID": "instructions/ans.html",
+    "href": "instructions/ans.html",
+    "title": "Ans instructions",
+    "section": "",
+    "text": "Ans ZIP is already available as download from the ShareStats search table. Follow the instructions below on how to upload the ZIP file to ans."
+  },
+  {
+    "objectID": "instructions/ans.html#upload-to-ans",
+    "href": "instructions/ans.html#upload-to-ans",
+    "title": "Ans instructions",
+    "section": "",
+    "text": "Ans ZIP is already available as download from the ShareStats search table. Follow the instructions below on how to upload the ZIP file to ans."
+  },
+  {
+    "objectID": "instructions/ans.html#create-ans-package",
+    "href": "instructions/ans.html#create-ans-package",
+    "title": "Ans instructions",
+    "section": "Create ans package",
+    "text": "Create ans package\nIt is also possible to download the ZIP Folder with all the raw files from the itembank search page. When you unpack the zip you will have a folder containing the item .Rmd file, and data or image files.\nWe recommend to create a folder for your items and set this to your working directory and save the extracted ZIP folders in there. In this folder you can ad an R file with the code below to compile the items for uploading.\nFor compiling the items to a ans ZIP you can use the exams2ans function from the exams package. Make sure to first install the exams package to R if you do not have it installed already.\n\ninstall.packages(\"exams\")\n\nYou can use the script below to compile a question. Note that you can also download multiple questions and combine them to upload multiple questions at once to ans.\n\nSingle QuestionMultiple Questions\n\n\n\nlibrary(\"exams\")\n\n# Add file path to list. Multiple paths can be added here list(\"path1.rmd\", \"path2.rmd\")\nfile.paths &lt;- list(\"itemFolder1/itemFile1.rmd\")\n\n# Create preview\nexams2html(file.paths)\n\n# Set directory where you want to store the .zip package that will be created\ndirectory &lt;- getwd()\n\n# Create ans package\nexams2ans(file.paths, \n                 dir  = directory, \n                 name = \"exam_name\")\n\n\n\n\nlibrary(\"exams\")\n\n# Add file path to list. Multiple paths can be added here list(\"path1/file1.rmd\", \"path2/file2.rmd\")\nfile.paths &lt;- list(\"itemFolder1/itemFile1.rmd\",\n                   \"itemFolder2/itemFile2.rmd\",\n                   \"itemFolder3/itemFile3.rmd\")\n\n# Create preview\nexams2html(file.paths)\n\n# Set directory where you want to store the .zip package that will be created\ndirectory &lt;- getwd()\n\n# Create TvO package\nexams2ans(file.paths, \n              dir  = directory, \n              name = \"exam_name\")\n\n\n\n\nThe newly created .zip file can be uploaded to ans as described in the video above."
+  },
+  {
+    "objectID": "instructions/grasple.html",
+    "href": "instructions/grasple.html",
+    "title": "Grasple instructions",
+    "section": "",
+    "text": "All items in the ShareStats item bank are available in Grasple in a community repository. Here you can use the search bar to find items using the terms of the ShareStats taxonomy."
   },
   {
     "objectID": "instructions/wooclap.html",

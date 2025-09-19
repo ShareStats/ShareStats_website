@@ -1,0 +1,10 @@
+---
+author: Sharon Klinkenberg
+page-layout: article
+date: now
+# image: 
+title: Grasple instructions
+description: Instructio on how to access sharestats questions in Grasple
+---
+
+All items in the ShareStats item bank are available in [Grasple](https://www.grasple.com) in a [community repository](https://app.grasple.com/#/repositories/2972/exercises). Here you can use the search bar to find items using the terms of the [ShareStats taxonomy](https://www.sharestats.nl/taxonomy/taxonomy_tree.html).
