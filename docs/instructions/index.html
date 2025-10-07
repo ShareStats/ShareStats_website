@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.30">
+<meta name="generator" content="quarto-1.8.25">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -31,14 +31,19 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-de070a7b0ab54f8780927367ac907214.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-707d8167ce6003fca903bfe2be84ab7f.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-a5ee37e88d3967f3f617253e7ad12af0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-98827c764e096396dc2ff9df08f8fb0a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-98827c764e096396dc2ff9df08f8fb0a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-98827c764e096396dc2ff9df08f8fb0a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -98,7 +103,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -126,7 +131,8 @@ window.Quarto = {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../images/logoWT.png" alt="" class="navbar-logo">
+    <img src="../images/logoWT.png" alt="ShareStats" class="navbar-logo light-content">
+    <img src="../images/logoWT.png" alt="ShareStats" class="navbar-logo dark-content">
     </a>
   </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
@@ -233,7 +239,7 @@ window.Quarto = {
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1758285967000" data-listing-file-modified-sort="1751636848038" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="396">
+<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1759857463000" data-listing-file-modified-sort="1751636848038" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="396">
 <div class="thumbnail"><a href="../instructions/ans.html" class="no-external">
 
 <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
@@ -250,7 +256,7 @@ window.Quarto = {
 <div class="metadata">
 <a href="../instructions/ans.html" class="no-external">
 <div class="listing-date">
-Sep 19, 2025
+Oct 7, 2025
 </div>
 <div class="listing-author">
 Sharon Klinkenberg
@@ -258,7 +264,7 @@ Sharon Klinkenberg
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-listing-date-sort="1758285967000" data-listing-file-modified-sort="1751636450808" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="402">
+<div class="quarto-post image-right" data-index="1" data-listing-date-sort="1759857463000" data-listing-file-modified-sort="1751636450808" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="402">
 <div class="thumbnail"><a href="../instructions/canvas.html" class="no-external">
 
 <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
@@ -275,7 +281,7 @@ Sharon Klinkenberg
 <div class="metadata">
 <a href="../instructions/canvas.html" class="no-external">
 <div class="listing-date">
-Sep 19, 2025
+Oct 7, 2025
 </div>
 <div class="listing-author">
 Sharon Klinkenberg
@@ -283,7 +289,7 @@ Sharon Klinkenberg
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-listing-date-sort="1758285967000" data-listing-file-modified-sort="1758283753674" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="32">
+<div class="quarto-post image-right" data-index="2" data-listing-date-sort="1759857463000" data-listing-file-modified-sort="1758283753674" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="32">
 <div class="thumbnail"><a href="../instructions/grasple.html" class="no-external">
 
 <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
@@ -300,7 +306,7 @@ Sharon Klinkenberg
 <div class="metadata">
 <a href="../instructions/grasple.html" class="no-external">
 <div class="listing-date">
-Sep 19, 2025
+Oct 7, 2025
 </div>
 <div class="listing-author">
 Sharon Klinkenberg
@@ -308,7 +314,7 @@ Sharon Klinkenberg
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="3" data-listing-date-sort="1758285967000" data-listing-file-modified-sort="1751635898544" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="214">
+<div class="quarto-post image-right" data-index="3" data-listing-date-sort="1759857463000" data-listing-file-modified-sort="1751635898544" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="214">
 <div class="thumbnail"><a href="../instructions/searching-itembank-upload-to-testvision.html" class="no-external">
 
 <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
@@ -325,7 +331,7 @@ Sharon Klinkenberg
 <div class="metadata">
 <a href="../instructions/searching-itembank-upload-to-testvision.html" class="no-external">
 <div class="listing-date">
-Sep 19, 2025
+Oct 7, 2025
 </div>
 <div class="listing-author">
 Sharon Klinkenberg
@@ -333,7 +339,7 @@ Sharon Klinkenberg
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="4" data-listing-date-sort="1758285967000" data-listing-file-modified-sort="1751636499991" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="538">
+<div class="quarto-post image-right" data-index="4" data-listing-date-sort="1759857463000" data-listing-file-modified-sort="1751636499991" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="538">
 <div class="thumbnail"><a href="../instructions/using-r-exams.html" class="no-external">
 
 <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
@@ -350,7 +356,7 @@ Sharon Klinkenberg
 <div class="metadata">
 <a href="../instructions/using-r-exams.html" class="no-external">
 <div class="listing-date">
-Sep 19, 2025
+Oct 7, 2025
 </div>
 <div class="listing-author">
 Sharon Klinkenberg
@@ -358,7 +364,7 @@ Sharon Klinkenberg
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="5" data-listing-date-sort="1758285967000" data-listing-file-modified-sort="1751636925356" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="396">
+<div class="quarto-post image-right" data-index="5" data-listing-date-sort="1759857463000" data-listing-file-modified-sort="1751636925356" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="396">
 <div class="thumbnail"><a href="../instructions/moodle.html" class="no-external">
 
 <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
@@ -375,7 +381,7 @@ Sharon Klinkenberg
 <div class="metadata">
 <a href="../instructions/moodle.html" class="no-external">
 <div class="listing-date">
-Sep 19, 2025
+Oct 7, 2025
 </div>
 <div class="listing-author">
 Sharon Klinkenberg
@@ -383,7 +389,7 @@ Sharon Klinkenberg
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="6" data-listing-date-sort="1758285967000" data-listing-file-modified-sort="1751636479706" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="402">
+<div class="quarto-post image-right" data-index="6" data-listing-date-sort="1759857463000" data-listing-file-modified-sort="1751636479706" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="402">
 <div class="thumbnail"><a href="../instructions/testvision.html" class="no-external">
 
 <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
@@ -400,7 +406,7 @@ Sharon Klinkenberg
 <div class="metadata">
 <a href="../instructions/testvision.html" class="no-external">
 <div class="listing-date">
-Sep 19, 2025
+Oct 7, 2025
 </div>
 <div class="listing-author">
 Sharon Klinkenberg
@@ -408,7 +414,7 @@ Sharon Klinkenberg
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="7" data-listing-date-sort="1758285967000" data-listing-file-modified-sort="1751636888440" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="402">
+<div class="quarto-post image-right" data-index="7" data-listing-date-sort="1759857463000" data-listing-file-modified-sort="1751636888440" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="402">
 <div class="thumbnail"><a href="../instructions/wooclap.html" class="no-external">
 
 <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
@@ -425,7 +431,7 @@ Sharon Klinkenberg
 <div class="metadata">
 <a href="../instructions/wooclap.html" class="no-external">
 <div class="listing-date">
-Sep 19, 2025
+Oct 7, 2025
 </div>
 <div class="listing-author">
 Sharon Klinkenberg
@@ -487,13 +493,14 @@ Sharon Klinkenberg
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
