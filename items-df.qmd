@@ -49,7 +49,8 @@ get_link <- function(what, folder, name){
   packages_link <- 'https://github.com/ShareStats/itembank/raw/packages/packages/'
   repo_link <- 'https://sharestats.github.io/itembank/'
   cdn_link <- 'https://cdn.jsdelivr.net/gh/ShareStats/itembank@packages/packages/' # for XML
-  grasple_link <- 'https://app.grasple.com/#/challenge/' # for direct link to grasple
+  
+
   link <- switch(what,
                  zip = paste0(packages_link, 'zip/', folder, '.zip'),
                  tv = paste0(packages_link, 'tv/', folder,'-tv.zip'),
@@ -58,10 +59,23 @@ get_link <- function(what, folder, name){
                  ans = paste0(packages_link, 'ans/', folder,'-ans.zip'),
                  wooclap = paste0(cdn_link, 'wooclap/', folder, '-wooclap.xml'),
                  moodle = paste0(cdn_link, 'moodle/', folder, '-moodle.xml'),
-                 html = paste0(repo_link, folder, '/', name, '1.html'), 
+                 html = paste0(repo_link, folder, '/', name, '1.html'),
                  NULL
                  )
 }
+
+## Grasple link seperately 
+
+grasple.data <- read.csv("20250813-ShareStats-Grasple-Links.csv")[, c("item.name", "exercise.id")]
+grasple_link <- "https://app.grasple.com/#/challenge/"
+
+# Function that uses the already-loaded data
+get_grasple_link <- function(name) {
+  id <- grasple.data$exercise.id[match(name, grasple.data$item.name)]
+  paste0(grasple_link, id)
+}
+
+
 ```
 
 ```{r, include = FALSE}
@@ -73,11 +87,15 @@ library(tidyverse)
 ```{r read-file-from-url, include = FALSE}
 # Create the columns containing the 'View' and 'Download' buttons
 data.path <- "https://sharestats.github.io/itembank/sharestats_website.csv"
-grasple.links <- read.csv("20250813-ShareStats-Grasple-Links.csv")
-grasple.links <- grasple.links[,c('item.name', 'exercise.id')]
 
+# read all the other data
 dat <- read_csv(data.path)
-# dat <- merge(dat, grasple.links, by.x = "name", by.y = "item.name")
+
+
+# merge all data and grasple by common key
+# NOTE! keep only the first match of Grasple duplicates @todo!
+#dat.mrgd <- left_join(dat, distinct(grasple.data, name, .keep_all = TRUE), by = "name")
+
 ```
 
 ```{r, include = FALSE}
@@ -113,7 +131,7 @@ mutate(View = paste0(
         <li><a class="dropdown-item" href="',get_link("ans", folder, name),'">Ans QTI</a></li>
         <li><a class="dropdown-item" href="#" onclick="forceDownload(\'', get_link("wooclap", folder, name), '\', \'', name, '-wooclap.xml\'); return false;">Wooclap XML</a></li>
         <li><a class="dropdown-item" href="#" onclick="forceDownload(\'', get_link("moodle", folder, name), '\', \'', name, '-moodle.xml\'); return false;">Moodle XML</a></li>
-        <!-- <li><a class="dropdown-item" href="#">Grasple</a></li> -->
+        <li><a class="dropdown-item" href="',get_grasple_link(name),'">Grasple</a></li> 
       </ul>
     </div>'
   )) %>% 
@@ -157,4 +175,3 @@ names(all.items)
 ```
 
 :::
-
